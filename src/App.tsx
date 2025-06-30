@@ -1,11 +1,13 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
 import { FilterPanel } from './components/FilterPanel';
 import { StatsCards } from './components/StatsCards';
+import { FacultyModal } from './components/FacultyModal';
 import { useFacultyData } from './hooks/useFacultyData';
 import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
-import type { Filters, SortOption } from './types';
+import type { Filters, SortOption, EnrichedFacultyProfile } from './types';
+import enrichedData from './data/facultyEnriched.json';
 
 function App() {
   const { loading, error, profiles, workshops } = useFacultyData();
@@ -17,11 +19,40 @@ function App() {
   });
   
   const [sortOption, setSortOption] = useState<SortOption>('lastName');
+  const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
+
+  // Enrich profiles with additional data
+  const enrichedProfiles = useMemo(() => {
+    return profiles.map(profile => ({
+      ...profile,
+      enrichment: (enrichedData as any)[profile.faculty.id]?.enrichment
+    })) as EnrichedFacultyProfile[];
+  }, [profiles]);
 
   const filteredAndSortedProfiles = useMemo(() => {
-    const filtered = filterFacultyProfiles(profiles, filters);
+    const filtered = filterFacultyProfiles(enrichedProfiles, filters);
     return sortFacultyProfiles(filtered, sortOption);
-  }, [profiles, filters, sortOption]);
+  }, [enrichedProfiles, filters, sortOption]);
+
+  // Find selected profile
+  const selectedProfile = useMemo(() => {
+    if (!selectedFacultyId) return null;
+    return enrichedProfiles.find(p => p.faculty.id === selectedFacultyId) || null;
+  }, [selectedFacultyId, enrichedProfiles]);
+
+  // Handle navigation between faculty in modal
+  const handleNavigate = (direction: 'prev' | 'next') => {
+    if (!selectedFacultyId) return;
+    
+    const currentIndex = filteredAndSortedProfiles.findIndex(p => p.faculty.id === selectedFacultyId);
+    if (currentIndex === -1) return;
+    
+    const newIndex = direction === 'prev' 
+      ? (currentIndex - 1 + filteredAndSortedProfiles.length) % filteredAndSortedProfiles.length
+      : (currentIndex + 1) % filteredAndSortedProfiles.length;
+    
+    setSelectedFacultyId(filteredAndSortedProfiles[newIndex].faculty.id);
+  };
 
   if (loading) {
     return (
@@ -55,7 +86,7 @@ function App() {
   return (
     <Layout>
       <StatsCards 
-        profiles={profiles} 
+        profiles={enrichedProfiles} 
         workshops={workshops} 
       />
       
@@ -100,11 +131,21 @@ function App() {
               <FacultyCard
                 profile={profile}
                 workshops={workshops}
+                onClick={() => setSelectedFacultyId(profile.faculty.id)}
               />
             </div>
           ))}
         </div>
       )}
+      
+      {/* Faculty Modal */}
+      <FacultyModal
+        profile={selectedProfile}
+        workshops={workshops}
+        isOpen={!!selectedFacultyId}
+        onClose={() => setSelectedFacultyId(null)}
+        onNavigate={handleNavigate}
+      />
     </Layout>
   );
 }

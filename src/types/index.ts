@@ -60,3 +60,29 @@ export interface Filters {
 }
 
 export type SortOption = 'lastName' | 'firstName' | 'participationCount' | 'recentYear' | 'firstYear';
+
+// Enriched faculty data from web scraping
+export interface FacultyEnrichment {
+  lastUpdated: string;
+  confidence: 'high' | 'medium' | 'low';
+  professional?: {
+    title?: string;
+    affiliation?: string;
+    department?: string;
+    labWebsite?: string;
+  };
+  academic?: {
+    orcid?: string;
+    googleScholarId?: string;
+    researchAreas?: string[];
+  };
+  profile?: {
+    photoUrl?: string;
+    shortBio?: string;
+    source?: string;
+  };
+}
+
+export interface EnrichedFacultyProfile extends FacultyProfile {
+  enrichment?: FacultyEnrichment;
+}

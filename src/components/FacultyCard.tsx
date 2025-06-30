@@ -4,6 +4,7 @@ import type { FacultyProfile } from '../types';
 interface FacultyCardProps {
   profile: FacultyProfile;
   workshops: { [key: string]: { name: string; shortName: string } };
+  onClick?: () => void;
 }
 
 // Define workshop colors
@@ -19,13 +20,23 @@ const workshopBadgeColors = {
   wphylo: 'bg-green-100 text-green-800 border-green-200'
 };
 
-export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops }) => {
+export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, onClick }) => {
   // Get primary workshop for gradient
   const primaryWorkshop = Object.keys(profile.participations)[0] || 'wog';
   const gradientClass = workshopColors[primaryWorkshop as keyof typeof workshopColors] || workshopColors.wog;
   
   return (
-    <div className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
+    <div 
+      className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up cursor-pointer"
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}>
       {/* Gradient accent bar */}
       <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradientClass}`}></div>
       

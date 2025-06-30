@@ -1,0 +1,249 @@
+{
+  "leonard-guy": {
+    "id": "leonard-guy",
+    "name": "Guy Leonard",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Research Fellow",
+        "affiliation": "University of Oxford",
+        "department": "Department of Biology",
+        "labWebsite": "https://protists.co.uk"
+      },
+      "academic": {
+        "researchAreas": [
+          "comparative genomics",
+          "phylogenomics",
+          "genome assembly",
+          "evolutionary relationships",
+          "eukaryotes",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Guy Leonard works with comparative genomics, phylogenomics and genome assembly with an interest in the evolutionary relationships of eukaryotes. Lead Developer and Co-Director of the Workshop on Genomics.",
+        "source": "protists.co.uk, Google Scholar"
+      }
+    }
+  },
+  "marcet-houben-marina": {
+    "id": "marcet-houben-marina",
+    "name": "Marina Marcet-Houben",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Barcelona Supercomputing Center",
+        "department": "BSC"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenomics",
+          "fungal evolution",
+          "next generation sequencing",
+          "genomics",
+          "bioinformatics",
+          "microsporidians"
+        ]
+      },
+      "profile": {
+        "shortBio": "Marina Marcet-Houben at Barcelona Supercomputing Center. Phylogenomics supports microsporidia as the earliest diverging clade of sequenced fungi. Skills in Next Generation Sequencing, Genomics, and Bioinformatics.",
+        "source": "Google Scholar, ResearchGate"
+      }
+    }
+  },
+  "mcdonald-daniel": {
+    "id": "mcdonald-daniel",
+    "name": "Daniel McDonald",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Ph.D. in Computer Science",
+        "affiliation": "University of Colorado Boulder",
+        "department": "Computer Science"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome data science",
+          "microbiome analysis",
+          "genomics",
+          "QIIME 2",
+          "complex microbial communities",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Daniel McDonald holds a Ph.D. in Computer Science from UC Boulder. He specializes as a developer using popular microbiome software and works on reproducible, interactive, scalable and extensible microbiome data science using QIIME 2.",
+        "source": "The Microsetta Initiative, Google Scholar"
+      }
+    }
+  },
+  "bank-claudia": {
+    "id": "bank-claudia",
+    "name": "Claudia Bank",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "SIB Swiss Institute of Bioinformatics",
+        "department": "Theoretical Ecology and Evolution"
+      },
+      "academic": {
+        "researchAreas": [
+          "theoretical ecology",
+          "evolution",
+          "population genetics",
+          "evolutionary forces",
+          "genomics",
+          "diversity"
+        ]
+      },
+      "profile": {
+        "shortBio": "Claudia Bank leads the Theoretical Ecology and Evolution group at SIB. Her overarching goal is to quantify the relative roles of ecological and evolutionary forces for the buildup and maintenance of diversity.",
+        "source": "SIB website, Evolution and Genomics website"
+      }
+    }
+  },
+  "catchen-julian": {
+    "id": "catchen-julian",
+    "name": "Julian Catchen",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "University of Illinois",
+        "labWebsite": "https://catchenlab.life.illinois.edu"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "RAD-seq",
+          "genetic mapping",
+          "restriction enzyme-based data",
+          "stacks software",
+          "evolutionary genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Julian Catchen developed Stacks, an analysis tool set for population genomics. Stacks was developed to work with restriction enzyme-based data such as RAD-seq, for building genetic maps and conducting population genomics analyses.",
+        "source": "Catchen Lab website, PubMed"
+      }
+    }
+  },
+  "kubatko-laura": {
+    "id": "kubatko-laura",
+    "name": "Laura Kubatko",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "Ohio State University",
+        "department": "Statistics and Evolution, Ecology and Organismal Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenetics",
+          "statistical phylogenetics",
+          "coalescent theory",
+          "species tree inference"
+        ]
+      },
+      "profile": {
+        "source": "Inferred from workshop participation"
+      }
+    }
+  },
+  "malinsky-milan": {
+    "id": "malinsky-milan",
+    "name": "Milan Malinsky",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "University of Basel"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "speciation",
+          "cichlid evolution",
+          "genomic differentiation"
+        ]
+      },
+      "profile": {
+        "source": "Inferred from WPSG participation"
+      }
+    }
+  },
+  "matschiner-michael": {
+    "id": "matschiner-michael",
+    "name": "Michael Matschiner",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "University of Oslo",
+        "department": "Natural History Museum"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenomics",
+          "molecular dating",
+          "fish evolution",
+          "speciation genomics"
+        ]
+      },
+      "profile": {
+        "source": "Inferred from WPSG participation"
+      }
+    }
+  },
+  "marchet-camille": {
+    "id": "marchet-camille",
+    "name": "Camille Marchet",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "CNRS / University of Lille"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "k-mer analysis",
+          "genome assembly",
+          "transcriptomics"
+        ]
+      },
+      "profile": {
+        "source": "Inferred from recent WoG participation"
+      }
+    }
+  },
+  "bielawski-joseph": {
+    "id": "bielawski-joseph",
+    "name": "Joseph Bielawski",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T10:00:00Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "Dalhousie University",
+        "department": "Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "molecular evolution",
+          "phylogenetics",
+          "selection analysis",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "source": "Inferred from workshop participation"
+      }
+    }
+  }
+}

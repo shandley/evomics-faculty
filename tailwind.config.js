@@ -38,6 +38,8 @@ export default {
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.3s ease-out',
+        'fadeIn': 'fadeIn 0.2s ease-out',
+        'slideUp': 'slideUp 0.3s ease-out',
       },
       keyframes: {
         fadeIn: {

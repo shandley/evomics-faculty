@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import type { Faculty, Participation, FacultyProfile, Workshop } from '../types';
+import type { Faculty, Participation, Workshop } from '../types';
 import { generateFacultyProfiles } from '../utils/dataTransform';
 import facultyDataJson from '../data/facultyData.json';
 import workshopsJson from '../data/workshops.json';

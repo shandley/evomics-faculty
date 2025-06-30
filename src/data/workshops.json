@@ -1,0 +1,29 @@
+{
+  "wog": {
+    "id": "wog",
+    "name": "Workshop on Genomics",
+    "shortName": "WoG",
+    "description": "Annual workshop focusing on genomic data analysis techniques including genome assembly, annotation, alignment, and variant calling.",
+    "active": true,
+    "startYear": 2011,
+    "location": "Český Krumlov, Czech Republic"
+  },
+  "wpsg": {
+    "id": "wpsg",
+    "name": "Workshop on Population and Speciation Genomics",
+    "shortName": "WPSG",
+    "description": "Biennial workshop analyzing genomic data at population and species levels.",
+    "active": true,
+    "startYear": 2016,
+    "location": "Český Krumlov, Czech Republic"
+  },
+  "wphylo": {
+    "id": "wphylo",
+    "name": "Workshop on Phylogenomics",
+    "shortName": "WPhylo",
+    "description": "Workshop exploring large-scale phylogenetics and phylogenomics.",
+    "active": true,
+    "startYear": 2017,
+    "location": "Český Krumlov, Czech Republic"
+  }
+}

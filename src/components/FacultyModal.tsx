@@ -254,7 +254,7 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
               {enrichment ? 'Is this information outdated or incorrect?' : 'Help us add information for this faculty member'}
             </p>
             <a
-              href={`mailto:evomics-faculty@googlegroups.com?subject=Faculty Profile Update Request - ${fullName}&body=I would like to update my faculty profile information.%0A%0AName: ${fullName}%0AFaculty ID: ${faculty.id}%0A%0APlease send me the update form link.`}
+              href={`mailto:fourthculture@gmail.com?subject=Faculty Profile Update Request - ${fullName}&body=I would like to update my faculty profile information.%0A%0AName: ${fullName}%0AFaculty ID: ${faculty.id}%0A%0APlease send me the update form link.`}
               className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

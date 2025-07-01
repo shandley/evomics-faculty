@@ -228,6 +228,7 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
             })}
           </div>
 
+
           {/* Data Attribution */}
           {enrichment && (
             <div className="mt-8 pt-4 border-t border-gray-200">
@@ -246,6 +247,22 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
               <p className="text-gray-600">Additional information not yet available for this faculty member.</p>
             </div>
           )}
+          
+          {/* Update Request Button - Always visible */}
+          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+            <p className="text-sm text-gray-600 mb-3">
+              {enrichment ? 'Is this information outdated or incorrect?' : 'Help us add information for this faculty member'}
+            </p>
+            <a
+              href={`mailto:evomics-faculty@googlegroups.com?subject=Faculty Profile Update Request - ${fullName}&body=I would like to update my faculty profile information.%0A%0AName: ${fullName}%0AFaculty ID: ${faculty.id}%0A%0APlease send me the update form link.`}
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+              {enrichment ? 'Request Update' : 'Add Information'}
+            </a>
+          </div>
         </div>
 
         {/* Navigation buttons */}

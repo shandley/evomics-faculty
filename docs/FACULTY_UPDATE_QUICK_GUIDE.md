@@ -18,7 +18,7 @@ Dear [Faculty Name],
 Thank you for your interest in updating your Evomics faculty profile.
 
 Please complete the following form to submit your updates:
-[YOUR_GOOGLE_FORM_LINK]
+https://docs.google.com/forms/d/e/1FAIpQLSfgjNj8lJF4Iw4z_oFTUHkAwgcq5_XjcPDmoFUmtpZECthdlw/viewform
 
 The form should take about 5 minutes to complete. Your updates will be reviewed and published within 1-2 weeks.
 

@@ -280,11 +280,29 @@
     "id": "albrechtsen-anders",
     "name": "Anders Albrechtsen",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "University of Copenhagen",
+        "department": "Department of Biology, Computational and RNA Biology"
+      },
+      "academic": {
+        "orcid": "0000-0001-7306-031X",
+        "researchAreas": [
+          "statistical genetics",
+          "computational methods",
+          "genomic data analysis",
+          "population genetics",
+          "association studies",
+          "population stratification",
+          "natural selection"
+        ]
+      },
+      "profile": {
+        "shortBio": "Anders Albrechtsen is an Associate Professor at the Bioinformatics Centre, University of Copenhagen. His group develops statistical and computational methods for analysis of genomic data including multi-loci association studies and detecting natural selection.",
+        "source": "University of Copenhagen Research Portal"
+      }
     }
   },
   "almeida-king-jeff": {
@@ -311,13 +329,30 @@
   },
   "barth-julia": {
     "id": "barth-julia",
-    "name": "Julia Barth",
+    "name": "Julia M.I. Barth",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Guest Researcher",
+        "affiliation": "University of Oslo / University of Basel",
+        "department": "CEES - Centre for Ecological and Evolutionary Synthesis"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "speciation genomics",
+          "evolutionary biology",
+          "marine fish genomics",
+          "Atlantic cod",
+          "conservation genetics",
+          "adaptation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Julia M.I. Barth studies genomic differentiation and demographic histories of Atlantic and Indo-Pacific yellowfin tuna populations. She is involved in various population genomic projects including the Aqua Genome project, studying connectivity, gene flow, and adaptation in marine fish species.",
+        "source": "University of Oslo CEES / Evolution and Genomics website"
+      }
     }
   },
   "beiko-robert": {
@@ -353,11 +388,27 @@
     "id": "berner-daniel",
     "name": "Daniel Berner",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T13:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "PD Dr. Lecturer",
+        "affiliation": "University of Basel",
+        "department": "Department of Environmental Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "adaptive divergence",
+          "stickleback evolution",
+          "speciation",
+          "evolutionary ecology",
+          "range expansion genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Daniel Berner is a population genomics researcher at University of Basel studying adaptive divergence in stickleback fish, speciation, and the genetic basis of adaptation and range expansion in butterflies.",
+        "source": "University of Basel Department Page"
+      }
     }
   },
   "blanco-miguez-altor": {
@@ -419,11 +470,29 @@
     "id": "chikhi-rayan",
     "name": "Rayan Chikhi",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.200Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "G5 Group Leader",
+        "affiliation": "Institut Pasteur",
+        "department": "Sequence Bioinformatics"
+      },
+      "academic": {
+        "researchAreas": [
+          "algorithms",
+          "big biological data",
+          "next-generation sequencing",
+          "genome assembly",
+          "k-mers",
+          "metagenomics",
+          "pan-genomics",
+          "transcriptomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Rayan Chikhi leads a computational team researching algorithms for big biological data at Institut Pasteur. The group creates and implements algorithms and data structures into software tools for genomics and metagenomics, including methods for improving bacterial genome assemblies with long reads.",
+        "source": "Institut Pasteur Research Portal"
+      }
     }
   },
   "christmas-matthew": {
@@ -566,11 +635,30 @@
     "id": "drummond-alexei",
     "name": "Alexei Drummond",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Computational Biology",
+        "affiliation": "University of Auckland",
+        "department": "School of Biological Sciences & School of Computer Science",
+        "labWebsite": "https://alexeidrummond.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational biology",
+          "Bayesian phylogenetics",
+          "molecular evolution",
+          "population genetics",
+          "coalescent theory",
+          "evolutionary biology",
+          "Markov chain Monte Carlo",
+          "phylodynamics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Alexei Drummond is co-inventor of BEAST and BEAST 2 software packages and co-founder of the Centre for Computational Evolution at University of Auckland. He has >20 years of Java programming experience and research expertise in computational biology for understanding evolutionary biology and population genetics.",
+        "source": "Personal website and University of Auckland"
+      }
     }
   },
   "duchoslav-miroslav": {

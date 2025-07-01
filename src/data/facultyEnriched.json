@@ -245,5 +245,867 @@
         "source": "Inferred from workshop participation"
       }
     }
+  },
+  "ahren-dag": {
+    "id": "ahren-dag",
+    "name": "Dag Ahren",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.197Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "albrechtsen-anders": {
+    "id": "albrechtsen-anders",
+    "name": "Anders Albrechtsen",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "almeida-king-jeff": {
+    "id": "almeida-king-jeff",
+    "name": "Jeff Almeida-King",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "barnett-david": {
+    "id": "barnett-david",
+    "name": "David Barnett",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "barth-julia": {
+    "id": "barth-julia",
+    "name": "Julia Barth",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "beiko-robert": {
+    "id": "beiko-robert",
+    "name": "Robert Beiko",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "berner-daniel": {
+    "id": "berner-daniel",
+    "name": "Daniel Berner",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "blanco-miguez-altor": {
+    "id": "blanco-miguez-altor",
+    "name": "Altor Blanco Miguez",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "bohutinska-magdalena": {
+    "id": "bohutinska-magdalena",
+    "name": "Magdalena Bohutinska",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "bos-kirsten": {
+    "id": "bos-kirsten",
+    "name": "Kirsten Bos",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:49.198Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "buerkle-alex": {
+    "id": "buerkle-alex",
+    "name": "Alex Buerkle",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.200Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "chevreux-bastien": {
+    "id": "chevreux-bastien",
+    "name": "Bastien Chevreux",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.200Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "chikhi-rayan": {
+    "id": "chikhi-rayan",
+    "name": "Rayan Chikhi",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.200Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "christmas-matthew": {
+    "id": "christmas-matthew",
+    "name": "Matthew Christmas",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.200Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "cicconardi-francesco": {
+    "id": "cicconardi-francesco",
+    "name": "Francesco Cicconardi",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.200Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "clark-andrew": {
+    "id": "clark-andrew",
+    "name": "Andrew Clark",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.200Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "clauw-pieter": {
+    "id": "clauw-pieter",
+    "name": "Pieter Clauw",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.201Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "colonna-vincenza": {
+    "id": "colonna-vincenza",
+    "name": "Vincenza Colonna",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.201Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "cresko-bill": {
+    "id": "cresko-bill",
+    "name": "Bill Cresko",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T12:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Oregon",
+        "department": "Institute of Ecology and Evolution"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "stickleback fish",
+          "population genomics",
+          "adaptation",
+          "speciation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Bill Cresko studies evolutionary genomics using threespine stickleback fish as a model system. Co-organizer of the Workshop on Population and Speciation Genomics.",
+        "source": "Workshop information"
+      }
+    }
+  },
+  "crotty-stephen": {
+    "id": "crotty-stephen",
+    "name": "Stephen Crotty",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:54.201Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "cummings-michael": {
+    "id": "cummings-michael",
+    "name": "Michael Cummings",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "danacek-petr": {
+    "id": "danacek-petr",
+    "name": "Petr Danacek",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "dos-reis-mario": {
+    "id": "dos-reis-mario",
+    "name": "Mario dos Reis",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "droge-johannes": {
+    "id": "droge-johannes",
+    "name": "Johannes Droge",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "drummond-alexei": {
+    "id": "drummond-alexei",
+    "name": "Alexei Drummond",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "duchoslav-miroslav": {
+    "id": "duchoslav-miroslav",
+    "name": "Miroslav Duchoslav",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "dudaniec-rachael": {
+    "id": "dudaniec-rachael",
+    "name": "Rachael Dudaniec",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "dudas-gytis": {
+    "id": "dudas-gytis",
+    "name": "Gytis Dudas",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "durbin-richard": {
+    "id": "durbin-richard",
+    "name": "Richard Durbin",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T12:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Cambridge",
+        "department": "Department of Genetics / Wellcome Sanger Institute"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational genomics",
+          "genome assembly",
+          "population genetics",
+          "sequence analysis",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Richard Durbin is a computational biologist and one of the founders of the field of computational genomics. Key contributor to the Human Genome Project.",
+        "source": "Academic profile"
+      }
+    }
+  },
+  "dyhrman-sonya": {
+    "id": "dyhrman-sonya",
+    "name": "Sonya Dyhrman",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:48:59.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "eichler-evan": {
+    "id": "eichler-evan",
+    "name": "Evan Eichler",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T12:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Washington",
+        "department": "Department of Genome Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "genome evolution",
+          "structural variation",
+          "segmental duplications",
+          "primate genomics",
+          "human genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Evan Eichler is a leader in primate genome evolution and structural variation. Howard Hughes Medical Institute Investigator.",
+        "source": "Academic profile"
+      }
+    }
+  },
+  "falush-daniel": {
+    "id": "falush-daniel",
+    "name": "Daniel Falush",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "fernandez-rosa": {
+    "id": "fernandez-rosa",
+    "name": "Rosa Fernandez",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "fernndez-rosa": {
+    "id": "fernndez-rosa",
+    "name": "Rosa Fernández",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "ferrer-obiol-joan": {
+    "id": "ferrer-obiol-joan",
+    "name": "Joan Ferrer Obiol",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "fillault-daniel": {
+    "id": "fillault-daniel",
+    "name": "Daniel Fillault",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "fumagalli-matteo": {
+    "id": "fumagalli-matteo",
+    "name": "Matteo Fumagalli",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "gabaldon-toni": {
+    "id": "gabaldon-toni",
+    "name": "Toni Gabaldon",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "gaggiotti-oscar": {
+    "id": "gaggiotti-oscar",
+    "name": "Oscar Gaggiotti",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "garamszegi-laszlo": {
+    "id": "garamszegi-laszlo",
+    "name": "Laszlo Garamszegi",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:04.202Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "garber-manuel": {
+    "id": "garber-manuel",
+    "name": "Manuel Garber",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "gardy-jennifer": {
+    "id": "gardy-jennifer",
+    "name": "Jennifer Gardy",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "garrison-erik": {
+    "id": "garrison-erik",
+    "name": "Erik Garrison",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T12:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Professor",
+        "affiliation": "University of Tennessee Health Science Center",
+        "department": "Department of Genetics, Genomics and Informatics"
+      },
+      "academic": {
+        "researchAreas": [
+          "pangenomics",
+          "variant calling",
+          "genome graphs",
+          "sequence analysis",
+          "bioinformatics tools"
+        ]
+      },
+      "profile": {
+        "shortBio": "Erik Garrison develops computational methods for pangenomics and variation graphs. Creator of FreeBayes and other genomics tools.",
+        "source": "Academic profile"
+      }
+    }
+  },
+  "gascuel-olivier": {
+    "id": "gascuel-olivier",
+    "name": "Olivier Gascuel",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "gosik-kirk": {
+    "id": "gosik-kirk",
+    "name": "Kirk Gosik",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "grabherr-manfred": {
+    "id": "grabherr-manfred",
+    "name": "Manfred Grabherr",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "griffith-malachi": {
+    "id": "griffith-malachi",
+    "name": "Malachi Griffith",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "guido-roderic": {
+    "id": "guido-roderic",
+    "name": "Roderic Guido",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "gutenkurst-ryan": {
+    "id": "gutenkurst-ryan",
+    "name": "Ryan Gutenkurst",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "haas-brian": {
+    "id": "haas-brian",
+    "name": "Brian Haas",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:09.205Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "hahn-matthew": {
+    "id": "hahn-matthew",
+    "name": "Matthew Hahn",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T12:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Distinguished Professor",
+        "affiliation": "Indiana University",
+        "department": "Department of Biology and Computer Science"
+      },
+      "academic": {
+        "researchAreas": [
+          "molecular evolution",
+          "population genetics",
+          "comparative genomics",
+          "speciation",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Matthew Hahn is a Distinguished Professor studying molecular evolution and population genetics. Author of 'Molecular Population Genetics' textbook.",
+        "source": "Academic profile"
+      }
+    }
+  },
+  "hall-neil": {
+    "id": "hall-neil",
+    "name": "Neil Hall",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "hancock-angela": {
+    "id": "hancock-angela",
+    "name": "Angela Hancock",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "handley-scott": {
+    "id": "handley-scott",
+    "name": "Scott Handley",
+    "enrichment": {
+      "lastUpdated": "2025-01-30T12:00:00Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "Washington University in St. Louis",
+        "department": "Edison Family Center for Genome Sciences & Systems Biology",
+        "labWebsite": "https://handleylab.wustl.edu"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "virome",
+          "metagenomics",
+          "computational biology",
+          "systems biology",
+          "genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Scott Handley is the founder and director of the Workshop on Genomics and co-founder of workshops on Population & Speciation Genomics and Phylogenomics. His research focuses on the human virome and microbiome interactions.",
+        "source": "Workshop organizer information"
+      }
+    }
+  },
+  "harris-kelley": {
+    "id": "harris-kelley",
+    "name": "Kelley Harris",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "heath-tracy": {
+    "id": "heath-tracy",
+    "name": "Tracy Heath",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "hird-sarah": {
+    "id": "hird-sarah",
+    "name": "Sarah Hird",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "hoff-katharina": {
+    "id": "hoff-katharina",
+    "name": "Katharina Hoff",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "hofreiter-michael": {
+    "id": "hofreiter-michael",
+    "name": "Michael Hofreiter",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "huson-daniel": {
+    "id": "huson-daniel",
+    "name": "Daniel Huson",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:14.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "huttenhower-curtis": {
+    "id": "huttenhower-curtis",
+    "name": "Curtis Huttenhower",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "jay-flora": {
+    "id": "jay-flora",
+    "name": "Flora Jay",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "jiggins-chris": {
+    "id": "jiggins-chris",
+    "name": "Chris Jiggins",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "jones-felicity": {
+    "id": "jones-felicity",
+    "name": "Felicity Jones",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "kaessman-henrik": {
+    "id": "kaessman-henrik",
+    "name": "Henrik Kaessman",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "kamoun-sophien": {
+    "id": "kamoun-sophien",
+    "name": "Sophien Kamoun",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "karlicki-michal": {
+    "id": "karlicki-michal",
+    "name": "Michal Karlicki",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "karnkowska-anna": {
+    "id": "karnkowska-anna",
+    "name": "Anna Karnkowska",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "kern-andrew": {
+    "id": "kern-andrew",
+    "name": "Andrew Kern",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "knight-robert": {
+    "id": "knight-robert",
+    "name": "Robert Knight",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T02:49:19.208Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
   }
 }

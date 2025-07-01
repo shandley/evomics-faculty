@@ -248,13 +248,32 @@
   },
   "ahren-dag": {
     "id": "ahren-dag",
-    "name": "Dag Ahren",
+    "name": "Dag Ahrén",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.197Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T13:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior lecturer, Bioinformatician",
+        "affiliation": "Lund University",
+        "department": "Department of Biology / Molecular Biosciences"
+      },
+      "academic": {
+        "orcid": "0000-0003-4713-0032",
+        "researchAreas": [
+          "bioinformatics",
+          "computational biology",
+          "genomics",
+          "NGS",
+          "evolution",
+          "metagenomics",
+          "fungal host interactions",
+          "nematode-trapping fungi"
+        ]
+      },
+      "profile": {
+        "shortBio": "Dag Ahrén studies genetic and genomic mechanisms related to fungal host interactions using genomics and transcriptomics approaches coupled with bioinformatics analyses, particularly focused on nematode-trapping fungi.",
+        "source": "Lund University Research Portal"
+      }
     }
   },
   "albrechtsen-anders": {
@@ -305,11 +324,29 @@
     "id": "beiko-robert",
     "name": "Robert Beiko",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T13:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "Dalhousie University",
+        "department": "Faculty of Computer Science",
+        "labWebsite": "https://www.cs.dal.ca/~beiko/"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "comparative genomics",
+          "phylogenetics",
+          "machine learning",
+          "visualization of biological data",
+          "human microbiome",
+          "algorithms"
+        ]
+      },
+      "profile": {
+        "shortBio": "Robert Beiko is a Professor in the Faculty of Computer Science at Dalhousie University. His research focuses on bioinformatics, comparative genomics and phylogenetics, machine learning, visualization of biological data, and the human microbiome.",
+        "source": "Dalhousie University Faculty Page"
+      }
     }
   },
   "berner-daniel": {
@@ -700,13 +737,30 @@
   },
   "gabaldon-toni": {
     "id": "gabaldon-toni",
-    "name": "Toni Gabaldon",
+    "name": "Toni Gabaldón",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T13:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Group Leader (Bases of disease)",
+        "affiliation": "Institut de Recerca Biomèdica",
+        "department": "Barcelona Supercomputing Center"
+      },
+      "academic": {
+        "orcid": "0000-0003-0019-1735",
+        "researchAreas": [
+          "comparative genomics",
+          "phylogenomics",
+          "fungal genomics",
+          "evolutionary biology",
+          "systems biology",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Toni Gabaldón is a Senior Group Leader at the Institut de Recerca Biomèdica in Barcelona, specializing in comparative genomics, phylogenomics, and fungal evolution.",
+        "source": "ORCID profile"
+      }
     }
   },
   "gaggiotti-oscar": {

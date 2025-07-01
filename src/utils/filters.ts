@@ -55,6 +55,7 @@ export function sortFacultyProfiles(
         a.faculty.lastName.localeCompare(b.faculty.lastName)
       );
     
+    case 'totalYears':
     case 'participationCount':
       return sorted.sort((a, b) => 
         b.statistics.totalYears - a.statistics.totalYears ||

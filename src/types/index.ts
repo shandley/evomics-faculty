@@ -59,7 +59,7 @@ export interface Filters {
   year: number | null;  // null means "All Years"
 }
 
-export type SortOption = 'lastName' | 'firstName' | 'participationCount' | 'recentYear' | 'firstYear';
+export type SortOption = 'lastName' | 'firstName' | 'totalYears' | 'participationCount' | 'recentYear' | 'firstYear';
 
 // Enriched faculty data from web scraping
 export interface FacultyEnrichment {

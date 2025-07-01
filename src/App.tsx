@@ -6,20 +6,45 @@ import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
 import { useFacultyData } from './hooks/useFacultyData';
 import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
+import { exportToCSV, generateFilename } from './utils/export';
 import type { Filters, SortOption, EnrichedFacultyProfile } from './types';
 import enrichedData from './data/facultyEnriched.json';
 
 function App() {
   const { loading, error, profiles, workshops } = useFacultyData();
   
-  const [filters, setFilters] = useState<Filters>({
-    search: '',
-    workshops: [],
-    year: null
-  });
+  // Parse URL parameters on initial load
+  const getInitialFilters = (): Filters => {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      search: params.get('search') || '',
+      workshops: params.get('workshops')?.split(',').filter(Boolean) || [],
+      year: params.get('year') ? parseInt(params.get('year')!) : null
+    };
+  };
   
-  const [sortOption, setSortOption] = useState<SortOption>('lastName');
+  const getInitialSort = (): SortOption => {
+    const params = new URLSearchParams(window.location.search);
+    const sort = params.get('sort');
+    return (sort === 'lastName' || sort === 'firstName' || sort === 'totalYears') ? sort : 'lastName';
+  };
+  
+  const [filters, setFilters] = useState<Filters>(getInitialFilters());
+  const [sortOption, setSortOption] = useState<SortOption>(getInitialSort());
   const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
+
+  // Update URL when filters or sort change
+  useEffect(() => {
+    const params = new URLSearchParams();
+    
+    if (filters.search) params.set('search', filters.search);
+    if (filters.workshops.length > 0) params.set('workshops', filters.workshops.join(','));
+    if (filters.year) params.set('year', filters.year.toString());
+    if (sortOption !== 'lastName') params.set('sort', sortOption);
+    
+    const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+    window.history.replaceState({}, '', newUrl);
+  }, [filters, sortOption]);
 
   // Enrich profiles with additional data
   const enrichedProfiles = useMemo(() => {
@@ -96,6 +121,10 @@ function App() {
         workshops={workshops}
         onFiltersChange={setFilters}
         onSortChange={setSortOption}
+        onExport={() => {
+          const filename = generateFilename(filters);
+          exportToCSV(filteredAndSortedProfiles, workshops, filename);
+        }}
         totalCount={profiles.length}
         filteredCount={filteredAndSortedProfiles.length}
       />

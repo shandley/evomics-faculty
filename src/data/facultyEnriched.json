@@ -591,44 +591,112 @@
     "id": "cummings-michael",
     "name": "Michael Cummings",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Maryland",
+        "department": "Department of Biology",
+        "additionalRoles": ["Director, Center for Bioinformatics and Computational Biology, UMIACS", "Director, Master of Science Program in Bioinformatics and Computational Biology"]
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "computational biology",
+          "data analysis",
+          "molecular evolution",
+          "biomedical data science",
+          "machine learning"
+        ]
+      },
+      "profile": {
+        "shortBio": "Michael Cummings is a Professor of Biology at the University of Maryland. His research involves bioinformatics and computational biology with a particular focus on data analysis that spans a broad range of biomedical problems using machine learning, statistical and other methods.",
+        "source": "University of Maryland Department of Biology"
+      }
     }
   },
   "danacek-petr": {
     "id": "danacek-petr",
     "name": "Petr Danacek",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Bioinformatician",
+        "affiliation": "Wellcome Sanger Institute",
+        "department": "Genomics",
+        "orcid": "0000-0002-0667-3788"
+      },
+      "academic": {
+        "researchAreas": [
+          "methods development",
+          "data analysis",
+          "genomics",
+          "BCFtools",
+          "SAMtools",
+          "HTSlib",
+          "large-scale sequencing projects",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Petr Danacek is a Senior Bioinformatician at the Wellcome Sanger Institute with a background in computer science and PhD in biophysics. He is one of the lead developers of BCFtools/SAMtools/HTSlib and was involved in large-scale sequencing projects such as 1000 Genomes Project, UK10k, or Deciphering Developmental Disorders.",
+        "source": "Wellcome Sanger Institute, ResearchGate"
+      }
     }
   },
   "dos-reis-mario": {
     "id": "dos-reis-mario",
     "name": "Mario dos Reis",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Dr",
+        "affiliation": "Queen Mary University of London",
+        "department": "School of Biological and Behavioural Sciences",
+        "labWebsite": "https://www.qmul.ac.uk/sbcs/staff/mariodosreisbarros.html"
+      },
+      "academic": {
+        "researchAreas": [
+          "molecular evolution",
+          "phylogenetics",
+          "human genetics",
+          "genomics",
+          "molecular clock",
+          "divergence time estimation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Dr Mario Dos Reis Barros teaches Human Genetics and Genomics at the Joint Programme with Nanchang University. His research focuses on molecular evolution, phylogenetics, and using genomic data to understand evolutionary processes and timing.",
+        "source": "Queen Mary University of London"
+      }
     }
   },
   "droge-johannes": {
     "id": "droge-johannes",
     "name": "Johannes Droge",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Chalmers University of Technology",
+        "department": "Life Sciences",
+        "orcid": "0000-0002-6752-2204"
+      },
+      "academic": {
+        "researchAreas": [
+          "algorithmic bioinformatics",
+          "environmental research",
+          "metagenomics",
+          "next-generation sequencing",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Johannes Dröge specializes in algorithmic bioinformatics with a focus on environmental research and metagenomics using next-generation sequencing data.",
+        "source": "Chalmers Research, ORCID, Google Scholar"
+      }
     }
   },
   "drummond-alexei": {
@@ -661,37 +729,89 @@
       }
     }
   },
-  "duchoslav-miroslav": {
-    "id": "duchoslav-miroslav",
-    "name": "Miroslav Duchoslav",
+  "duchoslav-milos": {
+    "id": "duchoslav-milos",
+    "name": "Milos Duchoslav",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoc",
+        "affiliation": "Charles University",
+        "department": "Department of Botany"
+      },
+      "academic": {
+        "orcid": "0000-0003-0715-3029",
+        "researchAreas": [
+          "plant molecular biology",
+          "bioinformatics",
+          "proteomics",
+          "photosystem II",
+          "plant ecological genomics",
+          "evolution",
+          "molecular biology of plants"
+        ]
+      },
+      "profile": {
+        "shortBio": "Milos Duchoslav is a Postdoc in the Plant ecological genomics group at Charles University in Prague. His specialties include plant molecular biology, bioinformatics, proteomics, and photosystem II research.",
+        "source": "Charles University Faculty Page"
+      }
     }
   },
   "dudaniec-rachael": {
     "id": "dudaniec-rachael",
     "name": "Rachael Dudaniec",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "Macquarie University",
+        "department": "Biological Sciences (Conservation Biology)",
+        "labWebsite": "https://dudanieclab.weebly.com"
+      },
+      "academic": {
+        "researchAreas": [
+          "landscape genetics",
+          "evolutionary genetics",
+          "conservation genetics",
+          "host-parasite ecology",
+          "environmental genomics",
+          "genetic connectivity"
+        ]
+      },
+      "profile": {
+        "shortBio": "A/Prof Rachael Dudaniec examines how environmental conditions affect genetic connectivity and evolutionary processes within species. She links this information with data on pathogen impacts and diversity to understand how species persist and evolve across diverse landscapes.",
+        "source": "Macquarie University, Google Scholar"
+      }
     }
   },
   "dudas-gytis": {
     "id": "dudas-gytis",
     "name": "Gytis Dudas",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Scientist",
+        "affiliation": "Vilnius University Life Sciences Center",
+        "department": "Institute of Biotechnology",
+        "labWebsite": "https://evogytis.github.io"
+      },
+      "academic": {
+        "researchAreas": [
+          "viral evolution",
+          "RNA virus ecology",
+          "phylogenetics",
+          "outbreak analysis",
+          "molecular epidemiology",
+          "genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Gytis Dudas is a scientist at Vilnius University's Life Sciences Center in Lithuania who works on viruses. His interests broadly cover the evolution and ecology of RNA viruses from the most closely related lineages in an outbreak setting to radical changes viruses undergo over evolutionary time.",
+        "source": "Personal website, PubMed"
+      }
     }
   },
   "durbin-richard": {
@@ -816,11 +936,28 @@
     "id": "fumagalli-matteo",
     "name": "Matteo Fumagalli",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Lecturer",
+        "affiliation": "Queen Mary University of London",
+        "department": "School of Biological and Behavioural Sciences",
+        "previousAffiliation": "Imperial College London"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "bioinformatics",
+          "evolutionary genomics",
+          "quantitative evolution",
+          "human genetics",
+          "statistical genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Matteo Fumagalli moved to Imperial College London in 2016 and then became Lecturer in Quantitative Evolution at Silwood Park in 2017. He joined Queen Mary University of London as Senior Lecturer in Genetics in 2021. His research focuses on population genetics and bioinformatics.",
+        "source": "Queen Mary University of London, Google Scholar"
+      }
     }
   },
   "gabaldon-toni": {
@@ -936,66 +1073,167 @@
     "id": "gosik-kirk",
     "name": "Kirk Gosik",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Ph.D.",
+        "affiliation": "Constantiam Biosciences",
+        "previousAffiliation": "Penn State College of Medicine"
+      },
+      "academic": {
+        "researchAreas": [
+          "statistical genetics",
+          "bioinformatics",
+          "computational biology",
+          "genotype-phenotype maps",
+          "complex traits",
+          "biostatistics",
+          "systems biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Kirk is a statistical geneticist by training with experience in bioinformatics and computational biology working with various levels of omics data for inferring the architecture of genotype-phenotype maps for complex traits and diseases.",
+        "source": "Constantiam Biosciences, Google Scholar"
+      }
     }
   },
   "grabherr-manfred": {
     "id": "grabherr-manfred",
     "name": "Manfred Grabherr",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "Uppsala University",
+        "department": "Department of Medical Biochemistry and Microbiology",
+        "additionalRole": "Nathaniel Robert Street Professor, Umeå Plant Science Centre",
+        "orcid": "0000-0001-8792-6508"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "genomics",
+          "genome assembly",
+          "comparative genomics",
+          "evolutionary genomics",
+          "plant genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Manfred Grabherr is Head of NGS and bioinformatics at State Laboratory Schleswig-Holstein, Germany. Previously at Uppsala University, Sweden & IPI, Polish Academy of Sciences, Poland. Patric Jern Uppsala University. His research includes genome assembly and evolutionary genomics.",
+        "source": "Uppsala University, Google Scholar, ResearchGate"
+      }
     }
   },
   "griffith-malachi": {
     "id": "griffith-malachi",
     "name": "Malachi Griffith",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor of Medicine and Genetics",
+        "affiliation": "Washington University in St. Louis",
+        "department": "McDonnell Genome Institute & School of Medicine",
+        "additionalRole": "Assistant Director of the McDonnell Genome Institute",
+        "labWebsite": "https://griffithlab.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "cancer genomics",
+          "bioinformatics",
+          "personalized medicine",
+          "data mining",
+          "cancer research",
+          "precision oncology",
+          "genomic medicine"
+        ]
+      },
+      "profile": {
+        "shortBio": "Dr. Griffith has more than 15 years of experience in the fields of genomics, bioinformatics, data mining, and cancer research. His research is focused on the development of personalized medicine strategies for cancer using genomic technologies.",
+        "source": "Washington University School of Medicine"
+      }
     }
   },
   "guido-roderic": {
     "id": "guido-roderic",
     "name": "Roderic Guido",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "NYU Langone Health",
+        "department": "Institute for Systems Genetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "systems genetics",
+          "computational biology",
+          "genomics",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Roderic Guigo is a computational biologist working in systems genetics and genomics.",
+        "source": "NYU Langone Health"
+      }
     }
   },
   "gutenkurst-ryan": {
     "id": "gutenkurst-ryan",
     "name": "Ryan Gutenkurst",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "University of Arizona",
+        "department": "Molecular and Cellular Biology",
+        "additionalAffiliations": ["BIO5 Institute", "Departments of Ecology and Evolutionary Biology", "Graduate Programs in Applied Biosciences"]
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "systems biology",
+          "evolutionary genetics",
+          "molecular mechanisms",
+          "computational biology",
+          "statistical genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Ryan Gutenkunst joined the faculty in Molecular and Cellular Biology at the University of Arizona in Fall 2010. His research program integrates population genomics and systems biology to incorporate molecular mechanisms into evolutionary genetics.",
+        "source": "University of Arizona, Zuckerman College of Public Health"
+      }
     }
   },
   "haas-brian": {
     "id": "haas-brian",
     "name": "Brian Haas",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Principal Computational Scientist",
+        "affiliation": "Broad Institute of MIT and Harvard",
+        "department": "Cancer Informatics",
+        "labWebsite": "https://personal.broadinstitute.org/bhaas"
+      },
+      "academic": {
+        "researchAreas": [
+          "transcriptomics",
+          "genomics",
+          "bioinformatics tools",
+          "cancer informatics",
+          "gene discovery",
+          "genome annotation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Brian Haas is a Principal Computational Scientist at Broad Institute of MIT and Harvard. He is a Bioinformatics software developer and data analyst with a focus on leveraging transcriptomics for studies in genomics and cancer.",
+        "source": "Broad Institute, ResearchGate"
+      }
     }
   },
   "hahn-matthew": {
@@ -1089,33 +1327,83 @@
     "id": "heath-tracy",
     "name": "Tracy Heath",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "Iowa State University",
+        "department": "Department of Ecology, Evolution, and Organismal Biology",
+        "labWebsite": "https://phyloworks.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenetics",
+          "statistical phylogenetics",
+          "Bayesian inference",
+          "computational methods",
+          "evolutionary biology",
+          "molecular evolution"
+        ]
+      },
+      "profile": {
+        "shortBio": "Tracy Heath's research program focuses on developing and applying computational methods for understanding evolutionary processes in a phylogenetic context. Her primary approach to developing phylogenetic tools is to apply new statistical models as priors using Bayesian inference methods.",
+        "source": "Iowa State University EEOB"
+      }
     }
   },
   "hird-sarah": {
     "id": "hird-sarah",
     "name": "Sarah Hird",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Professor",
+        "affiliation": "University of Connecticut",
+        "department": "Department of Molecular and Cell Biology",
+        "additionalRole": "CLAS Molecular and Cell Biology Website"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome evolution",
+          "gut microbiota",
+          "bioinformatics",
+          "microbial ecology",
+          "ornithology",
+          "phylogeography"
+        ]
+      },
+      "profile": {
+        "shortBio": "Sarah Hird's research focuses on host-microbiome evolution, gut microbiota, bioinformatics, microbial ecology, ornithology, and phylogeography. She is Assistant Professor at the Department of Molecular and Cell Biology at University of Connecticut.",
+        "source": "University of Connecticut MCB"
+      }
     }
   },
   "hoff-katharina": {
     "id": "hoff-katharina",
     "name": "Katharina Hoff",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T14:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "PD Dr.",
+        "affiliation": "Universität Greifswald",
+        "department": "Institut für Mathematik und Informatik",
+        "additionalRole": "Postdoktorandinnen 2019 Externe Mentorin"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "genome annotation",
+          "structural gene prediction",
+          "computational biology",
+          "genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "PD Dr. Katharina Hoff is a Privatdozentin at the Institut für Mathematik und Informatik, Universität Greifswald. Her research focuses on bioinformatics, particularly genome annotation and structural gene prediction.",
+        "source": "Universität Greifswald"
+      }
     }
   },
   "hofreiter-michael": {

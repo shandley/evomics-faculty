@@ -1487,55 +1487,332 @@
     "id": "kamoun-sophien",
     "name": "Sophien Kamoun",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T15:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Scientist",
+        "affiliation": "The Sainsbury Laboratory",
+        "additionalRole": "Professor of Biology at the University of East Anglia",
+        "labWebsite": "https://kamounlab.net"
+      },
+      "academic": {
+        "researchAreas": [
+          "plant pathology",
+          "plant-pathogen interactions",
+          "Phytophthora infestans",
+          "potato famine",
+          "rice blast fungus",
+          "Magnaporthe oryzae"
+        ]
+      },
+      "profile": {
+        "shortBio": "Sophien Kamoun is a Tunisian biologist and senior scientist at The Sainsbury Laboratory. The Kamoun lab studies the interactions between plants and filamentous pathogens, notably the potato famine organism Phytophthora infestans and the rice and wheat blast fungus Magnaporthe oryzae.",
+        "source": "The Sainsbury Laboratory, Wikipedia"
+      }
     }
   },
   "karlicki-michal": {
     "id": "karlicki-michal",
     "name": "Michal Karlicki",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T15:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "PhD Student (former)",
+        "affiliation": "University of Warsaw",
+        "department": "Institute of Evolutionary Biology, Field of Bioinformatics",
+        "period": "October 2015 - September 2017"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "protistology",
+          "metagenomics",
+          "machine learning",
+          "chloroplast genomics",
+          "plastid genomes"
+        ]
+      },
+      "profile": {
+        "shortBio": "Michal Karlicki worked on MetaPlastHunter: An efficient pipeline for classifying chloroplast reads from metagenomic data. His research focused on searching for Plastid Genomes in the Metagenomic Data.",
+        "source": "University of Warsaw IBE, ResearchGate, GitHub"
+      }
     }
   },
   "karnkowska-anna": {
     "id": "karnkowska-anna",
     "name": "Anna Karnkowska",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T15:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "University of Warsaw",
+        "department": "Institute of Evolutionary Biology, Faculty of Biology",
+        "labWebsite": "https://karnkowskalab.com"
+      },
+      "academic": {
+        "researchAreas": [
+          "protists",
+          "eukaryotic microorganisms",
+          "evolution",
+          "diversity",
+          "ecology",
+          "mitochondria",
+          "lignocellulose digestion"
+        ]
+      },
+      "profile": {
+        "shortBio": "Dr hab. Anna Karnkowska's research focuses on the diversity, evolution and ecology of eukaryotic microorganisms (aka protists). The lab is part of the Institute of Evolutionary Biology at Faculty of Biology at University of Warsaw and the Diversity of Eukaryotic Microorganisms Consortium (DEMON).",
+        "source": "University of Warsaw IBE, Personal Lab Website"
+      }
     }
   },
   "kern-andrew": {
     "id": "kern-andrew",
     "name": "Andrew Kern",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T15:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Oregon",
+        "department": "Institute of Ecology and Evolution",
+        "additionalRole": "Evergreen Professor"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "evolutionary biology",
+          "machine learning",
+          "computational biology",
+          "genomics",
+          "probabilistic approaches",
+          "simulation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Andrew Kern is an academic expert in population genetics, evolutionary biology, machine learning, computational biology, and genomics. His research combines modern machine learning methods with classical probabilistic approaches and large-scale simulation to gain insight into evolutionary processes.",
+        "source": "University of Oregon Institute of Ecology and Evolution"
+      }
     }
   },
   "knight-robert": {
     "id": "knight-robert",
     "name": "Robert Knight",
     "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
+      "lastUpdated": "2025-07-01T15:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor & Founding Director",
+        "affiliation": "UC San Diego",
+        "department": "Departments of Pediatrics, Bioengineering, Computer Science & Engineering, and Halıcıoğlu Data Science Institute",
+        "additionalRole": "Founding Director of the Center for Microbiome Innovation",
+        "awards": "Wolfe Family Endowed Chair"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "metagenomics",
+          "bioinformatics",
+          "computational biology",
+          "microbial ecology",
+          "data science"
+        ]
+      },
+      "profile": {
+        "shortBio": "Rob Knight is the founding Director of the Center for Microbiome Innovation and Professor of Pediatrics, Shu Chien-Gene Lay Department of Bioengineering, Computer Science & Engineering and Halıcıoğlu Data Science Institute at UC San Diego. He is the Wolfe Family Endowed Chair.",
+        "source": "Knight Lab UCSD"
+      }
+    }
+  },
+  "lorenzen-eline": {
+    "id": "lorenzen-eline",
+    "name": "Eline Lorenzen",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Copenhagen",
+        "department": "GLOBE Institute, Section for GeoGenetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "conservation genomics",
+          "ancient DNA",
+          "population genomics",
+          "biodiversity",
+          "environmental genomics",
+          "wildlife genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Eline Lorenzen is a Professor at the GLOBE Institute, University of Copenhagen, specializing in conservation genomics and ancient DNA research to understand biodiversity patterns and inform conservation efforts.",
+        "source": "University of Copenhagen"
+      }
+    }
+  },
+  "lunter-gerton": {
+    "id": "lunter-gerton",
+    "name": "Gerton Lunter",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Bioinformatics",
+        "affiliation": "University of Oxford",
+        "department": "MRC Weatherall Institute of Molecular Medicine"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational genomics",
+          "bioinformatics",
+          "sequence analysis",
+          "genome evolution",
+          "statistical methods",
+          "machine learning"
+        ]
+      },
+      "profile": {
+        "shortBio": "Gerton Lunter is a Professor of Bioinformatics at Oxford University's MRC Weatherall Institute. His research focuses on developing computational and statistical methods for analyzing genomic data and understanding genome evolution.",
+        "source": "University of Oxford"
+      }
+    }
+  },
+  "mafessoni-fabrizio": {
+    "id": "mafessoni-fabrizio",
+    "name": "Fabrizio Mafessoni",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Research Group Leader",
+        "affiliation": "Max Planck Institute for Evolutionary Anthropology",
+        "department": "Department of Evolutionary Genetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary anthropology",
+          "ancient DNA",
+          "population genetics",
+          "computational biology",
+          "human evolution",
+          "archaic humans"
+        ]
+      },
+      "profile": {
+        "shortBio": "Fabrizio Mafessoni leads a research group at the Max Planck Institute for Evolutionary Anthropology, focusing on computational approaches to understand human evolution through ancient DNA and population genetics.",
+        "source": "Max Planck Institute"
+      }
+    }
+  },
+  "manghi-paolo": {
+    "id": "manghi-paolo",
+    "name": "Paolo Manghi",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Guest",
+        "affiliation": "University of Trento",
+        "department": "Department of Cellular, Computational and Integrative Biology - CIBIO"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "computational biology",
+          "metagenomics",
+          "bioinformatics",
+          "microbial ecology",
+          "gut microbiota"
+        ]
+      },
+      "profile": {
+        "shortBio": "Paolo Manghi is a computational biologist at University of Trento's CIBIO department, specializing in microbiome research and metagenomic analysis of microbial communities.",
+        "source": "University of Trento"
+      }
+    }
+  },
+  "martin-simon": {
+    "id": "martin-simon",
+    "name": "Simon Martin",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "University of Cambridge",
+        "department": "Department of Zoology"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "speciation",
+          "butterfly evolution",
+          "population genomics",
+          "Heliconius butterflies",
+          "natural selection"
+        ]
+      },
+      "profile": {
+        "shortBio": "Simon Martin studies evolutionary genomics and speciation at the University of Cambridge, with a focus on understanding how natural selection shapes genetic diversity in butterfly populations.",
+        "source": "University of Cambridge"
+      }
+    }
+  },
+  "matschiner-michael": {
+    "id": "matschiner-michael",
+    "name": "Michael Matschiner",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Adjunct Professor",
+        "affiliation": "Natural History Museum, University of Oslo",
+        "department": "Sex and Evolution Research Group"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenomics",
+          "molecular dating",
+          "fish evolution",
+          "speciation genomics",
+          "evolutionary biology",
+          "comparative genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Michael Matschiner is an Adjunct Professor at the Natural History Museum, University of Oslo, specializing in phylogenomics and molecular dating to understand the evolutionary history of fishes and other organisms.",
+        "source": "Natural History Museum Oslo"
+      }
+    }
+  },
+  "mchardy-alice": {
+    "id": "mchardy-alice",
+    "name": "Alice McHardy",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor / Head of Research Group",
+        "affiliation": "Helmholtz Centre for Infection Research",
+        "department": "Department of Computational Biology for Infection Research"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational biology",
+          "metagenomics",
+          "infection research",
+          "bioinformatics",
+          "microbial genomics",
+          "algorithmic bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Alice McHardy is a Professor and Head of the Department of Computational Biology for Infection Research at the Helmholtz Centre. She develops computational methods for analyzing microbial communities and understanding infection processes.",
+        "source": "Helmholtz Centre for Infection Research"
+      }
     }
   }
 }

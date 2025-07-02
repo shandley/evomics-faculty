@@ -3,7 +3,7 @@
     "id": "leonard-guy",
     "name": "Guy Leonard",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T19:27:49.708Z",
       "confidence": "high",
       "professional": {
         "title": "Research Fellow",
@@ -19,7 +19,8 @@
           "evolutionary relationships",
           "eukaryotes",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0002-4607-2064"
       },
       "profile": {
         "shortBio": "Guy Leonard works with comparative genomics, phylogenomics and genome assembly with an interest in the evolutionary relationships of eukaryotes. Lead Developer and Co-Director of the Workshop on Genomics.",
@@ -31,7 +32,7 @@
     "id": "marcet-houben-marina",
     "name": "Marina Marcet-Houben",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T19:27:49.709Z",
       "confidence": "high",
       "professional": {
         "affiliation": "Barcelona Supercomputing Center",
@@ -45,7 +46,8 @@
           "genomics",
           "bioinformatics",
           "microsporidians"
-        ]
+        ],
+        "orcid": "0000-0003-4838-187X"
       },
       "profile": {
         "shortBio": "Marina Marcet-Houben at Barcelona Supercomputing Center. Phylogenomics supports microsporidia as the earliest diverging clade of sequenced fungi. Skills in Next Generation Sequencing, Genomics, and Bioinformatics.",
@@ -57,7 +59,7 @@
     "id": "mcdonald-daniel",
     "name": "Daniel McDonald",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T19:27:49.709Z",
       "confidence": "high",
       "professional": {
         "title": "Ph.D. in Computer Science",
@@ -72,7 +74,8 @@
           "QIIME 2",
           "complex microbial communities",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0003-0876-9060"
       },
       "profile": {
         "shortBio": "Daniel McDonald holds a Ph.D. in Computer Science from UC Boulder. He specializes as a developer using popular microbiome software and works on reproducible, interactive, scalable and extensible microbiome data science using QIIME 2.",
@@ -84,7 +87,7 @@
     "id": "bank-claudia",
     "name": "Claudia Bank",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T19:27:49.709Z",
       "confidence": "high",
       "professional": {
         "title": "Group Leader",
@@ -99,7 +102,8 @@
           "evolutionary forces",
           "genomics",
           "diversity"
-        ]
+        ],
+        "orcid": "0000-0003-4730-758X"
       },
       "profile": {
         "shortBio": "Claudia Bank leads the Theoretical Ecology and Evolution group at SIB. Her overarching goal is to quantify the relative roles of ecological and evolutionary forces for the buildup and maintenance of diversity.",
@@ -111,7 +115,7 @@
     "id": "catchen-julian",
     "name": "Julian Catchen",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T19:29:25.141Z",
       "confidence": "high",
       "professional": {
         "affiliation": "University of Illinois",
@@ -125,7 +129,8 @@
           "restriction enzyme-based data",
           "stacks software",
           "evolutionary genomics"
-        ]
+        ],
+        "orcid": "0000-0002-4798-660X"
       },
       "profile": {
         "shortBio": "Julian Catchen developed Stacks, an analysis tool set for population genomics. Stacks was developed to work with restriction enzyme-based data such as RAD-seq, for building genetic maps and conducting population genomics analyses.",
@@ -137,7 +142,7 @@
     "id": "kubatko-laura",
     "name": "Laura Kubatko",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T19:29:25.142Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Ohio State University",
@@ -149,7 +154,8 @@
           "statistical phylogenetics",
           "coalescent theory",
           "species tree inference"
-        ]
+        ],
+        "orcid": "0000-0002-5215-7144"
       },
       "profile": {
         "source": "Inferred from workshop participation"

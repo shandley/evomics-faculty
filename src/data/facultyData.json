@@ -178,11 +178,6 @@
     {
       "id": "fernandez-rosa",
       "firstName": "Rosa",
-      "lastName": "Fernandez"
-    },
-    {
-      "id": "fernndez-rosa",
-      "firstName": "Rosa",
       "lastName": "Fernández"
     },
     {
@@ -1458,13 +1453,13 @@
       "role": "faculty"
     },
     {
-      "facultyId": "fernndez-rosa",
+      "facultyId": "fernandez-rosa",
       "workshopId": "wog",
       "year": 2023,
       "role": "faculty"
     },
     {
-      "facultyId": "fernndez-rosa",
+      "facultyId": "fernandez-rosa",
       "workshopId": "wog",
       "year": 2024,
       "role": "faculty"

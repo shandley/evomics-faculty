@@ -3724,5 +3724,33 @@
         "source": "Google Scholar, ORCID, IBE"
       }
     }
+  },
+  "steffen-karin": {
+    "id": "steffen-karin",
+    "name": "Karin Steffen",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T20:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "Vanderbilt University",
+        "department": "Department of Biological Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomics",
+          "metabolomics",
+          "evolution",
+          "marine biology",
+          "sponge biology",
+          "host-microbe interactions"
+        ],
+        "orcid": "0000-0003-0499-1430"
+      },
+      "profile": {
+        "shortBio": "Karin Steffen is a postdoctoral researcher at Vanderbilt University specializing in genomics, metabolomics, and evolution. Her research focuses on marine organisms, particularly sponges and their associated microbiomes, studying convergent morphology in Alpineae and host-defense mechanisms in marine environments.",
+        "source": "Google Scholar, ORCID, Vanderbilt University"
+      }
+    }
   }
 }

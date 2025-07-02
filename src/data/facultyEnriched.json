@@ -3696,5 +3696,33 @@
         "source": "Gregor Mendel Institute, Austrian Academy of Sciences"
       }
     }
+  },
+  "martinez-redondo-gemma": {
+    "id": "martinez-redondo-gemma",
+    "name": "Gemma Isabel Martínez-Redondo",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T20:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Institute of Evolutionary Biology (IBE, CSIC-UPF)",
+        "department": "Evolutionary Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "terrestrialization",
+          "phylogenomics",
+          "comparative genomics",
+          "bioinformatics",
+          "macroevolution",
+          "dark proteome"
+        ],
+        "orcid": "0000-0001-5633-8690"
+      },
+      "profile": {
+        "shortBio": "Gemma Isabel Martínez-Redondo is a researcher at the Institute of Evolutionary Biology in Barcelona. Her work focuses on terrestrialization processes, phylogenomics, and comparative genomics. She has contributed to major projects including the European Reference Genome Atlas and studies on the dark proteome across the Animal Tree of Life.",
+        "source": "Google Scholar, ORCID, IBE"
+      }
+    }
   }
 }

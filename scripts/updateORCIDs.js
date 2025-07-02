@@ -7,18 +7,10 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// ORCID IDs found through search - Batch 3
+// ORCID IDs found through search - Final batch
 const orcidsToAdd = [
-  // Previous batches already added
-  // High priority batch 1 (already added via Task)
-  // High priority batch 2 (already added via Task)
-  // High priority batch 3 (new)
-  { id: 'meyer-britta', orcid: '0000-0002-2549-1825', name: 'Britta Meyer' },
-  { id: 'rodriguez-ezpeleta-naiara', orcid: '0000-0001-6735-6755', name: 'Naiara Rodriguez-Ezpeleta' },
-  { id: 'sousa-vitor', orcid: '0000-0003-3575-0875', name: 'Vitor Sousa' },
-  { id: 'barnett-david', orcid: '0000-0003-1961-7206', name: 'David Barnett' },
-  { id: 'garrison-erik', orcid: '0000-0003-3821-631X', name: 'Erik Garrison' },
-  { id: 'griffith-malachi', orcid: '0000-0002-6388-446X', name: 'Malachi Griffith' }
+  // Professors without ORCIDs
+  { id: 'lorenzen-eline', orcid: '0000-0002-6353-2819', name: 'Eline Lorenzen' }
 ];
 
 // Read the enriched faculty data

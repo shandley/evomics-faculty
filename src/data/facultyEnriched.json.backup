@@ -32,11 +32,12 @@
     "id": "marcet-houben-marina",
     "name": "Marina Marcet-Houben",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:27:49.709Z",
+      "lastUpdated": "2025-07-02T20:38:09.907Z",
       "confidence": "high",
       "professional": {
         "affiliation": "Barcelona Supercomputing Center",
-        "department": "BSC"
+        "department": "BSC",
+        "title": "Bioinformatician"
       },
       "academic": {
         "researchAreas": [
@@ -115,11 +116,13 @@
     "id": "catchen-julian",
     "name": "Julian Catchen",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:29:25.141Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "high",
       "professional": {
         "affiliation": "University of Illinois",
-        "labWebsite": "https://catchenlab.life.illinois.edu"
+        "labWebsite": "https://catchenlab.life.illinois.edu",
+        "title": "Associate Professor",
+        "department": "Department of Evolution, Ecology, and Behavior"
       },
       "academic": {
         "researchAreas": [
@@ -142,11 +145,12 @@
     "id": "kubatko-laura",
     "name": "Laura Kubatko",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:29:25.142Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Ohio State University",
-        "department": "Statistics and Evolution, Ecology and Organismal Biology"
+        "department": "Statistics and Evolution, Ecology and Organismal Biology",
+        "title": "Professor"
       },
       "academic": {
         "researchAreas": [
@@ -166,10 +170,12 @@
     "id": "malinsky-milan",
     "name": "Milan Malinsky",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
-        "affiliation": "University of Basel"
+        "affiliation": "University of Basel",
+        "title": "Group Leader",
+        "department": "Evolutionary Genomics"
       },
       "academic": {
         "researchAreas": [
@@ -177,7 +183,8 @@
           "speciation",
           "cichlid evolution",
           "genomic differentiation"
-        ]
+        ],
+        "orcid": "0000-0002-1462-6317"
       },
       "profile": {
         "source": "Inferred from WPSG participation"
@@ -203,7 +210,8 @@
           "speciation genomics",
           "evolutionary biology",
           "comparative genomics"
-        ]
+        ],
+        "orcid": "0000-0003-4741-3884"
       },
       "profile": {
         "shortBio": "Michael Matschiner is an Adjunct Professor at the Natural History Museum, University of Oslo, specializing in phylogenomics and molecular dating to understand the evolutionary history of fishes and other organisms.",
@@ -215,10 +223,12 @@
     "id": "marchet-camille",
     "name": "Camille Marchet",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
-        "affiliation": "CNRS / University of Lille"
+        "affiliation": "CNRS / University of Lille",
+        "title": "CNRS Researcher",
+        "department": "CRIStAL"
       },
       "academic": {
         "researchAreas": [
@@ -226,7 +236,8 @@
           "k-mer analysis",
           "genome assembly",
           "transcriptomics"
-        ]
+        ],
+        "orcid": "0000-0002-7235-7346"
       },
       "profile": {
         "source": "Inferred from recent WoG participation"
@@ -237,11 +248,12 @@
     "id": "bielawski-joseph",
     "name": "Joseph Bielawski",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T21:45:51.000Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Dalhousie University",
-        "department": "Biology"
+        "department": "Biology",
+        "title": "Professor"
       },
       "academic": {
         "researchAreas": [
@@ -249,7 +261,8 @@
           "phylogenetics",
           "selection analysis",
           "computational biology"
-        ]
+        ],
+        "orcid": "0000-0002-1621-1772"
       },
       "profile": {
         "source": "Inferred from workshop participation"
@@ -335,7 +348,8 @@
           "Atlantic cod",
           "conservation genetics",
           "adaptation"
-        ]
+        ],
+        "orcid": "0000-0001-5125-819X"
       },
       "profile": {
         "shortBio": "Julia M.I. Barth studies genomic differentiation and demographic histories of Atlantic and Indo-Pacific yellowfin tuna populations. She is involved in various population genomic projects including the Aqua Genome project, studying connectivity, gene flow, and adaptation in marine fish species.",
@@ -353,7 +367,7 @@
         "title": "Professor",
         "affiliation": "Dalhousie University",
         "department": "Faculty of Computer Science",
-        "labWebsite": "https://www.cs.dal.ca/~beiko/"
+        "labWebsite": "https://www.cs.dal.ca/~beiko"
       },
       "academic": {
         "researchAreas": [
@@ -403,7 +417,7 @@
     "id": "chikhi-rayan",
     "name": "Rayan Chikhi",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165369Z",
       "confidence": "high",
       "professional": {
         "title": "G5 Group Leader",
@@ -420,7 +434,8 @@
           "metagenomics",
           "pan-genomics",
           "transcriptomics"
-        ]
+        ],
+        "orcid": "0000-0003-1099-8735"
       },
       "profile": {
         "shortBio": "Rayan Chikhi leads a computational team researching algorithms for big biological data at Institut Pasteur. The group creates and implements algorithms and data structures into software tools for genomics and metagenomics, including methods for improving bacterial genome assemblies with long reads.",
@@ -432,7 +447,7 @@
     "id": "cresko-bill",
     "name": "Bill Cresko",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T20:47:51.165383Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -446,7 +461,8 @@
           "population genomics",
           "adaptation",
           "speciation"
-        ]
+        ],
+        "orcid": "0000-0002-3496-8074"
       },
       "profile": {
         "shortBio": "Bill Cresko studies evolutionary genomics using threespine stickleback fish as a model system. Co-organizer of the Workshop on Population and Speciation Genomics.",
@@ -547,12 +563,13 @@
     "id": "droge-johannes",
     "name": "Johannes Droge",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "high",
       "professional": {
         "affiliation": "Chalmers University of Technology",
         "department": "Life Sciences",
-        "orcid": "0000-0002-6752-2204"
+        "orcid": "0000-0002-6752-2204",
+        "title": "Bioinformatics Specialist"
       },
       "academic": {
         "researchAreas": [
@@ -702,7 +719,8 @@
           "population genetics",
           "sequence analysis",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0002-9130-1006"
       },
       "profile": {
         "shortBio": "Richard Durbin is a computational biologist and one of the founders of the field of computational genomics. Key contributor to the Human Genome Project.",
@@ -714,7 +732,7 @@
     "id": "eichler-evan",
     "name": "Evan Eichler",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T20:47:51.165378Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -728,7 +746,8 @@
           "segmental duplications",
           "primate genomics",
           "human genetics"
-        ]
+        ],
+        "orcid": "0000-0002-8246-4014"
       },
       "profile": {
         "shortBio": "Evan Eichler is a leader in primate genome evolution and structural variation. Howard Hughes Medical Institute Investigator.",
@@ -756,7 +775,8 @@
           "quantitative evolution",
           "human genetics",
           "statistical genetics"
-        ]
+        ],
+        "orcid": "0000-0002-4084-2953"
       },
       "profile": {
         "shortBio": "Matteo Fumagalli moved to Imperial College London in 2016 and then became Lecturer in Quantitative Evolution at Silwood Park in 2017. He joined Queen Mary University of London as Senior Lecturer in Genetics in 2021. His research focuses on population genetics and bioinformatics.",
@@ -796,7 +816,7 @@
     "id": "garrison-erik",
     "name": "Erik Garrison",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Assistant Professor",
@@ -810,7 +830,8 @@
           "genome graphs",
           "sequence analysis",
           "bioinformatics tools"
-        ]
+        ],
+        "orcid": "0000-0003-3821-631X"
       },
       "profile": {
         "shortBio": "Erik Garrison develops computational methods for pangenomics and variation graphs. Creator of FreeBayes and other genomics tools.",
@@ -879,7 +900,7 @@
     "id": "griffith-malachi",
     "name": "Malachi Griffith",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Associate Professor of Medicine and Genetics",
@@ -897,7 +918,8 @@
           "cancer research",
           "precision oncology",
           "genomic medicine"
-        ]
+        ],
+        "orcid": "0000-0002-6388-446X"
       },
       "profile": {
         "shortBio": "Dr. Griffith has more than 15 years of experience in the fields of genomics, bioinformatics, data mining, and cancer research. His research is focused on the development of personalized medicine strategies for cancer using genomic technologies.",
@@ -909,11 +931,12 @@
     "id": "guido-roderic",
     "name": "Roderic Guido",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "NYU Langone Health",
-        "department": "Institute for Systems Genetics"
+        "department": "Institute for Systems Genetics",
+        "title": "Senior Research Fellow"
       },
       "academic": {
         "researchAreas": [
@@ -965,7 +988,7 @@
     "id": "haas-brian",
     "name": "Brian Haas",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165381Z",
       "confidence": "high",
       "professional": {
         "title": "Principal Computational Scientist",
@@ -981,7 +1004,8 @@
           "cancer informatics",
           "gene discovery",
           "genome annotation"
-        ]
+        ],
+        "orcid": "0000-0002-6609-4973"
       },
       "profile": {
         "shortBio": "Brian Haas is a Principal Computational Scientist at Broad Institute of MIT and Harvard. He is a Bioinformatics software developer and data analyst with a focus on leveraging transcriptomics for studies in genomics and cancer.",
@@ -993,7 +1017,7 @@
     "id": "hahn-matthew",
     "name": "Matthew Hahn",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T21:22:16.667Z",
       "confidence": "high",
       "professional": {
         "title": "Distinguished Professor",
@@ -1007,7 +1031,8 @@
           "comparative genomics",
           "speciation",
           "computational biology"
-        ]
+        ],
+        "orcid": "0000-0002-5731-8808"
       },
       "profile": {
         "shortBio": "Matthew Hahn is a Distinguished Professor studying molecular evolution and population genetics. Author of 'Molecular Population Genetics' textbook.",
@@ -1019,7 +1044,7 @@
     "id": "handley-scott",
     "name": "Scott Handley",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T20:47:51.165259Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -1034,7 +1059,8 @@
           "computational biology",
           "systems biology",
           "genomics"
-        ]
+        ],
+        "orcid": "0000-0002-2143-6570"
       },
       "profile": {
         "shortBio": "Scott Handley is the founder and director of the Workshop on Genomics and co-founder of workshops on Population & Speciation Genomics and Phylogenomics. His research focuses on the human virome and microbiome interactions.",
@@ -1062,7 +1088,8 @@
           "computational methods",
           "evolutionary biology",
           "molecular evolution"
-        ]
+        ],
+        "orcid": "0000-0002-0087-2541"
       },
       "profile": {
         "shortBio": "Tracy Heath's research program focuses on developing and applying computational methods for understanding evolutionary processes in a phylogenetic context. Her primary approach to developing phylogenetic tools is to apply new statistical models as priors using Bayesian inference methods.",
@@ -1102,7 +1129,7 @@
     "id": "hoff-katharina",
     "name": "Katharina Hoff",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:45:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "PD Dr.",
@@ -1117,7 +1144,8 @@
           "structural gene prediction",
           "computational biology",
           "genomics"
-        ]
+        ],
+        "orcid": "0000-0002-7333-8390"
       },
       "profile": {
         "shortBio": "PD Dr. Katharina Hoff is a Privatdozentin at the Institut für Mathematik und Informatik, Universität Greifswald. Her research focuses on bioinformatics, particularly genome annotation and structural gene prediction.",
@@ -1145,7 +1173,8 @@
           "potato famine",
           "rice blast fungus",
           "Magnaporthe oryzae"
-        ]
+        ],
+        "orcid": "0000-0002-0290-0315"
       },
       "profile": {
         "shortBio": "Sophien Kamoun is a Tunisian biologist and senior scientist at The Sainsbury Laboratory. The Kamoun lab studies the interactions between plants and filamentous pathogens, notably the potato famine organism Phytophthora infestans and the rice and wheat blast fungus Magnaporthe oryzae.",
@@ -1202,7 +1231,8 @@
           "ecology",
           "mitochondria",
           "lignocellulose digestion"
-        ]
+        ],
+        "orcid": "0000-0003-3709-7873"
       },
       "profile": {
         "shortBio": "Dr hab. Anna Karnkowska's research focuses on the diversity, evolution and ecology of eukaryotic microorganisms (aka protists). The lab is part of the Institute of Evolutionary Biology at Faculty of Biology at University of Warsaw and the Diversity of Eukaryotic Microorganisms Consortium (DEMON).",
@@ -1380,7 +1410,7 @@
     "id": "martin-simon",
     "name": "Simon Martin",
     "enrichment": {
-      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -1395,7 +1425,8 @@
           "population genomics",
           "Heliconius butterflies",
           "natural selection"
-        ]
+        ],
+        "orcid": "0000-0002-0747-7456"
       },
       "profile": {
         "shortBio": "Simon Martin studies evolutionary genomics and speciation at the University of Cambridge, with a focus on understanding how natural selection shapes genetic diversity in butterfly populations.",
@@ -1503,7 +1534,8 @@
           "R programming",
           "phyloseq package",
           "microbial ecology"
-        ]
+        ],
+        "orcid": "0000-0001-8879-3954"
       },
       "profile": {
         "shortBio": "Paul McMurdie is the developer of phyloseq, an R package for reproducible interactive analysis and graphics of microbiome census data. He specializes in statistical methods for microbiome analysis.",
@@ -1542,7 +1574,7 @@
     "id": "meyer-britta",
     "name": "Britta Meyer",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Computational Biologist",
@@ -1556,7 +1588,8 @@
           "population genomics",
           "speciation genomics",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0002-2549-1825"
       },
       "profile": {
         "shortBio": "Britta Meyer is a computational biologist at University of Hamburg specializing in evolutionary immunogenomics. She is an instructor for the Workshop on Population and Speciation Genomics.",
@@ -1595,7 +1628,7 @@
     "id": "montserrat-jordi-paps",
     "name": "Jordi Paps Montserrat",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Dr",
@@ -1610,7 +1643,8 @@
           "animal kingdom evolution",
           "land plants evolution",
           "molecular evolution"
-        ]
+        ],
+        "orcid": "0000-0003-2636-6636"
       },
       "profile": {
         "shortBio": "Dr Jordi Paps Montserrat studies major evolutionary transitions using molecular and genomic approaches. His lab aims to unravel the molecular and genomic changes underlying evolutionary shifts like the origins of animals or plants.",
@@ -1664,7 +1698,8 @@
           "human evolution",
           "computational methods",
           "genetic variation"
-        ]
+        ],
+        "orcid": "0000-0002-2585-9626"
       },
       "profile": {
         "shortBio": "Simon Myers is a Professor at Oxford University developing statistical and computational methods to analyze genetic variation. His research focuses on understanding recombination, mutation, and selection in shaping genetic diversity.",
@@ -1812,7 +1847,7 @@
     "id": "orlando-ludovic",
     "name": "Ludovic Orlando",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Director of Research",
@@ -1827,7 +1862,8 @@
           "archaeogenetics",
           "horse domestication",
           "molecular archaeology"
-        ]
+        ],
+        "orcid": "0000-0003-3936-1850"
       },
       "profile": {
         "shortBio": "Ludovic Orlando is a leading paleogeneticist and Director of Research at CNRS. He leads the Centre for Anthropobiology and Genomics of Toulouse, specializing in ancient DNA and the genomic history of domestication.",
@@ -1839,7 +1875,7 @@
     "id": "paris-josephine",
     "name": "Josephine Paris",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165380Z",
       "confidence": "high",
       "professional": {
         "title": "Workshop Director",
@@ -1853,7 +1889,8 @@
           "workshop organization",
           "bioinformatics training",
           "scientific education"
-        ]
+        ],
+        "orcid": "0000-0001-6868-3416"
       },
       "profile": {
         "shortBio": "Josephine Paris is the Workshop Director for the Workshop on Genomics. She is a Marie Skłodowska-Curie Fellow at University of Oxford organizing intensive training opportunities in genomics.",
@@ -1959,7 +1996,8 @@
           "sex chromosome evolution",
           "genome assembly",
           "structural variation"
-        ]
+        ],
+        "orcid": "0000-0001-5119-1837"
       },
       "profile": {
         "shortBio": "Valentina Peona is a postdoc at the Swedish Natural Museum and Swiss Vogelwarte, with visiting researcher status at Uppsala University. Her research focuses on how transposable elements and chromosome rearrangements shape genome evolution, particularly in birds. She has made significant contributions to understanding tuatara genome evolution and avian genome assembly.",
@@ -2090,7 +2128,8 @@
           "algal genomics",
           "microbial evolution",
           "harmful algal blooms"
-        ]
+        ],
+        "orcid": "0000-0002-5209-3160"
       },
       "profile": {
         "shortBio": "Karin Rengefors is a Professor at Lund University studying phytoplankton ecology and evolution, with a focus on understanding harmful algal blooms and microbial diversity in aquatic systems.",
@@ -2102,7 +2141,7 @@
     "id": "rodriguez-ezpeleta-naiara",
     "name": "Naiara Rodriguez-Ezpeleta",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Head of Molecular Ecology and Biotechnology Unit",
@@ -2117,7 +2156,8 @@
           "transcriptomics",
           "bioinformatics",
           "fisheries genomics"
-        ]
+        ],
+        "orcid": "0000-0001-6735-6755"
       },
       "profile": {
         "shortBio": "Naiara Rodriguez-Ezpeleta leads the Molecular Ecology and Biotechnology Unit at AZTI, integrating genomics, transcriptomics and bioinformatics approaches for marine environment research.",
@@ -2129,7 +2169,7 @@
     "id": "rokas-antonis",
     "name": "Antonis Rokas",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165374Z",
       "confidence": "high",
       "professional": {
         "title": "Cornelius Vanderbilt Chair, Professor",
@@ -2144,7 +2184,8 @@
           "computational biology",
           "evolutionary genomics",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0002-7248-6551"
       },
       "profile": {
         "shortBio": "Antonis Rokas holds the Cornelius Vanderbilt Chair at Vanderbilt University. His research focuses on understanding the molecular foundations of the tree of life and the evolution of human pregnancy.",
@@ -2171,7 +2212,8 @@
           "adaptive radiation",
           "genomics",
           "African Great Lakes"
-        ]
+        ],
+        "orcid": "0000-0002-9988-1674"
       },
       "profile": {
         "shortBio": "Walter Salzburger studies the evolution of cichlid fishes, particularly their adaptive radiation in African Great Lakes. His research focuses on understanding the molecular basis of adaptation, innovation, and speciation.",
@@ -2210,11 +2252,12 @@
     "id": "scofield-doug",
     "name": "Doug Scofield",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Uppsala University",
-        "department": "Evolutionary Biology Centre"
+        "department": "Evolutionary Biology Centre",
+        "title": "Senior Bioinformatician"
       },
       "academic": {
         "researchAreas": [
@@ -2259,7 +2302,7 @@
     "id": "sedlazeck-fritz",
     "name": "Fritz Sedlazeck",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Assistant Professor",
@@ -2274,7 +2317,8 @@
           "computational genomics",
           "bioinformatics tools",
           "variant calling"
-        ]
+        ],
+        "orcid": "0000-0001-6040-2691"
       },
       "profile": {
         "shortBio": "Fritz Sedlazeck develops computational methods for detecting structural variations using long-read sequencing technologies. He is a key developer of tools for analyzing complex genomic variations.",
@@ -2395,7 +2439,7 @@
     "id": "sousa-vitor",
     "name": "Vitor Sousa",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -2410,7 +2454,8 @@
           "speciation genetics",
           "conservation genetics",
           "statistical inference"
-        ]
+        ],
+        "orcid": "0000-0003-3575-0875"
       },
       "profile": {
         "shortBio": "Vitor Sousa uses population genetic data and theory to reconstruct evolutionary history and understand the roles of demography and selection in structuring genetic diversity.",
@@ -2477,7 +2522,7 @@
     "id": "steenwyk-jacob",
     "name": "Jacob Steenwyk",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Postdoctoral Researcher",
@@ -2492,7 +2537,8 @@
           "phylogenomics",
           "molecular evolution",
           "fungal genomics"
-        ]
+        ],
+        "orcid": "0000-0002-8436-595X"
       },
       "profile": {
         "shortBio": "Jacob Steenwyk is Chair of Alumni Affairs, Evolutionary Studies Postdoctoral Researcher at UC Berkeley / HHMI. His research focuses on evolutionary biology, genomics, and bioinformatics, with a particular emphasis on the evolution and function of genomes.",
@@ -2519,7 +2565,8 @@
           "evolutionary biology",
           "fish parasites",
           "coevolution"
-        ]
+        ],
+        "orcid": "0000-0001-9735-8479"
       },
       "profile": {
         "shortBio": "Jan Stefka is an Associate Professor at the Faculty of Science, University of South Bohemia. His research focuses on population genomics of pathogenic fish parasites and understanding the role of population structure and selection in parasitic evolution.",
@@ -2694,7 +2741,7 @@
     "id": "trucchi-emiliano",
     "name": "Emiliano Trucchi",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165384Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -2709,7 +2756,8 @@
           "non-model species",
           "demographic inference",
           "adaptation genomics"
-        ]
+        ],
+        "orcid": "0000-0002-1270-5273"
       },
       "profile": {
         "shortBio": "Emiliano Trucchi specializes in evolutionary dynamics in non-model species. His expertise in non-model species genomics has led to novel approaches for estimating demographic histories and identifying genome-wide methylation patterns to test models of genetic diversity decay.",
@@ -2748,7 +2796,7 @@
     "id": "uliano-silva-marcela",
     "name": "Marcela Uliano-Silva",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Senior Bioinformatician",
@@ -2763,7 +2811,8 @@
           "eukaryotic species",
           "Darwin Tree of Life",
           "chromosome-level genomes"
-        ]
+        ],
+        "orcid": "0000-0001-6723-4715"
       },
       "profile": {
         "shortBio": "Marcela Uliano-Silva is a TED Fellow and Senior Bioinformatician at the Wellcome Sanger Institute, specializing in genome assembly and bioinformatics. She plays a crucial role in the Darwin Tree of Life Project, focusing on creating chromosome-level genomes for various eukaryotic species.",
@@ -2883,7 +2932,7 @@
     "id": "wheat-chris",
     "name": "Chris Wheat",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165376Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -2898,7 +2947,8 @@
           "adaptation",
           "population genomics",
           "lepidoptera"
-        ]
+        ],
+        "orcid": "0000-0003-1863-2340"
       },
       "profile": {
         "shortBio": "Chris Wheat at Stockholm University specializes in Ecological Genomics, studying how genomic variation affects ecological and evolutionary processes in butterflies and other organisms. His work combines field studies with genomic approaches.",
@@ -3074,7 +3124,7 @@
     "id": "zody-mike",
     "name": "Mike Zody",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165372Z",
       "confidence": "high",
       "professional": {
         "title": "Senior Computational Biologist",
@@ -3089,7 +3139,8 @@
           "bioinformatics",
           "genome biology",
           "illumina sequencing"
-        ]
+        ],
+        "orcid": "0000-0001-6594-7199"
       },
       "profile": {
         "shortBio": "Mike Zody is a senior computational biologist at the Broad Institute. He teaches workshops on comparative genomics and sequencing technologies, with expertise in genome biology and sequencing study design.",
@@ -3101,7 +3152,7 @@
     "id": "steward-rachel",
     "name": "Rachel Steward",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.669Z",
       "confidence": "high",
       "professional": {
         "title": "Postdoctoral Researcher",
@@ -3116,7 +3167,8 @@
           "entomology",
           "behavioral ecology",
           "insect-plant interactions"
-        ]
+        ],
+        "orcid": "0000-0001-8610-334X"
       },
       "profile": {
         "shortBio": "Rachel Steward studies evolution and plasticity in response to variable environments. Her PhD focused on genetic, environmental, and behavioral constraints contributing to persistent maladaptive use of an invasive host plant by a native insect.",
@@ -3236,7 +3288,7 @@
     "id": "montoliu-nern-merc",
     "name": "Mercè Montoliu-Nerin",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:22:16.670Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -3251,7 +3303,8 @@
           "symbiosis",
           "phylogenomics",
           "fungal biology"
-        ]
+        ],
+        "orcid": "0000-0002-5200-0411"
       },
       "profile": {
         "shortBio": "Mercè Montoliu-Nerin specializes in arbuscular mycorrhizal fungi genomics at Uppsala University. She led groundbreaking phylogenomic analysis of AM fungi using comprehensive de novo genome assemblies, advancing our understanding of these crucial plant symbionts.",
@@ -3406,7 +3459,7 @@
         "title": "Associate Professor",
         "affiliation": "Columbia University",
         "department": "Department of Earth and Environmental Sciences",
-        "labWebsite": "https://dyhrman.ldeo.columbia.edu/"
+        "labWebsite": "https://dyhrman.ldeo.columbia.edu"
       },
       "academic": {
         "researchAreas": [
@@ -3435,7 +3488,7 @@
         "title": "Professor, Bioinformatics Core Director",
         "affiliation": "UMass Chan Medical School",
         "department": "Department of Genomics and Computational Biology",
-        "labWebsite": "https://www.umassmed.edu/garberlab/"
+        "labWebsite": "https://www.umassmed.edu/garberlab"
       },
       "academic": {
         "researchAreas": [
@@ -3445,7 +3498,8 @@
           "epigenomics",
           "gene regulation",
           "single cell genomics"
-        ]
+        ],
+        "orcid": "0000-0001-8732-1293"
       },
       "profile": {
         "shortBio": "Manuel Garber is Professor and Bioinformatics Core Director at UMass Chan Medical School. His lab focuses on evolutionary non-coding genomics, developing computational techniques to integrate comparative and functional genomics data. He developed Siphy and Scripture algorithms and continues work on single cell RNA-seq and epigenomics.",
@@ -3463,7 +3517,7 @@
         "title": "CNRS Researcher",
         "affiliation": "University of Lille",
         "department": "CRIStAL - Centre de Recherche en Informatique, Signal et Automatique de Lille",
-        "labWebsite": "https://malfoy.github.io/"
+        "labWebsite": "https://malfoy.github.io"
       },
       "academic": {
         "researchAreas": [
@@ -3486,7 +3540,7 @@
     "id": "barnett-david",
     "name": "David Barnett",
     "enrichment": {
-      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Research Bioinformatician",
@@ -3501,7 +3555,8 @@
           "gut microbiota",
           "child health",
           "data visualization"
-        ]
+        ],
+        "orcid": "0000-0003-1961-7206"
       },
       "profile": {
         "shortBio": "David Barnett is a Research Bioinformatician at Maastricht University working on infant/child gut microbiome projects. He developed the R package microViz for microbiome data analysis and visualization. He teaches microbiome analysis methods at genomics workshops.",
@@ -3534,6 +3589,892 @@
       "profile": {
         "shortBio": "Daniel Falush is a leading population geneticist at Institut Pasteur of Shanghai. He co-developed influential methods for inferring population structure from genetic data. His research focuses on bacterial population genetics, particularly Helicobacter pylori evolution and antibiotic resistance.",
         "source": "Institut Pasteur of Shanghai, Chinese Academy of Sciences"
+      }
+    }
+  },
+  "fernandez-rosa": {
+    "id": "fernandez-rosa",
+    "name": "Rosa Fernández",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader and Senior Research Scientist",
+        "affiliation": "Institute of Evolutionary Biology (IBE, CSIC-UPF)",
+        "department": "Metazoa Phylogenomics Lab",
+        "labWebsite": "https://www.metazomics.com"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenomics",
+          "comparative genomics",
+          "terrestrialization",
+          "invertebrate evolution",
+          "adaptation",
+          "functional annotation"
+        ],
+        "orcid": "0000-0002-3724-6096"
+      },
+      "profile": {
+        "shortBio": "Rosa Fernández is a Group Leader at the Institute of Evolutionary Biology (CSIC-UPF) in Barcelona. She was awarded the 2024 National Research Award for Young Scientists and an ERC Starting Grant. Her research focuses on understanding how animals adapted to terrestrial environments through genomic approaches.",
+        "source": "Institute of Evolutionary Biology (IBE), CSIC-UPF"
+      }
+    }
+  },
+  "ferrer-obiol-joan": {
+    "id": "ferrer-obiol-joan",
+    "name": "Joan Ferrer Obiol",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "Colorado State University",
+        "department": "The Bird Genoscape Project, Department of Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "conservation genomics",
+          "phylogenomics",
+          "ornithology",
+          "migratory behaviour",
+          "seabird evolution"
+        ],
+        "orcid": "0000-0002-1184-5434"
+      },
+      "profile": {
+        "shortBio": "Joan Ferrer Obiol is a postdoctoral researcher at Colorado State University's Bird Genoscape Project. He completed his PhD on shearwater phylogeny using UCEs and ddRADseq data. His research uses genomic approaches to understand bird evolution, particularly seabirds, and the genetic basis of migratory behavior.",
+        "source": "Colorado State University, The Bird Genoscape Project"
+      }
+    }
+  },
+  "jiggins-chris": {
+    "id": "jiggins-chris",
+    "name": "Chris Jiggins",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Evolutionary Biology",
+        "affiliation": "University of Cambridge",
+        "department": "Department of Zoology",
+        "labWebsite": "https://heliconius.zoo.cam.ac.uk"
+      },
+      "academic": {
+        "researchAreas": [
+          "butterfly genomics",
+          "speciation",
+          "adaptive evolution",
+          "mimicry",
+          "Heliconius butterflies",
+          "evolutionary developmental biology"
+        ],
+        "orcid": "0000-0002-7809-062X"
+      },
+      "profile": {
+        "shortBio": "Chris Jiggins is Professor of Evolutionary Biology at Cambridge University, leading the Insect Evolution and Genomics Group. He has worked with Heliconius butterflies since 1993 and led the Heliconius genome sequencing project. His research focuses on speciation, mimicry, and the genetic basis of adaptation.",
+        "source": "University of Cambridge, Department of Zoology"
+      }
+    }
+  },
+  "buerkle-alex": {
+    "id": "buerkle-alex",
+    "name": "Alex Buerkle",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Staff Scientist (formerly Professor)",
+        "affiliation": "Illumina (formerly University of Wyoming)",
+        "department": "Bioinformatics for Clinical Genomics"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "computational biology",
+          "evolutionary genetics",
+          "statistical genomics",
+          "low coverage sequencing",
+          "Bayesian methods"
+        ]
+      },
+      "profile": {
+        "shortBio": "Alex Buerkle is a Staff Scientist at Illumina working on bioinformatics for clinical genomics. Previously Professor at University of Wyoming (2004-2022), he developed influential methods for population genomics using low coverage sequencing and Bayesian approaches. His work significantly advanced statistical methods in evolutionary genomics.",
+        "source": "Illumina, University of Wyoming"
+      }
+    }
+  },
+  "cicconardi-francesco": {
+    "id": "cicconardi-francesco",
+    "name": "Francesco Cicconardi",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Research Associate",
+        "affiliation": "University of Bristol",
+        "department": "School of Biological Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary biology",
+          "comparative genomics",
+          "bioinformatics",
+          "molecular evolution",
+          "entomology",
+          "alpine adaptation"
+        ],
+        "orcid": "0000-0002-8395-8057"
+      },
+      "profile": {
+        "shortBio": "Francesco Cicconardi is a Senior Research Associate at University of Bristol. His research focuses on evolutionary adaptation to extreme environments, particularly studying how ants adapted to alpine habitats through comparative genomics. Previously at University of Cambridge and University of Innsbruck.",
+        "source": "University of Bristol, School of Biological Sciences"
+      }
+    }
+  },
+  "colonna-vincenza": {
+    "id": "colonna-vincenza",
+    "name": "Vincenza Colonna",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "Institute of Genetics and Biophysics, CNR",
+        "department": "Italian National Research Council",
+        "additionalAffiliation": "University of Tennessee Health Science Center"
+      },
+      "academic": {
+        "researchAreas": [
+          "human population genomics",
+          "genetic variation",
+          "consanguineous populations",
+          "isolated populations",
+          "Southern Italy genetics",
+          "natural selection"
+        ]
+      },
+      "profile": {
+        "shortBio": "Vincenza Colonna is Group Leader at the Institute of Genetics and Biophysics of the Italian National Research Council in Naples. Her research focuses on human genetic variation, particularly in isolated populations of Southern Italy. She graduated from University of Naples Federico II and did postdoctoral work at Wellcome Trust Sanger Institute.",
+        "source": "Institute of Genetics and Biophysics, CNR, Naples"
+      }
+    }
+  },
+  "harris-kelley": {
+    "id": "harris-kelley",
+    "name": "Kelley Harris",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "University of Washington",
+        "department": "Department of Genome Sciences",
+        "labWebsite": "https://sites.google.com/site/harriskelley/home"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "mutation rate evolution",
+          "human evolution",
+          "ancient DNA",
+          "computational genomics",
+          "Neanderthal introgression"
+        ],
+        "orcid": "0000-0003-0302-2523"
+      },
+      "profile": {
+        "shortBio": "Kelley Harris is Associate Professor of Genome Sciences at University of Washington. She uses population genetic theory to study evolutionary history, particularly the evolution of mutagenesis and human-Neanderthal interactions. She received a Sloan Fellowship and Pew Biomedical Scholar award for her innovative research.",
+        "source": "University of Washington, Department of Genome Sciences"
+      }
+    }
+  },
+  "almeida-king-jeff": {
+    "id": "almeida-king-jeff",
+    "name": "Jeff Almeida-King",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "medium",
+      "professional": {
+        "title": "Scientist",
+        "affiliation": "Genedata",
+        "department": "Bioinformatics"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomics",
+          "bioinformatics",
+          "MHC haplotypes",
+          "BioMart",
+          "Ensembl Genomes",
+          "data warehousing"
+        ]
+      },
+      "profile": {
+        "shortBio": "Jeff Almeida-King is a commercially-minded scientist at Genedata. He contributed to major genomics projects including the MHC Haplotype Project and BioMart/Ensembl Genomes development. His work includes gene annotation and developing data access tools for genomic databases.",
+        "source": "Genedata, EMBL-EBI"
+      }
+    }
+  },
+  "blanco-miguez-aitor": {
+    "id": "blanco-miguez-aitor",
+    "name": "Aitor Blanco Miguez",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Coordinator Microbiome Bioinformatic Core",
+        "affiliation": "PreBiomics",
+        "department": "Microbiome Bioinformatics",
+        "previousAffiliation": "University of Trento"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "metagenomics",
+          "computational biology",
+          "bioinformatics",
+          "human microbiome",
+          "food microbiomes"
+        ],
+        "orcid": "0000-0001-7386-5572"
+      },
+      "profile": {
+        "shortBio": "Aitor Blanco-Míguez is Coordinator of Microbiome Bioinformatic Core at PreBiomics. Previously at University of Trento, he has contributed to MetaPhlAn 4 and studies on microbiome-health relationships. His research includes developing bioinformatics tools for microbiome analysis and database curation.",
+        "source": "PreBiomics, University of Trento"
+      }
+    }
+  },
+  "bohutinska-magdalena": {
+    "id": "bohutinska-magdalena",
+    "name": "Magdalena Bohutinska",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T00:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Charles University in Prague",
+        "department": "Department of Botany, Faculty of Science",
+        "additionalAffiliation": "University of Bern"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "polyploidy",
+          "whole genome duplication",
+          "speciation",
+          "Arabidopsis",
+          "repeated adaptation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Magdalena Bohutínská is a researcher at Charles University in Prague studying evolutionary genomics. Her work focuses on polyploidy and whole genome duplication in plant speciation, particularly using Arabidopsis species. She investigates how organisms repeatedly adapt to similar environmental challenges through genomic mechanisms.",
+        "source": "Charles University in Prague, Faculty of Science"
+      }
+    }
+  },
+  "bos-kirsten": {
+    "id": "bos-kirsten",
+    "name": "Kirsten Bos",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader, Molecular Palaeopathology",
+        "affiliation": "Max Planck Institute for Evolutionary Anthropology",
+        "department": "Department of Archaeogenetics",
+        "labWebsite": "https://kirstenbos.ca"
+      },
+      "academic": {
+        "researchAreas": [
+          "ancient DNA",
+          "infectious diseases",
+          "paleopathology",
+          "Black Death",
+          "tuberculosis",
+          "syphilis",
+          "pathogen genomics"
+        ],
+        "orcid": "0000-0003-2937-3006"
+      },
+      "profile": {
+        "shortBio": "Kirsten Bos is a Canadian physical anthropologist and Group Leader of Molecular Palaeopathology at the Max Planck Institute for Evolutionary Anthropology. Her research focuses on ancient DNA retrieval to reconstruct ancient pathogen genomes, studying the changing landscape of infectious diseases over time, host-pathogen coevolution, and the biological consequences of European and New World contact.",
+        "source": "Max Planck Institute for Evolutionary Anthropology, Google Scholar"
+      }
+    }
+  },
+  "chevreux-bastien": {
+    "id": "chevreux-bastien",
+    "name": "Bastien Chevreux",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Data Scientist and Bioinformatics Expert",
+        "affiliation": "Independent Consultant",
+        "department": "Data - Insights - Products - Strategy",
+        "labWebsite": "https://www.chevreux.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "genome assembly",
+          "bioinformatics",
+          "sequence assembly",
+          "MIRA assembler",
+          "computational biology",
+          "EST assembly",
+          "SNP detection"
+        ]
+      },
+      "profile": {
+        "shortBio": "Bastien Chevreux is the developer of the MIRA genome assembler, a versatile tool for sequence assembly that has been continuously maintained since 1997. His work includes over 20 biotechnology patents and numerous high-impact publications. MIRA supports multiple sequencing technologies including Sanger, 454, Illumina, IonTorrent, and PacBio, making it a Swiss army knife of sequence assembly.",
+        "source": "chevreux.org, MIRA documentation"
+      }
+    }
+  },
+  "christmas-matthew": {
+    "id": "christmas-matthew",
+    "name": "Matthew Christmas",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Uppsala University",
+        "department": "Department of Medical Biochemistry and Microbiology"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "population genomics",
+          "bioinformatics",
+          "comparative genomics",
+          "alpine bumblebees",
+          "common quails",
+          "placental mammals"
+        ]
+      },
+      "profile": {
+        "shortBio": "Matthew Christmas is a post-doctoral researcher at Uppsala University working with Kerstin Lindblad-Toh. His research focuses on evolutionary genomics, contributing to major studies on genome evolution in common quails, evolutionary constraint across placental mammals, and population genomics of alpine bumblebees.",
+        "source": "Uppsala University, Google Scholar"
+      }
+    }
+  },
+  "clark-andrew": {
+    "id": "clark-andrew",
+    "name": "Andrew Clark",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Jacob Gould Schurman Professor",
+        "affiliation": "Cornell University",
+        "department": "Department of Molecular Biology and Genetics",
+        "labWebsite": "https://blogs.cornell.edu/andyclarklab"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "evolutionary genetics",
+          "Drosophila genetics",
+          "human genetics",
+          "cardiovascular disease",
+          "innate immunity",
+          "genomic imprinting"
+        ],
+        "orcid": "0000-0002-0622-6611"
+      },
+      "profile": {
+        "shortBio": "Andrew G. Clark is the Jacob Gould Schurman Professor at Cornell University and a member of the National Academy of Sciences. His research focuses on empirical and analytical problems in population genetics, with particular emphasis on Drosophila and human systems. He has published over 360 papers and co-authored the textbook Principles of Population Genetics with Dan Hartl.",
+        "source": "Cornell University, National Academy of Sciences"
+      }
+    }
+  },
+  "clauw-pieter": {
+    "id": "clauw-pieter",
+    "name": "Pieter Clauw",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Gregor Mendel Institute of Molecular Plant Biology",
+        "department": "Austrian Academy of Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "plant genomics",
+          "Arabidopsis thaliana",
+          "cold adaptation",
+          "metabolomics",
+          "drought stress",
+          "natural variation",
+          "GWAS"
+        ]
+      },
+      "profile": {
+        "shortBio": "Pieter Clauw researches natural variation in plant responses to environmental stresses at the Gregor Mendel Institute. His work focuses on cold temperature adaptation, metabolome plasticity, and drought stress responses in Arabidopsis thaliana, using genomic and metabolomic approaches to understand how plants adapt to environmental challenges.",
+        "source": "Gregor Mendel Institute, Google Scholar"
+      }
+    }
+  },
+  "crotty-stephen": {
+    "id": "crotty-stephen",
+    "name": "Stephen Crotty",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor and Chief Scientific Officer",
+        "affiliation": "La Jolla Institute for Immunology",
+        "department": "Center for Infectious Disease and Vaccine Research",
+        "labWebsite": "https://www.lji.org/labs/crotty-lab"
+      },
+      "academic": {
+        "researchAreas": [
+          "immunology",
+          "virology",
+          "T follicular helper cells",
+          "vaccine immunology",
+          "COVID-19",
+          "HIV",
+          "germinal centers"
+        ],
+        "orcid": "0000-0002-3484-4068"
+      },
+      "profile": {
+        "shortBio": "Shane Crotty is a Professor and Chief Scientific Officer at La Jolla Institute for Immunology. His lab is best known for understanding T follicular helper cells and their role in antibody responses. He made crucial contributions to COVID-19 research, publishing the first detailed analysis of immune responses to SARS-CoV-2. He has been a Highly Cited Researcher for 8 consecutive years.",
+        "source": "La Jolla Institute for Immunology, Wikipedia"
+      }
+    }
+  },
+  "fillault-daniel": {
+    "id": "fillault-daniel",
+    "name": "Daniel Fillault",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "low",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Unknown"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomics",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Limited information available about Daniel Fillault's current research activities and affiliations in genomics and bioinformatics.",
+        "source": "Web search - no specific results found"
+      }
+    }
+  },
+  "gaggiotti-oscar": {
+    "id": "gaggiotti-oscar",
+    "name": "Oscar Gaggiotti",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "MASTS Professor",
+        "affiliation": "University of St Andrews",
+        "department": "Scottish Oceans Institute and School of Biology",
+        "labWebsite": "https://www.st-andrews.ac.uk/biology/people/oeg"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "metapopulation dynamics",
+          "Bayesian statistics",
+          "marine biology",
+          "local adaptation",
+          "spatial genetics",
+          "conservation genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Oscar Gaggiotti is a MASTS professor at the University of St Andrews studying spatial patterns of genetic diversity. He develops ecologically realistic population genetics theory and methods using metapopulation paradigms and Bayesian statistics, with applications mainly to marine species including fish, marine mammals, and macroalgae.",
+        "source": "University of St Andrews, Google Scholar"
+      }
+    }
+  },
+  "garamszegi-laszlo": {
+    "id": "garamszegi-laszlo",
+    "name": "Laszlo Garamszegi",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Director",
+        "affiliation": "Centre for Ecological Research, Budapest",
+        "department": "Institute of Ecology and Botany",
+        "previousAffiliation": "Estación Biológica de Doñana - CSIC, Spain"
+      },
+      "academic": {
+        "researchAreas": [
+          "behavioral ecology",
+          "evolutionary biology",
+          "bird song evolution",
+          "host-parasite interactions",
+          "animal personality",
+          "phylogenetic comparative methods",
+          "statistical ecology"
+        ],
+        "orcid": "0000-0001-8920-2183"
+      },
+      "profile": {
+        "shortBio": "László Zsolt Garamszegi is Director at the Centre for Ecological Research in Budapest. His research focuses on the evolutionary ecology of birds, including the evolution of bird song, behavioral adaptation, and host-parasite interactions. He develops statistical approaches for behavioral ecology and has been cited over 12,000 times.",
+        "source": "Centre for Ecological Research, CSIC"
+      }
+    }
+  },
+  "gardy-jennifer": {
+    "id": "gardy-jennifer",
+    "name": "Jennifer Gardy",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Deputy Director for Surveillance, Data, and Epidemiology",
+        "affiliation": "Bill & Melinda Gates Foundation",
+        "department": "Malaria Team",
+        "previousAffiliation": "University of British Columbia and BC Centre for Disease Control"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomic epidemiology",
+          "infectious disease surveillance",
+          "pathogen transmission",
+          "tuberculosis genomics",
+          "public health genomics",
+          "bioinformatics",
+          "malaria"
+        ],
+        "orcid": "0000-0002-6061-8740"
+      },
+      "profile": {
+        "shortBio": "Jennifer Gardy is Deputy Director at the Gates Foundation, previously Canada Research Chair in Public Health Genomics at UBC. She pioneered genomic epidemiology, using genome sequencing to track disease outbreaks. Her team was first to show how genomics could reconstruct person-to-person TB transmission. She's also a science communicator and occasional CBC host.",
+        "source": "Gates Foundation, University of British Columbia"
+      }
+    }
+  },
+  "gascuel-olivier": {
+    "id": "gascuel-olivier",
+    "name": "Olivier Gascuel",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Research Director",
+        "affiliation": "CNRS and Muséum National d'Histoire Naturelle",
+        "department": "ISYEB (Institut de Systématique, Évolution, Biodiversité)",
+        "labWebsite": "https://www.lirmm.fr/~gascuel"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenetics",
+          "bioinformatics",
+          "evolutionary biology",
+          "mathematical biology",
+          "sequence analysis",
+          "phylogenetic tree building",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Olivier Gascuel is a Research Director at CNRS focusing on phylogeny and evolutionary biology. He co-developed PhyML, a widely-used phylogenetic tree building software with over 20,000 citations. He received the 2017 Grand Prix Inria – Académie des Sciences and has made significant contributions to mathematical and computational approaches in evolution.",
+        "source": "CNRS, LIRMM, Wikipedia"
+      }
+    }
+  },
+  "hall-neil": {
+    "id": "hall-neil",
+    "name": "Neil Hall",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Director",
+        "affiliation": "The Earlham Institute",
+        "department": "Genomics and Computational Biology",
+        "labWebsite": "https://www.earlham.ac.uk/profile/neil-hall"
+      },
+      "academic": {
+        "researchAreas": [
+          "comparative genomics",
+          "evolutionary genomics",
+          "pathogen genomics",
+          "parasitic protists",
+          "microbial communities",
+          "bioinformatics",
+          "malaria genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Neil Hall is Director of the Earlham Institute in Norwich, UK. His research focuses on comparative and evolutionary genomics in pathogens, particularly parasitic protists. He previously led the effort to sequence the Plasmodium falciparum genome at the Sanger Institute and has been cited over 38,000 times.",
+        "source": "Earlham Institute, Google Scholar"
+      }
+    }
+  },
+  "hancock-angela": {
+    "id": "hancock-angela",
+    "name": "Angela Hancock",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "Max Planck Institute for Plant Breeding Research (moving to Purdue University in 2025)",
+        "department": "Department of Plant Developmental Biology",
+        "labWebsite": "https://www.mpipz.mpg.de/hancock"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "evolutionary biology",
+          "quantitative genetics",
+          "climate adaptation",
+          "Arabidopsis genomics",
+          "GWAS",
+          "complex trait evolution"
+        ]
+      },
+      "profile": {
+        "shortBio": "Angela Hancock leads a research group at MPI for Plant Biology studying how complex traits evolve. Her work integrates computational and experimental approaches to understand adaptation, particularly in Arabidopsis populations from Africa and Cape Verde Islands. She received her PhD from University of Chicago in Human Genetics.",
+        "source": "MPI Plant Biology, Google Scholar"
+      }
+    }
+  },
+  "hofreiter-michael": {
+    "id": "hofreiter-michael",
+    "name": "Michael Hofreiter",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor for Evolutionary Adaptive Genomics",
+        "affiliation": "University of Potsdam",
+        "department": "Institute for Biochemistry and Biology",
+        "labWebsite": "https://www.uni-potsdam.de/en/ibb-genomics/group/hofreiter.html"
+      },
+      "academic": {
+        "researchAreas": [
+          "ancient DNA",
+          "paleogenomics",
+          "evolutionary biology",
+          "molecular ecology",
+          "conservation genetics",
+          "adaptive genomics",
+          "extinct species genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Michael Hofreiter is a Professor at University of Potsdam and a leading expert in ancient DNA research. He studies the genetic basis of animal adaptations and environmental impacts on genetic diversity. His group was first to functionally test genetic variants from extinct species and has been cited over 35,000 times.",
+        "source": "University of Potsdam, Google Scholar"
+      }
+    }
+  },
+  "huson-daniel": {
+    "id": "huson-daniel",
+    "name": "Daniel Huson",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Algorithms in Bioinformatics",
+        "affiliation": "University of Tübingen",
+        "department": "Center for Bioinformatics and Department of Computer Science",
+        "labWebsite": "https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics"
+      },
+      "academic": {
+        "researchAreas": [
+          "metagenomics",
+          "bioinformatics algorithms",
+          "phylogenetics",
+          "microbiome analysis",
+          "software development",
+          "computational biology",
+          "phylogenetic networks"
+        ]
+      },
+      "profile": {
+        "shortBio": "Daniel Huson is Professor at University of Tübingen and developer of MEGAN (MEtaGenome ANalyzer), a landmark tool for metagenomic analysis. His research focuses on computational methods for microbiome analysis, genomics, and phylogenetics. He has developed multiple widely-used tools including DIAMOND, SplitsTree, and Dendroscope.",
+        "source": "University of Tübingen, Research publications"
+      }
+    }
+  },
+  "huttenhower-curtis": {
+    "id": "huttenhower-curtis",
+    "name": "Curtis Huttenhower",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Computational Biology and Bioinformatics",
+        "affiliation": "Harvard T.H. Chan School of Public Health",
+        "department": "Department of Biostatistics",
+        "labWebsite": "https://huttenhower.sph.harvard.edu"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "computational biology",
+          "metagenomics",
+          "human health",
+          "machine learning",
+          "functional genomics",
+          "inflammatory bowel disease"
+        ],
+        "orcid": "0000-0002-1110-0096"
+      },
+      "profile": {
+        "shortBio": "Curtis Huttenhower is a Professor at Harvard School of Public Health and Associate Member at the Broad Institute. He co-leads the HMP2 Center studying the gut microbiome in IBD and directs the Harvard Microbiome Analysis Core. His work on computational methods for microbiome research has been cited over 162,000 times.",
+        "source": "Harvard T.H. Chan School of Public Health, Google Scholar"
+      }
+    }
+  },
+  "jay-flora": {
+    "id": "jay-flora",
+    "name": "Flora Jay",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "CNRS Junior Researcher",
+        "affiliation": "Université Paris-Saclay, CNRS, INRIA",
+        "department": "Laboratoire Interdisciplinaire des Sciences du Numérique (LISN)",
+        "labWebsite": "http://flora-jay.blogspot.com"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "machine learning",
+          "demographic inference",
+          "deep learning",
+          "artificial genomes",
+          "ancient DNA",
+          "Bayesian models"
+        ]
+      },
+      "profile": {
+        "shortBio": "Flora Jay is a CNRS researcher bridging computer science and genetics. She develops machine learning methods for population genetics, including pioneering work on artificial genome generation using deep learning. Her research reconstructs demographic histories and studies admixture patterns in human evolution, with over 8,700 citations.",
+        "source": "CNRS, Google Scholar, ResearchGate"
+      }
+    }
+  },
+  "jones-felicity": {
+    "id": "jones-felicity",
+    "name": "Felicity Jones",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "University of Groningen (previously Max Planck Institute)",
+        "department": "Evolutionary Genetics",
+        "labWebsite": "https://research.rug.nl/en/persons/felicity-jones"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "stickleback fish",
+          "adaptation",
+          "functional genomics",
+          "regulatory evolution",
+          "ancient DNA",
+          "speciation"
+        ],
+        "orcid": "0000-0002-5027-1031"
+      },
+      "profile": {
+        "shortBio": "Felicity Jones studies genome function in naturally evolving organisms, particularly using threespine stickleback fish. She led landmark work sequencing 21 stickleback genomes (Nature 2012) creating high-resolution adaptive loci maps. Her research combines functional genomics with evolutionary biology to understand adaptation and speciation.",
+        "source": "University of Groningen, Google Scholar"
+      }
+    }
+  },
+  "kaessman-henrik": {
+    "id": "kaessman-henrik",
+    "name": "Henrik Kaessmann",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Evolutionary Genomics",
+        "affiliation": "Heidelberg University",
+        "department": "Center for Molecular Biology (ZMBH)",
+        "labWebsite": "https://www.zmbh.uni-heidelberg.de/Kaessmann"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "gene expression evolution",
+          "mammalian organ development",
+          "brain evolution",
+          "single-cell genomics",
+          "new gene evolution",
+          "comparative genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Henrik Kaessmann is Professor at Heidelberg University studying mammalian organ evolution through gene expression. His lab examines transcriptome evolution across development in multiple species, pioneering single-cell approaches. He has received three ERC Grants, EMBO membership, and the Cloëtta Prize for his contributions.",
+        "source": "Heidelberg University, NOMIS Foundation"
+      }
+    }
+  },
+  "nenasheva-natalia": {
+    "id": "nenasheva-natalia",
+    "name": "Natalia Nenasheva",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "medium",
+      "professional": {
+        "title": "PhD Student",
+        "affiliation": "University of Greifswald",
+        "department": "Institute of Mathematics and Computer Science"
+      },
+      "academic": {
+        "researchAreas": [
+          "metagenomics",
+          "genome annotation",
+          "bioinformatics",
+          "gene prediction",
+          "computational biology",
+          "applied mathematics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Natalia Nenasheva is a PhD student at University of Greifswald working on gene prediction in eukaryotic metagenomes. She co-developed GALBA, a genome annotation pipeline using miniprot and AUGUSTUS. Her background includes Applied Mathematics and Physics from Moscow Institute of Physics and Technology.",
+        "source": "University of Greifswald, BMC Bioinformatics"
+      }
+    }
+  },
+  "rees-jasmine": {
+    "id": "rees-jasmine",
+    "name": "Jasmine Rees",
+    "enrichment": {
+      "lastUpdated": "2025-01-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "University of Pennsylvania",
+        "department": "Tishkoff Lab"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genetics",
+          "computational biology",
+          "human adaptation",
+          "convergent evolution",
+          "population genomics",
+          "diet-related adaptation",
+          "trace metals"
+        ]
+      },
+      "profile": {
+        "shortBio": "Jasmin Rees (note: spelled without 'e') is an evolutionary geneticist at University of Pennsylvania studying how environments influence genome evolution. She focuses on local adaptation in humans, particularly regarding micronutrients and diet. She completed her PhD at UCL and has taught at the Workshop on Population and Speciation Genomics.",
+        "source": "University of Pennsylvania, personal website"
       }
     }
   }

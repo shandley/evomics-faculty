@@ -2508,5 +2508,516 @@
         "source": "AZTI, personal website"
       }
     }
+  },
+  "rokas-antonis": {
+    "id": "rokas-antonis",
+    "name": "Antonis Rokas",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Cornelius Vanderbilt Chair, Professor",
+        "affiliation": "Vanderbilt University",
+        "department": "Department of Biological Sciences and Department of Biomedical Informatics"
+      },
+      "academic": {
+        "researchAreas": [
+          "molecular evolution",
+          "phylogenetics",
+          "fungal genomics",
+          "computational biology",
+          "evolutionary genomics",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Antonis Rokas holds the Cornelius Vanderbilt Chair at Vanderbilt University. His research focuses on understanding the molecular foundations of the tree of life and the evolution of human pregnancy.",
+        "source": "Vanderbilt University"
+      }
+    }
+  },
+  "salzburger-walter": {
+    "id": "salzburger-walter",
+    "name": "Walter Salzburger",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Basel",
+        "department": "Department of Environmental Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary biology",
+          "cichlid fish",
+          "speciation",
+          "adaptive radiation",
+          "genomics",
+          "African Great Lakes"
+        ]
+      },
+      "profile": {
+        "shortBio": "Walter Salzburger studies the evolution of cichlid fishes, particularly their adaptive radiation in African Great Lakes. His research focuses on understanding the molecular basis of adaptation, innovation, and speciation.",
+        "source": "University of Basel"
+      }
+    }
+  },
+  "schleper-christa": {
+    "id": "schleper-christa",
+    "name": "Christa Schleper",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor, Head of Unit",
+        "affiliation": "University of Vienna",
+        "department": "Archaea Biology and Ecogenomics Unit"
+      },
+      "academic": {
+        "researchAreas": [
+          "archaea biology",
+          "microbiology",
+          "ecogenomics",
+          "evolution",
+          "ammonia oxidation",
+          "environmental microbiology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Christa Schleper is Head of the Archaea Biology and Ecogenomics Unit at University of Vienna. Her research focuses on archaea, particularly ammonia-oxidizing archaea and their role in global nitrogen cycling.",
+        "source": "University of Vienna"
+      }
+    }
+  },
+  "scofield-doug": {
+    "id": "scofield-doug",
+    "name": "Doug Scofield",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "medium",
+      "professional": {
+        "affiliation": "Uppsala University",
+        "department": "Evolutionary Biology Centre"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "genomics",
+          "population genetics",
+          "evolutionary biology"
+        ]
+      },
+      "profile": {
+        "source": "Workshop participation records"
+      }
+    }
+  },
+  "scornavacca-celine": {
+    "id": "scornavacca-celine",
+    "name": "Celine Scornavacca",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Researcher",
+        "affiliation": "CNRS",
+        "department": "ISEM - Institute of Evolutionary Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenetic networks",
+          "computational phylogenetics",
+          "evolutionary biology",
+          "algorithms",
+          "mathematical biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Celine Scornavacca is a Senior Researcher at CNRS working on phylogenetic networks and computational methods for understanding reticulate evolution.",
+        "source": "ISEM, CNRS"
+      }
+    }
+  },
+  "sedlazeck-fritz": {
+    "id": "sedlazeck-fritz",
+    "name": "Fritz Sedlazeck",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Professor",
+        "affiliation": "Baylor College of Medicine",
+        "department": "Human Genome Sequencing Center"
+      },
+      "academic": {
+        "researchAreas": [
+          "structural variation",
+          "genome assembly",
+          "long-read sequencing",
+          "computational genomics",
+          "bioinformatics tools",
+          "variant calling"
+        ]
+      },
+      "profile": {
+        "shortBio": "Fritz Sedlazeck develops computational methods for detecting structural variations using long-read sequencing technologies. He is a key developer of tools for analyzing complex genomic variations.",
+        "source": "Academic profile"
+      }
+    }
+  },
+  "setter-derek": {
+    "id": "setter-derek",
+    "name": "Derek Setter",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "University of Edinburgh",
+        "department": "MRC Human Genetics Unit"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "evolutionary genomics",
+          "natural selection",
+          "demography",
+          "statistical inference",
+          "genomic data analysis"
+        ]
+      },
+      "profile": {
+        "shortBio": "Derek Setter is a theoretical population geneticist interested in how evolutionary processes shape genetic variation. He develops inference frameworks for understanding selection and demography from genomic data.",
+        "source": "University of Edinburgh Research Explorer"
+      }
+    }
+  },
+  "shekhar-karthik": {
+    "id": "shekhar-karthik",
+    "name": "Karthik Shekhar",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "John F. Heil, Jr. Professor",
+        "affiliation": "University of California, Berkeley",
+        "department": "Chemical and Biomolecular Engineering",
+        "additionalAffiliation": "Helen Wills Neuroscience Institute"
+      },
+      "academic": {
+        "researchAreas": [
+          "single-cell genomics",
+          "neuroscience",
+          "retinal biology",
+          "computational biology",
+          "systems biology",
+          "cell type diversity"
+        ]
+      },
+      "profile": {
+        "shortBio": "Karthik Shekhar uses single-cell genomics to understand cell type diversity in the nervous system, particularly in the retina. He combines experimental and computational approaches to map cellular diversity.",
+        "source": "UC Berkeley"
+      }
+    }
+  },
+  "simakov-oleg": {
+    "id": "simakov-oleg",
+    "name": "Oleg Simakov",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Univ.-Prof. Dr.",
+        "affiliation": "University of Vienna",
+        "department": "Faculty of Life Sciences, Department of Neuroscience and Developmental Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "comparative genomics",
+          "cephalopod biology",
+          "animal evolution",
+          "genome evolution",
+          "developmental biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Oleg Simakov studies genome evolution and the origins of animal complexity, with a particular focus on cephalopods. His research uses comparative genomics to understand major evolutionary transitions.",
+        "source": "University of Vienna"
+      }
+    }
+  },
+  "skidmore-zachary": {
+    "id": "skidmore-zachary",
+    "name": "Zachary Skidmore",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Staff Scientist",
+        "affiliation": "Washington University in St. Louis",
+        "department": "McDonell Genome Institute, Department of Medicine"
+      },
+      "academic": {
+        "researchAreas": [
+          "cancer genomics",
+          "bioinformatics",
+          "precision oncology",
+          "variant analysis",
+          "clinical genomics",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Zachary Skidmore is a staff scientist at the McDonell Genome Institute specializing in oncology bioinformatics. He develops tools and analyses for cancer genomics and precision medicine.",
+        "source": "Griffith Lab, Washington University"
+      }
+    }
+  },
+  "sousa-vitor": {
+    "id": "sousa-vitor",
+    "name": "Vitor Sousa",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "University of Lisbon",
+        "department": "Centre for Ecology, Evolution and Environmental Changes (cE3c)"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "evolutionary biology",
+          "demography",
+          "speciation genetics",
+          "conservation genetics",
+          "statistical inference"
+        ]
+      },
+      "profile": {
+        "shortBio": "Vitor Sousa uses population genetic data and theory to reconstruct evolutionary history and understand the roles of demography and selection in structuring genetic diversity.",
+        "source": "University of Lisbon, cE3c"
+      }
+    }
+  },
+  "stajich-jason": {
+    "id": "stajich-jason",
+    "name": "Jason Stajich",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of California, Riverside",
+        "department": "Department of Microbiology and Plant Pathology",
+        "labWebsite": "https://lab.stajich.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "fungal evolutionary genomics",
+          "comparative genomics",
+          "computational biology",
+          "molecular evolution",
+          "phylogenetics",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Jason Stajich leads the Stajich Laboratory for Fungal Evolutionary Genomics at UC Riverside. He studies fungi using comparative, computational, and experimental tools, utilizing genome and RNA sequencing, sequence analysis, molecular evolution, and phylogenetics.",
+        "source": "lab.stajich.org"
+      }
+    }
+  },
+  "stanke-mario": {
+    "id": "stanke-mario",
+    "name": "Mario Stanke",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Bioinformatics",
+        "affiliation": "University of Greifswald",
+        "department": "Institute of Mathematics and Computer Science"
+      },
+      "academic": {
+        "researchAreas": [
+          "gene prediction",
+          "comparative genome analysis",
+          "machine learning",
+          "probabilistic graphical models",
+          "molecular evolution",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Mario Stanke is Professor of Bioinformatics at the University of Greifswald. He is the developer of AUGUSTUS, a gene prediction software, and works on genome annotation pipelines including BRAKER.",
+        "source": "Google Scholar, University of Greifswald"
+      }
+    }
+  },
+  "steenwyk-jacob": {
+    "id": "steenwyk-jacob",
+    "name": "Jacob Steenwyk",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "UC Berkeley / HHMI",
+        "department": "Evolutionary Studies"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary biology",
+          "genomics",
+          "bioinformatics",
+          "phylogenomics",
+          "molecular evolution",
+          "fungal genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Jacob Steenwyk is Chair of Alumni Affairs, Evolutionary Studies Postdoctoral Researcher at UC Berkeley / HHMI. His research focuses on evolutionary biology, genomics, and bioinformatics, with a particular emphasis on the evolution and function of genomes.",
+        "source": "Vanderbilt University, LinkedIn"
+      }
+    }
+  },
+  "stefka-jan": {
+    "id": "stefka-jan",
+    "name": "Jan Stefka",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "University of South Bohemia",
+        "department": "Faculty of Science, Biology Centre CAS"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genomics",
+          "parasitic evolution",
+          "phylogenetics",
+          "evolutionary biology",
+          "fish parasites",
+          "coevolution"
+        ]
+      },
+      "profile": {
+        "shortBio": "Jan Stefka is an Associate Professor at the Faculty of Science, University of South Bohemia. His research focuses on population genomics of pathogenic fish parasites and understanding the role of population structure and selection in parasitic evolution.",
+        "source": "Evomics.org, Fulbright Scholars"
+      }
+    }
+  },
+  "stepanauskas-ramunas": {
+    "id": "stepanauskas-ramunas",
+    "name": "Ramunas Stepanauskas",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Research Scientist",
+        "affiliation": "Bigelow Laboratory for Ocean Sciences",
+        "department": "Single Cell Genomics Center",
+        "labWebsite": "https://www.bigelow.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "single cell genomics",
+          "marine microbiology",
+          "environmental genomics",
+          "microbial ecology",
+          "synthetic biology",
+          "bioremediation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Ramunas Stepanauskas is Senior Research Scientist and Director of the Single Cell Genomics Center at Bigelow Laboratory for Ocean Sciences. He pioneered single cell genomics techniques to study uncultured microorganisms in marine environments.",
+        "source": "Bigelow Laboratory for Ocean Sciences"
+      }
+    }
+  },
+  "suh-alexander": {
+    "id": "suh-alexander",
+    "name": "Alexander Suh",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Uppsala University",
+        "department": "Department of Organismal Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "convergent evolution",
+          "phylogenomics",
+          "transposable elements",
+          "chromosome evolution",
+          "avian genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Alexander Suh is a researcher at Uppsala University focusing on evolutionary genomics. His work provides insights into the processes underpinning convergent evolution and the contributions of ancestral, introgressed, and novel genetic variation to phenotypic evolution.",
+        "source": "ResearchGate"
+      }
+    }
+  },
+  "swofford-david": {
+    "id": "swofford-david",
+    "name": "David Swofford",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor Emeritus",
+        "affiliation": "Duke University",
+        "department": "Department of Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "phylogenetics",
+          "systematics",
+          "computational biology",
+          "evolutionary biology",
+          "statistical methods",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "David Swofford is the author and developer of PAUP* (Phylogenetic Analysis Using Parsimony), one of the most widely used software packages for phylogenetic analysis. He is a pioneer in computational phylogenetics and systematic biology.",
+        "source": "PAUP* website"
+      }
+    }
+  },
+  "szollosi-gergely": {
+    "id": "szollosi-gergely",
+    "name": "Gergely Szollosi",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Professor",
+        "affiliation": "Eötvös Loránd University",
+        "department": "Institute of Physics"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "phylogenetics",
+          "gene family evolution",
+          "computational biology",
+          "reconciliation methods",
+          "molecular evolution"
+        ]
+      },
+      "profile": {
+        "shortBio": "Gergely Szöllősi heads the Evolutionary Genomics Research Group at Eötvös University in Budapest. He develops computational methods to reconstruct gene family evolution and was a Marie Curie Fellow at the Bioinformatics, Phylogenetics and Evolutionary Genomics group.",
+        "source": "ResearchGate, LinkedIn"
+      }
+    }
   }
 }

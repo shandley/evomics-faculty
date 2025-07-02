@@ -3779,5 +3779,32 @@
         "source": "IBENS, École Normale Supérieure"
       }
     }
+  },
+  "shaw-sophie": {
+    "id": "shaw-sophie",
+    "name": "Sophie Shaw",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T21:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Lead Bioinformatician for Research and Development",
+        "affiliation": "All Wales Medical Genomics Service",
+        "department": "NHS Wales"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "next generation sequencing",
+          "microbiome",
+          "metagenomics",
+          "clinical genomics",
+          "microbial ecology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Sophie Shaw is the Lead Bioinformatician for Research and Development at the All Wales Medical Genomics Service. Her research focuses on microbiome studies, particularly in clinical contexts such as ulcerative colitis and trans-kingdom microbial communication. She specializes in next-generation sequencing and metagenomics applications.",
+        "source": "Google Scholar, NHS Wales"
+      }
+    }
   }
 }

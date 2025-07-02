@@ -526,9 +526,9 @@
       "lastName": "Montserrat"
     },
     {
-      "id": "morton-helene",
-      "firstName": "Helene",
-      "lastName": "Morton"
+      "id": "morlon-helene",
+      "firstName": "Hélène",
+      "lastName": "Morlon"
     },
     {
       "id": "moyle-leonie",
@@ -2460,7 +2460,7 @@
       "role": "faculty"
     },
     {
-      "facultyId": "morton-helene",
+      "facultyId": "morlon-helene",
       "workshopId": "wphylo",
       "year": 2024,
       "role": "faculty"

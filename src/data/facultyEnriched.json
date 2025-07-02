@@ -3752,5 +3752,32 @@
         "source": "Google Scholar, ORCID, Vanderbilt University"
       }
     }
+  },
+  "morlon-helene": {
+    "id": "morlon-helene",
+    "name": "Hélène Morlon",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T20:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "CNRS Research Director",
+        "affiliation": "École Normale Supérieure",
+        "department": "Institute of Biology (IBENS)"
+      },
+      "academic": {
+        "researchAreas": [
+          "biodiversity",
+          "macroevolution",
+          "phylogenetics",
+          "evolutionary biology",
+          "theoretical ecology",
+          "conservation biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Hélène Morlon is a CNRS Research Director at the Institute of Biology, École Normale Supérieure in Paris. She leads the SMILE group and is broadly interested in biodiversity research from evolutionary perspectives. She is also a TED Fellow.",
+        "source": "IBENS, École Normale Supérieure"
+      }
+    }
   }
 }

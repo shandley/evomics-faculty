@@ -1016,10 +1016,9 @@
       "lastUpdated": "2025-01-30T12:00:00Z",
       "confidence": "high",
       "professional": {
-        "title": "Associate Professor",
+        "title": "Professor",
         "affiliation": "Washington University in St. Louis",
-        "department": "Edison Family Center for Genome Sciences & Systems Biology",
-        "labWebsite": "https://handleylab.wustl.edu"
+        "department": "Edison Family Center for Genome Sciences & Systems Biology"
       },
       "academic": {
         "researchAreas": [

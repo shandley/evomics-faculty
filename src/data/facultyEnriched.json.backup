@@ -3395,5 +3395,146 @@
         "source": "Google Scholar, NHS Wales"
       }
     }
+  },
+  "dyhrman-sonya": {
+    "id": "dyhrman-sonya",
+    "name": "Sonya Dyhrman",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "Columbia University",
+        "department": "Department of Earth and Environmental Sciences",
+        "labWebsite": "https://dyhrman.ldeo.columbia.edu/"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbial oceanography",
+          "marine microbiology",
+          "phytoplankton ecology",
+          "biogeochemistry",
+          "climate change",
+          "ocean acidification"
+        ],
+        "orcid": "0000-0002-1323-3307"
+      },
+      "profile": {
+        "shortBio": "Sonya Dyhrman is a microbial oceanographer at Lamont-Doherty Earth Observatory and Associate Professor at Columbia University. She studies how marine microbes interact with their environment using molecular tools to examine the intersection of microbial physiology and biogeochemistry. She is a Fellow of the American Academy of Microbiology.",
+        "source": "Columbia University, Lamont-Doherty Earth Observatory"
+      }
+    }
+  },
+  "garber-manuel": {
+    "id": "garber-manuel",
+    "name": "Manuel Garber",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor, Bioinformatics Core Director",
+        "affiliation": "UMass Chan Medical School",
+        "department": "Department of Genomics and Computational Biology",
+        "labWebsite": "https://www.umassmed.edu/garberlab/"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary non-coding genomics",
+          "bioinformatics",
+          "RNA-seq",
+          "epigenomics",
+          "gene regulation",
+          "single cell genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Manuel Garber is Professor and Bioinformatics Core Director at UMass Chan Medical School. His lab focuses on evolutionary non-coding genomics, developing computational techniques to integrate comparative and functional genomics data. He developed Siphy and Scripture algorithms and continues work on single cell RNA-seq and epigenomics.",
+        "source": "UMass Chan Medical School"
+      }
+    }
+  },
+  "limasset-antoine": {
+    "id": "limasset-antoine",
+    "name": "Antoine Limasset",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "CNRS Researcher",
+        "affiliation": "University of Lille",
+        "department": "CRIStAL - Centre de Recherche en Informatique, Signal et Automatique de Lille",
+        "labWebsite": "https://malfoy.github.io/"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "algorithms",
+          "metagenomics",
+          "k-mer analysis",
+          "de Bruijn graphs",
+          "sequence analysis"
+        ],
+        "orcid": "0000-0002-7848-8701"
+      },
+      "profile": {
+        "shortBio": "Antoine Limasset is a CNRS Researcher at University of Lille working on methods and data structures in sequence bioinformatics. His research focuses on efficient algorithms for k-mer analysis, de Bruijn graphs, and scalable sequence analysis tools. He has developed key contributions to sequence assembly and correction methods.",
+        "source": "CRIStAL, University of Lille"
+      }
+    }
+  },
+  "barnett-david": {
+    "id": "barnett-david",
+    "name": "David Barnett",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Research Bioinformatician",
+        "affiliation": "Maastricht University",
+        "department": "Maastricht Centre for Systems Biology (MaCSBio)"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome analysis",
+          "molecular epidemiology",
+          "R statistical programming",
+          "gut microbiota",
+          "child health",
+          "data visualization"
+        ]
+      },
+      "profile": {
+        "shortBio": "David Barnett is a Research Bioinformatician at Maastricht University working on infant/child gut microbiome projects. He developed the R package microViz for microbiome data analysis and visualization. He teaches microbiome analysis methods at genomics workshops.",
+        "source": "Maastricht University, Workshop on Genomics"
+      }
+    }
+  },
+  "falush-daniel": {
+    "id": "falush-daniel",
+    "name": "Daniel Falush",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Principal Investigator",
+        "affiliation": "Institut Pasteur of Shanghai",
+        "department": "Centre for Microbes, Development and Health"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "bacterial evolution",
+          "population structure",
+          "computational methods",
+          "Helicobacter pylori",
+          "microbial genomics"
+        ],
+        "orcid": "0000-0002-0747-4187"
+      },
+      "profile": {
+        "shortBio": "Daniel Falush is a leading population geneticist at Institut Pasteur of Shanghai. He co-developed influential methods for inferring population structure from genetic data. His research focuses on bacterial population genetics, particularly Helicobacter pylori evolution and antibiotic resistance.",
+        "source": "Institut Pasteur of Shanghai, Chinese Academy of Sciences"
+      }
+    }
   }
 }

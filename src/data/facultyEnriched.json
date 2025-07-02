@@ -3019,5 +3019,329 @@
         "source": "ResearchGate, LinkedIn"
       }
     }
+  },
+  "tavalire-hannah": {
+    "id": "tavalire-hannah",
+    "name": "Hannah Tavalire",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Scholar",
+        "affiliation": "University of Oregon",
+        "department": "Prevention Science Institute"
+      },
+      "academic": {
+        "researchAreas": [
+          "gut microbiome",
+          "childhood development",
+          "genetics",
+          "environmental health",
+          "early growth",
+          "microbiome composition"
+        ]
+      },
+      "profile": {
+        "shortBio": "Hannah Tavalire, PhD, is a postdoctoral scholar in the Leve research group at the Prevention Science Institute. Her research centers on characterizing the influences of genetics and rearing environment on gut microbiome composition in children and how the microbiome affects overall health.",
+        "source": "Prevention Science Institute, University of Oregon"
+      }
+    }
+  },
+  "taylor-james": {
+    "id": "taylor-james",
+    "name": "James Taylor",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor (1943-2020)",
+        "affiliation": "Johns Hopkins University",
+        "department": "Department of Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "computational biology",
+          "genomics",
+          "Galaxy platform",
+          "data science",
+          "open science"
+        ]
+      },
+      "profile": {
+        "shortBio": "James Taylor was a pioneer in computational biology and creator of the Galaxy platform for genomic data analysis. He revolutionized bioinformatics by making computational tools accessible to researchers without programming expertise. He passed away in 2020.",
+        "source": "Johns Hopkins University, bio.jhu.edu"
+      }
+    }
+  },
+  "trucchi-emiliano": {
+    "id": "trucchi-emiliano",
+    "name": "Emiliano Trucchi",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Marche Polytechnic University",
+        "department": "Department of Life and Environmental Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "population genomics",
+          "bioinformatics",
+          "non-model species",
+          "demographic inference",
+          "adaptation genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Emiliano Trucchi specializes in evolutionary dynamics in non-model species. His expertise in non-model species genomics has led to novel approaches for estimating demographic histories and identifying genome-wide methylation patterns to test models of genetic diversity decay.",
+        "source": "Google Scholar, evomics.org"
+      }
+    }
+  },
+  "trynka-gosia": {
+    "id": "trynka-gosia",
+    "name": "Gosia Trynka",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "Wellcome Sanger Institute",
+        "department": "Human Genetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "complex genetics",
+          "genomics",
+          "bioinformatics",
+          "immunogenetics",
+          "epigenetics",
+          "autoimmune diseases"
+        ]
+      },
+      "profile": {
+        "shortBio": "Gosia Trynka is a Group Leader at the Wellcome Sanger Institute. Her group aims to understand the role of genetic variants in modulating the immune system, with the ultimate goal to identify mechanisms through which genetic variants predispose to autoimmune diseases.",
+        "source": "Wellcome Sanger Institute, Cambridge Immunology Network"
+      }
+    }
+  },
+  "uliano-silva-marcela": {
+    "id": "uliano-silva-marcela",
+    "name": "Marcela Uliano-Silva",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Bioinformatician",
+        "affiliation": "Wellcome Sanger Institute",
+        "department": "Tree of Life Programme"
+      },
+      "academic": {
+        "researchAreas": [
+          "genome assembly",
+          "bioinformatics",
+          "comparative genomics",
+          "eukaryotic species",
+          "Darwin Tree of Life",
+          "chromosome-level genomes"
+        ]
+      },
+      "profile": {
+        "shortBio": "Marcela Uliano-Silva is a TED Fellow and Senior Bioinformatician at the Wellcome Sanger Institute, specializing in genome assembly and bioinformatics. She plays a crucial role in the Darwin Tree of Life Project, focusing on creating chromosome-level genomes for various eukaryotic species.",
+        "source": "Wellcome Sanger Institute, TED Fellows"
+      }
+    }
+  },
+  "uller-tobias": {
+    "id": "uller-tobias",
+    "name": "Tobias Uller",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "Lund University",
+        "department": "Department of Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary biology",
+          "developmental biology",
+          "ecology",
+          "developmental plasticity",
+          "evolutionary theory",
+          "mathematical modeling"
+        ]
+      },
+      "profile": {
+        "shortBio": "Tobias Uller studies how evolution works through an integrative approach spanning from molecular and developmental biology to ecology, guided by mathematical modeling and conceptual analysis. His research focuses on development, physiology and behavior in evolutionary processes.",
+        "source": "Lund University"
+      }
+    }
+  },
+  "vaughan-tim": {
+    "id": "vaughan-tim",
+    "name": "Tim Vaughan",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Centre for Computational Evolution",
+        "department": "Computational Evolution"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational phylogenetics",
+          "BEAST 2",
+          "evolutionary biology",
+          "population genetics",
+          "phylodynamics",
+          "molecular evolution"
+        ]
+      },
+      "profile": {
+        "shortBio": "Tim Vaughan specializes in computational phylogenetics using BEAST 2. His work focuses on evolutionary processes that give rise to biodiversity at every level of biological organization, from species to individual organisms and genes.",
+        "source": "GitHub, Centre for Computational Evolution"
+      }
+    }
+  },
+  "vazquez-baeza-yoshiki": {
+    "id": "vazquez-baeza-yoshiki",
+    "name": "Yoshiki Vazquez-Baeza",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Bioinformatics Lead",
+        "affiliation": "BiomeSense",
+        "department": "Computational Biology and Data Engineering"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "bioinformatics",
+          "data visualization",
+          "high-dimensional data",
+          "computational biology",
+          "statistical analysis"
+        ]
+      },
+      "profile": {
+        "shortBio": "Yoshiki Vazquez-Baeza leads computational biology and data engineering at BiomeSense. Previously Associate Director of Bioinformatics at UC San Diego's Center for Microbiome Innovation, he develops open source statistical analysis and visualization tools for microbiome research.",
+        "source": "LinkedIn, The Org"
+      }
+    }
+  },
+  "waterhouse-robert": {
+    "id": "waterhouse-robert",
+    "name": "Robert Waterhouse",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor (Assistant)",
+        "affiliation": "University of Lausanne",
+        "department": "Department of Ecology and Evolution"
+      },
+      "academic": {
+        "researchAreas": [
+          "comparative genomics",
+          "evolutionary genomics",
+          "genome assembly",
+          "arthropod genomics",
+          "tick-host-pathogen interactions",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Robert Waterhouse at University of Lausanne focuses on comparative, functional and evolutionary genomics. His research uses genome-comparison-based evolutionary approaches to improve draft genome assemblies and study tick-host-pathogen interactions.",
+        "source": "SIB Swiss Institute of Bioinformatics, ResearchGate"
+      }
+    }
+  },
+  "wheat-chris": {
+    "id": "wheat-chris",
+    "name": "Chris Wheat",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "Stockholm University",
+        "department": "Department of Zoology"
+      },
+      "academic": {
+        "researchAreas": [
+          "ecological genomics",
+          "evolutionary biology",
+          "butterfly genomics",
+          "adaptation",
+          "population genomics",
+          "lepidoptera"
+        ]
+      },
+      "profile": {
+        "shortBio": "Chris Wheat at Stockholm University specializes in Ecological Genomics, studying how genomic variation affects ecological and evolutionary processes in butterflies and other organisms. His work combines field studies with genomic approaches.",
+        "source": "Evolution and Genomics, Stockholm University"
+      }
+    }
+  },
+  "willis-amy": {
+    "id": "willis-amy",
+    "name": "Amy Willis",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "University of Washington",
+        "department": "Department of Biostatistics"
+      },
+      "academic": {
+        "researchAreas": [
+          "statistical methods",
+          "microbiome data",
+          "ecological diversity",
+          "high-throughput sequencing",
+          "biostatistics",
+          "microbial ecology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Amy Willis develops statistical methods for the analysis of ecological data from high throughput sequencing, with particular emphasis on microbiome data. She leads the Statistical Diversity Lab at University of Washington.",
+        "source": "University of Washington Biostatistics, Statistical Diversity Lab"
+      }
+    }
+  },
+  "woyke-tanja": {
+    "id": "woyke-tanja",
+    "name": "Tanja Woyke",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Deputy Director of User Programs",
+        "affiliation": "DOE Joint Genome Institute",
+        "department": "Microbial Genomics Program"
+      },
+      "academic": {
+        "researchAreas": [
+          "single-cell genomics",
+          "microbial genomics",
+          "metagenomics",
+          "uncultured microorganisms",
+          "genome technology",
+          "environmental genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Tanja Woyke leads the Microbial Genomics Program at DOE Joint Genome Institute. She pioneered single-cell genomics approaches and has been instrumental in advancing technologies to study uncultured microorganisms.",
+        "source": "DOE Joint Genome Institute"
+      }
+    }
   }
 }

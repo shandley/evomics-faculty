@@ -3615,5 +3615,59 @@
         "source": "University of Oxford, RIKEN, Nature Genetics"
       }
     }
+  },
+  "montoliu-nern-merc": {
+    "id": "montoliu-nern-merc",
+    "name": "Mercè Montoliu-Nerin",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Uppsala University",
+        "department": "Department of Ecology and Genetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "arbuscular mycorrhizal fungi",
+          "genomics",
+          "evolutionary biology",
+          "symbiosis",
+          "phylogenomics",
+          "fungal biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Mercè Montoliu-Nerin specializes in arbuscular mycorrhizal fungi genomics at Uppsala University. She led groundbreaking phylogenomic analysis of AM fungi using comprehensive de novo genome assemblies, advancing our understanding of these crucial plant symbionts.",
+        "source": "Google Scholar, Uppsala University"
+      }
+    }
+  },
+  "peona-valentina": {
+    "id": "peona-valentina",
+    "name": "Valentina Peona",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:35:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "Swiss Ornithological Institute",
+        "department": "Evolutionary Genomics"
+      },
+      "academic": {
+        "researchAreas": [
+          "transposable elements",
+          "avian genomics",
+          "sex chromosome evolution",
+          "genome assembly",
+          "structural variation",
+          "evolutionary biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Valentina Peona studies how transposable elements and chromosome rearrangements influence genome evolution. She received her PhD from Uppsala University under Alexander Suh and now works at the Swiss Ornithological Institute, specializing in avian genomics and sex chromosome evolution.",
+        "source": "ResearchGate, Uppsala University, personal website"
+      }
+    }
   }
 }

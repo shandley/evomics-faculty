@@ -3647,26 +3647,26 @@
     "id": "peona-valentina",
     "name": "Valentina Peona",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:35:00.000Z",
+      "lastUpdated": "2025-07-02T19:45:00.000Z",
       "confidence": "high",
       "professional": {
-        "title": "Postdoctoral Researcher",
-        "affiliation": "Swiss Ornithological Institute",
-        "department": "Evolutionary Genomics"
+        "title": "Postdoc",
+        "affiliation": "Swedish Natural Museum / Swiss Vogelwarte",
+        "department": "Department of Organismal Biology; Systematic Biology"
       },
       "academic": {
         "researchAreas": [
+          "evolutionary biology",
           "transposable elements",
           "avian genomics",
           "sex chromosome evolution",
           "genome assembly",
-          "structural variation",
-          "evolutionary biology"
+          "structural variation"
         ]
       },
       "profile": {
-        "shortBio": "Valentina Peona studies how transposable elements and chromosome rearrangements influence genome evolution. She received her PhD from Uppsala University under Alexander Suh and now works at the Swiss Ornithological Institute, specializing in avian genomics and sex chromosome evolution.",
-        "source": "ResearchGate, Uppsala University, personal website"
+        "shortBio": "Valentina Peona is a postdoc at the Swedish Natural Museum and Swiss Vogelwarte, with visiting researcher status at Uppsala University. Her research focuses on how transposable elements and chromosome rearrangements shape genome evolution, particularly in birds. She has made significant contributions to understanding tuatara genome evolution and avian genome assembly.",
+        "source": "Google Scholar, Uppsala University"
       }
     }
   }

@@ -611,11 +611,6 @@
       "lastName": "Peona"
     },
     {
-      "id": "peona-velentina",
-      "firstName": "Velentina",
-      "lastName": "Peona"
-    },
-    {
       "id": "petr-martin",
       "firstName": "Martin",
       "lastName": "Petr"
@@ -2663,7 +2658,7 @@
       "role": "faculty"
     },
     {
-      "facultyId": "peona-velentina",
+      "facultyId": "peona-valentina",
       "workshopId": "wpsg",
       "year": 2025,
       "role": "faculty"

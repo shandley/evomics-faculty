@@ -32,11 +32,12 @@
     "id": "marcet-houben-marina",
     "name": "Marina Marcet-Houben",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:27:49.709Z",
+      "lastUpdated": "2025-07-02T20:38:09.907Z",
       "confidence": "high",
       "professional": {
         "affiliation": "Barcelona Supercomputing Center",
-        "department": "BSC"
+        "department": "BSC",
+        "title": "Bioinformatician"
       },
       "academic": {
         "researchAreas": [
@@ -115,11 +116,13 @@
     "id": "catchen-julian",
     "name": "Julian Catchen",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:29:25.141Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "high",
       "professional": {
         "affiliation": "University of Illinois",
-        "labWebsite": "https://catchenlab.life.illinois.edu"
+        "labWebsite": "https://catchenlab.life.illinois.edu",
+        "title": "Associate Professor",
+        "department": "Department of Evolution, Ecology, and Behavior"
       },
       "academic": {
         "researchAreas": [
@@ -142,11 +145,12 @@
     "id": "kubatko-laura",
     "name": "Laura Kubatko",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:29:25.142Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Ohio State University",
-        "department": "Statistics and Evolution, Ecology and Organismal Biology"
+        "department": "Statistics and Evolution, Ecology and Organismal Biology",
+        "title": "Professor"
       },
       "academic": {
         "researchAreas": [
@@ -166,10 +170,12 @@
     "id": "malinsky-milan",
     "name": "Milan Malinsky",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
-        "affiliation": "University of Basel"
+        "affiliation": "University of Basel",
+        "title": "Group Leader",
+        "department": "Evolutionary Genomics"
       },
       "academic": {
         "researchAreas": [
@@ -177,7 +183,8 @@
           "speciation",
           "cichlid evolution",
           "genomic differentiation"
-        ]
+        ],
+        "orcid": "0000-0002-1462-6317"
       },
       "profile": {
         "source": "Inferred from WPSG participation"
@@ -203,7 +210,8 @@
           "speciation genomics",
           "evolutionary biology",
           "comparative genomics"
-        ]
+        ],
+        "orcid": "0000-0003-4741-3884"
       },
       "profile": {
         "shortBio": "Michael Matschiner is an Adjunct Professor at the Natural History Museum, University of Oslo, specializing in phylogenomics and molecular dating to understand the evolutionary history of fishes and other organisms.",
@@ -215,10 +223,12 @@
     "id": "marchet-camille",
     "name": "Camille Marchet",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
-        "affiliation": "CNRS / University of Lille"
+        "affiliation": "CNRS / University of Lille",
+        "title": "CNRS Researcher",
+        "department": "CRIStAL"
       },
       "academic": {
         "researchAreas": [
@@ -226,7 +236,8 @@
           "k-mer analysis",
           "genome assembly",
           "transcriptomics"
-        ]
+        ],
+        "orcid": "0000-0002-7235-7346"
       },
       "profile": {
         "source": "Inferred from recent WoG participation"
@@ -237,11 +248,12 @@
     "id": "bielawski-joseph",
     "name": "Joseph Bielawski",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Dalhousie University",
-        "department": "Biology"
+        "department": "Biology",
+        "title": "Professor"
       },
       "academic": {
         "researchAreas": [
@@ -335,7 +347,8 @@
           "Atlantic cod",
           "conservation genetics",
           "adaptation"
-        ]
+        ],
+        "orcid": "0000-0001-5125-819X"
       },
       "profile": {
         "shortBio": "Julia M.I. Barth studies genomic differentiation and demographic histories of Atlantic and Indo-Pacific yellowfin tuna populations. She is involved in various population genomic projects including the Aqua Genome project, studying connectivity, gene flow, and adaptation in marine fish species.",
@@ -353,7 +366,7 @@
         "title": "Professor",
         "affiliation": "Dalhousie University",
         "department": "Faculty of Computer Science",
-        "labWebsite": "https://www.cs.dal.ca/~beiko/"
+        "labWebsite": "https://www.cs.dal.ca/~beiko"
       },
       "academic": {
         "researchAreas": [
@@ -403,7 +416,7 @@
     "id": "chikhi-rayan",
     "name": "Rayan Chikhi",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165369Z",
       "confidence": "high",
       "professional": {
         "title": "G5 Group Leader",
@@ -420,7 +433,8 @@
           "metagenomics",
           "pan-genomics",
           "transcriptomics"
-        ]
+        ],
+        "orcid": "0000-0003-1099-8735"
       },
       "profile": {
         "shortBio": "Rayan Chikhi leads a computational team researching algorithms for big biological data at Institut Pasteur. The group creates and implements algorithms and data structures into software tools for genomics and metagenomics, including methods for improving bacterial genome assemblies with long reads.",
@@ -432,7 +446,7 @@
     "id": "cresko-bill",
     "name": "Bill Cresko",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T20:47:51.165383Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -446,7 +460,8 @@
           "population genomics",
           "adaptation",
           "speciation"
-        ]
+        ],
+        "orcid": "0000-0002-3496-8074"
       },
       "profile": {
         "shortBio": "Bill Cresko studies evolutionary genomics using threespine stickleback fish as a model system. Co-organizer of the Workshop on Population and Speciation Genomics.",
@@ -547,12 +562,13 @@
     "id": "droge-johannes",
     "name": "Johannes Droge",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "high",
       "professional": {
         "affiliation": "Chalmers University of Technology",
         "department": "Life Sciences",
-        "orcid": "0000-0002-6752-2204"
+        "orcid": "0000-0002-6752-2204",
+        "title": "Bioinformatics Specialist"
       },
       "academic": {
         "researchAreas": [
@@ -714,7 +730,7 @@
     "id": "eichler-evan",
     "name": "Evan Eichler",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T20:47:51.165378Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -728,7 +744,8 @@
           "segmental duplications",
           "primate genomics",
           "human genetics"
-        ]
+        ],
+        "orcid": "0000-0002-8246-4014"
       },
       "profile": {
         "shortBio": "Evan Eichler is a leader in primate genome evolution and structural variation. Howard Hughes Medical Institute Investigator.",
@@ -796,7 +813,7 @@
     "id": "garrison-erik",
     "name": "Erik Garrison",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Assistant Professor",
@@ -810,7 +827,8 @@
           "genome graphs",
           "sequence analysis",
           "bioinformatics tools"
-        ]
+        ],
+        "orcid": "0000-0003-3821-631X"
       },
       "profile": {
         "shortBio": "Erik Garrison develops computational methods for pangenomics and variation graphs. Creator of FreeBayes and other genomics tools.",
@@ -879,7 +897,7 @@
     "id": "griffith-malachi",
     "name": "Malachi Griffith",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Associate Professor of Medicine and Genetics",
@@ -897,7 +915,8 @@
           "cancer research",
           "precision oncology",
           "genomic medicine"
-        ]
+        ],
+        "orcid": "0000-0002-6388-446X"
       },
       "profile": {
         "shortBio": "Dr. Griffith has more than 15 years of experience in the fields of genomics, bioinformatics, data mining, and cancer research. His research is focused on the development of personalized medicine strategies for cancer using genomic technologies.",
@@ -909,11 +928,12 @@
     "id": "guido-roderic",
     "name": "Roderic Guido",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "NYU Langone Health",
-        "department": "Institute for Systems Genetics"
+        "department": "Institute for Systems Genetics",
+        "title": "Senior Research Fellow"
       },
       "academic": {
         "researchAreas": [
@@ -965,7 +985,7 @@
     "id": "haas-brian",
     "name": "Brian Haas",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165381Z",
       "confidence": "high",
       "professional": {
         "title": "Principal Computational Scientist",
@@ -981,7 +1001,8 @@
           "cancer informatics",
           "gene discovery",
           "genome annotation"
-        ]
+        ],
+        "orcid": "0000-0002-6609-4973"
       },
       "profile": {
         "shortBio": "Brian Haas is a Principal Computational Scientist at Broad Institute of MIT and Harvard. He is a Bioinformatics software developer and data analyst with a focus on leveraging transcriptomics for studies in genomics and cancer.",
@@ -1019,7 +1040,7 @@
     "id": "handley-scott",
     "name": "Scott Handley",
     "enrichment": {
-      "lastUpdated": "2025-01-30T12:00:00Z",
+      "lastUpdated": "2025-07-02T20:47:51.165259Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -1034,7 +1055,8 @@
           "computational biology",
           "systems biology",
           "genomics"
-        ]
+        ],
+        "orcid": "0000-0002-2143-6570"
       },
       "profile": {
         "shortBio": "Scott Handley is the founder and director of the Workshop on Genomics and co-founder of workshops on Population & Speciation Genomics and Phylogenomics. His research focuses on the human virome and microbiome interactions.",
@@ -1542,7 +1564,7 @@
     "id": "meyer-britta",
     "name": "Britta Meyer",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Computational Biologist",
@@ -1556,7 +1578,8 @@
           "population genomics",
           "speciation genomics",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0002-2549-1825"
       },
       "profile": {
         "shortBio": "Britta Meyer is a computational biologist at University of Hamburg specializing in evolutionary immunogenomics. She is an instructor for the Workshop on Population and Speciation Genomics.",
@@ -1839,7 +1862,7 @@
     "id": "paris-josephine",
     "name": "Josephine Paris",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165380Z",
       "confidence": "high",
       "professional": {
         "title": "Workshop Director",
@@ -1853,7 +1876,8 @@
           "workshop organization",
           "bioinformatics training",
           "scientific education"
-        ]
+        ],
+        "orcid": "0000-0001-6868-3416"
       },
       "profile": {
         "shortBio": "Josephine Paris is the Workshop Director for the Workshop on Genomics. She is a Marie Skłodowska-Curie Fellow at University of Oxford organizing intensive training opportunities in genomics.",
@@ -2090,7 +2114,8 @@
           "algal genomics",
           "microbial evolution",
           "harmful algal blooms"
-        ]
+        ],
+        "orcid": "0000-0002-5209-3160"
       },
       "profile": {
         "shortBio": "Karin Rengefors is a Professor at Lund University studying phytoplankton ecology and evolution, with a focus on understanding harmful algal blooms and microbial diversity in aquatic systems.",
@@ -2102,7 +2127,7 @@
     "id": "rodriguez-ezpeleta-naiara",
     "name": "Naiara Rodriguez-Ezpeleta",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Head of Molecular Ecology and Biotechnology Unit",
@@ -2117,7 +2142,8 @@
           "transcriptomics",
           "bioinformatics",
           "fisheries genomics"
-        ]
+        ],
+        "orcid": "0000-0001-6735-6755"
       },
       "profile": {
         "shortBio": "Naiara Rodriguez-Ezpeleta leads the Molecular Ecology and Biotechnology Unit at AZTI, integrating genomics, transcriptomics and bioinformatics approaches for marine environment research.",
@@ -2129,7 +2155,7 @@
     "id": "rokas-antonis",
     "name": "Antonis Rokas",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165374Z",
       "confidence": "high",
       "professional": {
         "title": "Cornelius Vanderbilt Chair, Professor",
@@ -2144,7 +2170,8 @@
           "computational biology",
           "evolutionary genomics",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0002-7248-6551"
       },
       "profile": {
         "shortBio": "Antonis Rokas holds the Cornelius Vanderbilt Chair at Vanderbilt University. His research focuses on understanding the molecular foundations of the tree of life and the evolution of human pregnancy.",
@@ -2171,7 +2198,8 @@
           "adaptive radiation",
           "genomics",
           "African Great Lakes"
-        ]
+        ],
+        "orcid": "0000-0002-9988-1674"
       },
       "profile": {
         "shortBio": "Walter Salzburger studies the evolution of cichlid fishes, particularly their adaptive radiation in African Great Lakes. His research focuses on understanding the molecular basis of adaptation, innovation, and speciation.",
@@ -2210,11 +2238,12 @@
     "id": "scofield-doug",
     "name": "Doug Scofield",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
       "confidence": "medium",
       "professional": {
         "affiliation": "Uppsala University",
-        "department": "Evolutionary Biology Centre"
+        "department": "Evolutionary Biology Centre",
+        "title": "Senior Bioinformatician"
       },
       "academic": {
         "researchAreas": [
@@ -2395,7 +2424,7 @@
     "id": "sousa-vitor",
     "name": "Vitor Sousa",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -2410,7 +2439,8 @@
           "speciation genetics",
           "conservation genetics",
           "statistical inference"
-        ]
+        ],
+        "orcid": "0000-0003-3575-0875"
       },
       "profile": {
         "shortBio": "Vitor Sousa uses population genetic data and theory to reconstruct evolutionary history and understand the roles of demography and selection in structuring genetic diversity.",
@@ -2519,7 +2549,8 @@
           "evolutionary biology",
           "fish parasites",
           "coevolution"
-        ]
+        ],
+        "orcid": "0000-0001-9735-8479"
       },
       "profile": {
         "shortBio": "Jan Stefka is an Associate Professor at the Faculty of Science, University of South Bohemia. His research focuses on population genomics of pathogenic fish parasites and understanding the role of population structure and selection in parasitic evolution.",
@@ -2694,7 +2725,7 @@
     "id": "trucchi-emiliano",
     "name": "Emiliano Trucchi",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165384Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -2709,7 +2740,8 @@
           "non-model species",
           "demographic inference",
           "adaptation genomics"
-        ]
+        ],
+        "orcid": "0000-0002-1270-5273"
       },
       "profile": {
         "shortBio": "Emiliano Trucchi specializes in evolutionary dynamics in non-model species. His expertise in non-model species genomics has led to novel approaches for estimating demographic histories and identifying genome-wide methylation patterns to test models of genetic diversity decay.",
@@ -2883,7 +2915,7 @@
     "id": "wheat-chris",
     "name": "Chris Wheat",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165376Z",
       "confidence": "high",
       "professional": {
         "title": "Professor",
@@ -2898,7 +2930,8 @@
           "adaptation",
           "population genomics",
           "lepidoptera"
-        ]
+        ],
+        "orcid": "0000-0003-1863-2340"
       },
       "profile": {
         "shortBio": "Chris Wheat at Stockholm University specializes in Ecological Genomics, studying how genomic variation affects ecological and evolutionary processes in butterflies and other organisms. His work combines field studies with genomic approaches.",
@@ -3074,7 +3107,7 @@
     "id": "zody-mike",
     "name": "Mike Zody",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "lastUpdated": "2025-07-02T20:47:51.165372Z",
       "confidence": "high",
       "professional": {
         "title": "Senior Computational Biologist",
@@ -3089,7 +3122,8 @@
           "bioinformatics",
           "genome biology",
           "illumina sequencing"
-        ]
+        ],
+        "orcid": "0000-0001-6594-7199"
       },
       "profile": {
         "shortBio": "Mike Zody is a senior computational biologist at the Broad Institute. He teaches workshops on comparative genomics and sequencing technologies, with expertise in genome biology and sequencing study design.",
@@ -3406,7 +3440,7 @@
         "title": "Associate Professor",
         "affiliation": "Columbia University",
         "department": "Department of Earth and Environmental Sciences",
-        "labWebsite": "https://dyhrman.ldeo.columbia.edu/"
+        "labWebsite": "https://dyhrman.ldeo.columbia.edu"
       },
       "academic": {
         "researchAreas": [
@@ -3435,7 +3469,7 @@
         "title": "Professor, Bioinformatics Core Director",
         "affiliation": "UMass Chan Medical School",
         "department": "Department of Genomics and Computational Biology",
-        "labWebsite": "https://www.umassmed.edu/garberlab/"
+        "labWebsite": "https://www.umassmed.edu/garberlab"
       },
       "academic": {
         "researchAreas": [
@@ -3445,7 +3479,8 @@
           "epigenomics",
           "gene regulation",
           "single cell genomics"
-        ]
+        ],
+        "orcid": "0000-0001-8732-1293"
       },
       "profile": {
         "shortBio": "Manuel Garber is Professor and Bioinformatics Core Director at UMass Chan Medical School. His lab focuses on evolutionary non-coding genomics, developing computational techniques to integrate comparative and functional genomics data. He developed Siphy and Scripture algorithms and continues work on single cell RNA-seq and epigenomics.",
@@ -3463,7 +3498,7 @@
         "title": "CNRS Researcher",
         "affiliation": "University of Lille",
         "department": "CRIStAL - Centre de Recherche en Informatique, Signal et Automatique de Lille",
-        "labWebsite": "https://malfoy.github.io/"
+        "labWebsite": "https://malfoy.github.io"
       },
       "academic": {
         "researchAreas": [
@@ -3486,7 +3521,7 @@
     "id": "barnett-david",
     "name": "David Barnett",
     "enrichment": {
-      "lastUpdated": "2025-07-02T22:00:00.000Z",
+      "lastUpdated": "2025-07-02T21:08:43.665Z",
       "confidence": "high",
       "professional": {
         "title": "Research Bioinformatician",
@@ -3501,7 +3536,8 @@
           "gut microbiota",
           "child health",
           "data visualization"
-        ]
+        ],
+        "orcid": "0000-0003-1961-7206"
       },
       "profile": {
         "shortBio": "David Barnett is a Research Bioinformatician at Maastricht University working on infant/child gut microbiome projects. He developed the R package microViz for microbiome data analysis and visualization. He teaches microbiome analysis methods at genomics workshops.",
@@ -3829,7 +3865,7 @@
         "title": "Group Leader, Molecular Palaeopathology",
         "affiliation": "Max Planck Institute for Evolutionary Anthropology",
         "department": "Department of Archaeogenetics",
-        "labWebsite": "https://kirstenbos.ca/"
+        "labWebsite": "https://kirstenbos.ca"
       },
       "academic": {
         "researchAreas": [
@@ -3859,7 +3895,7 @@
         "title": "Data Scientist and Bioinformatics Expert",
         "affiliation": "Independent Consultant",
         "department": "Data - Insights - Products - Strategy",
-        "labWebsite": "https://www.chevreux.org/"
+        "labWebsite": "https://www.chevreux.org"
       },
       "academic": {
         "researchAreas": [
@@ -3916,7 +3952,7 @@
         "title": "Jacob Gould Schurman Professor",
         "affiliation": "Cornell University",
         "department": "Department of Molecular Biology and Genetics",
-        "labWebsite": "https://blogs.cornell.edu/andyclarklab/"
+        "labWebsite": "https://blogs.cornell.edu/andyclarklab"
       },
       "academic": {
         "researchAreas": [
@@ -3974,7 +4010,7 @@
         "title": "Professor and Chief Scientific Officer",
         "affiliation": "La Jolla Institute for Immunology",
         "department": "Center for Infectious Disease and Vaccine Research",
-        "labWebsite": "https://www.lji.org/labs/crotty-lab/"
+        "labWebsite": "https://www.lji.org/labs/crotty-lab"
       },
       "academic": {
         "researchAreas": [
@@ -4115,7 +4151,7 @@
         "title": "Research Director",
         "affiliation": "CNRS and Muséum National d'Histoire Naturelle",
         "department": "ISYEB (Institut de Systématique, Évolution, Biodiversité)",
-        "labWebsite": "https://www.lirmm.fr/~gascuel/"
+        "labWebsite": "https://www.lirmm.fr/~gascuel"
       },
       "academic": {
         "researchAreas": [
@@ -4231,7 +4267,7 @@
         "title": "Professor of Algorithms in Bioinformatics",
         "affiliation": "University of Tübingen",
         "department": "Center for Bioinformatics and Department of Computer Science",
-        "labWebsite": "https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/"
+        "labWebsite": "https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics"
       },
       "academic": {
         "researchAreas": [
@@ -4260,7 +4296,7 @@
         "title": "Professor of Computational Biology and Bioinformatics",
         "affiliation": "Harvard T.H. Chan School of Public Health",
         "department": "Department of Biostatistics",
-        "labWebsite": "https://huttenhower.sph.harvard.edu/"
+        "labWebsite": "https://huttenhower.sph.harvard.edu"
       },
       "academic": {
         "researchAreas": [
@@ -4290,7 +4326,7 @@
         "title": "CNRS Junior Researcher",
         "affiliation": "Université Paris-Saclay, CNRS, INRIA",
         "department": "Laboratoire Interdisciplinaire des Sciences du Numérique (LISN)",
-        "labWebsite": "http://flora-jay.blogspot.com/"
+        "labWebsite": "http://flora-jay.blogspot.com"
       },
       "academic": {
         "researchAreas": [
@@ -4349,7 +4385,7 @@
         "title": "Professor of Evolutionary Genomics",
         "affiliation": "Heidelberg University",
         "department": "Center for Molecular Biology (ZMBH)",
-        "labWebsite": "https://www.zmbh.uni-heidelberg.de/Kaessmann/"
+        "labWebsite": "https://www.zmbh.uni-heidelberg.de/Kaessmann"
       },
       "academic": {
         "researchAreas": [

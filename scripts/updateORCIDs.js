@@ -7,14 +7,18 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// ORCID IDs found through search
+// ORCID IDs found through search - Batch 3
 const orcidsToAdd = [
-  { id: 'leonard-guy', orcid: '0000-0002-4607-2064', name: 'Guy Leonard' },
-  { id: 'marcet-houben-marina', orcid: '0000-0003-4838-187X', name: 'Marina Marcet-Houben' },
-  { id: 'mcdonald-daniel', orcid: '0000-0003-0876-9060', name: 'Daniel McDonald' },
-  { id: 'bank-claudia', orcid: '0000-0003-4730-758X', name: 'Claudia Bank' },
-  { id: 'catchen-julian', orcid: '0000-0002-4798-660X', name: 'Julian Catchen' },
-  { id: 'kubatko-laura', orcid: '0000-0002-5215-7144', name: 'Laura Kubatko' }
+  // Previous batches already added
+  // High priority batch 1 (already added via Task)
+  // High priority batch 2 (already added via Task)
+  // High priority batch 3 (new)
+  { id: 'meyer-britta', orcid: '0000-0002-2549-1825', name: 'Britta Meyer' },
+  { id: 'rodriguez-ezpeleta-naiara', orcid: '0000-0001-6735-6755', name: 'Naiara Rodriguez-Ezpeleta' },
+  { id: 'sousa-vitor', orcid: '0000-0003-3575-0875', name: 'Vitor Sousa' },
+  { id: 'barnett-david', orcid: '0000-0003-1961-7206', name: 'David Barnett' },
+  { id: 'garrison-erik', orcid: '0000-0003-3821-631X', name: 'Erik Garrison' },
+  { id: 'griffith-malachi', orcid: '0000-0002-6388-446X', name: 'Malachi Griffith' }
 ];
 
 // Read the enriched faculty data

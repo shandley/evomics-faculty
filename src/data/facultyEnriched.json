@@ -3561,5 +3561,59 @@
         "source": "ResearchGate, Loop Frontiers"
       }
     }
+  },
+  "ocana-pallares-eduard": {
+    "id": "ocana-pallares-eduard",
+    "name": "Eduard Ocaña-Pallarès",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "Barcelona Supercomputing Center",
+        "department": "Life Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "protist evolution",
+          "horizontal gene transfer",
+          "opisthokonta",
+          "comparative genomics",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Eduard Ocaña-Pallarès studies the evolutionary trajectories of major eukaryotic lineages. His work on divergent genomic trajectories predating the origin of animals and fungi was published in Nature, revealing how Metazoa and Fungi evolved distinct genomic features.",
+        "source": "Google Scholar, Nature publications"
+      }
+    }
+  },
+  "speidel-leo": {
+    "id": "speidel-leo",
+    "name": "Leo Speidel",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "RIKEN",
+        "department": "Interdisciplinary Theoretical and Mathematical Sciences Program (iTHEMS)"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "statistical genetics",
+          "ancient DNA",
+          "genealogy estimation",
+          "human evolution",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Leo Speidel develops statistical tools for reconstructing human genetic history. He created Relate, a method for genome-wide genealogy estimation published in Nature Genetics. Previously a PostDoc at Oxford's Department of Statistics, now leads a group at RIKEN Japan.",
+        "source": "University of Oxford, RIKEN, Nature Genetics"
+      }
+    }
   }
 }

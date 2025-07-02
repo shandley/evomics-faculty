@@ -182,22 +182,26 @@
     "id": "matschiner-michael",
     "name": "Michael Matschiner",
     "enrichment": {
-      "lastUpdated": "2025-01-30T10:00:00Z",
-      "confidence": "medium",
+      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "confidence": "high",
       "professional": {
-        "affiliation": "University of Oslo",
-        "department": "Natural History Museum"
+        "title": "Adjunct Professor",
+        "affiliation": "Natural History Museum, University of Oslo",
+        "department": "Sex and Evolution Research Group"
       },
       "academic": {
         "researchAreas": [
           "phylogenomics",
           "molecular dating",
           "fish evolution",
-          "speciation genomics"
+          "speciation genomics",
+          "evolutionary biology",
+          "comparative genomics"
         ]
       },
       "profile": {
-        "source": "Inferred from WPSG participation"
+        "shortBio": "Michael Matschiner is an Adjunct Professor at the Natural History Museum, University of Oslo, specializing in phylogenomics and molecular dating to understand the evolutionary history of fishes and other organisms.",
+        "source": "Natural History Museum Oslo"
       }
     }
   },
@@ -305,28 +309,6 @@
       }
     }
   },
-  "almeida-king-jeff": {
-    "id": "almeida-king-jeff",
-    "name": "Jeff Almeida-King",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "barnett-david": {
-    "id": "barnett-david",
-    "name": "David Barnett",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "barth-julia": {
     "id": "barth-julia",
     "name": "Julia M.I. Barth",
@@ -411,61 +393,6 @@
       }
     }
   },
-  "blanco-miguez-altor": {
-    "id": "blanco-miguez-altor",
-    "name": "Altor Blanco Miguez",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "bohutinska-magdalena": {
-    "id": "bohutinska-magdalena",
-    "name": "Magdalena Bohutinska",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "bos-kirsten": {
-    "id": "bos-kirsten",
-    "name": "Kirsten Bos",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:49.198Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "buerkle-alex": {
-    "id": "buerkle-alex",
-    "name": "Alex Buerkle",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.200Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "chevreux-bastien": {
-    "id": "chevreux-bastien",
-    "name": "Bastien Chevreux",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.200Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "chikhi-rayan": {
     "id": "chikhi-rayan",
     "name": "Rayan Chikhi",
@@ -495,61 +422,6 @@
       }
     }
   },
-  "christmas-matthew": {
-    "id": "christmas-matthew",
-    "name": "Matthew Christmas",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.200Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "cicconardi-francesco": {
-    "id": "cicconardi-francesco",
-    "name": "Francesco Cicconardi",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.200Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "clark-andrew": {
-    "id": "clark-andrew",
-    "name": "Andrew Clark",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.200Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "clauw-pieter": {
-    "id": "clauw-pieter",
-    "name": "Pieter Clauw",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.201Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "colonna-vincenza": {
-    "id": "colonna-vincenza",
-    "name": "Vincenza Colonna",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.201Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "cresko-bill": {
     "id": "cresko-bill",
     "name": "Bill Cresko",
@@ -576,17 +448,6 @@
       }
     }
   },
-  "crotty-stephen": {
-    "id": "crotty-stephen",
-    "name": "Stephen Crotty",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:54.201Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "cummings-michael": {
     "id": "cummings-michael",
     "name": "Michael Cummings",
@@ -597,7 +458,10 @@
         "title": "Professor",
         "affiliation": "University of Maryland",
         "department": "Department of Biology",
-        "additionalRoles": ["Director, Center for Bioinformatics and Computational Biology, UMIACS", "Director, Master of Science Program in Bioinformatics and Computational Biology"]
+        "additionalRoles": [
+          "Director, Center for Bioinformatics and Computational Biology, UMIACS",
+          "Director, Master of Science Program in Bioinformatics and Computational Biology"
+        ]
       },
       "academic": {
         "researchAreas": [
@@ -840,17 +704,6 @@
       }
     }
   },
-  "dyhrman-sonya": {
-    "id": "dyhrman-sonya",
-    "name": "Sonya Dyhrman",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:48:59.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "eichler-evan": {
     "id": "eichler-evan",
     "name": "Evan Eichler",
@@ -875,61 +728,6 @@
         "shortBio": "Evan Eichler is a leader in primate genome evolution and structural variation. Howard Hughes Medical Institute Investigator.",
         "source": "Academic profile"
       }
-    }
-  },
-  "falush-daniel": {
-    "id": "falush-daniel",
-    "name": "Daniel Falush",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "fernandez-rosa": {
-    "id": "fernandez-rosa",
-    "name": "Rosa Fernandez",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "fernndez-rosa": {
-    "id": "fernndez-rosa",
-    "name": "Rosa Fernández",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "ferrer-obiol-joan": {
-    "id": "ferrer-obiol-joan",
-    "name": "Joan Ferrer Obiol",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "fillault-daniel": {
-    "id": "fillault-daniel",
-    "name": "Daniel Fillault",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
     }
   },
   "fumagalli-matteo": {
@@ -988,50 +786,6 @@
       }
     }
   },
-  "gaggiotti-oscar": {
-    "id": "gaggiotti-oscar",
-    "name": "Oscar Gaggiotti",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "garamszegi-laszlo": {
-    "id": "garamszegi-laszlo",
-    "name": "Laszlo Garamszegi",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:04.202Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "garber-manuel": {
-    "id": "garber-manuel",
-    "name": "Manuel Garber",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "gardy-jennifer": {
-    "id": "gardy-jennifer",
-    "name": "Jennifer Gardy",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "garrison-erik": {
     "id": "garrison-erik",
     "name": "Erik Garrison",
@@ -1056,17 +810,6 @@
         "shortBio": "Erik Garrison develops computational methods for pangenomics and variation graphs. Creator of FreeBayes and other genomics tools.",
         "source": "Academic profile"
       }
-    }
-  },
-  "gascuel-olivier": {
-    "id": "gascuel-olivier",
-    "name": "Olivier Gascuel",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:09.205Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
     }
   },
   "gosik-kirk": {
@@ -1190,7 +933,11 @@
         "title": "Associate Professor",
         "affiliation": "University of Arizona",
         "department": "Molecular and Cellular Biology",
-        "additionalAffiliations": ["BIO5 Institute", "Departments of Ecology and Evolutionary Biology", "Graduate Programs in Applied Biosciences"]
+        "additionalAffiliations": [
+          "BIO5 Institute",
+          "Departments of Ecology and Evolutionary Biology",
+          "Graduate Programs in Applied Biosciences"
+        ]
       },
       "academic": {
         "researchAreas": [
@@ -1262,28 +1009,6 @@
       }
     }
   },
-  "hall-neil": {
-    "id": "hall-neil",
-    "name": "Neil Hall",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "hancock-angela": {
-    "id": "hancock-angela",
-    "name": "Angela Hancock",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
   "handley-scott": {
     "id": "handley-scott",
     "name": "Scott Handley",
@@ -1310,17 +1035,6 @@
         "shortBio": "Scott Handley is the founder and director of the Workshop on Genomics and co-founder of workshops on Population & Speciation Genomics and Phylogenomics. His research focuses on the human virome and microbiome interactions.",
         "source": "Workshop organizer information"
       }
-    }
-  },
-  "harris-kelley": {
-    "id": "harris-kelley",
-    "name": "Kelley Harris",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
     }
   },
   "heath-tracy": {
@@ -1404,83 +1118,6 @@
         "shortBio": "PD Dr. Katharina Hoff is a Privatdozentin at the Institut für Mathematik und Informatik, Universität Greifswald. Her research focuses on bioinformatics, particularly genome annotation and structural gene prediction.",
         "source": "Universität Greifswald"
       }
-    }
-  },
-  "hofreiter-michael": {
-    "id": "hofreiter-michael",
-    "name": "Michael Hofreiter",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "huson-daniel": {
-    "id": "huson-daniel",
-    "name": "Daniel Huson",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:14.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "huttenhower-curtis": {
-    "id": "huttenhower-curtis",
-    "name": "Curtis Huttenhower",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "jay-flora": {
-    "id": "jay-flora",
-    "name": "Flora Jay",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "jiggins-chris": {
-    "id": "jiggins-chris",
-    "name": "Chris Jiggins",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "jones-felicity": {
-    "id": "jones-felicity",
-    "name": "Felicity Jones",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
-    }
-  },
-  "kaessman-henrik": {
-    "id": "kaessman-henrik",
-    "name": "Henrik Kaessman",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T02:49:19.208Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
-      "profile": {}
     }
   },
   "kamoun-sophien": {
@@ -1758,33 +1395,6 @@
       "profile": {
         "shortBio": "Simon Martin studies evolutionary genomics and speciation at the University of Cambridge, with a focus on understanding how natural selection shapes genetic diversity in butterfly populations.",
         "source": "University of Cambridge"
-      }
-    }
-  },
-  "matschiner-michael": {
-    "id": "matschiner-michael",
-    "name": "Michael Matschiner",
-    "enrichment": {
-      "lastUpdated": "2025-07-01T15:30:00.000Z",
-      "confidence": "high",
-      "professional": {
-        "title": "Adjunct Professor",
-        "affiliation": "Natural History Museum, University of Oslo",
-        "department": "Sex and Evolution Research Group"
-      },
-      "academic": {
-        "researchAreas": [
-          "phylogenomics",
-          "molecular dating",
-          "fish evolution",
-          "speciation genomics",
-          "evolutionary biology",
-          "comparative genomics"
-        ]
-      },
-      "profile": {
-        "shortBio": "Michael Matschiner is an Adjunct Professor at the Natural History Museum, University of Oslo, specializing in phylogenomics and molecular dating to understand the evolutionary history of fishes and other organisms.",
-        "source": "Natural History Museum Oslo"
       }
     }
   },
@@ -2329,25 +1939,26 @@
     "id": "peona-valentina",
     "name": "Valentina Peona",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "lastUpdated": "2025-07-02T19:45:00.000Z",
       "confidence": "high",
       "professional": {
-        "title": "Visiting Researcher",
-        "affiliation": "Uppsala University",
-        "department": "Department of Organismal Biology: Systematic Biology"
+        "title": "Postdoc",
+        "affiliation": "Swedish Natural Museum / Swiss Vogelwarte",
+        "department": "Department of Organismal Biology; Systematic Biology"
       },
       "academic": {
         "researchAreas": [
+          "evolutionary biology",
           "transposable elements",
-          "genome evolution",
-          "bird genomics",
-          "repetitive DNA",
-          "evolutionary genomics"
+          "avian genomics",
+          "sex chromosome evolution",
+          "genome assembly",
+          "structural variation"
         ]
       },
       "profile": {
-        "shortBio": "Valentina Peona is a visiting researcher at Uppsala University studying transposable elements and their role in genome evolution, particularly in bird genomes.",
-        "source": "Uppsala University"
+        "shortBio": "Valentina Peona is a postdoc at the Swedish Natural Museum and Swiss Vogelwarte, with visiting researcher status at Uppsala University. Her research focuses on how transposable elements and chromosome rearrangements shape genome evolution, particularly in birds. She has made significant contributions to understanding tuatara genome evolution and avian genome assembly.",
+        "source": "Google Scholar, Uppsala University"
       }
     }
   },
@@ -3639,33 +3250,6 @@
       },
       "profile": {
         "shortBio": "Mercè Montoliu-Nerin specializes in arbuscular mycorrhizal fungi genomics at Uppsala University. She led groundbreaking phylogenomic analysis of AM fungi using comprehensive de novo genome assemblies, advancing our understanding of these crucial plant symbionts.",
-        "source": "Google Scholar, Uppsala University"
-      }
-    }
-  },
-  "peona-valentina": {
-    "id": "peona-valentina",
-    "name": "Valentina Peona",
-    "enrichment": {
-      "lastUpdated": "2025-07-02T19:45:00.000Z",
-      "confidence": "high",
-      "professional": {
-        "title": "Postdoc",
-        "affiliation": "Swedish Natural Museum / Swiss Vogelwarte",
-        "department": "Department of Organismal Biology; Systematic Biology"
-      },
-      "academic": {
-        "researchAreas": [
-          "evolutionary biology",
-          "transposable elements",
-          "avian genomics",
-          "sex chromosome evolution",
-          "genome assembly",
-          "structural variation"
-        ]
-      },
-      "profile": {
-        "shortBio": "Valentina Peona is a postdoc at the Swedish Natural Museum and Swiss Vogelwarte, with visiting researcher status at Uppsala University. Her research focuses on how transposable elements and chromosome rearrangements shape genome evolution, particularly in birds. She has made significant contributions to understanding tuatara genome evolution and avian genome assembly.",
         "source": "Google Scholar, Uppsala University"
       }
     }

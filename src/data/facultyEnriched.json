@@ -3669,5 +3669,32 @@
         "source": "Google Scholar, Uppsala University"
       }
     }
+  },
+  "nordborg-magnus": {
+    "id": "nordborg-magnus",
+    "name": "Magnus Nordborg",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T20:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Scientific Director",
+        "affiliation": "Gregor Mendel Institute (GMI)",
+        "department": "Austrian Academy of Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "evolutionary genetics",
+          "Arabidopsis thaliana",
+          "genome-wide association studies",
+          "natural variation",
+          "adaptation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Magnus Nordborg is the Scientific Director of the Gregor Mendel Institute of Molecular Plant Biology. His research focuses on understanding how evolution works and how it has shaped the world we live in, particularly studying natural variation in Arabidopsis thaliana through population genetics approaches.",
+        "source": "Gregor Mendel Institute, Austrian Academy of Sciences"
+      }
+    }
   }
 }

@@ -556,9 +556,9 @@
       "lastName": "Nenasheva"
     },
     {
-      "id": "nordberg-magnus",
+      "id": "nordborg-magnus",
       "firstName": "Magnus",
-      "lastName": "Nordberg"
+      "lastName": "Nordborg"
     },
     {
       "id": "nosil-patrik",
@@ -2502,7 +2502,7 @@
       "role": "faculty"
     },
     {
-      "facultyId": "nordberg-magnus",
+      "facultyId": "nordborg-magnus",
       "workshopId": "wpsg",
       "year": 2020,
       "role": "faculty"

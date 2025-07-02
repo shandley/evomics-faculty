@@ -3343,5 +3343,223 @@
         "source": "DOE Joint Genome Institute"
       }
     }
+  },
+  "videvall-elin": {
+    "id": "videvall-elin",
+    "name": "Elin Videvall",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "Uppsala University",
+        "department": "Department of Ecology and Genetics",
+        "labWebsite": "http://www.videvall.com"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome",
+          "genomics",
+          "transcriptomics",
+          "avian malaria",
+          "host-pathogen interactions",
+          "gut microbiota"
+        ]
+      },
+      "profile": {
+        "shortBio": "Elin Videvall leads the Videvall Lab studying animals and their microbes. She uses high-throughput sequencing and bioinformatics to study the evolution of genomes, transcriptomes and microbiomes. She is Associate Editor for Molecular Ecology and Molecular Ecology Resources.",
+        "source": "Videvall Lab website, Uppsala University"
+      }
+    }
+  },
+  "westbury-michael": {
+    "id": "westbury-michael",
+    "name": "Michael Westbury",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Professor",
+        "affiliation": "University of Copenhagen",
+        "department": "Section for Molecular Ecology and Evolution"
+      },
+      "academic": {
+        "researchAreas": [
+          "ancient DNA",
+          "genomics",
+          "paleogenomics",
+          "biodiversity conservation",
+          "deep learning",
+          "low-coverage sequencing"
+        ]
+      },
+      "profile": {
+        "shortBio": "Michael Westbury leverages genomics and deep learning for biodiversity conservation. He develops new approaches to reliably assemble and analyze genomes from species without access to high quality samples, including ancient DNA studies.",
+        "source": "Research Leader Programme, University of Copenhagen"
+      }
+    }
+  },
+  "whiting-james": {
+    "id": "whiting-james",
+    "name": "James Whiting",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "University of Exeter",
+        "department": "Biosciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genomics",
+          "convergent evolution",
+          "adaptation",
+          "population genomics",
+          "parallel evolution",
+          "guppy genomics"
+        ],
+        "orcid": "0000-0001-8936-4991"
+      },
+      "profile": {
+        "shortBio": "James Whiting studies evolution within natural systems and the role of the local environment in manipulating evolution at the gene level. He investigates convergent genomic changes in Trinidadian guppies that have repeatedly adapted to different predation environments.",
+        "source": "University of Exeter, ResearchGate"
+      }
+    }
+  },
+  "wrighton-kelly": {
+    "id": "wrighton-kelly",
+    "name": "Kelly Wrighton",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Endowed Bishop Professor",
+        "affiliation": "Colorado State University",
+        "department": "Department of Soil and Crop Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbial ecology",
+          "microbiome",
+          "biogeochemistry",
+          "greenhouse gas emissions",
+          "carbon cycling",
+          "metagenomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Kelly Wrighton investigates chemical reactions catalyzed by microbial communities in methane-producing habitats. She received the Young Investigator Award from the International Society for Microbial Ecology and the Presidential Early Career Award for Scientists and Engineers (PECASE).",
+        "source": "Colorado State University, CSU Microbiome Network"
+      }
+    }
+  },
+  "zody-mike": {
+    "id": "zody-mike",
+    "name": "Mike Zody",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Computational Biologist",
+        "affiliation": "Broad Institute",
+        "department": "Genomics Platform"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomics",
+          "sequencing technology",
+          "comparative genomics",
+          "bioinformatics",
+          "genome biology",
+          "illumina sequencing"
+        ]
+      },
+      "profile": {
+        "shortBio": "Mike Zody is a senior computational biologist at the Broad Institute. He teaches workshops on comparative genomics and sequencing technologies, with expertise in genome biology and sequencing study design.",
+        "source": "Evolution and Genomics workshops, Broad Institute"
+      }
+    }
+  },
+  "steward-rachel": {
+    "id": "steward-rachel",
+    "name": "Rachel Steward",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "Stockholm University",
+        "department": "Department of Biological Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolution",
+          "plasticity",
+          "environmental biology",
+          "entomology",
+          "behavioral ecology",
+          "insect-plant interactions"
+        ]
+      },
+      "profile": {
+        "shortBio": "Rachel Steward studies evolution and plasticity in response to variable environments. Her PhD focused on genetic, environmental, and behavioral constraints contributing to persistent maladaptive use of an invasive host plant by a native insect.",
+        "source": "Lund University, Stockholm University"
+      }
+    }
+  },
+  "tsambos-georgia": {
+    "id": "tsambos-georgia",
+    "name": "Georgia Tsambos",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Researcher",
+        "affiliation": "University of Melbourne",
+        "department": "School of Mathematics and Statistics"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational genomics",
+          "bioinformatics",
+          "population genetics",
+          "ancestry simulation",
+          "statistical genetics",
+          "tree sequences"
+        ]
+      },
+      "profile": {
+        "shortBio": "Georgia Tsambos develops computational methods for simulating genetic ancestry. She is the lead author of 'link-ancestors', an algorithm for fast simulation of local ancestry with tree sequence software, addressing challenges in simulation-based inference.",
+        "source": "University of Melbourne, bioRxiv"
+      }
+    }
+  },
+  "zhou-xiaofen": {
+    "id": "zhou-xiaofen",
+    "name": "Xiaofen Zhou",
+    "enrichment": {
+      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Associate Professor",
+        "affiliation": "Wuhan Technology and Business University",
+        "department": "Department of Technology"
+      },
+      "academic": {
+        "researchAreas": [
+          "cancer genomics",
+          "thyroid cancer",
+          "bioinformatics",
+          "SP1BN2",
+          "apoptosis",
+          "clinical medicine"
+        ]
+      },
+      "profile": {
+        "shortBio": "Xiaofen Zhou conducts research on cancer genomics with 155 citations and 809 reads. Her work includes studying SP1BN2's role in promoting the progression of thyroid cancer by accelerating G1/S transition and inhibiting apoptosis.",
+        "source": "ResearchGate, Loop Frontiers"
+      }
+    }
   }
 }

@@ -1814,5 +1814,699 @@
         "source": "Helmholtz Centre for Infection Research"
       }
     }
+  },
+  "mckay-sheldon": {
+    "id": "mckay-sheldon",
+    "name": "Sheldon McKay",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Scientist - Bioinformatics",
+        "affiliation": "Cold Spring Harbor Laboratory",
+        "previousAffiliation": "University of Arizona"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "genomics",
+          "genome sequencing",
+          "genome annotation",
+          "functional genomics",
+          "genome browsers"
+        ]
+      },
+      "profile": {
+        "shortBio": "Sheldon McKay is a bioinformatics scientist specializing in genome sequencing and annotation. He develops functional genomics tools to apply high-throughput techniques for understanding gene function and interactions.",
+        "source": "LinkedIn, ResearchGate"
+      }
+    }
+  },
+  "mclysaght-aoife": {
+    "id": "mclysaght-aoife",
+    "name": "Aoife McLysaght",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Genetics",
+        "affiliation": "Trinity College Dublin",
+        "department": "School of Genetics and Microbiology"
+      },
+      "academic": {
+        "researchAreas": [
+          "molecular evolution",
+          "comparative genomics",
+          "gene duplication",
+          "genome evolution",
+          "human genetics",
+          "evolutionary genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Aoife McLysaght is a Professor of Genetics at Trinity College Dublin. Her research focuses on molecular evolution, comparative genomics, and understanding how genomes evolve through gene duplication and other mechanisms.",
+        "source": "Trinity College Dublin"
+      }
+    }
+  },
+  "mcmurdie-paul": {
+    "id": "mcmurdie-paul",
+    "name": "Paul McMurdie",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Bioinformatics Scientist",
+        "affiliation": "Independent/Industry",
+        "previousAffiliation": "Stanford University"
+      },
+      "academic": {
+        "researchAreas": [
+          "microbiome analysis",
+          "bioinformatics",
+          "statistical methods",
+          "R programming",
+          "phyloseq package",
+          "microbial ecology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Paul McMurdie is the developer of phyloseq, an R package for reproducible interactive analysis and graphics of microbiome census data. He specializes in statistical methods for microbiome analysis.",
+        "source": "phyloseq documentation, Bioconductor"
+      }
+    }
+  },
+  "meier-joana": {
+    "id": "meier-joana",
+    "name": "Joana Meier",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Group Leader",
+        "affiliation": "Wellcome Sanger Institute",
+        "department": "Tree of Life Programme"
+      },
+      "academic": {
+        "researchAreas": [
+          "speciation genomics",
+          "evolutionary genomics",
+          "population genetics",
+          "cichlid evolution",
+          "hybridization",
+          "adaptive radiation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Joana Meier leads a research group at the Wellcome Sanger Institute studying speciation genomics. She teaches at workshops including the Workshop on Population and Speciation Genomics, focusing on understanding genomic mechanisms of speciation.",
+        "source": "Wellcome Sanger Institute"
+      }
+    }
+  },
+  "meyer-britta": {
+    "id": "meyer-britta",
+    "name": "Britta Meyer",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Computational Biologist",
+        "affiliation": "University of Hamburg",
+        "department": "Faculty of Mathematics, Informatics and Natural Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary immunogenomics",
+          "computational biology",
+          "population genomics",
+          "speciation genomics",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Britta Meyer is a computational biologist at University of Hamburg specializing in evolutionary immunogenomics. She is an instructor for the Workshop on Population and Speciation Genomics.",
+        "source": "University of Hamburg, evomics.org"
+      }
+    }
+  },
+  "molloy-erin": {
+    "id": "molloy-erin",
+    "name": "Erin Molloy",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Professor",
+        "affiliation": "University of Maryland",
+        "department": "Department of Computer Science"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational phylogenetics",
+          "algorithms",
+          "phylogenetic trees",
+          "species tree estimation",
+          "computational biology",
+          "bioinformatics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Erin Molloy is an Assistant Professor in Computer Science at University of Maryland. Her research focuses on developing algorithms for phylogenetic tree estimation and computational methods for evolutionary biology.",
+        "source": "University of Maryland CS"
+      }
+    }
+  },
+  "montserrat-jordi-paps": {
+    "id": "montserrat-jordi-paps",
+    "name": "Jordi Paps Montserrat",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Dr",
+        "affiliation": "University of Bristol",
+        "department": "School of Biological Sciences"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolution",
+          "genomics",
+          "phylogenetics",
+          "animal kingdom evolution",
+          "land plants evolution",
+          "molecular evolution"
+        ]
+      },
+      "profile": {
+        "shortBio": "Dr Jordi Paps Montserrat studies major evolutionary transitions using molecular and genomic approaches. His lab aims to unravel the molecular and genomic changes underlying evolutionary shifts like the origins of animals or plants.",
+        "source": "University of Bristol"
+      }
+    }
+  },
+  "moyle-leonie": {
+    "id": "moyle-leonie",
+    "name": "Leonie Moyle",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "Indiana University",
+        "department": "Department of Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genetics",
+          "speciation",
+          "reproductive isolation",
+          "plant evolution",
+          "population genetics",
+          "tomato genetics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Leonie Moyle is a Professor of Biology at Indiana University studying the genetics of speciation and reproductive isolation, particularly in wild tomato species. Her research focuses on understanding how new species evolve.",
+        "source": "Indiana University Biology"
+      }
+    }
+  },
+  "myers-simon": {
+    "id": "myers-simon",
+    "name": "Simon Myers",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Oxford",
+        "department": "Department of Statistics and Wellcome Centre for Human Genetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "statistical genetics",
+          "population genetics",
+          "recombination",
+          "human evolution",
+          "computational methods",
+          "genetic variation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Simon Myers is a Professor at Oxford University developing statistical and computational methods to analyze genetic variation. His research focuses on understanding recombination, mutation, and selection in shaping genetic diversity.",
+        "source": "University of Oxford Statistics"
+      }
+    }
+  },
+  "neilsen-rasmus": {
+    "id": "neilsen-rasmus",
+    "name": "Rasmus Nielsen",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of California, Berkeley",
+        "department": "Department of Integrative Biology and Department of Statistics"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "molecular evolution",
+          "statistical genetics",
+          "human evolution",
+          "computational biology",
+          "evolutionary genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Rasmus Nielsen is a Professor at UC Berkeley in both Integrative Biology and Statistics. His research focuses on developing statistical methods for making inferences about evolution, molecular evolution, and population genetics.",
+        "source": "UC Berkeley Research"
+      }
+    }
+  },
+  "nekrutenko-anton": {
+    "id": "nekrutenko-anton",
+    "name": "Anton Nekrutenko",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor of Biochemistry and Molecular Biology",
+        "affiliation": "Pennsylvania State University",
+        "department": "Department of Biochemistry and Molecular Biology",
+        "labWebsite": "https://galaxyproject.org"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational genomics",
+          "bioinformatics",
+          "Galaxy platform",
+          "biological data analysis",
+          "open science",
+          "reproducible research"
+        ]
+      },
+      "profile": {
+        "shortBio": "Anton Nekrutenko is a Professor at Penn State and co-founder of the Galaxy platform for analysis of biological data. He developed Galaxy to make computational biology accessible to researchers without programming expertise.",
+        "source": "Penn State Makova Lab"
+      }
+    }
+  },
+  "nosil-patrik": {
+    "id": "nosil-patrik",
+    "name": "Patrik Nosil",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Director of Research",
+        "affiliation": "CEFE, CNRS",
+        "department": "Centre d'Ecologie Fonctionnelle et Evolutive"
+      },
+      "academic": {
+        "researchAreas": [
+          "speciation genomics",
+          "evolution",
+          "ecology",
+          "genetics",
+          "adaptive evolution",
+          "ecological speciation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Patrik Nosil is Director of Research at CEFE, CNRS studying evolution, ecology, and genetics. His research focuses on understanding the genomic basis of speciation and how ecological adaptation drives evolutionary divergence.",
+        "source": "Google Scholar"
+      }
+    }
+  },
+  "nurk-sergey": {
+    "id": "nurk-sergey",
+    "name": "Sergey Nurk",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Staff Scientist",
+        "affiliation": "National Institutes of Health (NIH)",
+        "department": "Genome Informatics Section"
+      },
+      "academic": {
+        "researchAreas": [
+          "genome assembly",
+          "telomere-to-telomere sequencing",
+          "bioinformatics",
+          "algorithms",
+          "T2T consortium",
+          "complete genome assembly"
+        ]
+      },
+      "profile": {
+        "shortBio": "Sergey Nurk is a Staff Scientist at NIH working on genome assembly algorithms. He is a key member of the Telomere-to-Telomere (T2T) Consortium that produced the first complete human genome assembly.",
+        "source": "NIH Genome Informatics"
+      }
+    }
+  },
+  "ogilvie-huw": {
+    "id": "ogilvie-huw",
+    "name": "Huw Ogilvie",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:15:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Assistant Research Professor",
+        "affiliation": "Rice University",
+        "department": "Department of Computer Science"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational biology",
+          "phylogenetics",
+          "species tree inference",
+          "BEAST software",
+          "StarBEAST2",
+          "evolutionary algorithms"
+        ]
+      },
+      "profile": {
+        "shortBio": "Huw Ogilvie is the lead author of StarBEAST2, a widely used method for joint inference of species and gene trees. He develops computational methods for phylogenetic inference and helps coordinate development of PhyloNet software.",
+        "source": "Rice University CS"
+      }
+    }
+  },
+  "orlando-ludovic": {
+    "id": "orlando-ludovic",
+    "name": "Ludovic Orlando",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Director of Research",
+        "affiliation": "CNRS / University of Toulouse",
+        "department": "Centre for Anthropobiology and Genomics of Toulouse"
+      },
+      "academic": {
+        "researchAreas": [
+          "paleogenomics",
+          "ancient DNA",
+          "evolutionary genomics",
+          "archaeogenetics",
+          "horse domestication",
+          "molecular archaeology"
+        ]
+      },
+      "profile": {
+        "shortBio": "Ludovic Orlando is a leading paleogeneticist and Director of Research at CNRS. He leads the Centre for Anthropobiology and Genomics of Toulouse, specializing in ancient DNA and the genomic history of domestication.",
+        "source": "CNRS Toulouse"
+      }
+    }
+  },
+  "paris-josephine": {
+    "id": "paris-josephine",
+    "name": "Josephine Paris",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Workshop Director",
+        "affiliation": "University of Oxford",
+        "additionalRole": "Marie Skłodowska-Curie Fellow"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomics",
+          "evolution",
+          "workshop organization",
+          "bioinformatics training",
+          "scientific education"
+        ]
+      },
+      "profile": {
+        "shortBio": "Josephine Paris is the Workshop Director for the Workshop on Genomics. She is a Marie Skłodowska-Curie Fellow at University of Oxford organizing intensive training opportunities in genomics.",
+        "source": "Evolution and Genomics workshops"
+      }
+    }
+  },
+  "paszkiewicz-konrad": {
+    "id": "paszkiewicz-konrad",
+    "name": "Konrad Paszkiewicz",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Head of Sequencing Service",
+        "affiliation": "University of Exeter",
+        "department": "Wellcome Trust Biomedical Informatics Hub"
+      },
+      "academic": {
+        "researchAreas": [
+          "bioinformatics",
+          "sequencing technologies",
+          "genomics",
+          "data analysis",
+          "next-generation sequencing"
+        ]
+      },
+      "profile": {
+        "shortBio": "Konrad Paszkiewicz heads the University of Exeter Sequencing Service and Wellcome Trust Biomedical Informatics Hub. He specializes in empowering biologists to interpret their genomic data.",
+        "source": "University of Exeter"
+      }
+    }
+  },
+  "pearson-william": {
+    "id": "pearson-william",
+    "name": "William Pearson",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Virginia",
+        "department": "Department of Biochemistry and Molecular Genetics"
+      },
+      "academic": {
+        "researchAreas": [
+          "sequence analysis",
+          "FASTA algorithm",
+          "bioinformatics",
+          "protein similarity",
+          "computational biology"
+        ]
+      },
+      "profile": {
+        "shortBio": "William Pearson is the developer of the FASTA algorithm for sequence similarity searching, one of the foundational tools in bioinformatics. He is a Professor at University of Virginia.",
+        "source": "Academic profile"
+      }
+    }
+  },
+  "peichel-katie": {
+    "id": "peichel-katie",
+    "name": "Katie Peichel",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Bern",
+        "department": "Institute of Ecology and Evolution"
+      },
+      "academic": {
+        "researchAreas": [
+          "evolutionary genetics",
+          "stickleback fish",
+          "speciation",
+          "adaptation genomics",
+          "sex chromosome evolution",
+          "reproductive isolation"
+        ]
+      },
+      "profile": {
+        "shortBio": "Katie Peichel studies the genetics of adaptation in stickleback fish, focusing on understanding the roles of pleiotropy and linkage in evolution. Her research examines how new species evolve.",
+        "source": "University of Bern"
+      }
+    }
+  },
+  "peona-valentina": {
+    "id": "peona-valentina",
+    "name": "Valentina Peona",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Visiting Researcher",
+        "affiliation": "Uppsala University",
+        "department": "Department of Organismal Biology: Systematic Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "transposable elements",
+          "genome evolution",
+          "bird genomics",
+          "repetitive DNA",
+          "evolutionary genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Valentina Peona is a visiting researcher at Uppsala University studying transposable elements and their role in genome evolution, particularly in bird genomes.",
+        "source": "Uppsala University"
+      }
+    }
+  },
+  "petr-martin": {
+    "id": "petr-martin",
+    "name": "Martin Petr",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Postdoctoral Researcher",
+        "affiliation": "University of Copenhagen",
+        "department": "Globe Institute"
+      },
+      "academic": {
+        "researchAreas": [
+          "population genetics",
+          "admixtools",
+          "ancient DNA",
+          "human evolution",
+          "computational methods",
+          "R programming"
+        ]
+      },
+      "profile": {
+        "shortBio": "Martin Petr developed the admixr R package providing an easy interface to ADMIXTOOLS for population genetics analyses. He specializes in computational methods for studying human evolution.",
+        "source": "admixr documentation"
+      }
+    }
+  },
+  "pettersson-olga-vinnere": {
+    "id": "pettersson-olga-vinnere",
+    "name": "Olga Vinnere Pettersson",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Project Manager",
+        "affiliation": "Uppsala University",
+        "department": "Department of Immunology, Genetics and Pathology",
+        "additionalRole": "Uppsala Genome Center"
+      },
+      "academic": {
+        "researchAreas": [
+          "genomics",
+          "project management",
+          "sequencing facilities",
+          "bioinformatics infrastructure"
+        ]
+      },
+      "profile": {
+        "shortBio": "Olga Vinnere Pettersson is Project Manager at the Department of Immunology, Genetics and Pathology and involved with Uppsala Genome Center, supporting genomics research infrastructure.",
+        "source": "Uppsala University"
+      }
+    }
+  },
+  "pokorny-lisa": {
+    "id": "pokorny-lisa",
+    "name": "Lisa Pokorny",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Research Leader",
+        "affiliation": "Royal Botanic Gardens, Kew",
+        "department": "Centre for Plant Biotechnology and Genomics"
+      },
+      "academic": {
+        "researchAreas": [
+          "plant genomics",
+          "phylogenetics",
+          "cornales evolution",
+          "computational biology",
+          "botanical research"
+        ]
+      },
+      "profile": {
+        "shortBio": "Lisa Pokorny is a Senior Research Leader at Royal Botanic Gardens, Kew. Her research focuses on phylogenetic reconstruction and understanding plant evolution through genomic approaches.",
+        "source": "Royal Botanic Gardens, Kew"
+      }
+    }
+  },
+  "ponting-chris": {
+    "id": "ponting-chris",
+    "name": "Chris Ponting",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "University of Edinburgh",
+        "department": "MRC Human Genetics Unit"
+      },
+      "academic": {
+        "researchAreas": [
+          "computational genomics",
+          "functional genomics",
+          "human genetics",
+          "genome evolution",
+          "non-coding RNA"
+        ]
+      },
+      "profile": {
+        "shortBio": "Chris Ponting is a Professor at the MRC Human Genetics Unit, University of Edinburgh. His research focuses on computational approaches to understand genome function and evolution.",
+        "source": "University of Edinburgh"
+      }
+    }
+  },
+  "rengefors-karin": {
+    "id": "rengefors-karin",
+    "name": "Karin Rengefors",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Professor",
+        "affiliation": "Lund University",
+        "department": "Department of Biology"
+      },
+      "academic": {
+        "researchAreas": [
+          "phytoplankton ecology",
+          "aquatic microbiology",
+          "algal genomics",
+          "microbial evolution",
+          "harmful algal blooms"
+        ]
+      },
+      "profile": {
+        "shortBio": "Karin Rengefors is a Professor at Lund University studying phytoplankton ecology and evolution, with a focus on understanding harmful algal blooms and microbial diversity in aquatic systems.",
+        "source": "Lund University Research Portal"
+      }
+    }
+  },
+  "rodriguez-ezpeleta-naiara": {
+    "id": "rodriguez-ezpeleta-naiara",
+    "name": "Naiara Rodriguez-Ezpeleta",
+    "enrichment": {
+      "lastUpdated": "2025-07-01T16:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Head of Molecular Ecology and Biotechnology Unit",
+        "affiliation": "AZTI",
+        "department": "Marine Research Division"
+      },
+      "academic": {
+        "researchAreas": [
+          "marine genomics",
+          "molecular ecology",
+          "biotechnology",
+          "transcriptomics",
+          "bioinformatics",
+          "fisheries genomics"
+        ]
+      },
+      "profile": {
+        "shortBio": "Naiara Rodriguez-Ezpeleta leads the Molecular Ecology and Biotechnology Unit at AZTI, integrating genomics, transcriptomics and bioinformatics approaches for marine environment research.",
+        "source": "AZTI, personal website"
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@
  * Provides typed access to the scientific topics taxonomy
  */
 
-import { TaxonomyData, TopicNode, MappingData, TopicHierarchyNode } from '../types/taxonomy';
+import type { TaxonomyData, TopicNode, MappingData, TopicHierarchyNode } from '../types/taxonomy';
 import taxonomyJson from '../data/taxonomy/scientificTopics.json';
 import mappingsJson from '../data/taxonomy/termMappings.json';
 
@@ -31,8 +31,8 @@ export function getAllTopics(): TopicNode[] {
   
   // Add all Level 3 topics
   if ((taxonomy as any).level3) {
-    Object.values((taxonomy as any).level3).forEach((topic: TopicNode) => {
-      allTopics.push(topic);
+    Object.values((taxonomy as any).level3).forEach((topic: any) => {
+      allTopics.push(topic as TopicNode);
     });
   }
   

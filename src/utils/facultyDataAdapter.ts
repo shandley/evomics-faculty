@@ -2,7 +2,8 @@
  * Adapter to transform enriched faculty data to work with existing components
  */
 
-import { Faculty, EnrichedFacultyProfile, hasStandardizedResearchAreas } from '../types';
+import type { Faculty, EnrichedFacultyProfile } from '../types';
+import { hasStandardizedResearchAreas } from '../types';
 import enrichedData from '../data/facultyEnriched.json';
 
 interface EnrichedDataEntry {

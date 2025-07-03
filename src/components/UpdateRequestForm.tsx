@@ -14,7 +14,12 @@ export const UpdateRequestForm: React.FC<UpdateRequestFormProps> = ({ profile, o
     department: profile.enrichment?.professional?.department || '',
     website: profile.enrichment?.professional?.labWebsite || '',
     orcid: profile.enrichment?.academic?.orcid || '',
-    researchAreas: profile.enrichment?.academic?.researchAreas?.join(', ') || '',
+    researchAreas: (() => {
+      const areas = profile.enrichment?.academic?.researchAreas;
+      if (!areas) return '';
+      if (Array.isArray(areas)) return areas.join(', ');
+      return areas.raw?.join(', ') || '';
+    })(),
     bio: profile.enrichment?.profile?.shortBio || '',
     consent: false
   });

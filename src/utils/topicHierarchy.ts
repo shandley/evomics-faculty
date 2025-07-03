@@ -12,6 +12,14 @@ import type {
   TopicMapping
 } from '../types/taxonomy';
 
+interface TreeNode {
+  id: string;
+  label: string;
+  level: number;
+  description?: string;
+  children: TreeNode[];
+}
+
 export class TopicHierarchy {
   private topics: Map<string, TopicNode>;
   private mappings: Map<string, TopicMapping>;
@@ -121,7 +129,7 @@ export class TopicHierarchy {
   /**
    * Get children of a topic
    */
-  getChildren(topicId: string): TopicNode[] {
+  getChildren(topicId: string): TopicHierarchyNode[] {
     const node = this.hierarchy.get(topicId);
     return node ? node.children : [];
   }
@@ -129,8 +137,8 @@ export class TopicHierarchy {
   /**
    * Get all descendants of a topic (recursive)
    */
-  getDescendants(topicId: string): TopicNode[] {
-    const descendants: TopicNode[] = [];
+  getDescendants(topicId: string): TopicHierarchyNode[] {
+    const descendants: TopicHierarchyNode[] = [];
     const node = this.hierarchy.get(topicId);
     
     if (node) {
@@ -149,11 +157,11 @@ export class TopicHierarchy {
   /**
    * Get the full path from root to a topic
    */
-  getPath(topicId: string): TopicNode[] {
+  getPath(topicId: string): TopicHierarchyNode[] {
     const node = this.hierarchy.get(topicId);
     if (!node) return [];
     
-    const path: TopicNode[] = [];
+    const path: TopicHierarchyNode[] = [];
     let current: TopicHierarchyNode | undefined = node;
     
     while (current) {
@@ -298,8 +306,8 @@ export class TopicHierarchy {
   /**
    * Export hierarchy as tree structure
    */
-  exportTree(): any {
-    const buildTree = (nodes: TopicHierarchyNode[]) => {
+  exportTree(): TreeNode[] {
+    const buildTree = (nodes: TopicHierarchyNode[]): TreeNode[] => {
       return nodes.map(node => ({
         id: node.id,
         label: node.label,

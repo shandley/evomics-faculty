@@ -3,7 +3,8 @@
  */
 
 import { useMemo, useState, useCallback } from 'react';
-import { EnrichedFacultyProfile, TopicFilter, hasStandardizedResearchAreas } from '../types';
+import type { EnrichedFacultyProfile, TopicFilter } from '../types';
+import { hasStandardizedResearchAreas } from '../types';
 import { getAllFaculty, getFacultyByTopic, getTopicUsageStats } from '../models/facultyData';
 import { getTopicById, getTopicPath } from '../models/taxonomyData';
 

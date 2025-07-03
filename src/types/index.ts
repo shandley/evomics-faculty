@@ -1,6 +1,6 @@
 // Core data types for the faculty alumni system
 
-import { StandardizedResearchAreas, TopicNode } from './taxonomy';
+import type { StandardizedResearchAreas, TopicNode } from './taxonomy';
 
 export interface Faculty {
   id: string;
@@ -125,7 +125,7 @@ export function hasStandardizedResearchAreas(
 }
 
 export function isLegacyResearchAreas(
-  researchAreas?: FacultyEnrichment['academic']['researchAreas']
+  researchAreas: any
 ): researchAreas is string[] {
   return Array.isArray(researchAreas);
 }

@@ -3,7 +3,8 @@
  * Provides typed access to faculty data with standardized research areas
  */
 
-import { EnrichedFacultyProfile, hasStandardizedResearchAreas } from '../types';
+import type { EnrichedFacultyProfile } from '../types';
+import { hasStandardizedResearchAreas } from '../types';
 import facultyEnrichedData from '../data/facultyEnriched.json';
 
 // Type the imported JSON data

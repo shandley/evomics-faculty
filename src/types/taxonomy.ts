@@ -63,7 +63,7 @@ export interface StandardizedResearchAreas {
   lastMigrated?: string;
 }
 
-export interface TopicHierarchyNode extends TopicNode {
+export interface TopicHierarchyNode extends Omit<TopicNode, 'children'> {
   children: TopicHierarchyNode[];
   parent?: TopicHierarchyNode;
   path: string[];

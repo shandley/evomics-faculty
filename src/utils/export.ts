@@ -50,7 +50,12 @@ export function exportToCSV(
       enrichment?.professional?.department || '',
       enrichment?.professional?.labWebsite || '',
       enrichment?.academic?.orcid || '',
-      enrichment?.academic?.researchAreas?.join(', ') || '',
+      (() => {
+        const areas = enrichment?.academic?.researchAreas;
+        if (!areas) return '';
+        if (Array.isArray(areas)) return areas.join(', ');
+        return areas.raw?.join(', ') || '';
+      })(),
       enrichment?.profile?.shortBio?.replace(/"/g, '""') || '', // Escape quotes
       statistics.totalYears,
       statistics.firstYear,

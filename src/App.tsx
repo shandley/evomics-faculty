@@ -167,6 +167,7 @@ function App() {
                 profile={profile}
                 workshops={workshops}
                 onClick={() => setSelectedFacultyId(profile.faculty.id)}
+                searchTerm={filters.search}
               />
             </div>
           ))}

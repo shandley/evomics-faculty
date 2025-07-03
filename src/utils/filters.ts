@@ -6,11 +6,63 @@ export function filterFacultyProfiles(
   filters: Filters
 ): FacultyProfile[] {
   return profiles.filter(profile => {
-    // Search filter
+    // Search filter - includes name and topic search
     if (filters.search) {
       const searchLower = filters.search.toLowerCase();
       const fullName = `${profile.faculty.firstName} ${profile.faculty.lastName}`.toLowerCase();
-      if (!fullName.includes(searchLower)) {
+      
+      // Check name match
+      const nameMatch = fullName.includes(searchLower);
+      
+      // Check topic match (for enriched profiles)
+      let topicMatch = false;
+      const enrichedProfile = profile as EnrichedFacultyProfile;
+      
+      if (enrichedProfile.enrichment?.academic?.researchAreas) {
+        const researchAreas = enrichedProfile.enrichment.academic.researchAreas;
+        
+        // Check raw research areas
+        if (Array.isArray(researchAreas)) {
+          topicMatch = researchAreas.some(area => 
+            area.toLowerCase().includes(searchLower)
+          );
+        } else {
+          // Check raw areas in new format
+          if (researchAreas.raw) {
+            topicMatch = researchAreas.raw.some(area => 
+              area.toLowerCase().includes(searchLower)
+            );
+          }
+          
+          // Check standardized topics
+          if (researchAreas.standardized) {
+            const { primary = [], secondary = [], techniques = [] } = researchAreas.standardized;
+            const allTopics = [...primary, ...secondary, ...techniques];
+            
+            topicMatch = topicMatch || allTopics.some(topic => {
+              // Check topic label
+              if (topic.label.toLowerCase().includes(searchLower)) return true;
+              
+              // Check topic synonyms
+              if (topic.synonyms) {
+                return topic.synonyms.some(syn => 
+                  syn.toLowerCase().includes(searchLower)
+                );
+              }
+              
+              // Check topic description
+              if (topic.description) {
+                return topic.description.toLowerCase().includes(searchLower);
+              }
+              
+              return false;
+            });
+          }
+        }
+      }
+      
+      // Return true if either name or topic matches
+      if (!nameMatch && !topicMatch) {
         return false;
       }
     }

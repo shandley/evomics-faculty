@@ -1,11 +1,13 @@
 import React from 'react';
 import type { FacultyProfile, EnrichedFacultyProfile } from '../types';
 import { TopicDisplay } from './TopicDisplay';
+import { SearchHighlight } from './SearchHighlight';
 
 interface FacultyCardProps {
   profile: FacultyProfile | EnrichedFacultyProfile;
   workshops: { [key: string]: { name: string; shortName: string } };
   onClick?: () => void;
+  searchTerm?: string;
 }
 
 // Define workshop colors
@@ -21,7 +23,7 @@ const workshopBadgeColors = {
   wphylo: 'bg-green-100 text-green-800 border-green-200'
 };
 
-export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, onClick }) => {
+export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, onClick, searchTerm }) => {
   // Get primary workshop for gradient
   const primaryWorkshop = Object.keys(profile.participations)[0] || 'wog';
   const gradientClass = workshopColors[primaryWorkshop as keyof typeof workshopColors] || workshopColors.wog;
@@ -91,6 +93,11 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
         {/* Topics Display (if enriched profile) */}
         {'enrichment' in profile && (
           <TopicDisplay profile={profile as EnrichedFacultyProfile} variant="card" />
+        )}
+        
+        {/* Search Highlight */}
+        {searchTerm && 'enrichment' in profile && (
+          <SearchHighlight profile={profile as EnrichedFacultyProfile} searchTerm={searchTerm} />
         )}
 
         {/* Footer with timeline info */}

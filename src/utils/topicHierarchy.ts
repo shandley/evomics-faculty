@@ -42,10 +42,17 @@ export class TopicHierarchy {
       this.topics.set(id, topic);
     });
 
-    // Add Level 2+ topics
+    // Add Level 2 topics
     if (data.level2) {
       Object.entries(data.level2).forEach(([id, topic]) => {
         this.topics.set(id, topic);
+      });
+    }
+
+    // Add Level 3 topics
+    if ((data as any).level3) {
+      Object.entries((data as any).level3).forEach(([id, topic]) => {
+        this.topics.set(id, topic as TopicNode);
       });
     }
   }

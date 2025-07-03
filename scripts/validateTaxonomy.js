@@ -55,7 +55,8 @@ console.log('-'.repeat(80));
 // Check if all mapped topics exist
 const allTopicIds = new Set([
   ...Object.keys(taxonomyData.topics),
-  ...Object.keys(taxonomyData.level2)
+  ...Object.keys(taxonomyData.level2 || {}),
+  ...Object.keys(taxonomyData.level3 || {})
 ]);
 
 let invalidMappings = 0;

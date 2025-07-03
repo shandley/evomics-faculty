@@ -69,18 +69,30 @@ export function getInstitutionCoordinates(institution: string): LocationData | n
     if (institution.includes(key) || key.includes(institution)) {
       return coords;
     }
-    // Check for common university patterns
+    // Check for common university patterns - but make sure there's actually a prefix to match
     const instLower = institution.toLowerCase();
     const keyLower = key.toLowerCase();
-    if (
-      (instLower.includes('university') && keyLower.includes('university') && 
-       (instLower.includes(keyLower.split('university')[0].trim()) || 
-        keyLower.includes(instLower.split('university')[0].trim()))) ||
-      (instLower.includes('institute') && keyLower.includes('institute') &&
-       (instLower.includes(keyLower.split('institute')[0].trim()) ||
-        keyLower.includes(instLower.split('institute')[0].trim())))
-    ) {
-      return coords;
+    
+    // For universities
+    if (instLower.includes('university') && keyLower.includes('university')) {
+      const instPrefix = instLower.split('university')[0].trim();
+      const keyPrefix = keyLower.split('university')[0].trim();
+      // Only match if both have prefixes and one contains the other
+      if (instPrefix && keyPrefix && 
+          (instPrefix.includes(keyPrefix) || keyPrefix.includes(instPrefix))) {
+        return coords;
+      }
+    }
+    
+    // For institutes  
+    if (instLower.includes('institute') && keyLower.includes('institute')) {
+      const instPrefix = instLower.split('institute')[0].trim();
+      const keyPrefix = keyLower.split('institute')[0].trim();
+      // Only match if both have prefixes and one contains the other
+      if (instPrefix && keyPrefix && 
+          (instPrefix.includes(keyPrefix) || keyPrefix.includes(instPrefix))) {
+        return coords;
+      }
     }
   }
   

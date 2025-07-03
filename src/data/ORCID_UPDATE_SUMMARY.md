@@ -1,5 +1,58 @@
 # ORCID Update Summary - January 2, 2025
 
+## LATEST UPDATE - July 2, 2025
+### Batch 2: Additional Faculty ORCID Updates (10 out of 10 successfully added)
+
+1. **Johannes Droege** - Chalmers University of Technology
+   - ORCID: 0000-0002-6752-2204
+   - Source: Google Scholar, GitHub, Chalmers Research
+   - Note: Already had ORCID in file
+
+2. **Roderic Guigo** - Centre for Genomic Regulation
+   - ORCID: 0000-0002-5738-4477
+   - Source: Centre for Genomic Regulation, Google Scholar
+   - Note: Corrected name from "Guido" to "Guigo" and updated affiliation
+
+3. **Alexander Leonard** - University of Exeter
+   - ORCID: 0000-0001-8425-5630
+   - Source: ORCID database
+   - Note: Added new entry to enriched file
+
+4. **Nick Loman** - University of Birmingham
+   - ORCID: 0000-0002-9843-8988
+   - Source: ORCID database
+   - Note: Added new entry to enriched file
+
+5. **Paolo Manghi** - University of Trento
+   - ORCID: 0000-0003-0846-6529
+   - Source: ResearchGate, Google Scholar
+   - Note: Added ORCID to existing entry
+
+6. **Sheldon McKay** - Cold Spring Harbor Laboratory (formerly University of Arizona)
+   - ORCID: 0000-0002-4011-3160
+   - Source: ORCID database
+   - Note: Added ORCID to existing entry
+
+7. **Olga Vinnere Pettersson** - Uppsala University
+   - ORCID: 0000-0002-5597-1870
+   - Source: ORCID database
+   - Note: Added ORCID to existing entry
+
+8. **Lisa Pokorny** - Royal Botanic Gardens Madrid (formerly University of Oxford)
+   - ORCID: 0000-0002-2478-8555
+   - Source: ORCID database, Google Scholar
+   - Note: Added ORCID to existing entry
+
+9. **Doug Scofield** - Uppsala University
+   - ORCID: 0000-0001-5235-6461
+   - Source: ORCID database, GitHub
+   - Note: Added ORCID to existing entry
+
+10. **Derek Setter** - University of Edinburgh (formerly University of Oregon)
+    - ORCID: 0000-0002-7101-443X
+    - Source: ORCID database
+    - Note: Added ORCID to existing entry
+
 ## Faculty Updated (9 out of 10 requested)
 
 ### Successfully Added ORCIDs:
@@ -56,7 +109,13 @@
 - Updated professional information for Georgia Tsambos (now Postdoc at University of Washington)
 - Updated lastUpdated timestamps for all modified entries
 
-## Statistics:
+## Updated Statistics (July 2, 2025):
+- Total faculty with ORCID: 126 (increased from 116 after adding 10 new ORCIDs)
+- Total faculty entries: 163 (added 2 new enriched entries)
+- Coverage: 77.3% of enriched faculty now have ORCID identifiers
+- Latest batch: Successfully added 10 ORCID IDs (100% success rate)
+
+## Previous Statistics (January 2, 2025):
 - Total faculty with ORCID: 84 (increased from 75)
 - Total faculty entries: 161
-- Coverage: 52.2% of faculty now have ORCID identifiers
+- Coverage: 52.2% of faculty had ORCID identifiers

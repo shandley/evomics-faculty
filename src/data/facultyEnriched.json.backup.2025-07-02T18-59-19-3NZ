@@ -935,28 +935,26 @@
   },
   "guido-roderic": {
     "id": "guido-roderic",
-    "name": "Roderic Guigo",
+    "name": "Roderic Guido",
     "enrichment": {
-      "lastUpdated": "2025-07-02T23:47:36.078Z",
-      "confidence": "high",
+      "lastUpdated": "2025-07-02T20:38:09.908Z",
+      "confidence": "medium",
       "professional": {
-        "affiliation": "Centre for Genomic Regulation",
-        "department": "Bioinformatics and Genomics Program",
-        "title": "Professor of Bioinformatics"
+        "affiliation": "NYU Langone Health",
+        "department": "Institute for Systems Genetics",
+        "title": "Senior Research Fellow"
       },
       "academic": {
         "researchAreas": [
+          "systems genetics",
           "computational biology",
           "genomics",
-          "bioinformatics",
-          "RNA processing",
-          "genome annotation"
-        ],
-        "orcid": "0000-0002-5738-4477"
+          "bioinformatics"
+        ]
       },
       "profile": {
-        "shortBio": "Roderic Guigo is Professor of Bioinformatics at the Centre for Genomic Regulation and Universitat Pompeu Fabra. His research focuses on computational biology of RNA processing and understanding genomic sequence information.",
-        "source": "Centre for Genomic Regulation, Google Scholar"
+        "shortBio": "Roderic Guigo is a computational biologist working in systems genetics and genomics.",
+        "source": "NYU Langone Health"
       }
     }
   },
@@ -1414,8 +1412,7 @@
           "bioinformatics",
           "microbial ecology",
           "gut microbiota"
-        ],
-        "orcid": "0000-0003-0846-6529"
+        ]
       },
       "profile": {
         "shortBio": "Paolo Manghi is a computational biologist at University of Trento's CIBIO department, specializing in microbiome research and metagenomic analysis of microbial communities.",
@@ -1497,8 +1494,7 @@
           "genome annotation",
           "functional genomics",
           "genome browsers"
-        ],
-        "orcid": "0000-0002-4011-3160"
+        ]
       },
       "profile": {
         "shortBio": "Sheldon McKay is a bioinformatics scientist specializing in genome sequencing and annotation. He develops functional genomics tools to apply high-throughput techniques for understanding gene function and interactions.",
@@ -2083,8 +2079,7 @@
           "project management",
           "sequencing facilities",
           "bioinformatics infrastructure"
-        ],
-        "orcid": "0000-0002-5597-1870"
+        ]
       },
       "profile": {
         "shortBio": "Olga Vinnere Pettersson is Project Manager at the Department of Immunology, Genetics and Pathology and involved with Uppsala Genome Center, supporting genomics research infrastructure.",
@@ -2110,8 +2105,7 @@
           "cornales evolution",
           "computational biology",
           "botanical research"
-        ],
-        "orcid": "0000-0002-2478-8555"
+        ]
       },
       "profile": {
         "shortBio": "Lisa Pokorny is a Senior Research Leader at Royal Botanic Gardens, Kew. Her research focuses on phylogenetic reconstruction and understanding plant evolution through genomic approaches.",
@@ -2302,8 +2296,7 @@
           "genomics",
           "population genetics",
           "evolutionary biology"
-        ],
-        "orcid": "0000-0001-5235-6461"
+        ]
       },
       "profile": {
         "source": "Workshop participation records"
@@ -2384,8 +2377,7 @@
           "demography",
           "statistical inference",
           "genomic data analysis"
-        ],
-        "orcid": "0000-0002-7101-443X"
+        ]
       },
       "profile": {
         "shortBio": "Derek Setter is a theoretical population geneticist interested in how evolutionary processes shape genetic variation. He develops inference frameworks for understanding selection and demography from genomic data.",
@@ -4540,57 +4532,6 @@
       "profile": {
         "shortBio": "Jasmin Rees (note: spelled without 'e') is an evolutionary geneticist at University of Pennsylvania studying how environments influence genome evolution. She focuses on local adaptation in humans, particularly regarding micronutrients and diet. She completed her PhD at UCL and has taught at the Workshop on Population and Speciation Genomics.",
         "source": "University of Pennsylvania, personal website"
-      }
-    }
-  },
-  "leonard-alexander": {
-    "id": "leonard-alexander",
-    "name": "Alexander Leonard",
-    "enrichment": {
-      "lastUpdated": "2025-07-02T23:47:36.078Z",
-      "confidence": "medium",
-      "professional": {
-        "affiliation": "University of Exeter",
-        "title": "Researcher"
-      },
-      "academic": {
-        "researchAreas": [
-          "bioinformatics",
-          "genomics"
-        ],
-        "orcid": "0000-0001-8425-5630"
-      },
-      "profile": {
-        "shortBio": "Alexander Leonard is a researcher at the University of Exeter with expertise in bioinformatics and genomics.",
-        "source": "ORCID"
-      }
-    }
-  },
-  "loman-nick": {
-    "id": "loman-nick",
-    "name": "Nick Loman",
-    "enrichment": {
-      "lastUpdated": "2025-07-02T23:47:36.078Z",
-      "confidence": "high",
-      "professional": {
-        "affiliation": "University of Birmingham",
-        "department": "Institute for Microbiology and Infection",
-        "title": "Professor of Microbial Genomics and Bioinformatics"
-      },
-      "academic": {
-        "researchAreas": [
-          "microbial genomics",
-          "bioinformatics",
-          "infectious disease",
-          "metagenomics",
-          "nanopore sequencing",
-          "pathogen surveillance"
-        ],
-        "orcid": "0000-0002-9843-8988"
-      },
-      "profile": {
-        "shortBio": "Nick Loman is Professor of Microbial Genomics and Bioinformatics at the University of Birmingham. His research explores the use of cutting-edge genomics and metagenomics approaches to infectious disease diagnosis, treatment and surveillance.",
-        "source": "University of Birmingham, COVID-19 Genomics UK Consortium"
       }
     }
   }

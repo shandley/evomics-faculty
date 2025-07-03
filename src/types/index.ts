@@ -1,5 +1,7 @@
 // Core data types for the faculty alumni system
 
+import { StandardizedResearchAreas, TopicNode } from './taxonomy';
+
 export interface Faculty {
   id: string;
   firstName: string;
@@ -74,7 +76,11 @@ export interface FacultyEnrichment {
   academic?: {
     orcid?: string;
     googleScholarId?: string;
-    researchAreas?: string[];
+    researchAreas?: {
+      raw: string[];
+      standardized?: StandardizedResearchAreas['standardized'];
+      lastMigrated?: string;
+    };
   };
   profile?: {
     photoUrl?: string;
@@ -85,4 +91,41 @@ export interface FacultyEnrichment {
 
 export interface EnrichedFacultyProfile extends FacultyProfile {
   enrichment?: FacultyEnrichment;
+}
+
+// Re-export taxonomy types for convenience
+export type { 
+  TopicNode, 
+  StandardizedResearchAreas, 
+  TopicMapping,
+  TaxonomyData,
+  MappingData,
+  TopicHierarchyNode,
+  TopicSearchResult,
+  TopicFilter,
+  TopicStats
+} from './taxonomy';
+
+// Type guards
+export function hasStandardizedResearchAreas(
+  enrichment?: FacultyEnrichment
+): enrichment is FacultyEnrichment & {
+  academic: {
+    researchAreas: {
+      raw: string[];
+      standardized: StandardizedResearchAreas['standardized'];
+    };
+  };
+} {
+  return !!(
+    enrichment?.academic?.researchAreas &&
+    'raw' in enrichment.academic.researchAreas &&
+    'standardized' in enrichment.academic.researchAreas
+  );
+}
+
+export function isLegacyResearchAreas(
+  researchAreas?: FacultyEnrichment['academic']['researchAreas']
+): researchAreas is string[] {
+  return Array.isArray(researchAreas);
 }

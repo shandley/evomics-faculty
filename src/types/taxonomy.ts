@@ -60,6 +60,7 @@ export interface StandardizedResearchAreas {
     techniques: TopicNode[];
   };
   lastUpdated?: string;
+  lastMigrated?: string;
 }
 
 export interface TopicHierarchyNode extends TopicNode {

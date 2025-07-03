@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
-import { FilterPanel } from './components/FilterPanel';
+import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
 import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
 import { useFacultyData } from './hooks/useFacultyData';
@@ -19,7 +19,9 @@ function App() {
     return {
       search: params.get('search') || '',
       workshops: params.get('workshops')?.split(',').filter(Boolean) || [],
-      year: params.get('year') ? parseInt(params.get('year')!) : null
+      year: params.get('year') ? parseInt(params.get('year')!) : null,
+      topics: params.get('topics')?.split(',').filter(Boolean) || [],
+      includeChildTopics: params.get('includeChildren') !== 'false'
     };
   };
   
@@ -40,6 +42,8 @@ function App() {
     if (filters.search) params.set('search', filters.search);
     if (filters.workshops.length > 0) params.set('workshops', filters.workshops.join(','));
     if (filters.year) params.set('year', filters.year.toString());
+    if (filters.topics && filters.topics.length > 0) params.set('topics', filters.topics.join(','));
+    if (filters.includeChildTopics === false) params.set('includeChildren', 'false');
     if (sortOption !== 'lastName') params.set('sort', sortOption);
     
     const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
@@ -115,7 +119,7 @@ function App() {
         workshops={workshops} 
       />
       
-      <FilterPanel
+      <EnhancedFilterPanel
         filters={filters}
         sortOption={sortOption}
         workshops={workshops}
@@ -142,7 +146,9 @@ function App() {
             onClick={() => setFilters({
               search: '',
               workshops: [],
-              year: null
+              year: null,
+              topics: [],
+              includeChildTopics: true
             })}
             className="inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
           >

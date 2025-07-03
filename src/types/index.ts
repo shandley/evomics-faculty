@@ -59,6 +59,8 @@ export interface Filters {
   search: string;
   workshops: string[];
   year: number | null;  // null means "All Years"
+  topics?: string[];  // Selected topic IDs
+  includeChildTopics?: boolean;
 }
 
 export type SortOption = 'lastName' | 'firstName' | 'totalYears' | 'participationCount' | 'recentYear' | 'firstYear';

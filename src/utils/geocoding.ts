@@ -28,6 +28,18 @@ function normalizeInstitution(name: string): string {
 
 // Find coordinates for an institution
 export function getInstitutionCoordinates(institution: string): LocationData | null {
+  // Handle dual affiliations (e.g., "University A / University B")
+  if (institution.includes(' / ')) {
+    // Try to match the first institution
+    const parts = institution.split(' / ');
+    for (const part of parts) {
+      const coords = getInstitutionCoordinates(part.trim());
+      if (coords) {
+        return coords;
+      }
+    }
+  }
+  
   // Direct match
   if (institutionCoordinates[institution]) {
     return institutionCoordinates[institution];
@@ -38,6 +50,17 @@ export function getInstitutionCoordinates(institution: string): LocationData | n
   for (const [key, coords] of Object.entries(institutionCoordinates)) {
     if (normalizeInstitution(key) === normalized) {
       return coords;
+    }
+  }
+  
+  // Handle "University Medical Center X" -> "University of X" pattern
+  if (institution.includes('University Medical Center')) {
+    const cityMatch = institution.match(/University Medical Center (\w+)/);
+    if (cityMatch) {
+      const universityVariant = `University of ${cityMatch[1]}`;
+      if (institutionCoordinates[universityVariant]) {
+        return institutionCoordinates[universityVariant];
+      }
     }
   }
   
@@ -79,7 +102,7 @@ export function aggregateFacultyByLocation(faculty: EnrichedFacultyProfile[]): F
       if (!locationMap.has(key)) {
         locationMap.set(key, {
           ...coords,
-          institution,
+          institution: coords.city, // Use city name as default institution display
           faculty: [],
           count: 0
         });
@@ -87,11 +110,6 @@ export function aggregateFacultyByLocation(faculty: EnrichedFacultyProfile[]): F
       const location = locationMap.get(key)!;
       location.faculty.push(profile);
       location.count++;
-      
-      // Update institution name if this one is more specific
-      if (institution.length > location.institution.length) {
-        location.institution = institution;
-      }
     } else {
       unmappedInstitutions.add(institution);
     }

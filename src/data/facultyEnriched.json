@@ -392,7 +392,7 @@
     "id": "berner-daniel",
     "name": "Daniel Berner",
     "enrichment": {
-      "lastUpdated": "2025-07-01T13:30:00.000Z",
+      "lastUpdated": "2025-07-03T00:00:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "PD Dr. Lecturer",
@@ -407,7 +407,8 @@
           "speciation",
           "evolutionary ecology",
           "range expansion genetics"
-        ]
+        ],
+        "orcid": "0000-0001-5995-6494"
       },
       "profile": {
         "shortBio": "Daniel Berner is a population genomics researcher at University of Basel studying adaptive divergence in stickleback fish, speciation, and the genetic basis of adaptation and range expansion in butterflies.",
@@ -538,7 +539,7 @@
     "id": "dos-reis-mario",
     "name": "Mario dos Reis",
     "enrichment": {
-      "lastUpdated": "2025-07-01T14:15:00.000Z",
+      "lastUpdated": "2025-07-03T00:00:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Dr",
@@ -554,7 +555,8 @@
           "genomics",
           "molecular clock",
           "divergence time estimation"
-        ]
+        ],
+        "orcid": "0000-0001-9514-3976"
       },
       "profile": {
         "shortBio": "Dr Mario Dos Reis Barros teaches Human Genetics and Genomics at the Joint Programme with Nanchang University. His research focuses on molecular evolution, phylogenetics, and using genomic data to understand evolutionary processes and timing.",
@@ -1455,12 +1457,13 @@
     "id": "mchardy-alice",
     "name": "Alice McHardy",
     "enrichment": {
-      "lastUpdated": "2025-07-01T15:30:00.000Z",
+      "lastUpdated": "2025-07-03T18:15:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Professor / Head of Research Group",
         "affiliation": "Helmholtz Centre for Infection Research",
-        "department": "Department of Computational Biology for Infection Research"
+        "department": "Department of Computational Biology for Infection Research",
+        "orcid": "0000-0003-2370-3430"
       },
       "academic": {
         "researchAreas": [
@@ -1566,7 +1569,7 @@
     "id": "meier-joana",
     "name": "Joana Meier",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:00:00.000Z",
+      "lastUpdated": "2025-07-03T00:00:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Group Leader",
@@ -1581,7 +1584,8 @@
           "cichlid evolution",
           "hybridization",
           "adaptive radiation"
-        ]
+        ],
+        "orcid": "0000-0001-7726-2875"
       },
       "profile": {
         "shortBio": "Joana Meier leads a research group at the Wellcome Sanger Institute studying speciation genomics. She teaches at workshops including the Workshop on Population and Speciation Genomics, focusing on understanding genomic mechanisms of speciation.",
@@ -1822,7 +1826,7 @@
     "id": "nurk-sergey",
     "name": "Sergey Nurk",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:15:00.000Z",
+      "lastUpdated": "2025-07-03T00:00:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Staff Scientist",
@@ -1837,7 +1841,8 @@
           "algorithms",
           "T2T consortium",
           "complete genome assembly"
-        ]
+        ],
+        "orcid": "0000-0003-1301-5749"
       },
       "profile": {
         "shortBio": "Sergey Nurk is a Staff Scientist at NIH working on genome assembly algorithms. He is a key member of the Telomere-to-Telomere (T2T) Consortium that produced the first complete human genome assembly.",
@@ -2623,13 +2628,14 @@
     "id": "stepanauskas-ramunas",
     "name": "Ramunas Stepanauskas",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:00:00.000Z",
+      "lastUpdated": "2025-07-03T18:15:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Senior Research Scientist",
         "affiliation": "Bigelow Laboratory for Ocean Sciences",
         "department": "Single Cell Genomics Center",
-        "labWebsite": "https://www.bigelow.org"
+        "labWebsite": "https://www.bigelow.org",
+        "orcid": "0000-0003-4458-3108"
       },
       "academic": {
         "researchAreas": [
@@ -2735,12 +2741,13 @@
     "id": "tavalire-hannah",
     "name": "Hannah Tavalire",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "lastUpdated": "2025-07-03T18:15:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Postdoctoral Scholar",
         "affiliation": "University of Oregon",
-        "department": "Prevention Science Institute"
+        "department": "Prevention Science Institute",
+        "orcid": "0000-0003-2360-1119"
       },
       "academic": {
         "researchAreas": [
@@ -2817,12 +2824,13 @@
     "id": "trynka-gosia",
     "name": "Gosia Trynka",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "lastUpdated": "2025-07-03T18:15:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Group Leader",
         "affiliation": "Wellcome Sanger Institute",
-        "department": "Human Genetics"
+        "department": "Human Genetics",
+        "orcid": "0000-0002-6955-9529"
       },
       "academic": {
         "researchAreas": [
@@ -2900,7 +2908,7 @@
     "id": "vaughan-tim",
     "name": "Tim Vaughan",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:30:00.000Z",
+      "lastUpdated": "2025-07-03T00:00:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
@@ -2915,7 +2923,8 @@
           "population genetics",
           "phylodynamics",
           "molecular evolution"
-        ]
+        ],
+        "orcid": "0000-0001-5755-0060"
       },
       "profile": {
         "shortBio": "Tim Vaughan specializes in computational phylogenetics using BEAST 2. His work focuses on evolutionary processes that give rise to biodiversity at every level of biological organization, from species to individual organisms and genes.",
@@ -3069,13 +3078,14 @@
     "id": "videvall-elin",
     "name": "Elin Videvall",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:00:00.000Z",
+      "lastUpdated": "2025-07-03T18:15:00.000Z",
       "confidence": "high",
       "professional": {
         "title": "Researcher",
         "affiliation": "Uppsala University",
         "department": "Department of Ecology and Genetics",
-        "labWebsite": "http://www.videvall.com"
+        "labWebsite": "http://www.videvall.com",
+        "orcid": "0000-0002-9998-3689"
       },
       "academic": {
         "researchAreas": [

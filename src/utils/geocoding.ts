@@ -118,6 +118,8 @@ export function aggregateFacultyByLocation(faculty: EnrichedFacultyProfile[]): F
   // Log unmapped institutions for future improvement
   if (unmappedInstitutions.size > 0) {
     console.log('Unmapped institutions:', Array.from(unmappedInstitutions));
+    console.log(`Total unmapped: ${unmappedInstitutions.size}`);
+    console.log(`Total mapped locations: ${locationMap.size}`);
   }
   
   return Array.from(locationMap.values());

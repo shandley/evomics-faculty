@@ -24,6 +24,7 @@
   "University of Illinois": { "lat": 40.1020, "lng": -88.2272, "city": "Urbana-Champaign", "country": "USA" },
   "Ohio State University": { "lat": 40.0067, "lng": -83.0305, "city": "Columbus", "country": "USA" },
   "Natural History Museum, University of Oslo": { "lat": 59.9139, "lng": 10.7522, "city": "Oslo", "country": "Norway" },
+  "University of Oslo": { "lat": 59.9139, "lng": 10.7522, "city": "Oslo", "country": "Norway" },
   "CNRS": { "lat": 48.8566, "lng": 2.3522, "city": "Paris", "country": "France" },
   "University of Lille": { "lat": 50.6099, "lng": 3.1373, "city": "Lille", "country": "France" },
   "Harvard University": { "lat": 42.3770, "lng": -71.1167, "city": "Cambridge", "country": "USA" },

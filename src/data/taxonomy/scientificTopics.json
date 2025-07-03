@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-03",
+    "totalTopics": 0,
+    "levels": 4
+  },
+  "topics": {
+    "computational-sciences": {
+      "id": "computational-sciences",
+      "label": "Computational Sciences",
+      "level": 1,
+      "description": "Computer science applications in biological research including algorithms, software development, and data analysis",
+      "icon": "💻",
+      "children": [
+        "bioinformatics",
+        "computational-biology",
+        "biostatistics",
+        "machine-learning-biology",
+        "algorithm-development",
+        "software-engineering-biology"
+      ]
+    },
+    "genomics-omics": {
+      "id": "genomics-omics",
+      "label": "Genomics & Omics Sciences",
+      "level": 1,
+      "description": "Large-scale study of genomes and other molecular data including sequencing, assembly, and multi-omics integration",
+      "icon": "🧬",
+      "children": [
+        "comparative-genomics",
+        "functional-genomics",
+        "population-genomics",
+        "evolutionary-genomics",
+        "structural-genomics",
+        "single-cell-genomics",
+        "metagenomics",
+        "transcriptomics",
+        "proteomics",
+        "metabolomics",
+        "epigenomics",
+        "pangenomics"
+      ]
+    },
+    "evolutionary-biology": {
+      "id": "evolutionary-biology",
+      "label": "Evolutionary Biology",
+      "level": 1,
+      "description": "Study of evolutionary processes, patterns, and history of life including phylogenetics and speciation",
+      "icon": "🌳",
+      "children": [
+        "molecular-evolution",
+        "phylogenetics",
+        "phylogenomics",
+        "speciation",
+        "adaptation",
+        "evolutionary-genetics",
+        "macroevolution",
+        "microevolution",
+        "evolutionary-ecology"
+      ]
+    },
+    "population-quantitative": {
+      "id": "population-quantitative",
+      "label": "Population & Quantitative Sciences",
+      "level": 1,
+      "description": "Study of genetic variation within and between populations including statistical genetics",
+      "icon": "📊",
+      "children": [
+        "population-genetics",
+        "quantitative-genetics",
+        "statistical-genetics",
+        "genetic-epidemiology",
+        "conservation-genetics",
+        "landscape-genetics",
+        "population-structure",
+        "demographic-inference"
+      ]
+    },
+    "microbiology-microbiome": {
+      "id": "microbiology-microbiome",
+      "label": "Microbiology & Microbiome Sciences",
+      "level": 1,
+      "description": "Study of microorganisms and microbial communities including their diversity and interactions",
+      "icon": "🦠",
+      "children": [
+        "microbiome-research",
+        "microbial-ecology",
+        "microbial-genomics",
+        "virology",
+        "bacteriology",
+        "mycology",
+        "parasitology",
+        "microbial-evolution",
+        "antimicrobial-resistance"
+      ]
+    },
+    "molecular-cellular": {
+      "id": "molecular-cellular",
+      "label": "Molecular & Cellular Biology",
+      "level": 1,
+      "description": "Molecular mechanisms and cellular processes including gene regulation and cell biology",
+      "icon": "🔬",
+      "children": [
+        "molecular-biology",
+        "cell-biology",
+        "gene-regulation",
+        "gene-expression",
+        "protein-biology",
+        "developmental-biology",
+        "systems-biology",
+        "synthetic-biology",
+        "genome-editing"
+      ]
+    },
+    "medical-clinical": {
+      "id": "medical-clinical",
+      "label": "Medical & Clinical Sciences",
+      "level": 1,
+      "description": "Application of genomics and biology to human health and disease",
+      "icon": "⚕️",
+      "children": [
+        "human-genetics",
+        "medical-genetics",
+        "clinical-genomics",
+        "precision-medicine",
+        "cancer-genomics",
+        "pharmacogenomics",
+        "genetic-counseling",
+        "rare-diseases",
+        "complex-diseases"
+      ]
+    },
+    "ecology-environmental": {
+      "id": "ecology-environmental",
+      "label": "Ecology & Environmental Sciences",
+      "level": 1,
+      "description": "Study of organisms in their environment including biodiversity and ecosystem dynamics",
+      "icon": "🌍",
+      "children": [
+        "ecology",
+        "biodiversity",
+        "conservation-biology",
+        "environmental-genomics",
+        "climate-adaptation",
+        "ecosystem-genomics",
+        "biogeography",
+        "community-ecology"
+      ]
+    },
+    "mathematical-statistical": {
+      "id": "mathematical-statistical",
+      "label": "Mathematical & Statistical Sciences",
+      "level": 1,
+      "description": "Mathematical and statistical methods applied to biological problems",
+      "icon": "📈",
+      "children": [
+        "biostatistics",
+        "mathematical-biology",
+        "computational-statistics",
+        "bayesian-methods",
+        "machine-learning",
+        "network-analysis",
+        "time-series-analysis",
+        "spatial-statistics"
+      ]
+    },
+    "technology-methods": {
+      "id": "technology-methods",
+      "label": "Technology & Methodology Development",
+      "level": 1,
+      "description": "Development of new technologies, methods, and approaches for biological research",
+      "icon": "🔧",
+      "children": [
+        "sequencing-technology",
+        "imaging-technology",
+        "laboratory-methods",
+        "computational-methods",
+        "experimental-design",
+        "data-integration",
+        "visualization-methods",
+        "automation-robotics"
+      ]
+    }
+  },
+  "level2": {
+    "bioinformatics": {
+      "id": "bioinformatics",
+      "label": "Bioinformatics",
+      "level": 2,
+      "parentId": "computational-sciences",
+      "description": "Application of computational methods to analyze biological data",
+      "synonyms": ["biomedical informatics", "computational genomics"],
+      "children": []
+    },
+    "computational-biology": {
+      "id": "computational-biology",
+      "label": "Computational Biology",
+      "level": 2,
+      "parentId": "computational-sciences",
+      "description": "Development and application of theoretical and computational methods in biology",
+      "synonyms": ["in silico biology", "theoretical biology"],
+      "children": []
+    },
+    "comparative-genomics": {
+      "id": "comparative-genomics",
+      "label": "Comparative Genomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Comparison of genome sequences and structures across different species",
+      "synonyms": ["genome comparison", "comparative genome analysis"],
+      "children": []
+    },
+    "functional-genomics": {
+      "id": "functional-genomics",
+      "label": "Functional Genomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Study of gene function and interactions at genome scale",
+      "synonyms": ["genome function", "functional genome analysis"],
+      "children": []
+    },
+    "population-genomics": {
+      "id": "population-genomics",
+      "label": "Population Genomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Genome-wide analysis of genetic variation within and between populations",
+      "synonyms": ["population-level genomics", "genomic population genetics"],
+      "children": []
+    },
+    "evolutionary-genomics": {
+      "id": "evolutionary-genomics",
+      "label": "Evolutionary Genomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Study of genome evolution and evolutionary processes using genomic data",
+      "synonyms": ["genome evolution", "evolutionary genome analysis"],
+      "children": []
+    },
+    "single-cell-genomics": {
+      "id": "single-cell-genomics",
+      "label": "Single-Cell Genomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Analysis of genomes, transcriptomes, and epigenomes at single-cell resolution",
+      "synonyms": ["single cell genomics", "single-cell sequencing"],
+      "children": []
+    },
+    "metagenomics": {
+      "id": "metagenomics",
+      "label": "Metagenomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Study of genetic material recovered directly from environmental samples",
+      "synonyms": ["environmental genomics", "community genomics"],
+      "children": []
+    },
+    "transcriptomics": {
+      "id": "transcriptomics",
+      "label": "Transcriptomics",
+      "level": 2,
+      "parentId": "genomics-omics",
+      "description": "Study of RNA transcripts produced by the genome",
+      "synonyms": ["RNA-seq analysis", "gene expression profiling"],
+      "children": []
+    },
+    "molecular-evolution": {
+      "id": "molecular-evolution",
+      "label": "Molecular Evolution",
+      "level": 2,
+      "parentId": "evolutionary-biology",
+      "description": "Evolution at the molecular level including DNA, RNA, and protein sequences",
+      "synonyms": ["molecular evolutionary biology", "evolutionary molecular biology"],
+      "children": []
+    },
+    "phylogenetics": {
+      "id": "phylogenetics",
+      "label": "Phylogenetics",
+      "level": 2,
+      "parentId": "evolutionary-biology",
+      "description": "Study of evolutionary relationships among organisms",
+      "synonyms": ["phylogenetic analysis", "phylogenetic inference"],
+      "children": []
+    },
+    "phylogenomics": {
+      "id": "phylogenomics",
+      "label": "Phylogenomics",
+      "level": 2,
+      "parentId": "evolutionary-biology",
+      "description": "Phylogenetic analysis using genome-scale data",
+      "synonyms": ["genomic phylogenetics", "phylogenomic analysis"],
+      "children": []
+    },
+    "population-genetics": {
+      "id": "population-genetics",
+      "label": "Population Genetics",
+      "level": 2,
+      "parentId": "population-quantitative",
+      "description": "Study of genetic variation and change within populations",
+      "synonyms": ["population genetic analysis", "genetic population structure"],
+      "children": []
+    },
+    "microbiome-research": {
+      "id": "microbiome-research",
+      "label": "Microbiome Research",
+      "level": 2,
+      "parentId": "microbiology-microbiome",
+      "description": "Study of microbial communities and their interactions with hosts and environments",
+      "synonyms": ["microbiome analysis", "microbiota research"],
+      "children": []
+    },
+    "sequencing-technology": {
+      "id": "sequencing-technology",
+      "label": "Sequencing Technology",
+      "level": 2,
+      "parentId": "technology-methods",
+      "description": "Development and application of DNA/RNA sequencing technologies",
+      "synonyms": ["next-generation sequencing", "NGS", "high-throughput sequencing"],
+      "children": []
+    }
+  }
+}

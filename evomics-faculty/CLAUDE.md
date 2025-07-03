@@ -116,7 +116,7 @@ interface Workshop {
 ### Phase 2B: Faculty Details & Updates ✅ COMPLETED
 - [x] Faculty detail modal with enriched information
 - [x] Click-to-view expanded faculty profiles
-- [x] Web scraping enrichment (16 high-confidence profiles)
+- [x] Web scraping enrichment (163 faculty enriched - 95.9% coverage)
 - [x] Faculty self-service update system
 - [x] Google Forms integration for updates
 - [x] Email workflow with templates
@@ -242,7 +242,8 @@ npm run preview    # Preview production build
 - Workshop on Genomics: ✅ Complete (93 faculty)
 - Population & Speciation Genomics: ✅ Complete (58 faculty)
 - Phylogenomics: ✅ Complete (21 faculty)
-- Faculty Enrichment: 16/172 profiles enriched (9.3%)
+- Faculty Enrichment: 163/170 profiles enriched (95.9%)
+- ORCID Coverage: 145 IDs (90% of enriched faculty)
 - Molecular Evolution: ⏳ Pending
 - Comparative Genomics: ⏳ Pending
 
@@ -307,5 +308,7 @@ npm run preview    # Preview production build
 - Successfully deployed with CI/CD pipeline
 - WordPress iframe integration live on evomics.org
 - Faculty self-service updates operational
-- 16 faculty profiles enriched with professional data
+- 163 faculty profiles enriched with professional data (95.9% coverage)
+- 145 ORCID IDs added (90% coverage)
+- 94.3% overall data quality score (A+ grade)
 - Architecture supports incremental enhancements

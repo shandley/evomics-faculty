@@ -4,6 +4,7 @@ import { FacultyCard } from './components/FacultyCard';
 import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
 import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
+import { GeographicDistribution } from './components/GeographicDistribution';
 import { useFacultyData } from './hooks/useFacultyData';
 import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
 import { exportToCSV, generateFilename } from './utils/export';
@@ -34,6 +35,7 @@ function App() {
   const [filters, setFilters] = useState<Filters>(getInitialFilters());
   const [sortOption, setSortOption] = useState<SortOption>(getInitialSort());
   const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
+  const [showMap, setShowMap] = useState(false);
 
   // Update URL when filters or sort change
   useEffect(() => {
@@ -118,6 +120,27 @@ function App() {
         profiles={enrichedProfiles} 
         workshops={workshops} 
       />
+      
+      {/* Toggle Map Button */}
+      <div className="mb-4 flex justify-end">
+        <button
+          onClick={() => setShowMap(!showMap)}
+          className="inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
+        >
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          {showMap ? 'Hide' : 'Show'} Geographic Distribution
+        </button>
+      </div>
+      
+      {/* Geographic Distribution Map */}
+      {showMap && (
+        <GeographicDistribution 
+          faculty={enrichedProfiles}
+          workshops={workshops}
+        />
+      )}
       
       <EnhancedFilterPanel
         filters={filters}

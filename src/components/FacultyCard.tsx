@@ -1,8 +1,9 @@
 import React from 'react';
-import type { FacultyProfile } from '../types';
+import type { FacultyProfile, EnrichedFacultyProfile } from '../types';
+import { TopicDisplay } from './TopicDisplay';
 
 interface FacultyCardProps {
-  profile: FacultyProfile;
+  profile: FacultyProfile | EnrichedFacultyProfile;
   workshops: { [key: string]: { name: string; shortName: string } };
   onClick?: () => void;
 }
@@ -86,6 +87,11 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
             );
           })}
         </div>
+
+        {/* Topics Display (if enriched profile) */}
+        {'enrichment' in profile && (
+          <TopicDisplay profile={profile as EnrichedFacultyProfile} variant="card" />
+        )}
 
         {/* Footer with timeline info */}
         <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">

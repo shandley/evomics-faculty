@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import type { EnrichedFacultyProfile, Workshop } from '../types';
+import { TopicDisplay } from './TopicDisplay';
 
 interface FacultyModalProps {
   profile: EnrichedFacultyProfile | null;
@@ -168,29 +169,10 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
             </div>
           </div>
 
-          {/* Research Areas */}
-          {enrichment?.academic?.researchAreas && (
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Research Areas</h3>
-              <div className="flex flex-wrap gap-2">
-                {(() => {
-                  // Handle both old (array) and new (object with raw/standardized) formats
-                  const areas = Array.isArray(enrichment.academic.researchAreas) 
-                    ? enrichment.academic.researchAreas 
-                    : enrichment.academic.researchAreas.raw || [];
-                  
-                  return areas.map((area: string, index: number) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
-                    >
-                      {area}
-                    </span>
-                  ));
-                })()}
-              </div>
-            </div>
-          )}
+          {/* Research Areas with Topics */}
+          <div className="mb-6">
+            <TopicDisplay profile={profile} variant="modal" />
+          </div>
 
           {/* Workshop Participation */}
           <div className="mb-6">

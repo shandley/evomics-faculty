@@ -1854,7 +1854,7 @@
     "id": "ogilvie-huw",
     "name": "Huw Ogilvie",
     "enrichment": {
-      "lastUpdated": "2025-07-01T16:15:00.000Z",
+      "lastUpdated": "2025-07-03T03:06:03.050Z",
       "confidence": "high",
       "professional": {
         "title": "Assistant Research Professor",
@@ -1869,7 +1869,8 @@
           "BEAST software",
           "StarBEAST2",
           "evolutionary algorithms"
-        ]
+        ],
+        "orcid": "0000-0003-1589-6885"
       },
       "profile": {
         "shortBio": "Huw Ogilvie is the lead author of StarBEAST2, a widely used method for joint inference of species and gene trees. He develops computational methods for phylogenetic inference and helps coordinate development of PhyloNet software.",
@@ -2431,7 +2432,7 @@
     "id": "simakov-oleg",
     "name": "Oleg Simakov",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-03T03:06:03.050Z",
       "confidence": "high",
       "professional": {
         "title": "Univ.-Prof. Dr.",
@@ -2446,7 +2447,8 @@
           "animal evolution",
           "genome evolution",
           "developmental biology"
-        ]
+        ],
+        "orcid": "0000-0002-3585-4511"
       },
       "profile": {
         "shortBio": "Oleg Simakov studies genome evolution and the origins of animal complexity, with a particular focus on cephalopods. His research uses comparative genomics to understand major evolutionary transitions.",
@@ -2458,7 +2460,7 @@
     "id": "skidmore-zachary",
     "name": "Zachary Skidmore",
     "enrichment": {
-      "lastUpdated": "2025-07-01T17:00:00.000Z",
+      "lastUpdated": "2025-07-03T03:06:03.050Z",
       "confidence": "high",
       "professional": {
         "title": "Staff Scientist",
@@ -2473,7 +2475,8 @@
           "variant analysis",
           "clinical genomics",
           "computational biology"
-        ]
+        ],
+        "orcid": "0000-0001-5811-0200"
       },
       "profile": {
         "shortBio": "Zachary Skidmore is a staff scientist at the McDonell Genome Institute specializing in oncology bioinformatics. He develops tools and analyses for cancer genomics and precision medicine.",
@@ -2936,7 +2939,7 @@
     "id": "vazquez-baeza-yoshiki",
     "name": "Yoshiki Vazquez-Baeza",
     "enrichment": {
-      "lastUpdated": "2025-07-02T18:45:00.000Z",
+      "lastUpdated": "2025-07-03T03:06:03.050Z",
       "confidence": "high",
       "professional": {
         "title": "Bioinformatics Lead",
@@ -2951,7 +2954,8 @@
           "high-dimensional data",
           "computational biology",
           "statistical analysis"
-        ]
+        ],
+        "orcid": "0000-0001-6014-2009"
       },
       "profile": {
         "shortBio": "Yoshiki Vazquez-Baeza leads computational biology and data engineering at BiomeSense. Previously Associate Director of Bioinformatics at UC San Diego's Center for Microbiome Innovation, he develops open source statistical analysis and visualization tools for microbiome research.",
@@ -3302,7 +3306,7 @@
     "id": "ocana-pallares-eduard",
     "name": "Eduard Ocaña-Pallarès",
     "enrichment": {
-      "lastUpdated": "2025-07-02T19:15:00.000Z",
+      "lastUpdated": "2025-07-03T03:06:03.050Z",
       "confidence": "high",
       "professional": {
         "title": "Postdoctoral Researcher",
@@ -3317,7 +3321,8 @@
           "opisthokonta",
           "comparative genomics",
           "bioinformatics"
-        ]
+        ],
+        "orcid": "0000-0001-6040-4216"
       },
       "profile": {
         "shortBio": "Eduard Ocaña-Pallarès studies the evolutionary trajectories of major eukaryotic lineages. His work on divergent genomic trajectories predating the origin of animals and fungi was published in Nature, revealing how Metazoa and Fungi evolved distinct genomic features.",
@@ -4148,7 +4153,7 @@
     "id": "gaggiotti-oscar",
     "name": "Oscar Gaggiotti",
     "enrichment": {
-      "lastUpdated": "2025-01-02T20:00:00.000Z",
+      "lastUpdated": "2025-07-03T03:06:03.049Z",
       "confidence": "high",
       "professional": {
         "title": "MASTS Professor",
@@ -4165,7 +4170,8 @@
           "local adaptation",
           "spatial genetics",
           "conservation genetics"
-        ]
+        ],
+        "orcid": "0000-0003-1827-1493"
       },
       "profile": {
         "shortBio": "Oscar Gaggiotti is a MASTS professor at the University of St Andrews studying spatial patterns of genetic diversity. He develops ecologically realistic population genetics theory and methods using metapopulation paradigms and Bayesian statistics, with applications mainly to marine species including fish, marine mammals, and macroalgae.",

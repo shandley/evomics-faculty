@@ -1,0 +1,96 @@
+name: Data Quality Check
+
+on:
+  push:
+    paths: 
+      - 'src/data/**'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - 'src/data/**'
+      - 'scripts/**'
+  schedule:
+    - cron: '0 2 * * 1' # Weekly Monday 2AM UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  data-quality-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run data validation
+        run: node scripts/validateData.cjs
+        
+      - name: Generate data quality report
+        run: node scripts/generateDataQualityReport.cjs
+        
+      - name: Upload data quality report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: data-quality-report-${{ github.run_number }}
+          path: reports/data-quality-report.json
+          retention-days: 30
+          
+      - name: Comment on PR with results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            try {
+              const report = JSON.parse(fs.readFileSync('reports/data-quality-report.json', 'utf8'));
+              const { summary, issues } = report;
+              
+              let comment = `## 📊 Data Quality Report\n\n`;
+              comment += `**Overall Status**: ${summary.overallStatus === 'pass' ? '✅ PASS' : '❌ FAIL'}\n`;
+              comment += `**Faculty Records**: ${summary.totalFaculty}\n`;
+              comment += `**Enriched Profiles**: ${summary.enrichedProfiles} (${summary.enrichmentPercentage}%)\n`;
+              comment += `**ORCID Coverage**: ${summary.orcidCoverage}%\n\n`;
+              
+              if (issues.length > 0) {
+                comment += `### ⚠️ Issues Found (${issues.length})\n\n`;
+                issues.slice(0, 10).forEach(issue => {
+                  comment += `- **${issue.type}**: ${issue.message}\n`;
+                });
+                if (issues.length > 10) {
+                  comment += `\n... and ${issues.length - 10} more issues. Check the full report artifact.\n`;
+                }
+              } else {
+                comment += `### ✅ No Issues Found\n\nAll data validation checks passed successfully!`;
+              }
+              
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            } catch (error) {
+              console.error('Error reading report:', error);
+            }
+            
+      - name: Fail workflow if critical issues found
+        run: |
+          if [ -f "reports/data-quality-report.json" ]; then
+            node -e "
+              const report = require('./reports/data-quality-report.json');
+              const criticalIssues = report.issues.filter(i => i.severity === 'critical');
+              if (criticalIssues.length > 0) {
+                console.error('Critical data quality issues found:', criticalIssues.length);
+                process.exit(1);
+              }
+            "
+          fi

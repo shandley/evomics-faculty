@@ -151,8 +151,11 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
           
           {/* Main timeline */}
           <div className="relative h-64 bg-gray-50 rounded-lg p-4">
-            {/* Workshop tracks */}
-            {Object.entries(workshops).map((([workshopId, workshop], workshopIndex) => (
+            {/* Different views based on mode */}
+            {viewMode === 'overview' && (
+              <>
+                {/* Workshop tracks */}
+                {Object.entries(workshops).map((([workshopId, workshop], workshopIndex) => (
               <div 
                 key={workshopId} 
                 className="absolute w-full"
@@ -209,19 +212,204 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
               </div>
             )))}
             
-            {/* Milestones */}
-            {timelineData.years.map((yearData, index) => 
-              yearData.milestones.map((milestone, mIndex) => (
-                <div
-                  key={`${yearData.year}-${mIndex}`}
-                  className="absolute top-0 w-0.5 h-full bg-red-500"
-                  style={{ left: `${index * yearWidth + yearWidth / 2}px` }}
-                >
-                  <div className="absolute -top-6 left-2 whitespace-nowrap text-xs text-red-600 font-medium">
-                    {milestone}
+                {/* Milestones */}
+                {timelineData.years.map((yearData, index) => 
+                  yearData.milestones.map((milestone, mIndex) => (
+                    <div
+                      key={`${yearData.year}-${mIndex}`}
+                      className="absolute top-0 w-0.5 h-full bg-red-500"
+                      style={{ left: `${index * yearWidth + yearWidth / 2}px` }}
+                    >
+                      <div 
+                        className="absolute left-2 whitespace-nowrap text-xs text-red-600 font-medium"
+                        style={{ 
+                          top: `${-20 - (mIndex * 15)}px`,
+                          transform: index > timelineData.years.length / 2 ? 'translateX(-100%)' : 'none',
+                          marginLeft: index > timelineData.years.length / 2 ? '-8px' : '0'
+                        }}
+                      >
+                        {milestone}
+                      </div>
+                    </div>
+                  ))
+                )}
+              </>
+            )}
+            
+            {/* Faculty Flow View */}
+            {viewMode === 'faculty' && (
+              <div className="relative h-full">
+                <div className="text-sm font-medium text-gray-700 mb-2">Faculty Teaching Patterns</div>
+                <div className="relative h-48 overflow-y-auto">
+                  {faculty.slice(0, 20).map((profile, idx) => {
+                    const facultyYears = new Set<number>();
+                    Object.values(profile.participations).forEach(years => {
+                      years.forEach(year => facultyYears.add(year));
+                    });
+                    const sortedYears = Array.from(facultyYears).sort();
+                    
+                    return (
+                      <div key={profile.faculty.id} className="flex items-center mb-1">
+                        <div className="w-32 text-xs truncate pr-2">
+                          {profile.faculty.firstName} {profile.faculty.lastName}
+                        </div>
+                        <div className="flex-1 relative h-4">
+                          {sortedYears.map(year => {
+                            const yearIndex = timelineData.allYears.indexOf(year);
+                            const workshop = Object.entries(profile.participations).find(([_, years]) => 
+                              years.includes(year)
+                            )?.[0];
+                            
+                            return (
+                              <div
+                                key={year}
+                                className="absolute w-2 h-4 rounded"
+                                style={{
+                                  left: `${yearIndex * yearWidth}px`,
+                                  backgroundColor: workshop ? workshopColors[workshop] : '#6B7280'
+                                }}
+                                title={`${year} - ${workshops[workshop || '']?.shortName || ''}`}
+                              />
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                <p className="text-xs text-gray-500 mt-2">Showing first 20 faculty members</p>
+              </div>
+            )}
+            
+            {/* Topic Evolution View */}
+            {viewMode === 'topics' && (
+              <div className="relative h-full">
+                <div className="text-sm font-medium text-gray-700 mb-2">Research Topic Trends</div>
+                <div className="relative h-48">
+                  {/* Top 10 topics over time */}
+                  {(() => {
+                    // Collect topic frequencies by year
+                    const topicsByYear = new Map<number, Map<string, number>>();
+                    timelineData.years.forEach(yearData => {
+                      const yearTopics = new Map<string, number>();
+                      Object.values(yearData.workshops).forEach(workshop => {
+                        workshop.topics.forEach((count, topic) => {
+                          yearTopics.set(topic, (yearTopics.get(topic) || 0) + count);
+                        });
+                      });
+                      topicsByYear.set(yearData.year, yearTopics);
+                    });
+                    
+                    // Get top topics overall
+                    const allTopics = new Map<string, number>();
+                    topicsByYear.forEach(topics => {
+                      topics.forEach((count, topic) => {
+                        allTopics.set(topic, (allTopics.get(topic) || 0) + count);
+                      });
+                    });
+                    const topTopics = Array.from(allTopics.entries())
+                      .sort((a, b) => b[1] - a[1])
+                      .slice(0, 8)
+                      .map(([topic]) => topic);
+                    
+                    return topTopics.map((topic, idx) => (
+                      <div key={topic} className="absolute w-full" style={{ top: `${idx * 20}px` }}>
+                        <div className="flex items-center">
+                          <div className="w-40 text-xs truncate pr-2">{topic}</div>
+                          <div className="flex-1 relative h-3">
+                            {timelineData.years.map((yearData, yearIdx) => {
+                              const count = yearData.workshops.wog?.topics.get(topic) || 0;
+                              const opacity = count > 0 ? Math.min(1, 0.3 + (count * 0.2)) : 0;
+                              
+                              return (
+                                <div
+                                  key={yearData.year}
+                                  className="absolute h-3 bg-blue-600"
+                                  style={{
+                                    left: `${yearIdx * yearWidth}px`,
+                                    width: `${yearWidth - 1}px`,
+                                    opacity
+                                  }}
+                                />
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    ));
+                  })()}
+                </div>
+                <p className="text-xs text-gray-500 mt-2">Showing top 8 research topics (darker = more faculty)</p>
+              </div>
+            )}
+            
+            {/* Geographic Spread View */}
+            {viewMode === 'geographic' && (
+              <div className="relative h-full">
+                <div className="text-sm font-medium text-gray-700 mb-2">Geographic Expansion</div>
+                <div className="relative h-48">
+                  {/* Country count over time */}
+                  <div className="mb-4">
+                    <svg width={timelineWidth} height={120}>
+                      <polyline
+                        fill="none"
+                        stroke="#10B981"
+                        strokeWidth="2"
+                        points={timelineData.years.map((yearData, index) => {
+                          const x = index * yearWidth + yearWidth / 2;
+                          const y = 120 - (yearData.totals.countryCount / 30) * 100; // Scale to max 30 countries
+                          return `${x},${y}`;
+                        }).join(' ')}
+                      />
+                      {timelineData.years.map((yearData, index) => {
+                        const x = index * yearWidth + yearWidth / 2;
+                        const y = 120 - (yearData.totals.countryCount / 30) * 100;
+                        
+                        return (
+                          <g key={yearData.year}>
+                            <circle
+                              cx={x}
+                              cy={y}
+                              r="3"
+                              fill="#10B981"
+                              className="cursor-pointer"
+                              onClick={() => handleYearClick(yearData.year)}
+                            />
+                            {(hoveredYear === yearData.year || selectedYear === yearData.year) && (
+                              <text x={x} y={y - 10} textAnchor="middle" className="text-xs fill-gray-700">
+                                {yearData.totals.countryCount}
+                              </text>
+                            )}
+                          </g>
+                        );
+                      })}
+                    </svg>
+                  </div>
+                  <p className="text-xs text-gray-600">Countries represented</p>
+                  
+                  {/* Top countries bar */}
+                  <div className="mt-4 flex gap-2">
+                    {selectedYearData && (() => {
+                      const countries = new Map<string, number>();
+                      Object.values(selectedYearData.workshops).forEach(workshop => {
+                        workshop.countries.forEach((count, country) => {
+                          countries.set(country, (countries.get(country) || 0) + count);
+                        });
+                      });
+                      const topCountries = Array.from(countries.entries())
+                        .sort((a, b) => b[1] - a[1])
+                        .slice(0, 5);
+                      
+                      return topCountries.map(([country, count]) => (
+                        <div key={country} className="text-xs">
+                          <div className="font-medium">{country}</div>
+                          <div className="text-gray-500">{count} faculty</div>
+                        </div>
+                      ));
+                    })()}
                   </div>
                 </div>
-              ))
+              </div>
             )}
           </div>
           

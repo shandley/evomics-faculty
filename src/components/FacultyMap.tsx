@@ -42,22 +42,20 @@ export const FacultyMap: React.FC<FacultyMapProps> = ({
 }) => {
   const [selectedLocation, setSelectedLocation] = useState<FacultyLocation | null>(null);
   
-  // Calculate max count for scaling
-  const maxCount = Math.max(...locations.map(loc => loc.count), 1);
-  
-  // Color scheme
+  // Color scheme based on absolute counts
   const getMarkerColor = (count: number) => {
-    const intensity = count / maxCount;
-    if (intensity > 0.75) return '#DC2626'; // red-600
-    if (intensity > 0.5) return '#F59E0B';  // amber-500
-    if (intensity > 0.25) return '#3B82F6'; // blue-500
+    if (count >= 6) return '#DC2626';  // red-600
+    if (count >= 4) return '#F59E0B';   // amber-500
+    if (count >= 2) return '#3B82F6';   // blue-500
     return '#10B981'; // emerald-500
   };
   
   const getMarkerSize = (count: number) => {
-    const minSize = 8;
-    const maxSize = 25;
-    return minSize + (count / maxCount) * (maxSize - minSize);
+    // Size based on absolute count
+    if (count >= 6) return 25;
+    if (count >= 4) return 20;
+    if (count >= 2) return 15;
+    return 10;
   };
   
   return (
@@ -150,19 +148,19 @@ export const FacultyMap: React.FC<FacultyMapProps> = ({
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-emerald-500"></div>
-            <span className="text-xs">1-25%</span>
+            <span className="text-xs">1 faculty member</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-blue-500"></div>
-            <span className="text-xs">26-50%</span>
+            <span className="text-xs">2-3 faculty members</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-amber-500"></div>
-            <span className="text-xs">51-75%</span>
+            <span className="text-xs">4-5 faculty members</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-red-600"></div>
-            <span className="text-xs">76-100%</span>
+            <span className="text-xs">6+ faculty members</span>
           </div>
         </div>
       </div>

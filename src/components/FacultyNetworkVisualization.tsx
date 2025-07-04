@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback, useRef } from 'react';
+import React, { useMemo, useState, useCallback, useRef, useEffect } from 'react';
 import ForceGraph2D from 'react-force-graph-2d';
 import type { EnrichedFacultyProfile, Workshop } from '../types';
 import { generateNetworkData, calculateNetworkStats } from '../utils/networkAnalysis';
@@ -23,6 +23,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
   const [hoveredNodeDetails, setHoveredNodeDetails] = useState<any>(null);
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [graphState, setGraphState] = useState<{ zoom: number; center: { x: number; y: number } } | null>(null);
   
   // Filter controls
   const [minSharedTopics, setMinSharedTopics] = useState(2);
@@ -54,6 +55,21 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
   
   // Calculate statistics
   const stats = useMemo(() => calculateNetworkStats(filteredData), [filteredData]);
+  
+  // Restore graph state after re-render
+  useEffect(() => {
+    if (graphState && graphRef.current) {
+      // Small delay to ensure graph is fully rendered
+      setTimeout(() => {
+        if (graphRef.current && graphState) {
+          graphRef.current.zoom(graphState.zoom);
+          if (graphState.center) {
+            graphRef.current.centerAt(graphState.center.x, graphState.center.y, 0);
+          }
+        }
+      }, 100);
+    }
+  }, [graphState]);
   
   // Workshop colors
   const workshopColors: Record<string, string> = {
@@ -152,6 +168,13 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
   
   // Handle node click
   const handleNodeClick = useCallback((node: NetworkNode) => {
+    // Save current graph state before triggering modal
+    if (graphRef.current) {
+      const zoom = graphRef.current.zoom();
+      const center = graphRef.current.centerAt();
+      setGraphState({ zoom, center });
+    }
+    
     setSelectedNode(node.id);
     onFacultyClick?.(node.id);
   }, [onFacultyClick]);
@@ -315,6 +338,10 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
             }
           }}
           onNodeClick={handleNodeClick as any}
+          cooldownTicks={100}
+          enableNodeDrag={true}
+          enableZoomInteraction={true}
+          enablePanInteraction={true}
           nodeCanvasObject={(node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
             const label = node.name;
             const fontSize = 12 / globalScale;

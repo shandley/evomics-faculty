@@ -20,6 +20,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
   const [highlightNodes, setHighlightNodes] = useState(new Set<string>());
   const [highlightLinks, setHighlightLinks] = useState(new Set<string>());
   const [hoverNode, setHoverNode] = useState<string | null>(null);
+  const [hoveredNodeDetails, setHoveredNodeDetails] = useState<any>(null);
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
@@ -122,10 +123,12 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
       setHighlightNodes(new Set());
       setHighlightLinks(new Set());
       setHoverNode(null);
+      setHoveredNodeDetails(null);
       return;
     }
     
     setHoverNode(node.id);
+    setHoveredNodeDetails(getFacultyDetails(node.id));
     
     // Highlight connected nodes and links
     const connectedNodes = new Set<string>([node.id]);
@@ -296,6 +299,10 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
         className="relative h-[600px] border border-gray-200 rounded-lg overflow-hidden bg-gray-50"
         onMouseMove={handleMouseMove}
       >
+        {/* Debug: Mouse position */}
+        <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded z-50">
+          Mouse: {mousePosition.x}, {mousePosition.y}
+        </div>
         <ForceGraph2D
           ref={graphRef}
           graphData={filteredData}
@@ -410,49 +417,41 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
       )}
       
       {/* Enhanced Tooltip */}
-      {hoverNode && (() => {
-        const details = getFacultyDetails(hoverNode);
-        if (!details) return null;
-        
-        // Calculate tooltip position
-        const tooltipX = Math.min(mousePosition.x + 15, 800); // Prevent going off right edge
-        const tooltipY = mousePosition.y > 300 ? mousePosition.y - 200 : mousePosition.y + 10;
-        
-        return (
-          <div
-            className="absolute z-50 pointer-events-none"
-            style={{
-              left: `${tooltipX}px`,
-              top: `${tooltipY}px`,
-              maxWidth: '350px'
-            }}
-          >
+      {hoveredNodeDetails && (
+        <div
+          className="absolute z-50 pointer-events-none transition-all duration-75"
+          style={{
+            left: `${Math.max(10, Math.min(mousePosition.x + 15, 850))}px`,
+            top: `${Math.max(10, Math.min(mousePosition.y + 10, 400))}px`,
+            maxWidth: '350px'
+          }}
+        >
             <div className="bg-white rounded-lg shadow-xl p-4 max-w-sm border border-gray-200">
-              <h3 className="font-bold text-lg mb-2">{details.name}</h3>
+              <h3 className="font-bold text-lg mb-2">{hoveredNodeDetails.name}</h3>
               <div className="space-y-2 text-sm">
                 <div>
                   <span className="text-gray-600">Institution:</span>{' '}
-                  <span className="font-medium">{details.institution}</span>
+                  <span className="font-medium">{hoveredNodeDetails.institution}</span>
                 </div>
-                {details.department && (
+                {hoveredNodeDetails.department && (
                   <div>
                     <span className="text-gray-600">Department:</span>{' '}
-                    <span className="font-medium">{details.department}</span>
+                    <span className="font-medium">{hoveredNodeDetails.department}</span>
                   </div>
                 )}
                 <div>
                   <span className="text-gray-600">Network Connections:</span>{' '}
-                  <span className="font-medium text-primary-600">{details.connectionCount}</span>
+                  <span className="font-medium text-primary-600">{hoveredNodeDetails.connectionCount}</span>
                 </div>
                 <div>
                   <span className="text-gray-600">Years Active:</span>{' '}
-                  <span className="font-medium">{details.yearsActive} years ({details.yearRange})</span>
+                  <span className="font-medium">{hoveredNodeDetails.yearsActive} years ({hoveredNodeDetails.yearRange})</span>
                 </div>
-                {details.topAreas.length > 0 && (
+                {hoveredNodeDetails.topAreas.length > 0 && (
                   <div>
                     <span className="text-gray-600">Top Research Areas:</span>
                     <ul className="mt-1 space-y-1">
-                      {details.topAreas.map((area, i) => (
+                      {hoveredNodeDetails.topAreas.map((area, i) => (
                         <li key={i} className="flex items-start gap-1">
                           <span className="text-primary-500 mt-1">•</span>
                           <span className="text-gray-800">{area}</span>
@@ -464,7 +463,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
                 <div>
                   <span className="text-gray-600">Workshop Participation:</span>
                   <div className="mt-1 flex flex-wrap gap-2">
-                    {details.workshops.map((w, i) => {
+                    {hoveredNodeDetails.workshops.map((w, i) => {
                       // Map workshop short names to IDs for color lookup
                       const workshopId = Object.entries(workshops).find(
                         ([_, workshop]) => workshop.shortName === w.name
@@ -489,8 +488,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
               </div>
             </div>
           </div>
-        );
-      })()}
+        )
     </div>
   );
 };

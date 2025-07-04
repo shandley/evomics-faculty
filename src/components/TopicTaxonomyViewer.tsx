@@ -25,6 +25,9 @@ interface TopicNode {
   stats?: TopicStats;
 }
 
+// Type the taxonomy topics
+type TaxonomyTopics = Record<string, TopicNode>;
+
 export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({ 
   faculty,
   onTopicClick 
@@ -116,7 +119,8 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
   
   // Render a topic node
   const renderNode = (topicId: string, depth: number = 0) => {
-    const topic = taxonomyData.topics[topicId] as TopicNode;
+    const topics = taxonomyData.topics as TaxonomyTopics;
+    const topic = topics[topicId];
     if (!topic) return null;
     
     const stats = topicStats[topicId];
@@ -294,10 +298,10 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
       {selectedTopic && (
         <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
           <h3 className="font-semibold text-blue-900 mb-2">
-            Selected: {(taxonomyData.topics[selectedTopic] as TopicNode).label}
+            Selected: {(taxonomyData.topics as TaxonomyTopics)[selectedTopic]?.label}
           </h3>
           <div className="text-sm text-blue-800">
-            <p className="mb-2">{(taxonomyData.topics[selectedTopic] as TopicNode).description}</p>
+            <p className="mb-2">{(taxonomyData.topics as TaxonomyTopics)[selectedTopic]?.description}</p>
             <div className="flex gap-4">
               <span><strong>{topicStats[selectedTopic].facultyCount}</strong> total faculty</span>
               <span><strong>{topicStats[selectedTopic].primaryCount}</strong> primary</span>

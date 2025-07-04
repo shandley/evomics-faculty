@@ -54,34 +54,60 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
       const researchAreas = profile.enrichment?.academic?.researchAreas?.standardized;
       if (!researchAreas) return;
       
-      const countedTopics = new Set<string>();
+      const facultyTopics = new Set<string>();
+      const primaryTopics = new Set<string>();
+      const secondaryTopics = new Set<string>();
+      const techniqueTopics = new Set<string>();
       
-      // Count primary topics
+      // Helper function to add topic and all its parents
+      const addTopicAndParents = (
+        topicId: string, 
+        targetSet: Set<string>,
+        countType: 'primary' | 'secondary' | 'technique'
+      ) => {
+        let currentId: string | undefined = topicId;
+        while (currentId && topics[currentId]) {
+          targetSet.add(currentId);
+          facultyTopics.add(currentId);
+          
+          // Update specific count
+          if (countType === 'primary') {
+            stats[currentId].primaryCount++;
+          } else if (countType === 'secondary') {
+            stats[currentId].secondaryCount++;
+          } else {
+            stats[currentId].techniqueCount++;
+          }
+          
+          // Move to parent
+          const topicData = topics[currentId] as TopicNode;
+          currentId = topicData.parentId;
+        }
+      };
+      
+      // Process primary topics
       researchAreas.primary?.forEach(topic => {
         if (stats[topic.id]) {
-          stats[topic.id].primaryCount++;
-          countedTopics.add(topic.id);
+          addTopicAndParents(topic.id, primaryTopics, 'primary');
         }
       });
       
-      // Count secondary topics
+      // Process secondary topics
       researchAreas.secondary?.forEach(topic => {
         if (stats[topic.id]) {
-          stats[topic.id].secondaryCount++;
-          countedTopics.add(topic.id);
+          addTopicAndParents(topic.id, secondaryTopics, 'secondary');
         }
       });
       
-      // Count technique topics
+      // Process technique topics
       researchAreas.techniques?.forEach(topic => {
         if (stats[topic.id]) {
-          stats[topic.id].techniqueCount++;
-          countedTopics.add(topic.id);
+          addTopicAndParents(topic.id, techniqueTopics, 'technique');
         }
       });
       
-      // Update faculty count for each topic
-      countedTopics.forEach(topicId => {
+      // Update faculty count for each unique topic this faculty is associated with
+      facultyTopics.forEach(topicId => {
         stats[topicId].facultyCount++;
       });
     });

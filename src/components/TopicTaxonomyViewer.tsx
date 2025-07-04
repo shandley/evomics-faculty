@@ -25,8 +25,29 @@ interface TopicNode {
   stats?: TopicStats;
 }
 
-// Cast the imported taxonomy data
-const topics = taxonomyData.topics as Record<string, any>;
+// Merge all topic levels into a single flat structure
+const getAllTopics = () => {
+  const allTopics: Record<string, any> = {};
+  
+  // Add level 1 topics
+  if (taxonomyData.topics) {
+    Object.assign(allTopics, taxonomyData.topics);
+  }
+  
+  // Add level 2 topics
+  if ((taxonomyData as any).level2) {
+    Object.assign(allTopics, (taxonomyData as any).level2);
+  }
+  
+  // Add level 3 topics
+  if ((taxonomyData as any).level3) {
+    Object.assign(allTopics, (taxonomyData as any).level3);
+  }
+  
+  return allTopics;
+};
+
+const topics = getAllTopics();
 
 export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({ 
   faculty,

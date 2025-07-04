@@ -13,6 +13,11 @@ on:
     - cron: '0 2 * * 1' # Weekly Monday 2AM UTC
   workflow_dispatch: # Allow manual trigger
 
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
 jobs:
   data-quality-check:
     runs-on: ubuntu-latest

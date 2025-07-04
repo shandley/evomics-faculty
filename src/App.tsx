@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
 import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
@@ -90,6 +90,11 @@ function App() {
     
     setSelectedFacultyId(filteredAndSortedProfiles[newIndex].faculty.id);
   };
+
+  // Stable callback for network visualization
+  const handleNetworkFacultyClick = useCallback((facultyId: string) => {
+    setSelectedFacultyId(facultyId);
+  }, []);
 
   if (loading) {
     return (
@@ -183,10 +188,7 @@ function App() {
         <FacultyNetworkVisualization
           faculty={enrichedProfiles}
           workshops={workshops}
-          onFacultyClick={(facultyId) => {
-            setSelectedFacultyId(facultyId);
-            setShowNetwork(false); // Optionally hide the network after selection
-          }}
+          onFacultyClick={handleNetworkFacultyClick}
         />
       )}
       

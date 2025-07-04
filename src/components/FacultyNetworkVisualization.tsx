@@ -10,7 +10,7 @@ interface FacultyNetworkVisualizationProps {
   onFacultyClick?: (facultyId: string) => void;
 }
 
-export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationProps> = ({
+const FacultyNetworkVisualizationComponent: React.FC<FacultyNetworkVisualizationProps> = ({
   faculty,
   workshops,
   onFacultyClick
@@ -515,3 +515,13 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
     </div>
   );
 };
+
+// Memoize the component to prevent re-renders when modal opens/closes
+export const FacultyNetworkVisualization = React.memo(FacultyNetworkVisualizationComponent, (prevProps, nextProps) => {
+  // Only re-render if faculty data or workshops actually changed
+  return (
+    prevProps.faculty === nextProps.faculty &&
+    prevProps.workshops === nextProps.workshops &&
+    prevProps.onFacultyClick === nextProps.onFacultyClick
+  );
+});

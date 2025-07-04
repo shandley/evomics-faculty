@@ -76,10 +76,14 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
     const connectedLinks = new Set<string>();
     
     filteredData.links.forEach(link => {
-      if (link.source === node.id || link.target === node.id) {
-        connectedNodes.add(link.source);
-        connectedNodes.add(link.target);
-        connectedLinks.add(`${link.source}-${link.target}`);
+      // Handle both string IDs and object references
+      const sourceId = typeof link.source === 'object' ? (link.source as any).id : link.source;
+      const targetId = typeof link.target === 'object' ? (link.target as any).id : link.target;
+      
+      if (sourceId === node.id || targetId === node.id) {
+        connectedNodes.add(sourceId);
+        connectedNodes.add(targetId);
+        connectedLinks.add(`${sourceId}-${targetId}`);
       }
     });
     
@@ -98,22 +102,32 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
     if (highlightNodes.has(node.id)) {
       return workshopColors[node.group] || workshopColors.default;
     }
-    return highlightNodes.size > 0 ? '#E5E7EB' : (workshopColors[node.group] || workshopColors.default);
+    // Make non-highlighted nodes much more faded when hovering
+    return highlightNodes.size > 0 ? '#D1D5DB' : (workshopColors[node.group] || workshopColors.default);
   }, [highlightNodes]);
   
   // Link styling
   const linkColor = useCallback((link: NetworkLink) => {
-    const linkId = `${link.source}-${link.target}`;
+    // Handle both string IDs and object references
+    const sourceId = typeof link.source === 'object' ? (link.source as any).id : link.source;
+    const targetId = typeof link.target === 'object' ? (link.target as any).id : link.target;
+    const linkId = `${sourceId}-${targetId}`;
+    
     if (highlightLinks.has(linkId)) {
       if (link.type === 'both') return '#DC2626'; // red for both
       if (link.type === 'co-teaching') return '#F59E0B'; // amber for co-teaching
-      return '#6B7280'; // gray for topic only
+      return '#374151'; // darker gray for topic only when highlighted
     }
-    return highlightLinks.size > 0 ? '#F3F4F6' : '#E5E7EB';
+    // Make non-highlighted links very faint when hovering
+    return highlightLinks.size > 0 ? '#F9FAFB' : '#E5E7EB';
   }, [highlightLinks]);
   
   const linkWidth = useCallback((link: NetworkLink) => {
-    const linkId = `${link.source}-${link.target}`;
+    // Handle both string IDs and object references
+    const sourceId = typeof link.source === 'object' ? (link.source as any).id : link.source;
+    const targetId = typeof link.target === 'object' ? (link.target as any).id : link.target;
+    const linkId = `${sourceId}-${targetId}`;
+    
     if (highlightLinks.has(linkId)) {
       return Math.min(link.value, 8);
     }
@@ -127,9 +141,11 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
     const node = filteredData.nodes.find(n => n.id === selectedNode);
     if (!node) return null;
     
-    const connections = filteredData.links.filter(l => 
-      l.source === selectedNode || l.target === selectedNode
-    );
+    const connections = filteredData.links.filter(l => {
+      const sourceId = typeof l.source === 'object' ? (l.source as any).id : l.source;
+      const targetId = typeof l.target === 'object' ? (l.target as any).id : l.target;
+      return sourceId === selectedNode || targetId === selectedNode;
+    });
     
     return { node, connections };
   }, [selectedNode, filteredData]);
@@ -236,23 +252,42 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
             
             // Draw node circle
             const nodeSize = Math.sqrt(node.val) * 2;
+            const isHighlighted = highlightNodes.has(node.id);
+            const isHovered = node.id === hoverNode;
+            
+            // Add glow effect for highlighted nodes
+            if (isHighlighted && highlightNodes.size > 0) {
+              ctx.shadowColor = workshopColors[node.group] || workshopColors.default;
+              ctx.shadowBlur = 20 / globalScale;
+              ctx.shadowOffsetX = 0;
+              ctx.shadowOffsetY = 0;
+            }
+            
             ctx.fillStyle = nodeColor(node);
             ctx.beginPath();
             ctx.arc(node.x, node.y, nodeSize, 0, 2 * Math.PI, false);
             ctx.fill();
             
-            // Draw border for selected/hovered nodes
-            if (node.id === selectedNode || node.id === hoverNode) {
+            // Reset shadow
+            ctx.shadowBlur = 0;
+            
+            // Draw border for highlighted or hovered nodes
+            if (isHighlighted && highlightNodes.size > 0) {
+              ctx.strokeStyle = workshopColors[node.group] || workshopColors.default;
+              ctx.lineWidth = 3 / globalScale;
+              ctx.stroke();
+            } else if (isHovered) {
               ctx.strokeStyle = '#1F2937';
               ctx.lineWidth = 2 / globalScale;
               ctx.stroke();
             }
             
-            // Draw label for highlighted nodes
-            if (highlightNodes.has(node.id) || highlightNodes.size === 0) {
+            // Draw label for highlighted nodes or when no highlighting
+            if (isHighlighted || highlightNodes.size === 0) {
               ctx.textAlign = 'center';
               ctx.textBaseline = 'middle';
-              ctx.fillStyle = '#1F2937';
+              ctx.fillStyle = isHighlighted && highlightNodes.size > 0 ? '#000000' : '#1F2937';
+              ctx.font = `${isHighlighted && highlightNodes.size > 0 ? 'bold ' : ''}${fontSize}px Sans-Serif`;
               ctx.fillText(label, node.x, node.y + nodeSize + fontSize);
             }
           }}

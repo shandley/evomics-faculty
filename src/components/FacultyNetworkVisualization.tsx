@@ -16,10 +16,12 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
   onFacultyClick
 }) => {
   const graphRef = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [highlightNodes, setHighlightNodes] = useState(new Set<string>());
   const [highlightLinks, setHighlightLinks] = useState(new Set<string>());
   const [hoverNode, setHoverNode] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   // Filter controls
   const [minSharedTopics, setMinSharedTopics] = useState(2);
@@ -60,6 +62,60 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
     default: '#6B7280'   // gray
   };
   
+  // Get enhanced faculty details
+  const getFacultyDetails = useCallback((nodeId: string) => {
+    const profile = faculty.find(f => f.faculty.id === nodeId);
+    if (!profile) return null;
+    
+    // Count connections
+    const connections = filteredData.links.filter(link => {
+      const sourceId = typeof link.source === 'object' ? (link.source as any).id : link.source;
+      const targetId = typeof link.target === 'object' ? (link.target as any).id : link.target;
+      return sourceId === nodeId || targetId === nodeId;
+    });
+    
+    // Get top research areas
+    const researchAreas = profile.enrichment?.academic?.researchAreas?.standardized?.primary || [];
+    const topAreas = researchAreas.slice(0, 3).map(area => area.label);
+    
+    // Get institution
+    const institution = profile.enrichment?.professional?.affiliation || 'Unknown Institution';
+    
+    // Get workshop participation years
+    const allYears = new Set<number>();
+    Object.values(profile.participations).forEach(years => {
+      years.forEach(year => allYears.add(year));
+    });
+    const yearRange = allYears.size > 0 
+      ? `${Math.min(...allYears)}-${Math.max(...allYears)}`
+      : 'N/A';
+    
+    return {
+      name: `${profile.faculty.firstName} ${profile.faculty.lastName}`,
+      institution,
+      department: profile.enrichment?.professional?.department,
+      connectionCount: connections.length,
+      yearsActive: allYears.size,
+      yearRange,
+      topAreas,
+      workshops: Object.entries(profile.participations).map(([wId, years]) => ({
+        name: workshops[wId]?.shortName || wId,
+        years: years.length
+      }))
+    };
+  }, [faculty, filteredData.links, workshops]);
+
+  // Handle mouse move for tooltip positioning
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      setMousePosition({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top
+      });
+    }
+  }, []);
+
   // Handle node hover
   const handleNodeHover = useCallback((node: NetworkNode | null) => {
     if (!node) {
@@ -89,7 +145,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
     
     setHighlightNodes(connectedNodes);
     setHighlightLinks(connectedLinks);
-  }, [filteredData.links]);
+  }, [filteredData.links, getFacultyDetails]);
   
   // Handle node click
   const handleNodeClick = useCallback((node: NetworkNode) => {
@@ -235,7 +291,11 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
       </div>
       
       {/* Network Graph */}
-      <div className="relative h-[600px] border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+      <div 
+        ref={containerRef}
+        className="relative h-[600px] border border-gray-200 rounded-lg overflow-hidden bg-gray-50"
+        onMouseMove={handleMouseMove}
+      >
         <ForceGraph2D
           ref={graphRef}
           graphData={filteredData}
@@ -244,6 +304,13 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
           linkWidth={linkWidth}
           linkDirectionalParticles={0}
           onNodeHover={handleNodeHover as any}
+          nodeCanvasObjectMode={() => 'after'}
+          onEngineStop={() => {
+            // Force re-render to update positions
+            if (graphRef.current) {
+              graphRef.current.d3ReheatSimulation();
+            }
+          }}
           onNodeClick={handleNodeClick as any}
           nodeCanvasObject={(node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
             const label = node.name;
@@ -341,6 +408,85 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
           </div>
         </div>
       )}
+      
+      {/* Enhanced Tooltip */}
+      {hoverNode && (() => {
+        const details = getFacultyDetails(hoverNode);
+        if (!details) return null;
+        
+        return (
+          <div
+            className="absolute z-50 pointer-events-none"
+            style={{
+              left: `${mousePosition.x + 15}px`,
+              top: `${mousePosition.y - 10}px`,
+              transform: mousePosition.y > 300 ? 'translateY(-100%)' : 'translateY(0)'
+            }}
+          >
+            <div className="bg-white rounded-lg shadow-xl p-4 max-w-sm border border-gray-200">
+              <h3 className="font-bold text-lg mb-2">{details.name}</h3>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <span className="text-gray-600">Institution:</span>{' '}
+                  <span className="font-medium">{details.institution}</span>
+                </div>
+                {details.department && (
+                  <div>
+                    <span className="text-gray-600">Department:</span>{' '}
+                    <span className="font-medium">{details.department}</span>
+                  </div>
+                )}
+                <div>
+                  <span className="text-gray-600">Network Connections:</span>{' '}
+                  <span className="font-medium text-primary-600">{details.connectionCount}</span>
+                </div>
+                <div>
+                  <span className="text-gray-600">Years Active:</span>{' '}
+                  <span className="font-medium">{details.yearsActive} years ({details.yearRange})</span>
+                </div>
+                {details.topAreas.length > 0 && (
+                  <div>
+                    <span className="text-gray-600">Top Research Areas:</span>
+                    <ul className="mt-1 space-y-1">
+                      {details.topAreas.map((area, i) => (
+                        <li key={i} className="flex items-start gap-1">
+                          <span className="text-primary-500 mt-1">•</span>
+                          <span className="text-gray-800">{area}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                <div>
+                  <span className="text-gray-600">Workshop Participation:</span>
+                  <div className="mt-1 flex flex-wrap gap-2">
+                    {details.workshops.map((w, i) => {
+                      // Map workshop short names to IDs for color lookup
+                      const workshopId = Object.entries(workshops).find(
+                        ([_, workshop]) => workshop.shortName === w.name
+                      )?.[0];
+                      const bgColor = workshopId ? workshopColors[workshopId] : workshopColors.default;
+                      
+                      return (
+                        <span 
+                          key={i} 
+                          className="px-2 py-1 rounded text-xs font-medium text-white"
+                          style={{ backgroundColor: bgColor }}
+                        >
+                          {w.name} ({w.years}×)
+                        </span>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+              <div className="mt-3 pt-2 border-t border-gray-200 text-xs text-gray-500 italic">
+                Click to view full profile
+              </div>
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 };

@@ -414,13 +414,17 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
         const details = getFacultyDetails(hoverNode);
         if (!details) return null;
         
+        // Calculate tooltip position
+        const tooltipX = Math.min(mousePosition.x + 15, 800); // Prevent going off right edge
+        const tooltipY = mousePosition.y > 300 ? mousePosition.y - 200 : mousePosition.y + 10;
+        
         return (
           <div
             className="absolute z-50 pointer-events-none"
             style={{
-              left: `${mousePosition.x + 15}px`,
-              top: `${mousePosition.y - 10}px`,
-              transform: mousePosition.y > 300 ? 'translateY(-100%)' : 'translateY(0)'
+              left: `${tooltipX}px`,
+              top: `${tooltipY}px`,
+              maxWidth: '350px'
             }}
           >
             <div className="bg-white rounded-lg shadow-xl p-4 max-w-sm border border-gray-200">

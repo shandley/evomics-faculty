@@ -145,7 +145,6 @@ export function generateTimelineData(
         // Track workshop start year
         if (!workshopStartYears.has(workshopId)) {
           workshopStartYears.set(workshopId, year);
-          yearData.milestones.push(`${workshop.name} launched`);
         }
         
         yearData.workshops[workshopId] = {

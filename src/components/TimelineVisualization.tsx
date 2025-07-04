@@ -212,7 +212,31 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
               </div>
             )))}
             
-                {/* Milestones */}
+                {/* COVID-19 indicator for 2021 */}
+                {timelineData.years.map((yearData, index) => {
+                  if (yearData.year === 2021) {
+                    return (
+                      <div
+                        key="covid-2021"
+                        className="absolute top-0 bottom-0"
+                        style={{ 
+                          left: `${index * yearWidth}px`,
+                          width: `${yearWidth}px`
+                        }}
+                      >
+                        <div className="h-full bg-gray-200 opacity-50 border-x border-gray-400" />
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-90 whitespace-nowrap">
+                          <span className="text-xs font-medium text-gray-600 bg-white px-1 rounded">
+                            COVID-19
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+                
+                {/* Other milestones */}
                 {timelineData.years.map((yearData, index) => 
                   yearData.milestones.map((milestone, mIndex) => (
                     <div
@@ -286,9 +310,9 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
               <div className="relative h-full">
                 <div className="text-sm font-medium text-gray-700 mb-2">Research Topic Trends</div>
                 <div className="relative h-48">
-                  {/* Top 10 topics over time */}
+                  {/* Stream graph of topic evolution */}
                   {(() => {
-                    // Collect topic frequencies by year
+                    // Collect topic frequencies by year across ALL workshops
                     const topicsByYear = new Map<number, Map<string, number>>();
                     timelineData.years.forEach(yearData => {
                       const yearTopics = new Map<string, number>();
@@ -309,37 +333,100 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
                     });
                     const topTopics = Array.from(allTopics.entries())
                       .sort((a, b) => b[1] - a[1])
-                      .slice(0, 8)
+                      .slice(0, 10)
                       .map(([topic]) => topic);
                     
-                    return topTopics.map((topic, idx) => (
-                      <div key={topic} className="absolute w-full" style={{ top: `${idx * 20}px` }}>
-                        <div className="flex items-center">
-                          <div className="w-40 text-xs truncate pr-2">{topic}</div>
-                          <div className="flex-1 relative h-3">
-                            {timelineData.years.map((yearData, yearIdx) => {
-                              const count = yearData.workshops.wog?.topics.get(topic) || 0;
-                              const opacity = count > 0 ? Math.min(1, 0.3 + (count * 0.2)) : 0;
-                              
-                              return (
-                                <div
-                                  key={yearData.year}
-                                  className="absolute h-3 bg-blue-600"
-                                  style={{
-                                    left: `${yearIdx * yearWidth}px`,
-                                    width: `${yearWidth - 1}px`,
-                                    opacity
-                                  }}
-                                />
-                              );
-                            })}
-                          </div>
-                        </div>
-                      </div>
+                    // Create line chart for each topic
+                    const maxCount = Math.max(...Array.from(topicsByYear.values()).flatMap(topics => 
+                      Array.from(topics.values())
                     ));
+                    
+                    const topicColors = [
+                      '#3B82F6', '#8B5CF6', '#10B981', '#F59E0B', '#EF4444',
+                      '#EC4899', '#06B6D4', '#84CC16', '#F97316', '#6366F1'
+                    ];
+                    
+                    return (
+                      <svg width={timelineWidth} height={180}>
+                        {/* Grid lines */}
+                        {[0, 5, 10, 15].map(count => (
+                          <line
+                            key={count}
+                            x1={0}
+                            x2={timelineWidth}
+                            y1={180 - (count / maxCount) * 160}
+                            y2={180 - (count / maxCount) * 160}
+                            stroke="#E5E7EB"
+                            strokeDasharray="2,2"
+                          />
+                        ))}
+                        
+                        {/* COVID-19 indicator */}
+                        {timelineData.years.map((yearData, index) => {
+                          if (yearData.year === 2021) {
+                            return (
+                              <rect
+                                key="covid-rect"
+                                x={index * yearWidth}
+                                y={0}
+                                width={yearWidth}
+                                height={180}
+                                fill="#9CA3AF"
+                                opacity={0.2}
+                              />
+                            );
+                          }
+                          return null;
+                        })}
+                        
+                        {/* Topic lines */}
+                        {topTopics.map((topic, topicIdx) => {
+                          const points = timelineData.years.map((yearData, index) => {
+                            const count = topicsByYear.get(yearData.year)?.get(topic) || 0;
+                            const x = index * yearWidth + yearWidth / 2;
+                            const y = 180 - (count / maxCount) * 160;
+                            return `${x},${y}`;
+                          }).join(' ');
+                          
+                          return (
+                            <g key={topic}>
+                              <polyline
+                                fill="none"
+                                stroke={topicColors[topicIdx]}
+                                strokeWidth="2"
+                                points={points}
+                                opacity={0.8}
+                              />
+                              {/* Topic label at end */}
+                              {(() => {
+                                const lastCount = topicsByYear.get(timelineData.maxYear)?.get(topic) || 0;
+                                if (lastCount > 0) {
+                                  const lastX = (timelineData.years.length - 1) * yearWidth + yearWidth / 2;
+                                  const lastY = 180 - (lastCount / maxCount) * 160;
+                                  return (
+                                    <text
+                                      x={lastX + 5}
+                                      y={lastY + 3}
+                                      fontSize="10"
+                                      fill={topicColors[topicIdx]}
+                                      className="font-medium"
+                                    >
+                                      {topic.split('-').slice(0, 2).join('-')}
+                                    </text>
+                                  );
+                                }
+                              })()}
+                            </g>
+                          );
+                        })}
+                        
+                        {/* Y-axis label */}
+                        <text x={5} y={15} fontSize="11" fill="#6B7280">Faculty</text>
+                      </svg>
+                    );
                   })()}
                 </div>
-                <p className="text-xs text-gray-500 mt-2">Showing top 8 research topics (darker = more faculty)</p>
+                <p className="text-xs text-gray-500 mt-2">Top 10 research topics across all workshops (2021 gap = COVID-19)</p>
               </div>
             )}
             
@@ -351,6 +438,24 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
                   {/* Country count over time */}
                   <div className="mb-4">
                     <svg width={timelineWidth} height={120}>
+                      {/* COVID-19 indicator */}
+                      {timelineData.years.map((yearData, index) => {
+                        if (yearData.year === 2021) {
+                          return (
+                            <rect
+                              key="covid-rect-geo"
+                              x={index * yearWidth}
+                              y={0}
+                              width={yearWidth}
+                              height={120}
+                              fill="#9CA3AF"
+                              opacity={0.2}
+                            />
+                          );
+                        }
+                        return null;
+                      })}
+                      
                       <polyline
                         fill="none"
                         stroke="#10B981"

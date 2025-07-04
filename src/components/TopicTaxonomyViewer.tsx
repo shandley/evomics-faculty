@@ -25,8 +25,8 @@ interface TopicNode {
   stats?: TopicStats;
 }
 
-// Type the taxonomy topics
-type TaxonomyTopics = Record<string, TopicNode>;
+// Cast the imported taxonomy data
+const topics = taxonomyData.topics as Record<string, any>;
 
 export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({ 
   faculty,
@@ -40,7 +40,7 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
     const stats: Record<string, TopicStats> = {};
     
     // Initialize all topics with zero counts
-    Object.keys(taxonomyData.topics).forEach(topicId => {
+    Object.keys(topics).forEach(topicId => {
       stats[topicId] = {
         facultyCount: 0,
         primaryCount: 0,
@@ -119,8 +119,7 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
   
   // Render a topic node
   const renderNode = (topicId: string, depth: number = 0) => {
-    const topics = taxonomyData.topics as TaxonomyTopics;
-    const topic = topics[topicId];
+    const topic = topics[topicId] as TopicNode;
     if (!topic) return null;
     
     const stats = topicStats[topicId];
@@ -209,7 +208,7 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
   };
   
   // Get root topics (level 1)
-  const rootTopics = Object.values(taxonomyData.topics)
+  const rootTopics = Object.values(topics)
     .filter((topic: any) => topic.level === 1)
     .map((topic: any) => topic.id);
   
@@ -232,7 +231,7 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
     return {
       facultyWithTopics,
       topicsUsed: uniqueTopicsUsed.size,
-      totalTopics: Object.keys(taxonomyData.topics).length
+      totalTopics: Object.keys(topics).length
     };
   }, [faculty]);
   
@@ -276,7 +275,7 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
       {/* Expand/Collapse All */}
       <div className="mb-4 flex gap-2">
         <button
-          onClick={() => setExpandedNodes(new Set(Object.keys(taxonomyData.topics)))}
+          onClick={() => setExpandedNodes(new Set(Object.keys(topics)))}
           className="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded-md transition-colors"
         >
           Expand All
@@ -295,13 +294,13 @@ export const TopicTaxonomyViewer: React.FC<TopicTaxonomyViewerProps> = ({
       </div>
       
       {/* Selected Topic Details */}
-      {selectedTopic && (
+      {selectedTopic && topics[selectedTopic] && (
         <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
           <h3 className="font-semibold text-blue-900 mb-2">
-            Selected: {(taxonomyData.topics as TaxonomyTopics)[selectedTopic]?.label}
+            Selected: {(topics[selectedTopic] as TopicNode).label}
           </h3>
           <div className="text-sm text-blue-800">
-            <p className="mb-2">{(taxonomyData.topics as TaxonomyTopics)[selectedTopic]?.description}</p>
+            <p className="mb-2">{(topics[selectedTopic] as TopicNode).description}</p>
             <div className="flex gap-4">
               <span><strong>{topicStats[selectedTopic].facultyCount}</strong> total faculty</span>
               <span><strong>{topicStats[selectedTopic].primaryCount}</strong> primary</span>

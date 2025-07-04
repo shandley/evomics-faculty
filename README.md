@@ -1,6 +1,29 @@
 # Evomics Faculty Alumni Page
 
-Interactive web application showcasing faculty alumni from Evomics workshops.
+Interactive web application showcasing faculty alumni from Evomics workshops, featuring 172 faculty members across 3 workshops with advanced search, filtering, and visualization capabilities.
+
+**Live Site**: https://shandley.github.io/evomics-faculty/
+
+## Key Features
+
+### Core Functionality
+- **Faculty Directory**: Interactive cards displaying participation history and professional information
+- **Advanced Search & Filtering**: Search by name, filter by workshop, year range, research topics, and minimum participation
+- **Data Visualization**: Geographic distribution maps, faculty network graphs, and timeline visualizations
+- **Data Export**: CSV downloads with dynamic filenames based on current filters
+- **URL State Management**: Shareable filtered views via URL parameters
+
+### Enhanced Features
+- **Enriched Faculty Profiles**: 95.9% of faculty have enhanced profiles with professional data, research areas, and ORCID IDs
+- **Topic Taxonomy**: Standardized research areas with hierarchical filtering
+- **Interactive Visualizations**: Click-through navigation between maps, networks, and faculty details
+- **Faculty Self-Service Updates**: Google Forms integration for profile updates
+- **Responsive Design**: Optimized for desktop and mobile, iframe-embeddable for WordPress
+
+### Current Data Coverage
+- **Workshop on Genomics (WoG)**: 93 faculty, 2011-2025
+- **Workshop on Population & Speciation Genomics (WPSG)**: 58 faculty, 2016-2025  
+- **Workshop on Phylogenomics (WPhylo)**: 21 faculty, 2018-2025
 
 ## Quick Start
 
@@ -22,24 +45,12 @@ npm run preview
 
 The app runs on http://localhost:5173 by default.
 
-### Key Features
-- Faculty cards with participation history
-- Search by name
-- Filter by workshop, year range, and minimum participation
-- Sort by name, participation count, or years
-- Responsive design for iframe embedding
-
-### Data Management
-- Faculty data is stored in `src/data/facultyData.json`
-- Workshop metadata in `src/data/workshops.json`
-- To update data, modify the JSON files directly
-
 ### WordPress Integration
-To embed in WordPress, use this iframe code:
+Current embed code for evomics.org:
 
 ```html
 <iframe 
-  src="https://your-deployed-url.vercel.app" 
+  src="https://shandley.github.io/evomics-faculty/" 
   width="100%" 
   height="800px" 
   frameborder="0"
@@ -49,15 +60,9 @@ To embed in WordPress, use this iframe code:
 
 ## Deployment
 
-### Vercel (Recommended)
-1. Push to GitHub
-2. Import project in Vercel
-3. Deploy with default settings
-
-### GitHub Pages
-1. Update `vite.config.ts` with base path
-2. Run `npm run build`
-3. Deploy `dist` folder
+**Current**: GitHub Pages with automated CI/CD
+- Push to main branch triggers automatic deployment
+- Live at: https://shandley.github.io/evomics-faculty/
 
 ## Adding New Workshop Data
 1. Create CSV file with same format as `wog-summary.csv`

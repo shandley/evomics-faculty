@@ -6,6 +6,7 @@ import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
 import { GeographicDistribution } from './components/GeographicDistribution';
 import { TopicTaxonomyViewer } from './components/TopicTaxonomyViewer';
+import { FacultyNetworkVisualization } from './components/FacultyNetworkVisualization';
 import { useFacultyData } from './hooks/useFacultyData';
 import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
 import { exportToCSV, generateFilename } from './utils/export';
@@ -38,6 +39,7 @@ function App() {
   const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
   const [showTaxonomy, setShowTaxonomy] = useState(false);
+  const [showNetwork, setShowNetwork] = useState(false);
 
   // Update URL when filters or sort change
   useEffect(() => {
@@ -126,6 +128,15 @@ function App() {
       {/* Toggle Buttons */}
       <div className="mb-4 flex justify-end gap-3">
         <button
+          onClick={() => setShowNetwork(!showNetwork)}
+          className="inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
+        >
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+          </svg>
+          {showNetwork ? 'Hide' : 'Show'} Faculty Network
+        </button>
+        <button
           onClick={() => setShowTaxonomy(!showTaxonomy)}
           className="inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
         >
@@ -144,6 +155,18 @@ function App() {
           {showMap ? 'Hide' : 'Show'} Geographic Distribution
         </button>
       </div>
+      
+      {/* Faculty Network Visualization */}
+      {showNetwork && (
+        <FacultyNetworkVisualization
+          faculty={enrichedProfiles}
+          workshops={workshops}
+          onFacultyClick={(facultyId) => {
+            setSelectedFacultyId(facultyId);
+            setShowNetwork(false); // Optionally hide the network after selection
+          }}
+        />
+      )}
       
       {/* Topic Taxonomy Viewer */}
       {showTaxonomy && (

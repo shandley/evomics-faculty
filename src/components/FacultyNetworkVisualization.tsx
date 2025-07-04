@@ -1,0 +1,316 @@
+import React, { useMemo, useState, useCallback, useRef } from 'react';
+import ForceGraph2D from 'react-force-graph-2d';
+import type { EnrichedFacultyProfile, Workshop } from '../types';
+import { generateNetworkData, calculateNetworkStats } from '../utils/networkAnalysis';
+import type { NetworkData, NetworkNode, NetworkLink } from '../utils/networkAnalysis';
+
+interface FacultyNetworkVisualizationProps {
+  faculty: EnrichedFacultyProfile[];
+  workshops: { [key: string]: Workshop };
+  onFacultyClick?: (facultyId: string) => void;
+}
+
+export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationProps> = ({
+  faculty,
+  workshops,
+  onFacultyClick
+}) => {
+  const graphRef = useRef<any>();
+  const [highlightNodes, setHighlightNodes] = useState(new Set<string>());
+  const [highlightLinks, setHighlightLinks] = useState(new Set<string>());
+  const [hoverNode, setHoverNode] = useState<string | null>(null);
+  const [selectedNode, setSelectedNode] = useState<string | null>(null);
+  
+  // Filter controls
+  const [minSharedTopics, setMinSharedTopics] = useState(2);
+  const [showCoTeaching, setShowCoTeaching] = useState(true);
+  const [showTopicConnections, setShowTopicConnections] = useState(true);
+  
+  // Generate network data
+  const networkData = useMemo(() => {
+    return generateNetworkData(faculty, workshops, {
+      minSharedTopics,
+      minCoTeaching: showCoTeaching ? 1 : 999, // High number to effectively disable
+      maxNodes: 150 // Limit for performance
+    });
+  }, [faculty, workshops, minSharedTopics, showCoTeaching]);
+  
+  // Filter links based on type
+  const filteredData = useMemo(() => {
+    const filteredLinks = networkData.links.filter(link => {
+      if (!showTopicConnections && link.type === 'topic') return false;
+      if (!showCoTeaching && link.type === 'co-teaching') return false;
+      return true;
+    });
+    
+    return {
+      nodes: networkData.nodes,
+      links: filteredLinks
+    };
+  }, [networkData, showCoTeaching, showTopicConnections]);
+  
+  // Calculate statistics
+  const stats = useMemo(() => calculateNetworkStats(filteredData), [filteredData]);
+  
+  // Workshop colors
+  const workshopColors: Record<string, string> = {
+    wog: '#3B82F6',      // blue
+    wpsg: '#8B5CF6',     // purple  
+    wphylo: '#10B981',   // green
+    default: '#6B7280'   // gray
+  };
+  
+  // Handle node hover
+  const handleNodeHover = useCallback((node: NetworkNode | null) => {
+    if (!node) {
+      setHighlightNodes(new Set());
+      setHighlightLinks(new Set());
+      setHoverNode(null);
+      return;
+    }
+    
+    setHoverNode(node.id);
+    
+    // Highlight connected nodes and links
+    const connectedNodes = new Set<string>([node.id]);
+    const connectedLinks = new Set<string>();
+    
+    filteredData.links.forEach(link => {
+      if (link.source === node.id || link.target === node.id) {
+        connectedNodes.add(link.source);
+        connectedNodes.add(link.target);
+        connectedLinks.add(`${link.source}-${link.target}`);
+      }
+    });
+    
+    setHighlightNodes(connectedNodes);
+    setHighlightLinks(connectedLinks);
+  }, [filteredData.links]);
+  
+  // Handle node click
+  const handleNodeClick = useCallback((node: NetworkNode) => {
+    setSelectedNode(node.id);
+    onFacultyClick?.(node.id);
+  }, [onFacultyClick]);
+  
+  // Node styling
+  const nodeColor = useCallback((node: NetworkNode) => {
+    if (highlightNodes.has(node.id)) {
+      return workshopColors[node.group] || workshopColors.default;
+    }
+    return highlightNodes.size > 0 ? '#E5E7EB' : (workshopColors[node.group] || workshopColors.default);
+  }, [highlightNodes]);
+  
+  // Link styling
+  const linkColor = useCallback((link: NetworkLink) => {
+    const linkId = `${link.source}-${link.target}`;
+    if (highlightLinks.has(linkId)) {
+      if (link.type === 'both') return '#DC2626'; // red for both
+      if (link.type === 'co-teaching') return '#F59E0B'; // amber for co-teaching
+      return '#6B7280'; // gray for topic only
+    }
+    return highlightLinks.size > 0 ? '#F3F4F6' : '#E5E7EB';
+  }, [highlightLinks]);
+  
+  const linkWidth = useCallback((link: NetworkLink) => {
+    const linkId = `${link.source}-${link.target}`;
+    if (highlightLinks.has(linkId)) {
+      return Math.min(link.value, 8);
+    }
+    return 1;
+  }, [highlightLinks]);
+  
+  // Find selected node details
+  const selectedNodeDetails = useMemo(() => {
+    if (!selectedNode) return null;
+    
+    const node = filteredData.nodes.find(n => n.id === selectedNode);
+    if (!node) return null;
+    
+    const connections = filteredData.links.filter(l => 
+      l.source === selectedNode || l.target === selectedNode
+    );
+    
+    return { node, connections };
+  }, [selectedNode, filteredData]);
+  
+  return (
+    <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100">
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Faculty Network</h2>
+        <p className="text-gray-600">
+          Explore connections between faculty based on shared research topics and co-teaching relationships
+        </p>
+      </div>
+      
+      {/* Controls */}
+      <div className="mb-4 p-4 bg-gray-50 rounded-lg">
+        <div className="flex flex-wrap gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Min Shared Topics
+            </label>
+            <select
+              value={minSharedTopics}
+              onChange={(e) => setMinSharedTopics(Number(e.target.value))}
+              className="px-3 py-1 border border-gray-300 rounded-md text-sm"
+            >
+              <option value={1}>1+ topics</option>
+              <option value={2}>2+ topics</option>
+              <option value={3}>3+ topics</option>
+              <option value={4}>4+ topics</option>
+            </select>
+          </div>
+          
+          <div className="flex items-end gap-4">
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={showTopicConnections}
+                onChange={(e) => setShowTopicConnections(e.target.checked)}
+                className="rounded text-primary-600"
+              />
+              <span className="text-sm">Topic Connections</span>
+            </label>
+            
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={showCoTeaching}
+                onChange={(e) => setShowCoTeaching(e.target.checked)}
+                className="rounded text-primary-600"
+              />
+              <span className="text-sm">Co-Teaching</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      {/* Legend */}
+      <div className="mb-4 p-3 bg-gray-50 rounded-lg">
+        <div className="flex flex-wrap gap-6 text-sm">
+          <div>
+            <span className="font-semibold">Node Color:</span> Primary Workshop
+          </div>
+          <div className="flex gap-4">
+            <span className="flex items-center gap-1">
+              <span className="w-3 h-3 rounded-full bg-blue-500"></span> WoG
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="w-3 h-3 rounded-full bg-purple-500"></span> WPSG
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="w-3 h-3 rounded-full bg-green-500"></span> WPhylo
+            </span>
+          </div>
+          <div className="flex gap-4">
+            <span className="font-semibold">Link Type:</span>
+            <span className="flex items-center gap-1">
+              <span className="w-8 h-0.5 bg-gray-600"></span> Topics Only
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="w-8 h-0.5 bg-amber-500"></span> Co-Teaching
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="w-8 h-0.5 bg-red-600"></span> Both
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      {/* Network Graph */}
+      <div className="relative h-[600px] border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
+        <ForceGraph2D
+          ref={graphRef}
+          graphData={filteredData as any}
+          nodeId="id"
+          nodeLabel="name"
+          nodeVal="val"
+          nodeColor={nodeColor as any}
+          linkColor={linkColor as any}
+          linkWidth={linkWidth}
+          linkDirectionalParticles={0}
+          onNodeHover={handleNodeHover as any}
+          onNodeClick={handleNodeClick as any}
+          nodeCanvasObject={(node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
+            const label = node.name;
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Sans-Serif`;
+            
+            // Draw node circle
+            const nodeSize = Math.sqrt(node.val) * 2;
+            ctx.fillStyle = nodeColor(node);
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, nodeSize, 0, 2 * Math.PI, false);
+            ctx.fill();
+            
+            // Draw border for selected/hovered nodes
+            if (node.id === selectedNode || node.id === hoverNode) {
+              ctx.strokeStyle = '#1F2937';
+              ctx.lineWidth = 2 / globalScale;
+              ctx.stroke();
+            }
+            
+            // Draw label for highlighted nodes
+            if (highlightNodes.has(node.id) || highlightNodes.size === 0) {
+              ctx.textAlign = 'center';
+              ctx.textBaseline = 'middle';
+              ctx.fillStyle = '#1F2937';
+              ctx.fillText(label, node.x, node.y + nodeSize + fontSize);
+            }
+          }}
+          enableZoomPanInteraction={true}
+          enableNodeDrag={true}
+        />
+      </div>
+      
+      {/* Statistics */}
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="bg-blue-50 rounded-lg p-4 text-center">
+          <p className="text-3xl font-bold text-blue-700">{stats.totalNodes}</p>
+          <p className="text-sm text-blue-600">Faculty in Network</p>
+        </div>
+        <div className="bg-green-50 rounded-lg p-4 text-center">
+          <p className="text-3xl font-bold text-green-700">{stats.totalLinks}</p>
+          <p className="text-sm text-green-600">Connections</p>
+        </div>
+        <div className="bg-purple-50 rounded-lg p-4 text-center">
+          <p className="text-3xl font-bold text-purple-700">{stats.avgDegree}</p>
+          <p className="text-sm text-purple-600">Avg Connections</p>
+        </div>
+        <div className="bg-amber-50 rounded-lg p-4 text-center">
+          <div className="text-sm">
+            <p><span className="font-bold text-amber-700">{stats.linkTypes.topic}</span> Topic Only</p>
+            <p><span className="font-bold text-amber-700">{stats.linkTypes.coTeaching}</span> Co-Teaching</p>
+            <p><span className="font-bold text-amber-700">{stats.linkTypes.both}</span> Both</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Selected Node Details */}
+      {selectedNodeDetails && (
+        <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <h3 className="font-semibold text-blue-900 mb-2">
+            {selectedNodeDetails.node.name}
+          </h3>
+          <div className="text-sm text-blue-800">
+            <p className="mb-1">
+              <strong>{selectedNodeDetails.connections.length}</strong> connections
+            </p>
+            <p className="mb-1">
+              <strong>{selectedNodeDetails.node.val}</strong> total years teaching
+            </p>
+            <p className="mb-1">
+              Workshops: {selectedNodeDetails.node.workshops.map(w => workshops[w]?.abbreviation).join(', ')}
+            </p>
+            {selectedNodeDetails.node.topics.length > 0 && (
+              <p className="text-xs mt-2">
+                {selectedNodeDetails.node.topics.length} research topics
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};

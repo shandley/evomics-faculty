@@ -16,7 +16,7 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
 }) => {
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [hoveredYear, setHoveredYear] = useState<number | null>(null);
-  const [viewMode, setViewMode] = useState<'overview' | 'faculty' | 'geographic'>('overview');
+  const [viewMode, setViewMode] = useState<'overview' | 'geographic'>('overview');
   const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
   
   // Generate timeline data
@@ -102,16 +102,6 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
           }`}
         >
           Overview
-        </button>
-        <button
-          onClick={() => setViewMode('faculty')}
-          className={`px-3 py-1 text-sm rounded-md transition-colors ${
-            viewMode === 'faculty' 
-              ? 'bg-primary-600 text-white' 
-              : 'bg-gray-100 hover:bg-gray-200'
-          }`}
-        >
-          Faculty Flow
         </button>
         <button
           onClick={() => setViewMode('geographic')}
@@ -250,50 +240,6 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
               </>
             )}
             
-            {/* Faculty Flow View */}
-            {viewMode === 'faculty' && (
-              <div className="relative h-full">
-                <div className="text-sm font-medium text-gray-700 mb-2">Faculty Teaching Patterns</div>
-                <div className="relative h-48 overflow-y-auto">
-                  {faculty.slice(0, 20).map((profile, idx) => {
-                    const facultyYears = new Set<number>();
-                    Object.values(profile.participations).forEach(years => {
-                      years.forEach(year => facultyYears.add(year));
-                    });
-                    const sortedYears = Array.from(facultyYears).sort();
-                    
-                    return (
-                      <div key={profile.faculty.id} className="flex items-center mb-1">
-                        <div className="w-32 text-xs truncate pr-2">
-                          {profile.faculty.firstName} {profile.faculty.lastName}
-                        </div>
-                        <div className="flex-1 relative h-4">
-                          {sortedYears.map(year => {
-                            const yearIndex = timelineData.allYears.indexOf(year);
-                            const workshop = Object.entries(profile.participations).find(([_, years]) => 
-                              years.includes(year)
-                            )?.[0];
-                            
-                            return (
-                              <div
-                                key={year}
-                                className="absolute w-2 h-4 rounded"
-                                style={{
-                                  left: `${yearIndex * yearWidth}px`,
-                                  backgroundColor: workshop ? workshopColors[workshop] : '#6B7280'
-                                }}
-                                title={`${year} - ${workshops[workshop || '']?.shortName || ''}`}
-                              />
-                            );
-                          })}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-                <p className="text-xs text-gray-500 mt-2">Showing first 20 faculty members</p>
-              </div>
-            )}
             
             
             {/* Geographic Spread View */}

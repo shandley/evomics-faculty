@@ -362,66 +362,17 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
             }
           }}
         />
-      </div>
-      
-      {/* Statistics */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="bg-blue-50 rounded-lg p-4 text-center">
-          <p className="text-3xl font-bold text-blue-700">{stats.totalNodes}</p>
-          <p className="text-sm text-blue-600">Faculty in Network</p>
-        </div>
-        <div className="bg-green-50 rounded-lg p-4 text-center">
-          <p className="text-3xl font-bold text-green-700">{stats.totalLinks}</p>
-          <p className="text-sm text-green-600">Connections</p>
-        </div>
-        <div className="bg-purple-50 rounded-lg p-4 text-center">
-          <p className="text-3xl font-bold text-purple-700">{stats.avgDegree}</p>
-          <p className="text-sm text-purple-600">Avg Connections</p>
-        </div>
-        <div className="bg-amber-50 rounded-lg p-4 text-center">
-          <div className="text-sm">
-            <p><span className="font-bold text-amber-700">{stats.linkTypes.topic}</span> Topic Only</p>
-            <p><span className="font-bold text-amber-700">{stats.linkTypes.coTeaching}</span> Co-Teaching</p>
-            <p><span className="font-bold text-amber-700">{stats.linkTypes.both}</span> Both</p>
-          </div>
-        </div>
-      </div>
-      
-      {/* Selected Node Details */}
-      {selectedNodeDetails && (
-        <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <h3 className="font-semibold text-blue-900 mb-2">
-            {selectedNodeDetails.node.name}
-          </h3>
-          <div className="text-sm text-blue-800">
-            <p className="mb-1">
-              <strong>{selectedNodeDetails.connections.length}</strong> connections
-            </p>
-            <p className="mb-1">
-              <strong>{selectedNodeDetails.node.val}</strong> total years teaching
-            </p>
-            <p className="mb-1">
-              Workshops: {selectedNodeDetails.node.workshops.map(w => workshops[w]?.shortName).join(', ')}
-            </p>
-            {selectedNodeDetails.node.topics.length > 0 && (
-              <p className="text-xs mt-2">
-                {selectedNodeDetails.node.topics.length} research topics
-              </p>
-            )}
-          </div>
-        </div>
-      )}
-      
-      {/* Enhanced Tooltip */}
-      {hoveredNodeDetails && (
-        <div
-          className="absolute z-50 pointer-events-none transition-all duration-75"
-          style={{
-            left: `${Math.min(mousePosition.x + 15, 750)}px`,
-            top: `${mousePosition.y > 350 ? mousePosition.y - 250 : mousePosition.y + 15}px`,
-            maxWidth: '350px'
-          }}
-        >
+        
+        {/* Enhanced Tooltip - Inside the container */}
+        {hoveredNodeDetails && (
+          <div
+            className="absolute z-50 pointer-events-none transition-all duration-75"
+            style={{
+              left: `${Math.min(mousePosition.x + 15, 750)}px`,
+              top: `${mousePosition.y > 350 ? mousePosition.y - 250 : mousePosition.y + 15}px`,
+              maxWidth: '350px'
+            }}
+          >
             <div className="bg-white rounded-lg shadow-xl p-4 max-w-sm border border-gray-200">
               <h3 className="font-bold text-lg mb-2">{hoveredNodeDetails.name}</h3>
               <div className="space-y-2 text-sm">
@@ -485,6 +436,55 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
             </div>
           </div>
         )}
+      </div>
+      
+      {/* Statistics */}
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="bg-blue-50 rounded-lg p-4 text-center">
+          <p className="text-3xl font-bold text-blue-700">{stats.totalNodes}</p>
+          <p className="text-sm text-blue-600">Faculty in Network</p>
+        </div>
+        <div className="bg-green-50 rounded-lg p-4 text-center">
+          <p className="text-3xl font-bold text-green-700">{stats.totalLinks}</p>
+          <p className="text-sm text-green-600">Connections</p>
+        </div>
+        <div className="bg-purple-50 rounded-lg p-4 text-center">
+          <p className="text-3xl font-bold text-purple-700">{stats.avgDegree}</p>
+          <p className="text-sm text-purple-600">Avg Connections</p>
+        </div>
+        <div className="bg-amber-50 rounded-lg p-4 text-center">
+          <div className="text-sm">
+            <p><span className="font-bold text-amber-700">{stats.linkTypes.topic}</span> Topic Only</p>
+            <p><span className="font-bold text-amber-700">{stats.linkTypes.coTeaching}</span> Co-Teaching</p>
+            <p><span className="font-bold text-amber-700">{stats.linkTypes.both}</span> Both</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Selected Node Details */}
+      {selectedNodeDetails && (
+        <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <h3 className="font-semibold text-blue-900 mb-2">
+            {selectedNodeDetails.node.name}
+          </h3>
+          <div className="text-sm text-blue-800">
+            <p className="mb-1">
+              <strong>{selectedNodeDetails.connections.length}</strong> connections
+            </p>
+            <p className="mb-1">
+              <strong>{selectedNodeDetails.node.val}</strong> total years teaching
+            </p>
+            <p className="mb-1">
+              Workshops: {selectedNodeDetails.node.workshops.map(w => workshops[w]?.shortName).join(', ')}
+            </p>
+            {selectedNodeDetails.node.topics.length > 0 && (
+              <p className="text-xs mt-2">
+                {selectedNodeDetails.node.topics.length} research topics
+              </p>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

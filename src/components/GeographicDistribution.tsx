@@ -22,6 +22,14 @@ export const GeographicDistribution: React.FC<GeographicDistributionProps> = ({
   // Calculate statistics
   const stats = useMemo(() => getLocationStatistics(locations), [locations]);
   
+  // Count faculty with unknown locations
+  const unknownCount = useMemo(() => {
+    return faculty.filter(f => 
+      !f.enrichment?.professional?.affiliation || 
+      f.enrichment.professional.affiliation === 'Unknown'
+    ).length;
+  }, [faculty]);
+  
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100">
       <div className="mb-6">
@@ -29,6 +37,11 @@ export const GeographicDistribution: React.FC<GeographicDistributionProps> = ({
         <p className="text-gray-600">
           Faculty members are distributed across {stats.totalLocations} institutions in {stats.totalCountries} countries
         </p>
+        {unknownCount > 0 && (
+          <p className="text-sm text-gray-500 mt-1">
+            ({unknownCount} faculty member{unknownCount !== 1 ? 's' : ''} not shown due to unknown affiliation)
+          </p>
+        )}
       </div>
       
       {/* Map Container */}
@@ -122,8 +135,8 @@ export const GeographicDistribution: React.FC<GeographicDistributionProps> = ({
           <p className="text-sm text-purple-600">Cities</p>
         </div>
         <div className="bg-amber-50 rounded-lg p-4 text-center">
-          <p className="text-3xl font-bold text-amber-700">{faculty.length}</p>
-          <p className="text-sm text-amber-600">Total Faculty</p>
+          <p className="text-3xl font-bold text-amber-700">{faculty.length - unknownCount}</p>
+          <p className="text-sm text-amber-600">Mapped Faculty</p>
         </div>
       </div>
     </div>

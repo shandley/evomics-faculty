@@ -108,8 +108,20 @@ export function aggregateFacultyByLocation(faculty: EnrichedFacultyProfile[]): F
     const institution = profile.enrichment?.professional?.affiliation;
     if (!institution) return;
     
+    // Skip faculty with "Unknown" affiliation
+    if (institution === 'Unknown') {
+      unmappedInstitutions.add(institution);
+      return;
+    }
+    
     const coords = getInstitutionCoordinates(institution);
     if (coords) {
+      // Skip locations at (0,0) - these are placeholder coordinates
+      if (coords.lat === 0 && coords.lng === 0) {
+        unmappedInstitutions.add(institution);
+        return;
+      }
+      
       const key = `${coords.lat},${coords.lng}`;
       if (!locationMap.has(key)) {
         locationMap.set(key, {
@@ -143,6 +155,11 @@ export function getLocationStatistics(locations: FacultyLocation[]) {
   const cities = new Map<string, number>();
   
   locations.forEach(location => {
+    // Skip "Unknown" in statistics
+    if (location.country === 'Unknown' || location.city === 'Unknown') {
+      return;
+    }
+    
     countries.set(location.country, (countries.get(location.country) || 0) + location.count);
     cities.set(`${location.city}, ${location.country}`, 
       (cities.get(`${location.city}, ${location.country}`) || 0) + location.count);

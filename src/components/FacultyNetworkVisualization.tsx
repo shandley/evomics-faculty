@@ -15,7 +15,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
   workshops,
   onFacultyClick
 }) => {
-  const graphRef = useRef<any>();
+  const graphRef = useRef<any>(null);
   const [highlightNodes, setHighlightNodes] = useState(new Set<string>());
   const [highlightLinks, setHighlightLinks] = useState(new Set<string>());
   const [hoverNode, setHoverNode] = useState<string | null>(null);
@@ -222,10 +222,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
       <div className="relative h-[600px] border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
         <ForceGraph2D
           ref={graphRef}
-          graphData={filteredData as any}
-          nodeId="id"
-          nodeLabel="name"
-          nodeVal="val"
+          graphData={filteredData}
           nodeColor={nodeColor as any}
           linkColor={linkColor as any}
           linkWidth={linkWidth}
@@ -259,8 +256,6 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
               ctx.fillText(label, node.x, node.y + nodeSize + fontSize);
             }
           }}
-          enableZoomPanInteraction={true}
-          enableNodeDrag={true}
         />
       </div>
       
@@ -301,7 +296,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
               <strong>{selectedNodeDetails.node.val}</strong> total years teaching
             </p>
             <p className="mb-1">
-              Workshops: {selectedNodeDetails.node.workshops.map(w => workshops[w]?.abbreviation).join(', ')}
+              Workshops: {selectedNodeDetails.node.workshops.map(w => workshops[w]?.shortName).join(', ')}
             </p>
             {selectedNodeDetails.node.topics.length > 0 && (
               <p className="text-xs mt-2">

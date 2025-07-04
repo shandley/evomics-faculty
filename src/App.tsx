@@ -5,6 +5,7 @@ import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
 import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
 import { GeographicDistribution } from './components/GeographicDistribution';
+import { TopicTaxonomyViewer } from './components/TopicTaxonomyViewer';
 import { useFacultyData } from './hooks/useFacultyData';
 import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
 import { exportToCSV, generateFilename } from './utils/export';
@@ -36,6 +37,7 @@ function App() {
   const [sortOption, setSortOption] = useState<SortOption>(getInitialSort());
   const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
+  const [showTaxonomy, setShowTaxonomy] = useState(false);
 
   // Update URL when filters or sort change
   useEffect(() => {
@@ -121,8 +123,17 @@ function App() {
         workshops={workshops} 
       />
       
-      {/* Toggle Map Button */}
-      <div className="mb-4 flex justify-end">
+      {/* Toggle Buttons */}
+      <div className="mb-4 flex justify-end gap-3">
+        <button
+          onClick={() => setShowTaxonomy(!showTaxonomy)}
+          className="inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
+        >
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+          </svg>
+          {showTaxonomy ? 'Hide' : 'Show'} Topic Taxonomy
+        </button>
         <button
           onClick={() => setShowMap(!showMap)}
           className="inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
@@ -133,6 +144,22 @@ function App() {
           {showMap ? 'Hide' : 'Show'} Geographic Distribution
         </button>
       </div>
+      
+      {/* Topic Taxonomy Viewer */}
+      {showTaxonomy && (
+        <TopicTaxonomyViewer 
+          faculty={enrichedProfiles}
+          onTopicClick={(topicId) => {
+            // When a topic is clicked, update the filters to show only faculty with that topic
+            setFilters({
+              ...filters,
+              topics: [topicId],
+              includeChildTopics: true
+            });
+            setShowTaxonomy(false); // Optionally hide the taxonomy after selection
+          }}
+        />
+      )}
       
       {/* Geographic Distribution Map */}
       {showMap && (

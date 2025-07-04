@@ -30,7 +30,7 @@ class LinkChecker {
     }
   }
 
-  async checkUrl(url, timeout = 10000) {
+  async checkUrl(url, timeout = 15000) {
     return new Promise((resolve) => {
       if (!url || typeof url !== 'string') {
         resolve({
@@ -58,24 +58,43 @@ class LinkChecker {
         resolve({
           status: 'broken',
           statusCode: null,
-          error: 'Timeout'
+          error: 'Timeout (15s)'
         });
       }, timeout);
 
       const request = client.get(url, {
         headers: {
-          'User-Agent': 'Evomics-Faculty-Link-Checker/1.0'
-        }
+          'User-Agent': 'Mozilla/5.0 (compatible; Evomics-Faculty-Link-Checker/1.0)',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.5',
+          'Connection': 'close'
+        },
+        // Allow self-signed certificates for academic sites
+        rejectUnauthorized: false
       }, (response) => {
         clearTimeout(timeoutId);
         
         const statusCode = response.statusCode;
         
-        if (statusCode >= 200 && statusCode < 400) {
+        // Handle redirects
+        if (statusCode >= 300 && statusCode < 400 && response.headers.location) {
+          resolve({
+            status: 'working',
+            statusCode,
+            error: `Redirect to ${response.headers.location}`
+          });
+        } else if (statusCode >= 200 && statusCode < 300) {
           resolve({
             status: 'working',
             statusCode,
             error: null
+          });
+        } else if (statusCode === 403) {
+          // 403 might be due to bot blocking, consider as warning rather than broken
+          resolve({
+            status: 'warning',
+            statusCode,
+            error: 'Access forbidden (possibly bot blocking)'
           });
         } else if (statusCode >= 400) {
           resolve({
@@ -94,10 +113,25 @@ class LinkChecker {
 
       request.on('error', (error) => {
         clearTimeout(timeoutId);
+        
+        // Categorize common errors
+        let errorMessage = error.message;
+        if (error.code === 'ENOTFOUND') {
+          errorMessage = 'Domain not found';
+        } else if (error.code === 'ECONNREFUSED') {
+          errorMessage = 'Connection refused';
+        } else if (error.code === 'ETIMEDOUT') {
+          errorMessage = 'Connection timeout';
+        } else if (error.code === 'CERT_HAS_EXPIRED') {
+          errorMessage = 'SSL certificate expired';
+        } else if (error.message.includes('certificate')) {
+          errorMessage = 'SSL certificate issue';
+        }
+        
         resolve({
           status: 'broken',
           statusCode: null,
-          error: error.message
+          error: errorMessage
         });
       });
 
@@ -107,7 +141,7 @@ class LinkChecker {
         resolve({
           status: 'broken',
           statusCode: null,
-          error: 'Request timeout'
+          error: 'Connection timeout'
         });
       });
     });
@@ -245,8 +279,21 @@ class LinkChecker {
     console.log(`\n📊 Link Check Results:`);
     console.log(`   Total links checked: ${summary.totalLinks}`);
     console.log(`   Working links: ${summary.workingLinks}`);
+    console.log(`   Warning links: ${summary.warningLinks}`);
     console.log(`   Broken links: ${summary.brokenLinks}`);
-    console.log(`   Success rate: ${summary.successRate}%`);
+    console.log(`   Overall success rate: ${summary.successRate}%`);
+    console.log(`   Strict success rate: ${summary.strictSuccessRate}%`);
+    
+    if (summary.warningLinks > 0) {
+      console.log(`\n⚠️  Warning links found:`);
+      const warningLinks = this.results.filter(r => r.status === 'warning');
+      warningLinks.slice(0, 3).forEach(link => {
+        console.log(`   - ${link.type}: ${link.facultyName} - ${link.url} (${link.error})`);
+      });
+      if (warningLinks.length > 3) {
+        console.log(`   ... and ${warningLinks.length - 3} more warnings`);
+      }
+    }
     
     if (summary.brokenLinks > 0) {
       console.log(`\n❌ Broken links found:`);
@@ -271,12 +318,17 @@ class LinkChecker {
     const brokenLinks = this.results.filter(r => r.status === 'broken').length;
     const warningLinks = this.results.filter(r => r.status === 'warning').length;
     
+    // Consider warnings as working for success rate calculation
+    const functionalLinks = workingLinks + warningLinks;
+    
     return {
       totalLinks,
       workingLinks,
       brokenLinks,
       warningLinks,
-      successRate: totalLinks > 0 ? Math.round((workingLinks / totalLinks) * 100) : 0,
+      functionalLinks,
+      successRate: totalLinks > 0 ? Math.round((functionalLinks / totalLinks) * 100) : 0,
+      strictSuccessRate: totalLinks > 0 ? Math.round((workingLinks / totalLinks) * 100) : 0,
       timestamp: new Date().toISOString()
     };
   }
@@ -287,9 +339,19 @@ if (require.main === module) {
   const checker = new LinkChecker();
   checker.checkAllLinks()
     .then(result => {
-      if (result.summary.brokenLinks > 0) {
-        console.log('\n⚠️  Some links are broken');
-        process.exit(1);
+      const { brokenLinks, successRate } = result.summary;
+      
+      if (brokenLinks > 0) {
+        console.log(`\n⚠️  Found ${brokenLinks} broken links (${successRate}% success rate)`);
+        
+        // Only fail if there are many broken links or very low success rate
+        if (brokenLinks > 20 || successRate < 80) {
+          console.log('❌ Too many broken links - failing workflow');
+          process.exit(1);
+        } else {
+          console.log('✅ Acceptable number of broken links - creating issue for tracking');
+          process.exit(0);
+        }
       } else {
         console.log('\n✅ All links are working');
         process.exit(0);

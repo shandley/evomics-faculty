@@ -41,7 +41,7 @@ jobs:
           retention-days: 30
           
       - name: Create GitHub issue for broken links
-        if: failure()
+        if: always()
         uses: actions/github-script@v7
         with:
           script: |
@@ -66,8 +66,10 @@ jobs:
               issueBody += `## 📊 Summary\n`;
               issueBody += `- Total links checked: ${report.summary.totalLinks}\n`;
               issueBody += `- Working links: ${report.summary.workingLinks}\n`;
+              issueBody += `- Warning links: ${report.summary.warningLinks || 0}\n`;
               issueBody += `- Broken links: ${report.summary.brokenLinks}\n`;
-              issueBody += `- Success rate: ${report.summary.successRate}%\n\n`;
+              issueBody += `- Overall success rate: ${report.summary.successRate}%\n`;
+              issueBody += `- Strict success rate: ${report.summary.strictSuccessRate || report.summary.successRate}%\n\n`;
               
               issueBody += `*Generated automatically by Link Checker workflow*`;
               

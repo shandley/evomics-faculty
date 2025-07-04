@@ -451,7 +451,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
                   <div>
                     <span className="text-gray-600">Top Research Areas:</span>
                     <ul className="mt-1 space-y-1">
-                      {hoveredNodeDetails.topAreas.map((area, i) => (
+                      {hoveredNodeDetails.topAreas.map((area: string, i: number) => (
                         <li key={i} className="flex items-start gap-1">
                           <span className="text-primary-500 mt-1">•</span>
                           <span className="text-gray-800">{area}</span>
@@ -463,7 +463,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
                 <div>
                   <span className="text-gray-600">Workshop Participation:</span>
                   <div className="mt-1 flex flex-wrap gap-2">
-                    {hoveredNodeDetails.workshops.map((w, i) => {
+                    {hoveredNodeDetails.workshops.map((w: any, i: number) => {
                       // Map workshop short names to IDs for color lookup
                       const workshopId = Object.entries(workshops).find(
                         ([_, workshop]) => workshop.shortName === w.name
@@ -488,7 +488,7 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
               </div>
             </div>
           </div>
-        )
+        )}
     </div>
   );
 };

@@ -299,10 +299,6 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
         className="relative h-[600px] border border-gray-200 rounded-lg overflow-hidden bg-gray-50"
         onMouseMove={handleMouseMove}
       >
-        {/* Debug: Mouse position */}
-        <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded z-50">
-          Mouse: {mousePosition.x}, {mousePosition.y}
-        </div>
         <ForceGraph2D
           ref={graphRef}
           graphData={filteredData}
@@ -421,8 +417,8 @@ export const FacultyNetworkVisualization: React.FC<FacultyNetworkVisualizationPr
         <div
           className="absolute z-50 pointer-events-none transition-all duration-75"
           style={{
-            left: `${Math.max(10, Math.min(mousePosition.x + 15, 850))}px`,
-            top: `${Math.max(10, Math.min(mousePosition.y + 10, 400))}px`,
+            left: `${Math.min(mousePosition.x + 15, 750)}px`,
+            top: `${mousePosition.y > 350 ? mousePosition.y - 250 : mousePosition.y + 15}px`,
             maxWidth: '350px'
           }}
         >

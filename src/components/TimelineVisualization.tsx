@@ -16,7 +16,7 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
 }) => {
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [hoveredYear, setHoveredYear] = useState<number | null>(null);
-  const [viewMode, setViewMode] = useState<'overview' | 'faculty' | 'topics' | 'geographic'>('overview');
+  const [viewMode, setViewMode] = useState<'overview' | 'faculty' | 'geographic'>('overview');
   const [selectedFacultyId, setSelectedFacultyId] = useState<string | null>(null);
   
   // Generate timeline data
@@ -112,16 +112,6 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
           }`}
         >
           Faculty Flow
-        </button>
-        <button
-          onClick={() => setViewMode('topics')}
-          className={`px-3 py-1 text-sm rounded-md transition-colors ${
-            viewMode === 'topics' 
-              ? 'bg-primary-600 text-white' 
-              : 'bg-gray-100 hover:bg-gray-200'
-          }`}
-        >
-          Workshop Comparison
         </button>
         <button
           onClick={() => setViewMode('geographic')}
@@ -305,125 +295,6 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
               </div>
             )}
             
-            {/* Workshop Comparison View */}
-            {viewMode === 'topics' && (
-              <div className="relative h-full">
-                <div className="text-sm font-medium text-gray-700 mb-2">Workshop Characteristics & Focus Areas</div>
-                <div className="relative">
-                  {(() => {
-                    // Collect all topics by workshop
-                    const workshopTopics = new Map<string, Map<string, number>>();
-                    const workshopFaculty = new Map<string, Set<string>>();
-                    const workshopYears = new Map<string, number[]>();
-                    
-                    // Initialize
-                    Object.keys(workshops).forEach(wId => {
-                      workshopTopics.set(wId, new Map());
-                      workshopFaculty.set(wId, new Set());
-                      workshopYears.set(wId, []);
-                    });
-                    
-                    // Aggregate data
-                    timelineData.years.forEach(yearData => {
-                      Object.entries(yearData.workshops).forEach(([workshopId, data]) => {
-                        // Track years active
-                        workshopYears.get(workshopId)?.push(yearData.year);
-                        
-                        // Track unique faculty
-                        data.faculty.forEach(f => workshopFaculty.get(workshopId)?.add(f));
-                        
-                        // Aggregate topics
-                        data.topics.forEach((count, topic) => {
-                          const wTopics = workshopTopics.get(workshopId)!;
-                          wTopics.set(topic, (wTopics.get(topic) || 0) + count);
-                        });
-                      });
-                    });
-                    
-                    // Get top topics for each workshop
-                    const getTopTopics = (workshopId: string, limit: number = 10) => {
-                      const topics = workshopTopics.get(workshopId)!;
-                      return Array.from(topics.entries())
-                        .sort((a, b) => b[1] - a[1])
-                        .slice(0, limit);
-                    };
-                    
-                    return (
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {Object.entries(workshops).map(([workshopId, workshop]) => {
-                          const topTopics = getTopTopics(workshopId);
-                          const totalFaculty = workshopFaculty.get(workshopId)?.size || 0;
-                          const years = workshopYears.get(workshopId) || [];
-                          const activeYears = years.length;
-                          
-                          return (
-                            <div key={workshopId} className="bg-gray-50 rounded-lg p-4">
-                              <div className="mb-3">
-                                <h3 
-                                  className="font-semibold text-lg"
-                                  style={{ color: workshopColors[workshopId] }}
-                                >
-                                  {workshop.name}
-                                </h3>
-                                <div className="text-xs text-gray-600 mt-1">
-                                  {Math.min(...years)} - {Math.max(...years)} 
-                                  ({activeYears} years, {totalFaculty} faculty)
-                                </div>
-                              </div>
-                              
-                              {/* Top topics bar chart */}
-                              <div className="space-y-1">
-                                {topTopics.map(([topic, count]) => {
-                                  const percentage = (count / topTopics[0][1]) * 100;
-                                  return (
-                                    <div key={topic} className="flex items-center gap-2">
-                                      <div className="w-24 text-xs truncate" title={topic}>
-                                        {topic.split('-').slice(-1)[0]}
-                                      </div>
-                                      <div className="flex-1 bg-gray-200 rounded-full h-3 relative">
-                                        <div
-                                          className="h-3 rounded-full transition-all"
-                                          style={{
-                                            width: `${percentage}%`,
-                                            backgroundColor: workshopColors[workshopId]
-                                          }}
-                                        />
-                                      </div>
-                                      <div className="text-xs text-gray-600 w-8 text-right">
-                                        {count}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                              
-                              {/* Workshop stats */}
-                              <div className="mt-3 pt-3 border-t border-gray-200 grid grid-cols-2 gap-2 text-xs">
-                                <div>
-                                  <span className="text-gray-500">Avg faculty/year:</span>
-                                  <span className="ml-1 font-medium">
-                                    {(totalFaculty / activeYears).toFixed(1)}
-                                  </span>
-                                </div>
-                                <div>
-                                  <span className="text-gray-500">Topic diversity:</span>
-                                  <span className="ml-1 font-medium">
-                                    {workshopTopics.get(workshopId)?.size || 0}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    );
-                  })()}
-                </div>
-                <p className="text-xs text-gray-500 mt-4">
-                  Top research topics and characteristics for each workshop series
-                </p>
-              </div>
-            )}
             
             {/* Geographic Spread View */}
             {viewMode === 'geographic' && (

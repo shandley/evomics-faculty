@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 console.log('🔍 Validating and Fixing Session Count Discrepancies\n');
 
 // Load teaching data
-const teachingPath = path.join(__dirname, 'data/processed/teachingDataCompleteWoGHistorical.json');
+const teachingPath = path.join(__dirname, 'data/processed/teachingDataCompleteMultiWorkshop.json');
 const teachingData = JSON.parse(fs.readFileSync(teachingPath, 'utf8'));
 
 console.log('📊 Found teaching data for', Object.keys(teachingData).length, 'faculty\n');

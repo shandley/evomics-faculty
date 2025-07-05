@@ -63,7 +63,9 @@ function App() {
   const enrichedProfiles = useMemo(() => {
     return profiles.map(profile => ({
       ...profile,
-      enrichment: (enrichedData as any)[profile.faculty.id]?.enrichment
+      enrichment: (enrichedData as any)[profile.faculty.id]?.enrichment,
+      // Preserve teaching data that was added in useFacultyData
+      teaching: (profile as any).teaching
     })) as EnrichedFacultyProfile[];
   }, [profiles]);
 

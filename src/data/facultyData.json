@@ -121,11 +121,6 @@
       "lastName": "Cummings"
     },
     {
-      "id": "danacek-petr",
-      "firstName": "Petr",
-      "lastName": "Danacek"
-    },
-    {
       "id": "danecek-petr",
       "firstName": "Petr",
       "lastName": "Daněček"
@@ -399,11 +394,6 @@
       "id": "kucukural-alper",
       "firstName": "Alper",
       "lastName": "Kucukural"
-    },
-    {
-      "id": "langmead-ben",
-      "firstName": "Ben",
-      "lastName": "Langmead"
     },
     {
       "id": "lanzen-anders",
@@ -859,16 +849,6 @@
       "id": "zody-mike",
       "firstName": "Mike",
       "lastName": "Zody"
-    },
-    {
-      "id": "langmead-ben",
-      "firstName": "Ben",
-      "lastName": "Langmead"
-    },
-    {
-      "id": "danecek-petr",
-      "firstName": "Petr",
-      "lastName": "Daněček"
     },
     {
       "id": "kintzl-daniel",

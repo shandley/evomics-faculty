@@ -1,0 +1,271 @@
+{
+  "totalPresenters": 33,
+  "matchedCount": 32,
+  "unmatchedCount": 1,
+  "matchRate": "97.0",
+  "matches": [
+    {
+      "presenter": "Josie Paris",
+      "faculty": "Josephine Paris",
+      "score": 0.8,
+      "type": "lastname_exact_firstname_initial",
+      "presenterNormalized": "josie paris",
+      "facultyNormalized": "josephine paris"
+    },
+    {
+      "presenter": "Mike Zody",
+      "faculty": "Mike Zody",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "mike zody",
+      "facultyNormalized": "mike zody"
+    },
+    {
+      "presenter": "Guy Leonard",
+      "faculty": "Guy Leonard",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "guy leonard",
+      "facultyNormalized": "guy leonard"
+    },
+    {
+      "presenter": "Mercè Montoliu Nerín",
+      "faculty": "Mercè Montoliu-Nerin",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "merce montoliu nerin",
+      "facultyNormalized": "merce montoliu nerin"
+    },
+    {
+      "presenter": "Rayan Chikhi",
+      "faculty": "Rayan Chikhi",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "rayan chikhi",
+      "facultyNormalized": "rayan chikhi"
+    },
+    {
+      "presenter": "Katharina Hoff",
+      "faculty": "Katharina Hoff",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "katharina hoff",
+      "facultyNormalized": "katharina hoff"
+    },
+    {
+      "presenter": "Camille Marchet",
+      "faculty": "Camille Marchet",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "camille marchet",
+      "facultyNormalized": "camille marchet"
+    },
+    {
+      "presenter": "Antoine Limasset",
+      "faculty": "Antoine Limasset",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "antoine limasset",
+      "facultyNormalized": "antoine limasset"
+    },
+    {
+      "presenter": "Fritz Sedlazeck",
+      "faculty": "Fritz Sedlazeck",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "fritz sedlazeck",
+      "facultyNormalized": "fritz sedlazeck"
+    },
+    {
+      "presenter": "Olga Vinnere Pettersson",
+      "faculty": "Olga Vinnere Pettersson",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "olga vinnere pettersson",
+      "facultyNormalized": "olga vinnere pettersson"
+    },
+    {
+      "presenter": "Erik Garrison",
+      "faculty": "Erik Garrison",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "erik garrison",
+      "facultyNormalized": "erik garrison"
+    },
+    {
+      "presenter": "Chris Wheat",
+      "faculty": "Chris Wheat",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "chris wheat",
+      "facultyNormalized": "chris wheat"
+    },
+    {
+      "presenter": "Evan Eichler",
+      "faculty": "Evan Eichler",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "evan eichler",
+      "facultyNormalized": "evan eichler"
+    },
+    {
+      "presenter": "Ben Langmead",
+      "faculty": "Ben Langmead",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "ben langmead",
+      "facultyNormalized": "ben langmead"
+    },
+    {
+      "presenter": "Brian Haas",
+      "faculty": "Brian Haas",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "brian haas",
+      "facultyNormalized": "brian haas"
+    },
+    {
+      "presenter": "Sonya Dyhrman",
+      "faculty": "Sonya Dyhrman",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "sonya dyhrman",
+      "facultyNormalized": "sonya dyhrman"
+    },
+    {
+      "presenter": "Marcela Uliano-Silva",
+      "faculty": "Marcela Uliano-Silva",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "marcela uliano silva",
+      "facultyNormalized": "marcela uliano silva"
+    },
+    {
+      "presenter": "Scott Handley",
+      "faculty": "Scott Handley",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "scott handley",
+      "facultyNormalized": "scott handley"
+    },
+    {
+      "presenter": "Petr Daněček",
+      "faculty": "Petr Daněček",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "petr danecek",
+      "facultyNormalized": "petr danecek"
+    },
+    {
+      "presenter": "Rachel Steward",
+      "faculty": "Rachel Steward",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "rachel steward",
+      "facultyNormalized": "rachel steward"
+    },
+    {
+      "presenter": "Oleg Simakov",
+      "faculty": "Oleg Simakov",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "oleg simakov",
+      "facultyNormalized": "oleg simakov"
+    },
+    {
+      "presenter": "David Barnett",
+      "faculty": "David Barnett",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "david barnett",
+      "facultyNormalized": "david barnett"
+    },
+    {
+      "presenter": "Vincenza Colonna",
+      "faculty": "Vincenza Colonna",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "vincenza colonna",
+      "facultyNormalized": "vincenza colonna"
+    },
+    {
+      "presenter": "Dag Ahrén",
+      "faculty": "Dag Ahrén",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "dag ahren",
+      "facultyNormalized": "dag ahren"
+    },
+    {
+      "presenter": "Rosa Fernández",
+      "faculty": "Rosa Fernández",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "rosa fernandez",
+      "facultyNormalized": "rosa fernandez"
+    },
+    {
+      "presenter": "Natalia Nenasheva",
+      "faculty": "Natalia Nenasheva",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "natalia nenasheva",
+      "facultyNormalized": "natalia nenasheva"
+    },
+    {
+      "presenter": "Rob Waterhouse",
+      "faculty": "Robert Waterhouse",
+      "score": 0.9,
+      "type": "lastname_exact_firstname_prefix",
+      "presenterNormalized": "rob waterhouse",
+      "facultyNormalized": "robert waterhouse"
+    },
+    {
+      "presenter": "Francesco Cicconardi",
+      "faculty": "Francesco Cicconardi",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "francesco cicconardi",
+      "facultyNormalized": "francesco cicconardi"
+    },
+    {
+      "presenter": "Aitor Blanco Miguez",
+      "faculty": "Altor Blanco Miguez",
+      "score": 0.8,
+      "type": "lastname_exact_firstname_initial",
+      "presenterNormalized": "aitor blanco miguez",
+      "facultyNormalized": "altor blanco miguez"
+    },
+    {
+      "presenter": "Paolo Manghi",
+      "faculty": "Paolo Manghi",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "paolo manghi",
+      "facultyNormalized": "paolo manghi"
+    },
+    {
+      "presenter": "James Whiting",
+      "faculty": "James Whiting",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "james whiting",
+      "facultyNormalized": "james whiting"
+    },
+    {
+      "presenter": "Doug Scofield",
+      "faculty": "Doug Scofield",
+      "score": 1,
+      "type": "exact_normalized",
+      "presenterNormalized": "doug scofield",
+      "facultyNormalized": "doug scofield"
+    }
+  ],
+  "unmatched": [
+    {
+      "presenter": "Daniel Kintzl",
+      "normalized": "daniel kintzl"
+    }
+  ],
+  "processedAt": "2025-07-05T17:56:55.160Z"
+}

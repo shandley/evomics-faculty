@@ -1,0 +1,145 @@
+{
+  "totalFaculty": 28,
+  "totalSessions": 76,
+  "topTeachers": [
+    {
+      "name": "Katharina Hoff",
+      "sessions": 6,
+      "specializations": [
+        "Genome Annotation"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Rayan Chikhi",
+      "sessions": 5,
+      "specializations": [
+        "Sequence Alignment",
+        "Computational Methods"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Camille Marchet",
+      "sessions": 5,
+      "specializations": [
+        "Genome Assembly"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Antoine Limasset",
+      "sessions": 5,
+      "specializations": [
+        "Genome Assembly"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Erik Garrison",
+      "sessions": 5,
+      "specializations": [
+        "Variant Analysis",
+        "General Genomics"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Josephine Paris",
+      "sessions": 4,
+      "specializations": [
+        "General Genomics"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Mike Zody",
+      "sessions": 4,
+      "specializations": [
+        "Sequencing Technologies",
+        "General Genomics",
+        "Sequence Alignment"
+      ],
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Guy Leonard",
+      "sessions": 4,
+      "specializations": [
+        "Computational Methods",
+        "General Genomics"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Brian Haas",
+      "sessions": 4,
+      "specializations": [
+        "Transcriptomics"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Marcela Uliano-Silva",
+      "sessions": 4,
+      "specializations": [
+        "Genome Assembly"
+      ],
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    }
+  ],
+  "specializations": {
+    "General Genomics": 7,
+    "Sequencing Technologies": 2,
+    "Sequence Alignment": 2,
+    "Computational Methods": 5,
+    "Genome Annotation": 2,
+    "Genome Assembly": 3,
+    "Variant Analysis": 2,
+    "Experimental Design": 1,
+    "Structural Variation": 1,
+    "Transcriptomics": 2,
+    "Population Genomics": 5,
+    "Microbiome Analysis": 1,
+    "Phylogenomics": 1
+  }
+}

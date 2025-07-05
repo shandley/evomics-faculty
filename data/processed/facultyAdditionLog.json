@@ -1,0 +1,27 @@
+{
+  "addedAt": "2025-07-05T17:56:48.762Z",
+  "addedFaculty": [
+    {
+      "id": "langmead-ben",
+      "firstName": "Ben",
+      "lastName": "Langmead",
+      "researchNote": "Johns Hopkins University, Associate Professor, Bioinformatics specialist, Known for Bowtie/Bowtie2 alignment tools",
+      "workshopRole": "Genome Indexing expert",
+      "addedReason": "Found in 2025 WoG workshop teaching Genome Indexing"
+    },
+    {
+      "id": "danecek-petr",
+      "firstName": "Petr",
+      "lastName": "Daněček",
+      "researchNote": "Wellcome Sanger Institute, Senior Bioinformatician, BCFtools/SAMtools contributor",
+      "workshopRole": "Bioinformatics file formats specialist",
+      "addedReason": "Found in 2024 WoG workshop teaching Essential File Types in Bioinformatics"
+    }
+  ],
+  "newTotalFaculty": 172,
+  "reason": "Workshop presenter matching improvement for 2023-2025 WoG data",
+  "expectedImprovements": [
+    "Ben Langmead: 2025 WoG Genome Indexing sessions",
+    "Petr Daněček: 2024 WoG Essential File Types session"
+  ]
+}

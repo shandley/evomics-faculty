@@ -1,6 +1,0 @@
-1. Christopher Desjardins (desjardins-christopher)
-2. A. Murat Eren (eren-murat)
-3. Yonatan Grad (grad-yonatan)
-4. Peter Kharchenko (kharchenko-peter)
-5. Sergei L Kosakovsky Pond (kosakovsky-pond-sergei)
-6. Alejandro Reyes (reyes-alejandro)

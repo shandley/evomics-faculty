@@ -15711,10 +15711,16 @@
     "id": "beerli-peter",
     "name": "Peter Beerli",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:55:45.463Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Florida State University",
+        "department": "Department of Scientific Computing",
+        "title": "Professor"
+      },
+      "academic": {
+        "orcid": "0000-0002-9090-662X"
+      },
       "profile": {}
     }
   },
@@ -15722,10 +15728,16 @@
     "id": "hoehna-sebastian",
     "name": "Sebastian Hoehna",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:55:45.463Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Ludwig-Maximilians-Universität München",
+        "department": "Department of Earth and Environmental Sciences",
+        "title": "Professor"
+      },
+      "academic": {
+        "orcid": "0000-0001-5135-5212"
+      },
       "profile": {}
     }
   },
@@ -15733,10 +15745,16 @@
     "id": "lewis-paul",
     "name": "Paul Lewis",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:55:45.463Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "University of Connecticut",
+        "department": "Department of Ecology and Evolutionary Biology",
+        "title": "Professor"
+      },
+      "academic": {
+        "orcid": "0000-0001-9852-8759"
+      },
       "profile": {}
     }
   },
@@ -15744,10 +15762,16 @@
     "id": "pennell-matt",
     "name": "Matt Pennell",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:55:45.463Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "University of British Columbia",
+        "department": "Department of Zoology",
+        "title": "Associate Professor"
+      },
+      "academic": {
+        "orcid": "0000-0001-8396-8103"
+      },
       "profile": {}
     }
   },
@@ -15755,10 +15779,16 @@
     "id": "stadler-tanja",
     "name": "Tanja Stadler",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:55:45.463Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "ETH Zurich",
+        "department": "Department of Biosystems Science and Engineering",
+        "title": "Professor"
+      },
+      "academic": {
+        "orcid": "0000-0003-1815-0706"
+      },
       "profile": {}
     }
   },
@@ -15766,9 +15796,13 @@
     "id": "desjardins-christopher",
     "name": "Christopher Desjardins",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:58:30.337Z",
-      "confidence": "pending",
-      "professional": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Broad Institute",
+        "department": "Infectious Disease and Microbiome Program",
+        "title": "Computational Biologist"
+      },
       "academic": {},
       "profile": {}
     }
@@ -15777,10 +15811,16 @@
     "id": "eren-murat",
     "name": "A. Murat Eren",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:58:30.337Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "University of Chicago",
+        "department": "Department of Medicine",
+        "title": "Assistant Professor"
+      },
+      "academic": {
+        "orcid": "0000-0001-9013-4827"
+      },
       "profile": {}
     }
   },
@@ -15788,10 +15828,16 @@
     "id": "grad-yonatan",
     "name": "Yonatan Grad",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:58:30.337Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Harvard T.H. Chan School of Public Health",
+        "department": "Department of Immunology and Infectious Diseases",
+        "title": "Associate Professor"
+      },
+      "academic": {
+        "orcid": "0000-0001-5646-1314"
+      },
       "profile": {}
     }
   },
@@ -15799,10 +15845,16 @@
     "id": "kharchenko-peter",
     "name": "Peter Kharchenko",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:58:30.337Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Harvard Medical School",
+        "department": "Department of Biomedical Informatics",
+        "title": "Associate Professor"
+      },
+      "academic": {
+        "orcid": "0000-0002-0930-4948"
+      },
       "profile": {}
     }
   },
@@ -15810,10 +15862,16 @@
     "id": "kosakovsky-pond-sergei",
     "name": "Sergei L Kosakovsky Pond",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:58:30.337Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Temple University",
+        "department": "Institute for Genomics and Evolutionary Medicine",
+        "title": "Professor"
+      },
+      "academic": {
+        "orcid": "0000-0002-2047-8863"
+      },
       "profile": {}
     }
   },
@@ -15821,10 +15879,16 @@
     "id": "reyes-alejandro",
     "name": "Alejandro Reyes",
     "enrichment": {
-      "lastUpdated": "2025-07-05T20:58:30.337Z",
-      "confidence": "pending",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-05",
+      "confidence": "high",
+      "professional": {
+        "affiliation": "Dana-Farber Cancer Institute",
+        "department": "Department of Data Science",
+        "title": "Principal Research Scientist"
+      },
+      "academic": {
+        "orcid": "0000-0001-8717-6612"
+      },
       "profile": {}
     }
   }

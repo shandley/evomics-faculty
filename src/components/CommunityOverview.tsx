@@ -6,19 +6,27 @@ interface CommunityOverviewProps {
 }
 
 export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }) => {
-  // Calculate year range for the community
+  // Calculate year range for the community (including teaching history)
   const allYears = new Set<number>();
   profiles.forEach(profile => {
+    // Include participation years
     Object.values(profile.participations).forEach(years => {
       years.forEach(year => allYears.add(year));
     });
+    
+    // Include teaching history years
+    if (profile.teaching?.yearsActive) {
+      profile.teaching.yearsActive.forEach(year => allYears.add(year));
+    }
   });
-  const yearRange = allYears.size > 0 
-    ? `${Math.min(...allYears)} - ${Math.max(...allYears)}`
-    : 'N/A';
-  const totalYears = allYears.size > 0 
-    ? Math.max(...allYears) - Math.min(...allYears) + 1
-    : 0;
+  
+  const minYear = allYears.size > 0 ? Math.min(...allYears) : 2011;
+  const maxYear = allYears.size > 0 ? Math.max(...allYears) : new Date().getFullYear();
+  const yearRange = `${minYear} - ${maxYear}`;
+  const totalYears = maxYear - minYear + 1;
+  
+  // Calculate teaching statistics
+  const facultyWithTeaching = profiles.filter(p => p.teaching?.totalSessions > 0);
 
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
@@ -38,7 +46,7 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
             <div>
               <div className="text-3xl font-bold text-blue-700">{profiles.length}</div>
               <div className="text-sm font-medium text-blue-600">Faculty Alumni</div>
-              <div className="text-xs text-blue-500 mt-1">Current dashboard</div>
+              <div className="text-xs text-blue-500 mt-1">{facultyWithTeaching.length} with teaching history</div>
             </div>
             <div className="text-blue-600">
               <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,7 +56,7 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
             </div>
           </div>
           <div className="text-blue-600 text-sm font-medium">
-            Current Dashboard
+            Complete Historical Dataset
             <svg className="w-4 h-4 ml-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>

@@ -11,14 +11,21 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
   const totalFaculty = profiles.length;
   const totalWorkshops = Object.keys(workshops).filter(id => workshops[id].active).length;
   
-  // Get all unique years across all workshops
+  // Get all unique years across all workshops (including teaching history)
   const allYears = new Set<number>();
   profiles.forEach(profile => {
+    // Include participation years
     Object.values(profile.participations).flat().forEach(year => allYears.add(year));
+    
+    // Include teaching history years if available
+    if (profile.teaching?.yearsActive) {
+      profile.teaching.yearsActive.forEach(year => allYears.add(year));
+    }
   });
-  const yearRange = allYears.size > 0 
-    ? Math.max(...allYears) - Math.min(...allYears) + 1 
-    : 0;
+  
+  const minYear = allYears.size > 0 ? Math.min(...allYears) : new Date().getFullYear();
+  const maxYear = allYears.size > 0 ? Math.max(...allYears) : new Date().getFullYear();
+  const yearRange = maxYear - minYear + 1;
   
   // Calculate average years per faculty
   const avgYears = profiles.length > 0
@@ -57,8 +64,9 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
       textColor: 'text-purple-600'
     },
     {
-      label: 'Years of Excellence',
-      value: yearRange,
+      label: 'Historical Coverage',
+      value: `${minYear}-${maxYear}`,
+      description: `${yearRange} years`,
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -95,6 +103,9 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
               <div>
                 <p className="text-sm font-medium text-gray-600 mb-1">{stat.label}</p>
                 <p className="text-3xl font-bold text-gray-900">{stat.value}</p>
+                {(stat as any).description && (
+                  <p className="text-sm text-gray-500 mt-1">{(stat as any).description}</p>
+                )}
               </div>
               <div className={`${stat.bgColor} p-3 rounded-lg`}>
                 <div className={stat.textColor}>
@@ -113,6 +124,24 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
           {Object.entries(workshops).map(([id, workshop]) => {
             const count = workshopCounts[id] || 0;
             const percentage = totalFaculty > 0 ? ((count / totalFaculty) * 100).toFixed(0) : '0';
+            
+            // Calculate years of operation for this workshop
+            const workshopYears = new Set<number>();
+            profiles.forEach(profile => {
+              if (profile.participations[id]?.length > 0) {
+                profile.participations[id].forEach(year => workshopYears.add(year));
+              }
+              if (profile.teaching?.workshopsHistory?.[id.toUpperCase()]) {
+                Object.keys(profile.teaching.workshopsHistory[id.toUpperCase()]).forEach(year => 
+                  workshopYears.add(parseInt(year))
+                );
+              }
+            });
+            
+            const workshopMinYear = workshopYears.size > 0 ? Math.min(...workshopYears) : workshop.startYear;
+            const workshopMaxYear = workshopYears.size > 0 ? Math.max(...workshopYears) : new Date().getFullYear();
+            const workshopRange = `${workshopMinYear}-${workshopMaxYear}`;
+            
             const colors = {
               wog: 'bg-blue-100 text-blue-800',
               wpsg: 'bg-purple-100 text-purple-800',
@@ -126,6 +155,7 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
                     {workshop.shortName}
                   </span>
                   <p className="text-sm text-gray-600 mt-1">{workshop.name}</p>
+                  <p className="text-xs text-gray-500 mt-1">Active: {workshopRange}</p>
                 </div>
                 <div className="text-right">
                   <p className="text-2xl font-bold text-gray-900">{count}</p>
@@ -134,6 +164,53 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* Teaching History Statistics */}
+      <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 animate-slide-up mt-6" style={{ animationDelay: '500ms' }}>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Teaching History Overview</h3>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          {(() => {
+            // Calculate teaching statistics
+            const facultyWithTeaching = profiles.filter(p => p.teaching?.totalSessions > 0);
+            const totalSessions = facultyWithTeaching.reduce((sum, p) => sum + (p.teaching?.totalSessions || 0), 0);
+            const allSpecializations = new Set<string>();
+            facultyWithTeaching.forEach(p => {
+              p.teaching?.specializations?.forEach(spec => allSpecializations.add(spec));
+            });
+            
+            const teachingStats = [
+              {
+                label: 'Faculty with Teaching History',
+                value: facultyWithTeaching.length,
+                subtitle: `${totalFaculty > 0 ? Math.round((facultyWithTeaching.length / totalFaculty) * 100) : 0}% of total`
+              },
+              {
+                label: 'Total Teaching Sessions',
+                value: totalSessions,
+                subtitle: `Across ${yearRange} years`
+              },
+              {
+                label: 'Teaching Specializations',
+                value: allSpecializations.size,
+                subtitle: 'Unique topic areas'
+              },
+              {
+                label: 'Avg Sessions/Faculty',
+                value: facultyWithTeaching.length > 0 ? Math.round(totalSessions / facultyWithTeaching.length) : 0,
+                subtitle: 'For teaching faculty'
+              }
+            ];
+
+            return teachingStats.map((stat, index) => (
+              <div key={stat.label} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4">
+                <p className="text-sm font-medium text-gray-600 mb-1">{stat.label}</p>
+                <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+                <p className="text-xs text-gray-500 mt-1">{stat.subtitle}</p>
+              </div>
+            ));
+          })()}
         </div>
       </div>
     </div>

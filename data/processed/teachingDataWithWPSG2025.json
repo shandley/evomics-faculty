@@ -1,0 +1,1892 @@
+{
+  "paris-josephine": {
+    "teaching": {
+      "totalSessions": 7,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "15th May",
+              "time": "09-12",
+              "topic": "Introduction and Orientation",
+              "type": "orientation",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Daniel Kintzl"
+              ]
+            },
+            {
+              "date": "19th May",
+              "time": "19-22",
+              "topic": "Genomics Adventure",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Guy Leonard"
+              ]
+            }
+          ],
+          "2024": [
+            {
+              "date": "8th Jan",
+              "time": "09-12",
+              "topic": "Introduction and Orientation",
+              "type": "orientation",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Daniel Kintzl"
+              ]
+            }
+          ],
+          "2025": [
+            {
+              "date": "6th Jan",
+              "time": "09-12",
+              "topic": "Introduction and Orientation Town Services",
+              "type": "orientation",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Daniel Kintzl"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "General Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "zody-mike": {
+    "teaching": {
+      "totalSessions": 6,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "15th May",
+              "time": "14-17",
+              "topic": "Sequencing Technology and Study Design",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "17th May",
+              "time": "09-12",
+              "topic": "Alignment",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "6th Jan",
+              "time": "14-17",
+              "topic": "Sequencing Technologies",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "7th Jan",
+              "time": "14-17",
+              "topic": "Essential File Types in Bioinformatics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Sequencing Technologies",
+        "General Genomics",
+        "Sequence Alignment"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "leonard-guy": {
+    "teaching": {
+      "totalSessions": 6,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "19th May",
+              "time": "19-22",
+              "topic": "Genomics Adventure",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Josephine Paris"
+              ]
+            }
+          ],
+          "2024": [
+            {
+              "date": "12th Jan",
+              "time": "19-22",
+              "topic": "Genomics Adventure",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "7th Jan",
+              "time": "09-12",
+              "topic": "AMIs, the Cloud, and Computing Introduction to UNIX",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Mercè Montoliu Nerín"
+              ]
+            },
+            {
+              "date": "11th Jan",
+              "time": "14-17",
+              "topic": "Genomics Adventure",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Computational Methods",
+        "General Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "chikhi-rayan": {
+    "teaching": {
+      "totalSessions": 8,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "20th May",
+              "time": "14-15",
+              "topic": "BIG Data",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "10th Jan",
+              "time": "09-12",
+              "topic": "Alignment",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "19th Jan",
+              "time": "09-12",
+              "topic": "BIG DATA",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "8th Jan",
+              "time": "09-12",
+              "topic": "Alignment",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "17th Jan",
+              "time": "09-12",
+              "topic": "BIG DATA",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Sequence Alignment",
+        "Computational Methods"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "hoff-katharina": {
+    "teaching": {
+      "totalSessions": 10,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "19th May",
+              "time": "09-12",
+              "topic": "Genome Annotation",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Natalia Nenasheva"
+              ]
+            },
+            {
+              "date": "19th May",
+              "time": "14-17",
+              "topic": "Genome Annotation",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Natalia Nenasheva"
+              ]
+            }
+          ],
+          "2024": [
+            {
+              "date": "10th Jan",
+              "time": "14-17",
+              "topic": "Genome Annotation",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "10th Jan",
+              "time": "19-22",
+              "topic": "Genome Annotation practical",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "8th Jan",
+              "time": "14-17",
+              "topic": "Genome Annotation: Theory and Principles",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "8th Jan",
+              "time": "19-22",
+              "topic": "Genome Annotation practical",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Genome Annotation"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "marchet-camille": {
+    "teaching": {
+      "totalSessions": 8,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "18th May",
+              "time": "09-12",
+              "topic": "Genome Assembly: theory and principles",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Antoine Limasset"
+              ]
+            }
+          ],
+          "2024": [
+            {
+              "date": "11th Jan",
+              "time": "09-12",
+              "topic": "Genome Assembly",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Antoine Limasset"
+              ]
+            },
+            {
+              "date": "11th Jan",
+              "time": "14-17",
+              "topic": "Genome Assembly practical",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Antoine Limasset"
+              ]
+            }
+          ],
+          "2025": [
+            {
+              "date": "9th Jan",
+              "time": "09-12",
+              "topic": "Genome Assembly: Theory and Principles",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Antoine Limasset"
+              ]
+            },
+            {
+              "date": "9th Jan",
+              "time": "14-17",
+              "topic": "Genome Assembly practical",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Antoine Limasset"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Genome Assembly"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "limasset-antoine": {
+    "teaching": {
+      "totalSessions": 8,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "18th May",
+              "time": "09-12",
+              "topic": "Genome Assembly: theory and principles",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Camille Marchet"
+              ]
+            }
+          ],
+          "2024": [
+            {
+              "date": "11th Jan",
+              "time": "09-12",
+              "topic": "Genome Assembly",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Camille Marchet"
+              ]
+            },
+            {
+              "date": "11th Jan",
+              "time": "14-17",
+              "topic": "Genome Assembly practical",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Camille Marchet"
+              ]
+            }
+          ],
+          "2025": [
+            {
+              "date": "9th Jan",
+              "time": "09-12",
+              "topic": "Genome Assembly: Theory and Principles",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Camille Marchet"
+              ]
+            },
+            {
+              "date": "9th Jan",
+              "time": "14-17",
+              "topic": "Genome Assembly practical",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Camille Marchet"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Genome Assembly"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "sedlazeck-fritz": {
+    "teaching": {
+      "totalSessions": 5,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "17th May",
+              "time": "19-22",
+              "topic": "Structural Variants",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "12th Jan",
+              "time": "14-17",
+              "topic": "Structural Variant Calling",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "9th Jan",
+              "time": "19-22",
+              "topic": "Structural Variant Calling",
+              "type": "lab",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Variant Analysis"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "pettersson-olga-vinnere": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WoG": {
+          "2025": [
+            {
+              "date": "10th Jan",
+              "time": "09-12",
+              "topic": "Experimental Design in Genomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Experimental Design"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "garrison-erik": {
+    "teaching": {
+      "totalSessions": 9,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "17th May",
+              "time": "14-17",
+              "topic": "Variant Calling",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            },
+            {
+              "date": "20th May",
+              "time": "09-12",
+              "topic": "Pangenomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "12th Jan",
+              "time": "09-12",
+              "topic": "Variant Calling",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "13th Jan",
+              "time": "14-17",
+              "topic": "Pangenomics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "10th Jan",
+              "time": "14-17",
+              "topic": "Variant Calling",
+              "type": "lab",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Variant Analysis",
+        "General Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "wheat-chris": {
+    "teaching": {
+      "totalSessions": 5,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "26th May",
+              "time": "09-12",
+              "topic": "Lies, Damn Lies, and Genomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "13th Jan",
+              "time": "09-12",
+              "topic": "Lies, Damn Lies, and Genomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "11th Jan",
+              "time": "09-12",
+              "topic": "Lies, Damn Lies, and Genomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "General Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "eichler-evan": {
+    "teaching": {
+      "totalSessions": 5,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "25th May",
+              "time": "09-12",
+              "topic": "Genome Structural Variation",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "18th Jan",
+              "time": "09-12",
+              "topic": "Genome Structural Variation",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "13th Jan",
+              "time": "09-12",
+              "topic": "Genome Structural Variation",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Structural Variation",
+        "General Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "haas-brian": {
+    "teaching": {
+      "totalSessions": 6,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "23rd May",
+              "time": "14-17",
+              "topic": "Transcriptomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "15th Jan",
+              "time": "09-12",
+              "topic": "Transcriptomics and Single-cell Transcriptomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "14th Jan",
+              "time": "09-12",
+              "topic": "Transcriptomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            },
+            {
+              "date": "14th Jan",
+              "time": "14-17",
+              "topic": "Transcriptomics Lab",
+              "type": "lab",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Transcriptomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "dyhrman-sonya": {
+    "teaching": {
+      "totalSessions": 5,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "24th May",
+              "time": "09-12",
+              "topic": "Genomics in the Ocean",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "16th Jan",
+              "time": "09-12",
+              "topic": "Genomics in the Ocean",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "15th Jan",
+              "time": "09-12",
+              "topic": "Genomics in the Ocean",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "General Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "uliano-silva-marcela": {
+    "teaching": {
+      "totalSessions": 7,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "18th May",
+              "time": "14-17",
+              "topic": "Genome Assembly: from reads to a genome",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            },
+            {
+              "date": "18th May",
+              "time": "19-22",
+              "topic": "Genome Assembly: from reads to a genome",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "17th Jan",
+              "time": "09-12",
+              "topic": "The wonders of genome assembly!",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2025": [
+            {
+              "date": "16th Jan",
+              "time": "09-12",
+              "topic": "Wonders of Genome Assembly",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Genome Assembly"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024,
+        2025
+      ],
+      "yearRange": "2023-2025"
+    }
+  },
+  "handley-scott": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2024": [
+            {
+              "date": "8th Jan",
+              "time": "14-17",
+              "topic": "Sequencing Technology",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Sequencing Technologies"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2024,
+      "yearsActive": [
+        2024
+      ],
+      "yearRange": "2024-2024"
+    }
+  },
+  "steward-rachel": {
+    "teaching": {
+      "totalSessions": 4,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "23rd May",
+              "time": "19-22",
+              "topic": "Differential Gene Expression",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "15th Jan",
+              "time": "19-22",
+              "topic": "Analysis of RNASeq Data",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Computational Methods",
+        "General Genomics",
+        "Transcriptomics"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024
+      ],
+      "yearRange": "2023-2024"
+    }
+  },
+  "simakov-oleg": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2024": [
+            {
+              "date": "16th Jan",
+              "time": "14-17",
+              "topic": "Comparative Genomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2024,
+      "yearsActive": [
+        2024
+      ],
+      "yearRange": "2024-2024"
+    }
+  },
+  "barnett-david": {
+    "teaching": {
+      "totalSessions": 4,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "24th May",
+              "time": "19-22",
+              "topic": "Microbiome Analysis",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "16th Jan",
+              "time": "19-22",
+              "topic": "Microbiome Analysis",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Microbiome Analysis"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024
+      ],
+      "yearRange": "2023-2024"
+    }
+  },
+  "colonna-vincenza": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2024": [
+            {
+              "date": "17th Jan",
+              "time": "14-17",
+              "topic": "Population Genomics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2024,
+      "yearsActive": [
+        2024
+      ],
+      "yearRange": "2024-2024"
+    }
+  },
+  "ahren-dag": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2024": [
+            {
+              "date": "18th Jan",
+              "time": "14-17",
+              "topic": "Best Practices in Handling Genomic Data",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Computational Methods"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2024,
+      "yearsActive": [
+        2024
+      ],
+      "yearRange": "2024-2024"
+    }
+  },
+  "fernandez-rosa": {
+    "teaching": {
+      "totalSessions": 4,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "23rd May",
+              "time": "09-12",
+              "topic": "Phylogenomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ],
+          "2024": [
+            {
+              "date": "18th Jan",
+              "time": "19-22",
+              "topic": "Phylogenomics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Phylogenomics"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024
+      ],
+      "yearRange": "2023-2024"
+    }
+  },
+  "nenasheva-natalia": {
+    "teaching": {
+      "totalSessions": 4,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "19th May",
+              "time": "09-12",
+              "topic": "Genome Annotation",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Katharina Hoff"
+              ]
+            },
+            {
+              "date": "19th May",
+              "time": "14-17",
+              "topic": "Genome Annotation",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Katharina Hoff"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Genome Annotation"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "waterhouse-robert": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "22nd May",
+              "time": "09-12",
+              "topic": "Comparative Genomics",
+              "type": "lecture",
+              "location": "Town Theatre",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "cicconardi-francesco": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "22nd May",
+              "time": "14-17",
+              "topic": "Comparative Genomics",
+              "type": "practical",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "manghi-paolo": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "24th May",
+              "time": "14-17",
+              "topic": "Metagenomics & Metatranscriptomics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Altor Blanco Miguez"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Transcriptomics"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "whiting-james": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "25th May",
+              "time": "14-17",
+              "topic": "Population Genomics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "scofield-doug": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "25th May",
+              "time": "19-22",
+              "topic": "Best Practices in Handling Genomic Data",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Computational Methods"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "kintzl-daniel": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "15th May",
+              "time": "09-12",
+              "topic": "Introduction and Orientation",
+              "type": "orientation",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Josephine Paris"
+              ]
+            }
+          ],
+          "2024": [
+            {
+              "date": "8th Jan",
+              "time": "09-12",
+              "topic": "Introduction and Orientation",
+              "type": "orientation",
+              "location": "Town Theatre",
+              "coPresenters": [
+                "Josephine Paris"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "General Genomics"
+      ],
+      "lastTaught": 2024,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023,
+        2024
+      ],
+      "yearRange": "2023-2024"
+    }
+  },
+  "blanco-miguez-altor": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WoG": {
+          "2023": [
+            {
+              "date": "24th May",
+              "time": "14-17",
+              "topic": "Metagenomics & Metatranscriptomics",
+              "type": "lecture",
+              "location": "House of Prelate",
+              "coPresenters": [
+                "Paolo Manghi"
+              ]
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Transcriptomics"
+      ],
+      "lastTaught": 2023,
+      "firstTaught": 2023,
+      "yearsActive": [
+        2023
+      ],
+      "yearRange": "2023-2023"
+    }
+  },
+  "matschiner-michael": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "20th Jan",
+              "time": "14-17",
+              "topic": "Likelihood and Probability",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Computational Methods"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "hahn-matthew": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "21st Jan",
+              "time": "09-12",
+              "topic": "Molecular Population Genomics",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            },
+            {
+              "date": "22nd Jan",
+              "time": "09-12",
+              "topic": "Coalescent Theory",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics",
+        "Coalescent Theory"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "sousa-vitor": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "22nd Jan",
+              "time": "14-17",
+              "topic": "Model-based Inference of Population History",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            },
+            {
+              "date": "22nd Jan",
+              "time": "19-22",
+              "topic": "fastsimcoal2 Activity",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics",
+        "Coalescent Theory"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "suh-alexander": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "23rd Jan",
+              "time": "09-12",
+              "topic": "Structural Variation",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Structural Variation"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "peona-valentina": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "23rd Jan",
+              "time": "14-17",
+              "topic": "Structural Variation Activity",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Structural Variation"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "leonard-alexander": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "23rd Jan",
+              "time": "19-22",
+              "topic": "Pangenomics",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Structural Variation"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "kern-andrew": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "24th Jan",
+              "time": "09-12",
+              "topic": "Machine Learning",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            },
+            {
+              "date": "24th Jan",
+              "time": "14-17",
+              "topic": "Machine Learning Activity",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Machine Learning"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "meier-joana": {
+    "teaching": {
+      "totalSessions": 3,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "24th Jan",
+              "time": "19-22",
+              "topic": "Experimental Design",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            },
+            {
+              "date": "27th Jan",
+              "time": "09-12",
+              "topic": "Hybridisation",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            },
+            {
+              "date": "28th Jan",
+              "time": "19-22",
+              "topic": "Selective Sweep Identification",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Experimental Design",
+        "Hybridization & Introgression",
+        "Population Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "salzburger-walter": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "25th Jan",
+              "time": "09-12",
+              "topic": "The Genomics of Organismal Diversification",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "peichel-katie": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "28th Jan",
+              "time": "09-12",
+              "topic": "Combining Genomics with Experimental Studies of Adaptation",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Selection & Adaptation"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "bohutinska-magdalena": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "28th Jan",
+              "time": "14-17",
+              "topic": "Detecting Positive Selection",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Selection & Adaptation"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "tsambos-georgia": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "29th Jan",
+              "time": "09-12",
+              "topic": "Coalescent Simulation and Inference Activity 1/2",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            },
+            {
+              "date": "29th Jan",
+              "time": "14-17",
+              "topic": "Coalescent Simulation and Inference Activity 2/2",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Coalescent Theory"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "petr-martin": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "29th Jan",
+              "time": "19-22",
+              "topic": "Building Intuition into Population Genetics Fundamentals and Inference",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Population Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "trucchi-emiliano": {
+    "teaching": {
+      "totalSessions": 2,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "30th Jan",
+              "time": "09-12",
+              "topic": "Conservation Genomics",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            },
+            {
+              "date": "30th Jan",
+              "time": "14-17",
+              "topic": "Genetic Load Activities",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Conservation Genomics",
+        "Population Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "hofreiter-michael": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "31st Jan",
+              "time": "09-12",
+              "topic": "Ancient Genomics",
+              "type": "lecture",
+              "location": "Town Theater",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Ancient Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  },
+  "westbury-michael": {
+    "teaching": {
+      "totalSessions": 1,
+      "workshopsHistory": {
+        "WPSG": {
+          "2025": [
+            {
+              "date": "31st Jan",
+              "time": "14-17",
+              "topic": "Ancient Genomics Activity",
+              "type": "practical",
+              "location": "Egon Schiele Art Center",
+              "coPresenters": []
+            }
+          ]
+        }
+      },
+      "specializations": [
+        "Ancient Genomics"
+      ],
+      "lastTaught": 2025,
+      "firstTaught": 2025,
+      "yearsActive": [
+        2025
+      ],
+      "yearRange": "2025-2025"
+    }
+  }
+}

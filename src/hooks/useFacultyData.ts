@@ -3,7 +3,7 @@ import type { Faculty, Participation, Workshop, TeachingHistory } from '../types
 import { generateFacultyProfiles, enhanceFacultyProfilesWithTeaching } from '../utils/dataTransform';
 import facultyDataJson from '../data/facultyData.json';
 import workshopsJson from '../data/workshops.json';
-import teachingDataJson from '../../data/processed/teachingDataComplete2023-2025.json';
+import teachingDataJson from '../../data/processed/teachingDataMultiWorkshop.json';
 
 export function useFacultyData() {
   const [loading, setLoading] = useState(true);

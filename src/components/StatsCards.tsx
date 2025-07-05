@@ -1,8 +1,8 @@
 import React from 'react';
-import type { FacultyProfile, Workshop } from '../types';
+import type { EnrichedFacultyProfile, Workshop } from '../types';
 
 interface StatsCardsProps {
-  profiles: FacultyProfile[];
+  profiles: EnrichedFacultyProfile[];
   workshops: { [key: string]: Workshop };
 }
 
@@ -19,7 +19,7 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
     
     // Include teaching history years if available
     if (profile.teaching?.yearsActive) {
-      profile.teaching.yearsActive.forEach(year => allYears.add(year));
+      profile.teaching.yearsActive.forEach((year: number) => allYears.add(year));
     }
   });
   
@@ -132,7 +132,7 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
                 profile.participations[id].forEach(year => workshopYears.add(year));
               }
               if (profile.teaching?.workshopsHistory?.[id.toUpperCase()]) {
-                Object.keys(profile.teaching.workshopsHistory[id.toUpperCase()]).forEach(year => 
+                Object.keys(profile.teaching.workshopsHistory[id.toUpperCase()]).forEach((year: string) => 
                   workshopYears.add(parseInt(year))
                 );
               }
@@ -173,11 +173,11 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ profiles, workshops }) =
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {(() => {
             // Calculate teaching statistics
-            const facultyWithTeaching = profiles.filter(p => p.teaching?.totalSessions > 0);
+            const facultyWithTeaching = profiles.filter(p => p.teaching && p.teaching.totalSessions > 0);
             const totalSessions = facultyWithTeaching.reduce((sum, p) => sum + (p.teaching?.totalSessions || 0), 0);
             const allSpecializations = new Set<string>();
             facultyWithTeaching.forEach(p => {
-              p.teaching?.specializations?.forEach(spec => allSpecializations.add(spec));
+              p.teaching?.specializations?.forEach((spec: string) => allSpecializations.add(spec));
             });
             
             const teachingStats = [

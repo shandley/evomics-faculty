@@ -26,7 +26,7 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
   const totalYears = maxYear - minYear + 1;
   
   // Calculate teaching statistics
-  const facultyWithTeaching = profiles.filter(p => p.teaching?.totalSessions > 0);
+  const facultyWithTeaching = profiles.filter(p => p.teaching && p.teaching.totalSessions > 0);
 
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">

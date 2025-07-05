@@ -859,6 +859,31 @@
       "id": "zody-mike",
       "firstName": "Mike",
       "lastName": "Zody"
+    },
+    {
+      "id": "langmead-ben",
+      "firstName": "Ben",
+      "lastName": "Langmead"
+    },
+    {
+      "id": "danecek-petr",
+      "firstName": "Petr",
+      "lastName": "Daněček"
+    },
+    {
+      "id": "kintzl-daniel",
+      "firstName": "Daniel",
+      "lastName": "Kintzl"
+    },
+    {
+      "id": "blanco-miguez-aitor",
+      "firstName": "Aitor",
+      "lastName": "Blanco Miguez"
+    },
+    {
+      "id": "montoliu-nerin-merce",
+      "firstName": "Mercè",
+      "lastName": "Montoliu Nerín"
     }
   ],
   "participations": [

@@ -1,0 +1,2385 @@
+{
+  "timestamp": "2025-07-05T19:28:17.081Z",
+  "summary": {
+    "overallStatus": "pass",
+    "totalFaculty": 173,
+    "enrichedProfiles": 174,
+    "enrichmentPercentage": 101,
+    "orcidCoverage": 0,
+    "workshopCount": 3,
+    "totalIssues": 337,
+    "criticalIssues": 0,
+    "warningIssues": 337,
+    "infoIssues": 0
+  },
+  "issues": [
+    {
+      "type": "ORPHANED_ENRICHMENT",
+      "message": "Enrichment data exists for non-existent faculty: danacek-petr",
+      "severity": "warning",
+      "facultyId": null,
+      "timestamp": "2025-07-05T19:28:17.079Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "ahren-dag",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "albrechtsen-anders",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "almeida-king-jeff",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "bank-claudia",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "barnett-david",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "barth-julia",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "beiko-robert",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "berner-daniel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "bielawski-joseph",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "blanco-miguez-altor",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "bohutinska-magdalena",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "bos-kirsten",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "buerkle-alex",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "catchen-julian",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "chevreux-bastien",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "chikhi-rayan",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "christmas-matthew",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "cicconardi-francesco",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "clark-andrew",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "clauw-pieter",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "colonna-vincenza",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "cresko-bill",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "crotty-stephen",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "cummings-michael",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "danacek-petr",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "dos-reis-mario",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "droge-johannes",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "drummond-alexei",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "duchoslav-miroslav",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "dudaniec-rachael",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "dudas-gytis",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "durbin-richard",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "dyhrman-sonya",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "eichler-evan",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "falush-daniel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "fernandez-rosa",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "ferrer-obiol-joan",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "fillault-daniel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "fumagalli-matteo",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "gabaldon-toni",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "gaggiotti-oscar",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "garamszegi-laszlo",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "garber-manuel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "gardy-jennifer",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "garrison-erik",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "gascuel-olivier",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "gosik-kirk",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "grabherr-manfred",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "griffith-malachi",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "guido-roderic",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "gutenkurst-ryan",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "haas-brian",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "hahn-matthew",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "hall-neil",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "hancock-angela",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "handley-scott",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "harris-kelley",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "heath-tracy",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "hird-sarah",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "hoff-katharina",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "hofreiter-michael",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "huson-daniel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "huttenhower-curtis",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "jay-flora",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "jiggins-chris",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "jones-felicity",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "kaessman-henrik",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "kamoun-sophien",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "karlicki-michal",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "karnkowska-anna",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "kern-andrew",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "knight-robert",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "kubatko-laura",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "leonard-alexander",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "leonard-guy",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "limasset-antoine",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "loman-nick",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "lorenzen-eline",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "lunter-gerton",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "mafessoni-fabrizio",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "malinsky-milan",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "manghi-paolo",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "marcet-houben-marina",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "marchet-camille",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "martin-simon",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "martinez-redondo-gemma",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "matschiner-michael",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "mcdonald-daniel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "mchardy-alice",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "mckay-sheldon",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "mclysaght-aoife",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "mcmurdie-paul",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "meier-joana",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "meyer-britta",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "molloy-erin",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "montoliu-nern-merc",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "montserrat-jordi-paps",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "morlon-helene",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "moyle-leonie",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "myers-simon",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "neilsen-rasmus",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "nekrutenko-anton",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "nenasheva-natalia",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "nordborg-magnus",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "nosil-patrik",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "nurk-sergey",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "ocana-pallares-eduard",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "ogilvie-huw",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "orlando-ludovic",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "paris-josephine",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "paszkiewicz-konrad",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "pearson-william",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "peichel-katie",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "peona-valentina",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "petr-martin",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "pettersson-olga-vinnere",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "pokorny-lisa",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "ponting-chris",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "rees-jasmine",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "rengefors-karin",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "rodriguez-ezpeleta-naiara",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "rokas-antonis",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "salzburger-walter",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "schleper-christa",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "scofield-doug",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "scornavacca-celine",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "sedlazeck-fritz",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "setter-derek",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "shaw-sophie",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "shekhar-karthik",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "simakov-oleg",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "skidmore-zachary",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "sousa-vitor",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "speidel-leo",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "stajich-jason",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "stanke-mario",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "steenwyk-jacob",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "steffen-karin",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "stefka-jan",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "stepanauskas-ramunas",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "steward-rachel",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "suh-alexander",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "swofford-david",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "szollosi-gergely",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "tavalire-hannah",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "taylor-james",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "trucchi-emiliano",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "trynka-gosia",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "tsambos-georgia",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "uliano-silva-marcela",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "uller-tobias",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "vaughan-tim",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "vazquez-baeza-yoshiki",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "videvall-elin",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "waterhouse-robert",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "westbury-michael",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "wheat-chris",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "whiting-james",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "willis-amy",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "woyke-tanja",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "wrighton-kelly",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "zhou-xiaofen",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "RESEARCH_AREAS_TYPE",
+      "message": "Research areas should be an array",
+      "severity": "warning",
+      "facultyId": "zody-mike",
+      "timestamp": "2025-07-05T19:28:17.080Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "ahren-dag",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "albrechtsen-anders",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "almeida-king-jeff",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "bank-claudia",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "barnett-david",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "barth-julia",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "beiko-robert",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "berner-daniel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "bielawski-joseph",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "blanco-miguez-altor",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "bohutinska-magdalena",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "bos-kirsten",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "buerkle-alex",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "catchen-julian",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "chevreux-bastien",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "chikhi-rayan",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "christmas-matthew",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "cicconardi-francesco",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "clark-andrew",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "clauw-pieter",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "colonna-vincenza",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "cresko-bill",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "crotty-stephen",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "cummings-michael",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "danecek-petr",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "dos-reis-mario",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "droge-johannes",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "drummond-alexei",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "duchoslav-miroslav",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "dudaniec-rachael",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "dudas-gytis",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "durbin-richard",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "dyhrman-sonya",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "eichler-evan",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "falush-daniel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "fernandez-rosa",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "ferrer-obiol-joan",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "fillault-daniel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "fumagalli-matteo",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "gabaldon-toni",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "gaggiotti-oscar",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "garamszegi-laszlo",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "garber-manuel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "gardy-jennifer",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "garrison-erik",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "gascuel-olivier",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "gosik-kirk",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "grabherr-manfred",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "griffith-malachi",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "guido-roderic",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "gutenkurst-ryan",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "haas-brian",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "hahn-matthew",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "hall-neil",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "hancock-angela",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "handley-scott",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "harris-kelley",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "heath-tracy",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "hird-sarah",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "hoff-katharina",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "hofreiter-michael",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "huson-daniel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "huttenhower-curtis",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "jay-flora",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "jiggins-chris",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "jones-felicity",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kaessman-henrik",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kamoun-sophien",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "karlicki-michal",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "karnkowska-anna",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kern-andrew",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "knight-robert",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "knowles-lacey",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kolisko-martin",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "korneliussen-thorfinn",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kosunsky-ilya",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kozlov-oleksiy",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kubatko-laura",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kucukural-alper",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "lanzen-anders",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "leonard-alexander",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "leonard-guy",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "limasset-antoine",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "loman-nick",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "lorenzen-eline",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "lunter-gerton",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "mafessoni-fabrizio",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "malinsky-milan",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "manghi-paolo",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "marcet-houben-marina",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "marchet-camille",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "martin-simon",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "martinez-redondo-gemma",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "matschiner-michael",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "mcdonald-daniel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "mchardy-alice",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "mckay-sheldon",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "mclysaght-aoife",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "mcmurdie-paul",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "meier-joana",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "meyer-britta",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "molloy-erin",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "montoliu-nern-merc",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "montserrat-jordi-paps",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "morlon-helene",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "moyle-leonie",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "myers-simon",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "nekrutenko-anton",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "nenasheva-natalia",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "neilsen-rasmus",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "nordborg-magnus",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "nosil-patrik",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "nurk-sergey",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "ocana-pallares-eduard",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "ogilvie-huw",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "orlando-ludovic",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "paris-josephine",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "paszkiewicz-konrad",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "pearson-william",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "peichel-katie",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "peona-valentina",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "petr-martin",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "pettersson-olga-vinnere",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "pokorny-lisa",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "ponting-chris",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "rees-jasmine",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "rengefors-karin",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "rodriguez-ezpeleta-naiara",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "rokas-antonis",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "salzburger-walter",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "schleper-christa",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "scofield-doug",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "scornavacca-celine",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "sedlazeck-fritz",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "setter-derek",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "shaw-sophie",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "shekhar-karthik",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "simakov-oleg",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "skidmore-zachary",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "sousa-vitor",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "speidel-leo",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "stajich-jason",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "stanke-mario",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "steenwyk-jacob",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "steffen-karin",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "stefka-jan",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "stepanauskas-ramunas",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "steward-rachel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "suh-alexander",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "swofford-david",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "szollosi-gergely",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "tavalire-hannah",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "taylor-james",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "trucchi-emiliano",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "trynka-gosia",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "tsambos-georgia",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "uliano-silva-marcela",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "uller-tobias",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "vaughan-tim",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "vazquez-baeza-yoshiki",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "videvall-elin",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "waterhouse-robert",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "westbury-michael",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "wheat-chris",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "whiting-james",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "willis-amy",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "woyke-tanja",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "wrighton-kelly",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "zhou-xiaofen",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "zody-mike",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "kintzl-daniel",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "blanco-miguez-aitor",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    },
+    {
+      "type": "PARTICIPATION_MISSING",
+      "message": "No participation data",
+      "severity": "warning",
+      "facultyId": "montoliu-nerin-merce",
+      "timestamp": "2025-07-05T19:28:17.081Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "category": "orcid_coverage",
+      "title": "Increase ORCID Coverage",
+      "description": "ORCID coverage is 0%, below target of 85%",
+      "action": "Run ORCID lookup scripts to find missing identifiers"
+    }
+  ]
+}

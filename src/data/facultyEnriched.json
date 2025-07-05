@@ -642,7 +642,7 @@
         "title": "Professor and Associate Dean",
         "affiliation": "Dalhousie University",
         "department": "Faculty of Computer Science",
-        "labWebsite": "https://beikolab.cs.dal.ca/"
+        "labWebsite": "https://beikolab.cs.dal.ca"
       },
       "academic": {
         "researchAreas": {
@@ -2602,7 +2602,7 @@
         "title": "Professor of Computational Biology",
         "affiliation": "University of Auckland",
         "department": "School of Biological Sciences & School of Computer Science",
-        "labWebsite": "https://www.cs.auckland.ac.nz/~alexei/"
+        "labWebsite": "https://www.cs.auckland.ac.nz/~alexei"
       },
       "academic": {
         "researchAreas": {
@@ -6810,7 +6810,7 @@
         "title": "Professor and Founding Director",
         "affiliation": "UC San Diego",
         "department": "Pediatrics, Bioengineering, Computer Science & Engineering",
-        "labWebsite": "https://knightlab.ucsd.edu/"
+        "labWebsite": "https://knightlab.ucsd.edu"
       },
       "academic": {
         "researchAreas": {
@@ -7506,7 +7506,7 @@
         "title": "Professor of Medical Statistics",
         "affiliation": "University Medical Center Groningen / University of Oxford",
         "department": "Epidemiology / Weatherall Institute of Molecular Medicine",
-        "labWebsite": "https://www.chg.ox.ac.uk/~gerton/"
+        "labWebsite": "https://www.chg.ox.ac.uk/~gerton"
       },
       "academic": {
         "researchAreas": {
@@ -9642,7 +9642,7 @@
         "title": "Professor of Computational Biology",
         "affiliation": "UC Berkeley / University of Copenhagen",
         "department": "Integrative Biology and Statistics",
-        "labWebsite": "https://nielsen-lab.github.io/"
+        "labWebsite": "https://nielsen-lab.github.io"
       },
       "academic": {
         "researchAreas": {
@@ -9777,7 +9777,7 @@
         "title": "Professor and Huck Chair in Genomics",
         "affiliation": "Pennsylvania State University",
         "department": "Biochemistry and Molecular Biology",
-        "labWebsite": "https://nekrut.github.io/lab_site/"
+        "labWebsite": "https://nekrut.github.io/lab_site"
       },
       "academic": {
         "researchAreas": {
@@ -10782,7 +10782,7 @@
         "title": "Professor and Head of Division",
         "affiliation": "University of Bern",
         "department": "Institute of Ecology and Evolution",
-        "labWebsite": "https://www.ee.iee.unibe.ch/"
+        "labWebsite": "https://www.ee.iee.unibe.ch"
       },
       "academic": {
         "researchAreas": {
@@ -12936,7 +12936,7 @@
         "title": "Professor",
         "affiliation": "University of California, Riverside",
         "department": "Microbiology and Plant Pathology",
-        "labWebsite": "https://lab.stajich.org/"
+        "labWebsite": "https://lab.stajich.org"
       },
       "academic": {
         "researchAreas": {
@@ -15240,7 +15240,7 @@
         "title": "Associate Professor",
         "affiliation": "University of Washington",
         "department": "Biostatistics",
-        "labWebsite": "http://statisticaldiversitylab.com/"
+        "labWebsite": "http://statisticaldiversitylab.com"
       },
       "academic": {
         "researchAreas": {
@@ -15652,6 +15652,58 @@
       "profile": {
         "shortBio": "Mike Zody is a senior computational biologist at the Broad Institute. He teaches workshops on comparative genomics and sequencing technologies, with expertise in genome biology and sequencing study design.",
         "source": "Evolution and Genomics workshops, Broad Institute"
+      }
+    }
+  },
+  "danecek-petr": {
+    "id": "danecek-petr",
+    "name": "Petr Daněček",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T19:27:59.613Z",
+      "confidence": "low",
+      "professional": {},
+      "academic": {},
+      "profile": {
+        "source": "Automated search"
+      }
+    }
+  },
+  "kintzl-daniel": {
+    "id": "kintzl-daniel",
+    "name": "Daniel Kintzl",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T19:28:00.616Z",
+      "confidence": "low",
+      "professional": {},
+      "academic": {},
+      "profile": {
+        "source": "Automated search"
+      }
+    }
+  },
+  "blanco-miguez-aitor": {
+    "id": "blanco-miguez-aitor",
+    "name": "Aitor Blanco Miguez",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T19:28:01.617Z",
+      "confidence": "low",
+      "professional": {},
+      "academic": {},
+      "profile": {
+        "source": "Automated search"
+      }
+    }
+  },
+  "montoliu-nerin-merce": {
+    "id": "montoliu-nerin-merce",
+    "name": "Mercè Montoliu Nerín",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T19:28:02.617Z",
+      "confidence": "low",
+      "professional": {},
+      "academic": {},
+      "profile": {
+        "source": "Automated search"
       }
     }
   }

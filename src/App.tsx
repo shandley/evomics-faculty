@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
+import { CommunityOverview } from './components/CommunityOverview';
 import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
 import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
@@ -127,6 +128,8 @@ function App() {
 
   return (
     <Layout>
+      <CommunityOverview profiles={enrichedProfiles} />
+      
       <StatsCards 
         profiles={enrichedProfiles} 
         workshops={workshops} 

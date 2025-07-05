@@ -3,7 +3,6 @@ import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
 import { CommunityOverview } from './components/CommunityOverview';
 import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
-import { StatsCards } from './components/StatsCards';
 import { FacultyModal } from './components/FacultyModal';
 import { GeographicDistribution } from './components/GeographicDistribution';
 import { TopicTaxonomyViewer } from './components/TopicTaxonomyViewer';
@@ -142,11 +141,6 @@ function App() {
   return (
     <Layout>
       <CommunityOverview profiles={enrichedProfiles} />
-      
-      <StatsCards 
-        profiles={enrichedProfiles} 
-        workshops={workshops} 
-      />
       
       {/* Toggle Buttons */}
       <div className="mb-4 flex justify-end gap-3">

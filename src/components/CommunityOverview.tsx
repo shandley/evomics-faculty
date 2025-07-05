@@ -1,5 +1,6 @@
 import React from 'react';
-import type { EnrichedFacultyProfile } from '../types';
+import type { EnrichedFacultyProfile, Workshop } from '../types';
+import workshopsData from '../data/workshops.json';
 
 interface CommunityOverviewProps {
   profiles: EnrichedFacultyProfile[];
@@ -27,6 +28,12 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
   
   // Calculate teaching statistics
   const facultyWithTeaching = profiles.filter(p => p.teaching && p.teaching.totalSessions > 0);
+  
+  // Calculate workshop statistics
+  const workshops = workshopsData as { [key: string]: Workshop };
+  const activeWorkshops = Object.values(workshops).filter(w => w.active).length;
+  const historicalWorkshops = Object.values(workshops).filter(w => !w.active).length;
+  const totalWorkshops = Object.values(workshops).length;
 
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
@@ -105,9 +112,9 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
             </div>
           </div>
           <div className="text-green-600 text-sm font-medium">
-            3 Active Workshops
+            {totalWorkshops} Workshop Series
             <div className="text-xs text-green-500 font-normal mt-1">
-              WoG • WPSG • WPhylo
+              {activeWorkshops} Active • {historicalWorkshops} Historical
             </div>
           </div>
         </div>

@@ -31,6 +31,11 @@
       "lastName": "Barth"
     },
     {
+      "id": "beerli-peter",
+      "firstName": "Peter",
+      "lastName": "Beerli"
+    },
+    {
       "id": "beiko-robert",
       "firstName": "Robert",
       "lastName": "Beiko"
@@ -48,6 +53,11 @@
     {
       "id": "blanco-miguez-altor",
       "firstName": "Altor",
+      "lastName": "Blanco Miguez"
+    },
+    {
+      "id": "blanco-miguez-aitor",
+      "firstName": "Aitor",
       "lastName": "Blanco Miguez"
     },
     {
@@ -126,6 +136,11 @@
       "lastName": "Daněček"
     },
     {
+      "id": "desjardins-christopher",
+      "firstName": "Christopher",
+      "lastName": "Desjardins"
+    },
+    {
       "id": "dos-reis-mario",
       "firstName": "Mario",
       "lastName": "dos Reis"
@@ -169,6 +184,11 @@
       "id": "eichler-evan",
       "firstName": "Evan",
       "lastName": "Eichler"
+    },
+    {
+      "id": "eren-murat",
+      "firstName": "A. Murat",
+      "lastName": "Eren"
     },
     {
       "id": "falush-daniel",
@@ -241,6 +261,11 @@
       "lastName": "Grabherr"
     },
     {
+      "id": "grad-yonatan",
+      "firstName": "Yonatan",
+      "lastName": "Grad"
+    },
+    {
       "id": "griffith-malachi",
       "firstName": "Malachi",
       "lastName": "Griffith"
@@ -294,6 +319,11 @@
       "id": "hird-sarah",
       "firstName": "Sarah",
       "lastName": "Hird"
+    },
+    {
+      "id": "hoehna-sebastian",
+      "firstName": "Sebastian",
+      "lastName": "Hoehna"
     },
     {
       "id": "hoff-katharina",
@@ -356,6 +386,16 @@
       "lastName": "Kern"
     },
     {
+      "id": "kharchenko-peter",
+      "firstName": "Peter",
+      "lastName": "Kharchenko"
+    },
+    {
+      "id": "kintzl-daniel",
+      "firstName": "Daniel",
+      "lastName": "Kintzl"
+    },
+    {
       "id": "knight-robert",
       "firstName": "Robert",
       "lastName": "Knight"
@@ -374,6 +414,11 @@
       "id": "korneliussen-thorfinn",
       "firstName": "Thorfinn",
       "lastName": "Korneliussen"
+    },
+    {
+      "id": "kosakovsky-pond-sergei",
+      "firstName": "Sergei L",
+      "lastName": "Kosakovsky Pond"
     },
     {
       "id": "kosunsky-ilya",
@@ -409,6 +454,11 @@
       "id": "leonard-guy",
       "firstName": "Guy",
       "lastName": "Leonard"
+    },
+    {
+      "id": "lewis-paul",
+      "firstName": "Paul",
+      "lastName": "Lewis"
     },
     {
       "id": "limasset-antoine",
@@ -511,6 +561,11 @@
       "lastName": "Molloy"
     },
     {
+      "id": "montoliu-nerin-merce",
+      "firstName": "Mercè",
+      "lastName": "Montoliu Nerín"
+    },
+    {
       "id": "montoliu-nern-merc",
       "firstName": "Mercè",
       "lastName": "Montoliu-Nerin"
@@ -601,6 +656,11 @@
       "lastName": "Peichel"
     },
     {
+      "id": "pennell-matt",
+      "firstName": "Matt",
+      "lastName": "Pennell"
+    },
+    {
       "id": "peona-valentina",
       "firstName": "Valentina",
       "lastName": "Peona"
@@ -634,6 +694,11 @@
       "id": "rengefors-karin",
       "firstName": "Karin",
       "lastName": "Rengefors"
+    },
+    {
+      "id": "reyes-alejandro",
+      "firstName": "Alejandro",
+      "lastName": "Reyes"
     },
     {
       "id": "rodriguez-ezpeleta-naiara",
@@ -704,6 +769,11 @@
       "id": "speidel-leo",
       "firstName": "Leo",
       "lastName": "Speidel"
+    },
+    {
+      "id": "stadler-tanja",
+      "firstName": "Tanja",
+      "lastName": "Stadler"
     },
     {
       "id": "stajich-jason",
@@ -849,21 +919,6 @@
       "id": "zody-mike",
       "firstName": "Mike",
       "lastName": "Zody"
-    },
-    {
-      "id": "kintzl-daniel",
-      "firstName": "Daniel",
-      "lastName": "Kintzl"
-    },
-    {
-      "id": "blanco-miguez-aitor",
-      "firstName": "Aitor",
-      "lastName": "Blanco Miguez"
-    },
-    {
-      "id": "montoliu-nerin-merce",
-      "firstName": "Mercè",
-      "lastName": "Montoliu Nerín"
     }
   ],
   "participations": [
@@ -3427,6 +3482,108 @@
       "facultyId": "zody-mike",
       "workshopId": "wog",
       "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "lewis-paul",
+      "workshopId": "wmolevo",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "beerli-peter",
+      "workshopId": "wmolevo",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hoehna-sebastian",
+      "workshopId": "wmolevo",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "pennell-matt",
+      "workshopId": "wmolevo",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stadler-tanja",
+      "workshopId": "wmolevo",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "htranscriptomics",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "htranscriptomics",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "htranscriptomics",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "reyes-alejandro",
+      "workshopId": "htranscriptomics",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kharchenko-peter",
+      "workshopId": "htranscriptomics",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gardy-jennifer",
+      "workshopId": "hmicrobial",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "hmicrobial",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "grad-yonatan",
+      "workshopId": "hmicrobial",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "desjardins-christopher",
+      "workshopId": "hmicrobial",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kosakovsky-pond-sergei",
+      "workshopId": "hmicrobial",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eren-murat",
+      "workshopId": "hmicrobial",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "vazquez-baeza-yoshiki",
+      "workshopId": "hmicrobial",
+      "year": 2016,
       "role": "faculty"
     }
   ]

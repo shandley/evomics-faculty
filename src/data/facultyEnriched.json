@@ -15706,5 +15706,126 @@
         "source": "Automated search"
       }
     }
+  },
+  "beerli-peter": {
+    "id": "beerli-peter",
+    "name": "Peter Beerli",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:55:45.463Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "hoehna-sebastian": {
+    "id": "hoehna-sebastian",
+    "name": "Sebastian Hoehna",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:55:45.463Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "lewis-paul": {
+    "id": "lewis-paul",
+    "name": "Paul Lewis",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:55:45.463Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "pennell-matt": {
+    "id": "pennell-matt",
+    "name": "Matt Pennell",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:55:45.463Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "stadler-tanja": {
+    "id": "stadler-tanja",
+    "name": "Tanja Stadler",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:55:45.463Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "desjardins-christopher": {
+    "id": "desjardins-christopher",
+    "name": "Christopher Desjardins",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:58:30.337Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "eren-murat": {
+    "id": "eren-murat",
+    "name": "A. Murat Eren",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:58:30.337Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "grad-yonatan": {
+    "id": "grad-yonatan",
+    "name": "Yonatan Grad",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:58:30.337Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "kharchenko-peter": {
+    "id": "kharchenko-peter",
+    "name": "Peter Kharchenko",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:58:30.337Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "kosakovsky-pond-sergei": {
+    "id": "kosakovsky-pond-sergei",
+    "name": "Sergei L Kosakovsky Pond",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:58:30.337Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
+  },
+  "reyes-alejandro": {
+    "id": "reyes-alejandro",
+    "name": "Alejandro Reyes",
+    "enrichment": {
+      "lastUpdated": "2025-07-05T20:58:30.337Z",
+      "confidence": "pending",
+      "professional": {},
+      "academic": {},
+      "profile": {}
+    }
   }
 }

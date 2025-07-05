@@ -1,8 +1,9 @@
 import { useState, useEffect, useMemo } from 'react';
-import type { Faculty, Participation, Workshop } from '../types';
-import { generateFacultyProfiles } from '../utils/dataTransform';
+import type { Faculty, Participation, Workshop, TeachingHistory } from '../types';
+import { generateFacultyProfiles, enhanceFacultyProfilesWithTeaching } from '../utils/dataTransform';
 import facultyDataJson from '../data/facultyData.json';
 import workshopsJson from '../data/workshops.json';
+import teachingDataJson from '../../data/processed/teachingDataForIntegration.json';
 
 export function useFacultyData() {
   const [loading, setLoading] = useState(true);
@@ -48,7 +49,8 @@ export function useFacultyData() {
 
   const profiles = useMemo(() => {
     if (facultyData.faculty.length === 0) return [];
-    return generateFacultyProfiles(facultyData.faculty, facultyData.participations);
+    const baseProfiles = generateFacultyProfiles(facultyData.faculty, facultyData.participations);
+    return enhanceFacultyProfilesWithTeaching(baseProfiles, teachingDataJson as any);
   }, [facultyData]);
 
   return {

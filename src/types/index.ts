@@ -61,6 +61,8 @@ export interface Filters {
   year: number | null;  // null means "All Years"
   topics?: string[];  // Selected topic IDs
   includeChildTopics?: boolean;
+  teachingSpecializations?: string[];  // Teaching specialization filters
+  hasTeachingHistory?: boolean;  // Filter for faculty with teaching history
 }
 
 export type SortOption = 'lastName' | 'firstName' | 'totalYears' | 'participationCount' | 'recentYear' | 'firstYear';
@@ -91,8 +93,33 @@ export interface FacultyEnrichment {
   };
 }
 
+// Teaching history types for workshop integration
+export interface TeachingSession {
+  date: string;
+  time: string;
+  topic: string;
+  type: 'lecture' | 'practical' | 'lab' | 'social' | 'orientation' | 'discussion' | 'presentation';
+  location: string;
+  coPresenters: string[];
+}
+
+export interface TeachingHistory {
+  totalSessions: number;
+  workshopsHistory: {
+    [workshop: string]: {
+      [year: number]: TeachingSession[];
+    };
+  };
+  specializations: string[];
+  lastTaught: number;
+  firstTaught: number;
+  yearsActive: number[];
+  yearRange: string;
+}
+
 export interface EnrichedFacultyProfile extends FacultyProfile {
   enrichment?: FacultyEnrichment;
+  teaching?: TeachingHistory;
 }
 
 // Re-export taxonomy types for convenience

@@ -1,4 +1,4 @@
-import type { Faculty, Participation, FacultyProfile } from '../types';
+import type { Faculty, Participation, FacultyProfile, TeachingHistory } from '../types';
 import { ParticipationRole } from '../types';
 
 export function parseCSVToFaculty(csvContent: string, workshopId: string): {
@@ -105,4 +105,22 @@ export function generateFacultyProfiles(
   });
   
   return profiles;
+}
+
+export function enhanceFacultyProfilesWithTeaching(
+  profiles: FacultyProfile[],
+  teachingData: { [facultyId: string]: { teaching: TeachingHistory } }
+): FacultyProfile[] {
+  return profiles.map(profile => {
+    const teachingHistory = teachingData[profile.faculty.id]?.teaching;
+    
+    if (teachingHistory) {
+      return {
+        ...profile,
+        teaching: teachingHistory
+      };
+    }
+    
+    return profile;
+  });
 }

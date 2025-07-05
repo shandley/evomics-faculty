@@ -72,6 +72,17 @@ function App() {
     return sortFacultyProfiles(filtered, sortOption);
   }, [enrichedProfiles, filters, sortOption]);
 
+  // Extract available teaching specializations
+  const availableSpecializations = useMemo(() => {
+    const specializations = new Set<string>();
+    enrichedProfiles.forEach(profile => {
+      if (profile.teaching?.specializations) {
+        profile.teaching.specializations.forEach(spec => specializations.add(spec));
+      }
+    });
+    return Array.from(specializations).sort();
+  }, [enrichedProfiles]);
+
   // Find selected profile
   const selectedProfile = useMemo(() => {
     if (!selectedFacultyId) return null;
@@ -223,6 +234,7 @@ function App() {
         filters={filters}
         sortOption={sortOption}
         workshops={workshops}
+        availableSpecializations={availableSpecializations}
         onFiltersChange={setFilters}
         onSortChange={setSortOption}
         onExport={() => {

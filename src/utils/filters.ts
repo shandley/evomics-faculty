@@ -148,6 +148,32 @@ export function filterFacultyProfiles(
       }
     }
 
+    // Teaching specialization filter
+    if (filters.teachingSpecializations && filters.teachingSpecializations.length > 0) {
+      const enrichedProfile = profile as EnrichedFacultyProfile;
+      
+      if (!enrichedProfile.teaching?.specializations) {
+        return false;
+      }
+      
+      const hasMatchingSpecialization = filters.teachingSpecializations.some(filterSpec =>
+        enrichedProfile.teaching!.specializations.includes(filterSpec)
+      );
+      
+      if (!hasMatchingSpecialization) {
+        return false;
+      }
+    }
+
+    // Teaching history filter
+    if (filters.hasTeachingHistory) {
+      const enrichedProfile = profile as EnrichedFacultyProfile;
+      
+      if (!enrichedProfile.teaching || enrichedProfile.teaching.totalSessions === 0) {
+        return false;
+      }
+    }
+
     return true;
   });
 }

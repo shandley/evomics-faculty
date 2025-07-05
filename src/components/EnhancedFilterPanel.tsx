@@ -7,6 +7,7 @@ interface EnhancedFilterPanelProps {
   filters: Filters;
   sortOption: SortOption;
   workshops: { [key: string]: Workshop };
+  availableSpecializations: string[];
   onFiltersChange: (filters: Filters) => void;
   onSortChange: (sort: SortOption) => void;
   onExport?: () => void;
@@ -18,6 +19,7 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
   filters,
   sortOption,
   workshops,
+  availableSpecializations,
   onFiltersChange,
   onSortChange,
   onExport,
@@ -76,7 +78,7 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
 
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
         {/* Search */}
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -148,6 +150,28 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
           </select>
         </div>
 
+        {/* Teaching Specializations Filter */}
+        <div>
+          <label className="block text-sm font-semibold text-gray-700 mb-2">
+            Teaching Specialization
+          </label>
+          <select
+            value={filters.teachingSpecializations?.[0] || ''}
+            onChange={(e) => onFiltersChange({
+              ...filters,
+              teachingSpecializations: e.target.value ? [e.target.value] : []
+            })}
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white"
+          >
+            <option value="">All Specializations</option>
+            {availableSpecializations.map(spec => (
+              <option key={spec} value={spec}>
+                {spec}
+              </option>
+            ))}
+          </select>
+        </div>
+
         {/* Sort Options */}
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -165,6 +189,24 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
             <option value="firstYear">First Year</option>
           </select>
         </div>
+      </div>
+
+      {/* Additional Filters */}
+      <div className="mt-4 flex flex-wrap items-center gap-4">
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            checked={filters.hasTeachingHistory || false}
+            onChange={(e) => onFiltersChange({
+              ...filters,
+              hasTeachingHistory: e.target.checked ? true : undefined
+            })}
+            className="w-4 h-4 text-primary-600 bg-white border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
+          />
+          <span className="ml-2 text-sm font-medium text-gray-700">
+            Has teaching history
+          </span>
+        </label>
       </div>
 
       {/* Results summary */}

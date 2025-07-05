@@ -1,6 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState, Suspense, lazy } from 'react';
 import type { EnrichedFacultyProfile, Workshop } from '../types';
 import { TopicDisplay } from './TopicDisplay';
+
+// Lazy load the TeachingHistory component for better performance
+const TeachingHistory = lazy(() => import('./TeachingHistory').then(module => ({ default: module.TeachingHistory })));
 
 interface FacultyModalProps {
   profile: EnrichedFacultyProfile | null;
@@ -18,6 +21,14 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
   onNavigate
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
+  const [activeTab, setActiveTab] = useState<'overview' | 'teaching'>('overview');
+
+  // Reset tab when modal opens or faculty changes
+  useEffect(() => {
+    if (isOpen && profile) {
+      setActiveTab('overview');
+    }
+  }, [isOpen, profile?.faculty.id]);
 
   // Handle ESC key and click outside
   useEffect(() => {
@@ -116,10 +127,53 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
           )}
         </div>
 
+        {/* Tab Navigation */}
+        <div className="border-b border-gray-200 bg-gray-50">
+          <div className="flex">
+            <button
+              onClick={() => setActiveTab('overview')}
+              className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+                activeTab === 'overview'
+                  ? 'border-primary-500 text-primary-600 bg-white'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                Overview
+              </div>
+            </button>
+            {profile?.teaching && (
+              <button
+                onClick={() => setActiveTab('teaching')}
+                className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+                  activeTab === 'teaching'
+                    ? 'border-primary-500 text-primary-600 bg-white'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                  Teaching History
+                  <span className="ml-1 bg-primary-100 text-primary-600 text-xs px-2 py-0.5 rounded-full">
+                    {profile.teaching.totalSessions}
+                  </span>
+                </div>
+              </button>
+            )}
+          </div>
+        </div>
+
         {/* Content */}
-        <div className="overflow-y-auto max-h-[calc(90vh-200px)] p-6">
-          {/* Links */}
-          <div className="mb-6 flex flex-wrap gap-4">
+        <div className="overflow-y-auto max-h-[calc(90vh-250px)] p-6">
+          {activeTab === 'overview' && (
+            <>
+              {/* Links */}
+              <div className="mb-6 flex flex-wrap gap-4">
             {enrichment?.professional?.labWebsite && (
               <a
                 href={enrichment.professional.labWebsite}
@@ -251,21 +305,42 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
             </div>
           )}
           
-          {/* Update Request Button - Always visible */}
-          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600 mb-3">
-              {enrichment ? 'Is this information outdated or incorrect?' : 'Help us add information for this faculty member'}
-            </p>
-            <a
-              href={`mailto:fourthculture@gmail.com?subject=Faculty Profile Update Request - ${fullName}&body=I would like to update my faculty profile information.%0A%0AName: ${fullName}%0AFaculty ID: ${faculty.id}%0A%0APlease send me the update form link.`}
-              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-              </svg>
-              {enrichment ? 'Request Update' : 'Add Information'}
-            </a>
-          </div>
+              {/* Update Request Button - Always visible */}
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+                <p className="text-sm text-gray-600 mb-3">
+                  {enrichment ? 'Is this information outdated or incorrect?' : 'Help us add information for this faculty member'}
+                </p>
+                <a
+                  href={`mailto:fourthculture@gmail.com?subject=Faculty Profile Update Request - ${fullName}&body=I would like to update my faculty profile information.%0A%0AName: ${fullName}%0AFaculty ID: ${faculty.id}%0A%0APlease send me the update form link.`}
+                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                  {enrichment ? 'Request Update' : 'Add Information'}
+                </a>
+              </div>
+            </>
+          )}
+
+          {activeTab === 'teaching' && profile?.teaching && (
+            <div className="animate-fade-in">
+              <Suspense fallback={
+                <div className="flex items-center justify-center py-12">
+                  <div className="relative">
+                    <div className="w-8 h-8 border-4 border-primary-200 rounded-full"></div>
+                    <div className="w-8 h-8 border-4 border-primary-600 rounded-full animate-spin border-t-transparent absolute top-0"></div>
+                  </div>
+                  <span className="ml-3 text-gray-600">Loading teaching history...</span>
+                </div>
+              }>
+                <TeachingHistory 
+                  teaching={profile.teaching} 
+                  facultyName={fullName}
+                />
+              </Suspense>
+            </div>
+          )}
         </div>
 
         {/* Navigation buttons */}

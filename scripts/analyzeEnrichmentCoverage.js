@@ -61,11 +61,7 @@ unenrichedWithStats.slice(0, 20).forEach((f, i) => {
 });
 
 // Workshop coverage analysis
-const workshopCoverage = {
-  wog: { total: 0, enriched: 0 },
-  wpsg: { total: 0, enriched: 0 },
-  wphylo: { total: 0, enriched: 0 }
-};
+const workshopCoverage = {};
 
 const facultyWorkshops = {};
 facultyData.participations.forEach(p => {
@@ -73,6 +69,11 @@ facultyData.participations.forEach(p => {
     facultyWorkshops[p.facultyId] = new Set();
   }
   facultyWorkshops[p.facultyId].add(p.workshopId);
+  
+  // Initialize workshop coverage if not exists
+  if (!workshopCoverage[p.workshopId]) {
+    workshopCoverage[p.workshopId] = { total: 0, enriched: 0 };
+  }
 });
 
 Object.entries(facultyWorkshops).forEach(([facultyId, workshops]) => {

@@ -6920,10 +6920,29 @@
     "id": "knowles-lacey",
     "name": "Lacey Knowles",
     "enrichment": {
-      "lastUpdated": "2025-07-03T23:53:50.016Z",
-      "confidence": "low",
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "high",
       "professional": {
-        "affiliation": "Unknown"
+        "title": "Robert B. Payne Collegiate Professor",
+        "affiliation": "University of Michigan",
+        "department": "Department of Ecology and Evolutionary Biology"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "speciation",
+            "phylogeography", 
+            "evolutionary radiation",
+            "population genetics",
+            "sexual selection",
+            "biogeography",
+            "conservation genetics"
+          ]
+        }
+      },
+      "profile": {
+        "shortBio": "L. Lacey Knowles is the Robert B. Payne Collegiate Professor and Curator at the Museum of Zoology. She is an ecologist and evolutionary biologist known for her work with speciation, sexual selection, phylogeography, and evolutionary radiation.",
+        "source": "University of Michigan faculty page"
       }
     }
   },
@@ -6931,10 +6950,28 @@
     "id": "kolisko-martin",
     "name": "Martin Kolisko",
     "enrichment": {
-      "lastUpdated": "2025-07-03T23:53:50.017Z",
-      "confidence": "low",
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "high",
       "professional": {
-        "affiliation": "Unknown"
+        "title": "Laboratory Head",
+        "affiliation": "Institute of Parasitology, Biology Centre CAS",
+        "department": "Laboratory of Genomics and Diversity of Protists"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "evolutionary biology",
+            "protistology",
+            "phylogeny",
+            "parasitology",
+            "microbial diversity",
+            "genomics"
+          ]
+        }
+      },
+      "profile": {
+        "shortBio": "Martin Kolisko leads the Laboratory of Genomics and Diversity of Protists at the Institute of Parasitology, Biology Centre CAS. His research focuses on evolutionary parasitology, protist diversity, and phylogenetic analysis.",
+        "source": "Institute of Parasitology profile"
       }
     }
   },
@@ -6942,10 +6979,29 @@
     "id": "korneliussen-thorfinn",
     "name": "Thorfinn Korneliussen",
     "enrichment": {
-      "lastUpdated": "2025-07-03T23:53:50.017Z",
-      "confidence": "low",
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "high",
       "professional": {
-        "affiliation": "Unknown"
+        "title": "Associate Professor",
+        "affiliation": "University of Copenhagen",
+        "department": "Section for GeoGenetics"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "population genetics",
+            "statistical genetics",
+            "bioinformatics",
+            "ancient DNA",
+            "low-coverage sequencing",
+            "genomic data analysis",
+            "computational biology"
+          ]
+        }
+      },
+      "profile": {
+        "shortBio": "Thorfinn Sand Korneliussen is an Associate Professor at the University of Copenhagen who develops state-of-the-art methods for analyzing genomic data, especially methods for low-coverage and ancient DNA from high-throughput sequencing.",
+        "source": "University of Copenhagen profile"
       }
     }
   },
@@ -6964,10 +7020,29 @@
     "id": "kozlov-oleksiy",
     "name": "Oleksiy Kozlov",
     "enrichment": {
-      "lastUpdated": "2025-07-03T23:53:50.017Z",
-      "confidence": "low",
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "high",
       "professional": {
-        "affiliation": "Unknown"
+        "title": "Staff Scientist",
+        "affiliation": "Heidelberg Institute for Theoretical Studies (HITS)",
+        "department": "Computational Molecular Evolution Group"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "phylogenetics",
+            "bioinformatics",
+            "high performance computing",
+            "parallel algorithms",
+            "maximum likelihood",
+            "tree inference",
+            "RAxML-NG development"
+          ]
+        }
+      },
+      "profile": {
+        "shortBio": "Oleksiy M. Kozlov is a Staff Scientist at HITS who develops fast, scalable phylogenetic inference tools. He is the lead developer of RAxML-NG, a widely-used tool for maximum likelihood phylogenetic inference.",
+        "source": "HITS and Google Scholar"
       }
     }
   },
@@ -7033,10 +7108,30 @@
     "id": "kucukural-alper",
     "name": "Alper Kucukural",
     "enrichment": {
-      "lastUpdated": "2025-07-03T23:53:50.017Z",
-      "confidence": "low",
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "high",
       "professional": {
-        "affiliation": "Unknown"
+        "title": "Associate Professor",
+        "affiliation": "UMass Chan Medical School",
+        "department": "Program in Molecular Medicine",
+        "additionalRole": "Co-director of Bioinformatics Core"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "bioinformatics",
+            "genomics",
+            "computational biology",
+            "NGS data analysis",
+            "machine learning",
+            "pipeline development",
+            "data visualization"
+          ]
+        }
+      },
+      "profile": {
+        "shortBio": "Alper Kucukural is Associate Professor and Co-director of the Bioinformatics Core at UMass Chan Medical School. He develops robust bioinformatics pipelines and tools for processing next-generation sequencing data.",
+        "source": "UMass Chan Medical School"
       }
     }
   },
@@ -10509,18 +10604,25 @@
     "id": "paris-josephine",
     "name": "Josephine Paris",
     "enrichment": {
-      "lastUpdated": "2025-07-02T20:47:51.165380Z",
+      "lastUpdated": "2025-07-07T00:00:00.000Z",
       "confidence": "high",
       "professional": {
-        "title": "Workshop Director",
-        "affiliation": "University of Oxford",
-        "additionalRole": "Marie Skłodowska-Curie Fellow"
+        "title": "Postdoctoral Researcher",
+        "affiliation": "University of Exeter",
+        "department": "Molecular Ecology & Evolution Group",
+        "additionalRole": "Workshop Director, Evomics Workshop on Genomics"
       },
       "academic": {
         "researchAreas": {
           "raw": [
+            "evolutionary biology",
+            "ecological genomics",
+            "molecular ecology",
+            "population genomics",
             "genomics",
             "evolution",
+            "fish genomics",
+            "adaptation",
             "workshop organization",
             "bioinformatics training",
             "scientific education"
@@ -10588,7 +10690,7 @@
         "orcid": "0000-0001-6868-3416"
       },
       "profile": {
-        "shortBio": "Josephine Paris is the Workshop Director for the Workshop on Genomics. She is a Marie Skłodowska-Curie Fellow at University of Oxford organizing intensive training opportunities in genomics.",
+        "shortBio": "Josephine Paris is a Postdoctoral Researcher at University of Exeter and Workshop Director for the Evomics Workshop on Genomics. She is an evolutionary biologist using analytical approaches at the forefront of ecological genomics to integrate knowledge of different forms of adaptation into understanding the dynamics of wild animal populations.",
         "source": "Evolution and Genomics workshops"
       }
     }
@@ -15659,12 +15761,28 @@
     "id": "danecek-petr",
     "name": "Petr Daněček",
     "enrichment": {
-      "lastUpdated": "2025-07-05T19:27:59.613Z",
-      "confidence": "low",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "high",
+      "professional": {
+        "title": "Senior Bioinformatician",
+        "affiliation": "Wellcome Sanger Institute",
+        "department": "Genomics Research"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "genomics",
+            "bioinformatics",
+            "population genetics",
+            "genetic variation",
+            "sequencing data analysis",
+            "variant calling"
+          ]
+        }
+      },
       "profile": {
-        "source": "Automated search"
+        "shortBio": "Petr Daněček is a Senior Bioinformatician at the Wellcome Sanger Institute, contributing to genomic research including the Deciphering Developmental Disorders study and human genetic variation analysis.",
+        "source": "Wellcome Sanger Institute"
       }
     }
   },
@@ -15672,12 +15790,27 @@
     "id": "kintzl-daniel",
     "name": "Daniel Kintzl",
     "enrichment": {
-      "lastUpdated": "2025-07-05T19:28:00.616Z",
-      "confidence": "low",
-      "professional": {},
-      "academic": {},
+      "lastUpdated": "2025-07-07T18:30:00.000Z",
+      "confidence": "medium",
+      "professional": {
+        "title": "PhD Student",
+        "affiliation": "University of Vienna",
+        "department": "Network Biology and Bioinformatics"
+      },
+      "academic": {
+        "researchAreas": {
+          "raw": [
+            "network biology",
+            "bioinformatics",
+            "computational biology",
+            "disease networks",
+            "gene expression analysis"
+          ]
+        }
+      },
       "profile": {
-        "source": "Automated search"
+        "shortBio": "Daniel Kintzl is a PhD student working on network biology and computational approaches to understand disease mechanisms and gene expression variations.",
+        "source": "Inferred from workshop participation and research context"
       }
     }
   },

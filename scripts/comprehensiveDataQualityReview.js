@@ -61,7 +61,10 @@ console.log(`With lab website: ${hasWebsite}/${enrichedCount} (${((hasWebsite/en
 // 4. Academic Information Completeness
 console.log('\n\n4. ACADEMIC INFORMATION COMPLETENESS');
 console.log('-'.repeat(40));
-const hasResearchAreas = Object.values(enrichedData).filter(f => f.enrichment?.academic?.researchAreas?.length > 0).length;
+const hasResearchAreas = Object.values(enrichedData).filter(f => 
+  f.enrichment?.academic?.researchAreas?.raw?.length > 0 || 
+  f.enrichment?.academic?.researchAreas?.length > 0
+).length;
 const hasBio = Object.values(enrichedData).filter(f => f.enrichment?.profile?.shortBio).length;
 console.log(`With research areas: ${hasResearchAreas}/${enrichedCount} (${((hasResearchAreas/enrichedCount)*100).toFixed(1)}%)`);
 console.log(`With biography: ${hasBio}/${enrichedCount} (${((hasBio/enrichedCount)*100).toFixed(1)}%)`);

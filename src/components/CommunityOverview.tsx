@@ -41,8 +41,19 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
           Evomics Alumni Community
         </h2>
-        <p className="text-gray-600">
+        <p className="text-gray-600 mb-2">
           Connecting faculty and students across the global genomics education network
+        </p>
+        <p className="text-sm text-gray-500 italic">
+          Celebrating the educators who have shaped genomics education worldwide, inspiring our{' '}
+          <a
+            href="https://shandley.github.io/evomics-students/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-600 hover:text-purple-700 underline decoration-dotted"
+          >
+            1,411 student alumni
+          </a>
         </p>
       </div>
 

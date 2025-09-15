@@ -24,37 +24,19 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         onUniversalSearch={handleUniversalSearch}
       />
       
-      {/* Faculty Site Specific Header */}
-      <header className="relative overflow-hidden bg-gradient-to-r from-primary-600 to-primary-800 shadow-xl">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-600/90 to-primary-800/90 backdrop-blur-sm"></div>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '60px 60px'
-          }}></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex items-center justify-between">
-            <div className="animate-fade-in">
-              <h1 className="text-3xl md:text-4xl font-bold text-white font-display tracking-tight">
-                Evomics Faculty Alumni
-              </h1>
-              <p className="text-primary-100 mt-2 text-lg">
-                Celebrating the educators who have shaped genomics education worldwide, inspiring our{' '}
-                <a 
-                  href="https://shandley.github.io/evomics-students/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-200 hover:text-white underline decoration-dotted"
-                >
-                  1,411 student alumni
-                </a>
-              </p>
-            </div>
+      {/* Simplified Page Header */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="animate-fade-in">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 font-display tracking-tight">
+              Faculty Alumni Directory
+            </h1>
+            <p className="text-gray-600 mt-1">
+              Explore the educators who have shaped genomics education across our workshop series
+            </p>
           </div>
         </div>
-      </header>
+      </div>
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
         {children}

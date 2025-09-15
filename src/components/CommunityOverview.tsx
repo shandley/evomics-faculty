@@ -59,39 +59,38 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Faculty Alumni */}
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+        <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-blue-700">{profiles.length}</div>
-              <div className="text-sm font-medium text-blue-600">Faculty Alumni</div>
-              <div className="text-xs text-blue-500 mt-1">{facultyWithTeaching.length} with teaching history</div>
+              <div className="text-3xl font-bold text-gray-900">{profiles.length}</div>
+              <div className="text-sm font-semibold text-gray-700">Faculty Alumni</div>
+              <div className="text-xs text-gray-500 mt-1">{facultyWithTeaching.length} with teaching history</div>
             </div>
-            <div className="text-blue-600">
-              <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <div className="p-3 bg-blue-50 rounded-lg">
+              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
               </svg>
             </div>
           </div>
-          <div className="text-blue-600 text-sm font-medium">
-            Complete Historical Dataset
-            <svg className="w-4 h-4 ml-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <div className="flex items-center text-blue-600 text-sm font-medium">
+            <span>Complete Historical Dataset</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
           </div>
         </div>
 
         {/* Student Alumni */}
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 border border-purple-200">
+        <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-purple-700">1,411</div>
-              <div className="text-sm font-medium text-purple-600">Student Alumni</div>
-              <div className="text-xs text-purple-500 mt-1">Core workshop series</div>
+              <div className="text-3xl font-bold text-gray-900">1,411</div>
+              <div className="text-sm font-semibold text-gray-700">Student Alumni</div>
+              <div className="text-xs text-gray-500 mt-1">Core workshop series</div>
             </div>
-            <div className="text-purple-600">
-              <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            <div className="p-3 bg-purple-50 rounded-lg">
+              <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
               </svg>
             </div>
           </div>
@@ -99,32 +98,32 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
             href="https://shandley.github.io/evomics-students/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-purple-600 hover:text-purple-800 text-sm font-medium transition-colors duration-200"
+            className="inline-flex items-center text-purple-600 hover:text-purple-700 text-sm font-medium transition-colors duration-200"
           >
             View Student Dashboard
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
             </svg>
           </a>
         </div>
 
         {/* Community Stats */}
-        <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 border border-green-200">
+        <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-green-700">{totalYears}</div>
-              <div className="text-sm font-medium text-green-600">Years of Excellence</div>
-              <div className="text-xs text-green-500 mt-1">{yearRange}</div>
+              <div className="text-3xl font-bold text-gray-900">{totalYears}</div>
+              <div className="text-sm font-semibold text-gray-700">Years of Excellence</div>
+              <div className="text-xs text-gray-500 mt-1">{yearRange}</div>
             </div>
-            <div className="text-green-600">
-              <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="p-3 bg-green-50 rounded-lg">
+              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
               </svg>
             </div>
           </div>
-          <div className="text-green-600 text-sm font-medium">
+          <div className="text-gray-700 text-sm font-medium">
             {totalWorkshops} Workshop Series
-            <div className="text-xs text-green-500 font-normal mt-1">
+            <div className="text-xs text-gray-500 font-normal mt-1">
               {activeWorkshops} Active • {historicalWorkshops} Historical
             </div>
           </div>

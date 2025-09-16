@@ -10,17 +10,17 @@ interface FacultyCardProps {
   searchTerm?: string;
 }
 
-// Define workshop colors
+// Define workshop colors - more subtle and professional
 const workshopColors = {
-  wog: 'from-blue-500 to-cyan-600',
-  wpsg: 'from-purple-500 to-pink-600',
-  wphylo: 'from-green-500 to-emerald-600'
+  wog: 'from-blue-400 to-blue-500',
+  wpsg: 'from-purple-400 to-purple-500',
+  wphylo: 'from-green-400 to-green-500'
 };
 
 const workshopBadgeColors = {
-  wog: 'bg-blue-100 text-blue-800 border-blue-200',
-  wpsg: 'bg-purple-100 text-purple-800 border-purple-200',
-  wphylo: 'bg-green-100 text-green-800 border-green-200'
+  wog: 'bg-blue-50 text-blue-700 border-blue-100',
+  wpsg: 'bg-purple-50 text-purple-700 border-purple-100',
+  wphylo: 'bg-green-50 text-green-700 border-green-100'
 };
 
 export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, onClick, searchTerm }) => {
@@ -29,8 +29,8 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
   const gradientClass = workshopColors[primaryWorkshop as keyof typeof workshopColors] || workshopColors.wog;
   
   return (
-    <div 
-      className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up cursor-pointer"
+    <div
+      className="group relative bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden animate-slide-up cursor-pointer border border-gray-100 hover:border-gray-200"
       onClick={onClick}
       role="button"
       tabIndex={0}
@@ -40,8 +40,8 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
           onClick?.();
         }
       }}>
-      {/* Gradient accent bar */}
-      <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradientClass}`}></div>
+      {/* Gradient accent bar - thinner and more subtle */}
+      <div className={`absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r ${gradientClass} opacity-80`}></div>
       
       <div className="p-6">
         {/* Header with name and years badge */}
@@ -55,7 +55,7 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
             )}
           </div>
           <div className="flex flex-col items-end gap-2">
-            <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r ${gradientClass} text-white shadow-sm`}>
+            <span className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-200">
               {profile.statistics.totalYears} {profile.statistics.totalYears === 1 ? 'year' : 'years'}
             </span>
           </div>
@@ -75,11 +75,11 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
                     {years.length} {years.length === 1 ? 'year' : 'years'}
                   </span>
                 </div>
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1.5">
                   {years.map(year => (
                     <span
                       key={year}
-                      className="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-150"
+                      className="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-150"
                     >
                       {year}
                     </span>
@@ -100,25 +100,24 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
           <SearchHighlight profile={profile as EnrichedFacultyProfile} searchTerm={searchTerm} />
         )}
 
-        {/* Footer with timeline info */}
-        <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
-          <div className="flex items-center gap-1 text-gray-500">
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        {/* Footer with timeline info - more elegant styling */}
+        <div className="pt-3 mt-3 border-t border-gray-50 flex items-center justify-between">
+          <div className="flex items-center gap-1.5 text-xs text-gray-500">
+            <svg className="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
             </svg>
-            <span>First: {profile.statistics.firstYear}</span>
+            <span className="font-medium text-gray-600">{profile.statistics.firstYear}</span>
+            <span className="text-gray-400">–</span>
+            <span className="font-medium text-gray-600">{profile.statistics.lastYear}</span>
           </div>
-          <div className="flex items-center gap-1 text-gray-500">
-            <span>Latest: {profile.statistics.lastYear}</span>
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+          <div className="text-xs text-gray-400 italic">
+            {profile.statistics.lastYear - profile.statistics.firstYear + 1} year span
           </div>
         </div>
       </div>
       
-      {/* Hover effect overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+      {/* Subtle hover effect overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-50/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
     </div>
   );
 };

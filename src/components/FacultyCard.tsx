@@ -10,17 +10,17 @@ interface FacultyCardProps {
   searchTerm?: string;
 }
 
-// Define workshop colors - more subtle and professional
+// Define workshop colors - harmonious and sophisticated palette
 const workshopColors = {
-  wog: 'from-blue-400 to-blue-500',
-  wpsg: 'from-purple-400 to-purple-500',
-  wphylo: 'from-green-400 to-green-500'
+  wog: 'from-slate-400 to-slate-500',      // Sophisticated slate blue
+  wpsg: 'from-violet-400 to-violet-500',   // Refined violet
+  wphylo: 'from-emerald-400 to-emerald-500' // Elegant emerald
 };
 
 const workshopBadgeColors = {
-  wog: 'bg-blue-50 text-blue-700 border-blue-100',
-  wpsg: 'bg-purple-50 text-purple-700 border-purple-100',
-  wphylo: 'bg-green-50 text-green-700 border-green-100'
+  wog: 'bg-slate-50 text-slate-700 border-slate-200',
+  wpsg: 'bg-violet-50 text-violet-700 border-violet-200',
+  wphylo: 'bg-emerald-50 text-emerald-700 border-emerald-200'
 };
 
 export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, onClick, searchTerm }) => {

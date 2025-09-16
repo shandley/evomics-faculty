@@ -99,39 +99,39 @@ export function UnifiedNavigation({
               </button>
               
               {showSiteMenu && (
-                <div className="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
-                  <div className="px-4 py-2 border-b border-gray-100">
-                    <div className="text-sm font-medium text-gray-900">Evomics Ecosystem</div>
-                    <div className="text-xs text-gray-500">Seamlessly explore all platforms</div>
+                <div className="absolute left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 py-2 z-50">
+                  <div className="px-4 py-2 border-b border-gray-700">
+                    <div className="text-sm font-medium text-gray-100">Evomics Ecosystem</div>
+                    <div className="text-xs text-gray-400">Seamlessly explore all platforms</div>
                   </div>
-                  
+
                   {/* Current Site */}
                   <div className="px-4 py-2">
-                    <div className="flex items-center space-x-3 p-2 bg-primary-50 rounded-md">
+                    <div className="flex items-center space-x-3 p-2 bg-gray-700 rounded-md">
                       <span className="text-lg">{currentSiteInfo?.icon}</span>
                       <div className="flex-1">
-                        <div className="font-medium text-primary-900">{currentSiteInfo?.name}</div>
-                        <div className="text-xs text-primary-600">{currentSiteInfo?.description}</div>
-                        <div className="text-xs text-primary-500 mt-1">Current Site</div>
+                        <div className="font-medium text-gray-100">{currentSiteInfo?.name}</div>
+                        <div className="text-xs text-gray-400">{currentSiteInfo?.description}</div>
+                        <div className="text-xs text-blue-400 mt-1">Current Site</div>
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Other Sites */}
-                  <div className="border-t border-gray-100 pt-2">
+                  <div className="border-t border-gray-700 pt-2">
                     {otherSites.map(site => (
                       <button
                         key={site.id}
                         onClick={() => handleSiteNavigation(site.url)}
-                        className="w-full text-left px-4 py-2 hover:bg-gray-50 transition-colors"
+                        className="w-full text-left px-4 py-2 hover:bg-gray-700 transition-colors"
                       >
                         <div className="flex items-center space-x-3 p-2">
                           <span className="text-lg">{site.icon}</span>
                           <div className="flex-1">
-                            <div className="font-medium text-gray-900">{site.name}</div>
-                            <div className="text-xs text-gray-500">{site.description}</div>
+                            <div className="font-medium text-gray-100">{site.name}</div>
+                            <div className="text-xs text-gray-400">{site.description}</div>
                           </div>
-                          <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
                         </div>
@@ -157,54 +157,54 @@ export function UnifiedNavigation({
               </button>
               
               {showUniversalSearch && (
-                <div className="absolute right-0 mt-2 w-96 bg-white rounded-lg shadow-xl border border-gray-200 p-4 z-50">
+                <div className="absolute right-0 mt-2 w-96 bg-gray-800 rounded-lg shadow-xl border border-gray-700 p-4 z-50">
                   <div className="mb-3">
-                    <div className="text-sm font-medium text-gray-900">Universal Search</div>
-                    <div className="text-xs text-gray-500">Search across Faculty, Workshops, and Students</div>
+                    <div className="text-sm font-medium text-gray-100">Universal Search</div>
+                    <div className="text-xs text-gray-400">Search across Faculty, Workshops, and Students</div>
                   </div>
-                  
+
                   <form onSubmit={handleUniversalSearch} className="space-y-3">
                     <input
                       type="text"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder="Search faculty, expertise, institutions..."
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm text-gray-100 placeholder-gray-400"
                       autoFocus
                     />
-                    
+
                     <div className="flex items-center justify-between">
-                      <div className="text-xs text-gray-500">
+                      <div className="text-xs text-gray-400">
                         Press Enter or click Search
                       </div>
                       <button
                         type="submit"
                         disabled={!searchQuery.trim()}
-                        className="px-3 py-1 bg-primary-600 text-white rounded text-xs hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="px-3 py-1 bg-blue-600 text-white rounded text-xs hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         Search
                       </button>
                     </div>
                   </form>
-                  
-                  <div className="mt-3 pt-3 border-t border-gray-100">
-                    <div className="text-xs text-gray-500 mb-2">Quick Actions:</div>
+
+                  <div className="mt-3 pt-3 border-t border-gray-700">
+                    <div className="text-xs text-gray-400 mb-2">Quick Actions:</div>
                     <div className="flex flex-wrap gap-2">
-                      <button 
+                      <button
                         onClick={() => setSearchQuery('population genetics')}
-                        className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs hover:bg-gray-200"
+                        className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs hover:bg-gray-600"
                       >
                         Population Genetics
                       </button>
-                      <button 
+                      <button
                         onClick={() => setSearchQuery('phylogenetics')}
-                        className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs hover:bg-gray-200"
+                        className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs hover:bg-gray-600"
                       >
                         Phylogenetics
                       </button>
-                      <button 
+                      <button
                         onClick={() => setSearchQuery('Harvard')}
-                        className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs hover:bg-gray-200"
+                        className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs hover:bg-gray-600"
                       >
                         Harvard
                       </button>
@@ -229,7 +229,7 @@ export function UnifiedNavigation({
               <span className="text-gray-300 font-medium">{currentSiteInfo?.name}</span>
             </div>
 
-            <div className="text-xs text-gray-600">
+            <div className="text-xs text-gray-400">
               Part of the integrated genomics education platform
             </div>
           </div>

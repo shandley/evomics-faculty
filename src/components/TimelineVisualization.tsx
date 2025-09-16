@@ -230,86 +230,145 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
             
             {/* Geographic Spread View */}
             {viewMode === 'geographic' && (
-              <div className="relative h-full">
-                <div className="text-sm font-medium text-gray-700 mb-2">Geographic Expansion</div>
-                <div className="relative h-48">
-                  {/* Country count over time */}
-                  <div className="mb-4">
-                    <svg width={timelineWidth} height={120}>
+              <div className="py-6">
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Geographic Expansion</h3>
+                  <p className="text-sm text-gray-600">Number of countries represented over time</p>
+                </div>
+
+                {/* Country count chart with proper axes */}
+                <div className="relative">
+                  {/* Y-axis labels */}
+                  <div className="absolute left-0 top-0 h-48 flex flex-col justify-between text-xs text-gray-500 -ml-8">
+                    <span>30</span>
+                    <span>20</span>
+                    <span>10</span>
+                    <span>0</span>
+                  </div>
+
+                  {/* Chart area */}
+                  <div className="ml-4">
+                    <svg width={timelineWidth} height={200} className="overflow-visible">
+                      {/* Grid lines */}
+                      {[0, 10, 20, 30].map(value => (
+                        <line
+                          key={value}
+                          x1={0}
+                          y1={200 - (value / 30) * 200}
+                          x2={timelineWidth}
+                          y2={200 - (value / 30) * 200}
+                          stroke="#e5e7eb"
+                          strokeDasharray="2,2"
+                        />
+                      ))}
+
                       {/* COVID-19 indicator */}
                       {timelineData.years.map((yearData, index) => {
                         if (yearData.year === 2021) {
                           return (
-                            <rect
-                              key="covid-rect-geo"
-                              x={index * yearWidth}
-                              y={0}
-                              width={yearWidth}
-                              height={120}
-                              fill="#9CA3AF"
-                              opacity={0.2}
-                            />
+                            <g key="covid-indicator">
+                              <rect
+                                x={index * yearWidth}
+                                y={0}
+                                width={yearWidth}
+                                height={200}
+                                fill="#9CA3AF"
+                                opacity={0.1}
+                              />
+                              <text
+                                x={index * yearWidth + yearWidth / 2}
+                                y={190}
+                                textAnchor="middle"
+                                className="text-xs fill-gray-500"
+                              >
+                                COVID-19
+                              </text>
+                            </g>
                           );
                         }
                         return null;
                       })}
-                      
+
+                      {/* Line chart */}
                       <polyline
                         fill="none"
-                        stroke="#10B981"
-                        strokeWidth="2"
+                        stroke="#10b981"
+                        strokeWidth="3"
                         points={timelineData.years.map((yearData, index) => {
                           const x = index * yearWidth + yearWidth / 2;
-                          const y = 120 - (yearData.totals.countryCount / 30) * 100; // Scale to max 30 countries
+                          const y = 200 - (yearData.totals.countryCount / 30) * 200;
                           return `${x},${y}`;
                         }).join(' ')}
                       />
+
+                      {/* Data points */}
                       {timelineData.years.map((yearData, index) => {
                         const x = index * yearWidth + yearWidth / 2;
-                        const y = 120 - (yearData.totals.countryCount / 30) * 100;
-                        
+                        const y = 200 - (yearData.totals.countryCount / 30) * 200;
+                        const isHovered = yearData.year === hoveredYear;
+                        const isSelected = yearData.year === selectedYear;
+
                         return (
                           <g key={yearData.year}>
                             <circle
                               cx={x}
                               cy={y}
-                              r="3"
-                              fill="#10B981"
-                              className="cursor-pointer"
+                              r={isHovered || isSelected ? 5 : 4}
+                              fill="#10b981"
+                              stroke="white"
+                              strokeWidth="2"
+                              className="cursor-pointer transition-all duration-200"
+                              onMouseEnter={() => setHoveredYear(yearData.year)}
+                              onMouseLeave={() => setHoveredYear(null)}
                               onClick={() => handleYearClick(yearData.year)}
                             />
-                            {(hoveredYear === yearData.year || selectedYear === yearData.year) && (
-                              <text x={x} y={y - 10} textAnchor="middle" className="text-xs fill-gray-700">
-                                {yearData.totals.countryCount}
-                              </text>
+                            {(isHovered || isSelected) && (
+                              <g>
+                                <rect
+                                  x={x - 15}
+                                  y={y - 25}
+                                  width="30"
+                                  height="18"
+                                  fill="#1f2937"
+                                  rx="3"
+                                />
+                                <text
+                                  x={x}
+                                  y={y - 12}
+                                  textAnchor="middle"
+                                  className="text-xs fill-white font-medium"
+                                >
+                                  {yearData.totals.countryCount}
+                                </text>
+                              </g>
                             )}
                           </g>
                         );
                       })}
                     </svg>
                   </div>
-                  <p className="text-xs text-gray-600">Countries represented</p>
-                  
-                  {/* Top countries bar */}
-                  <div className="mt-4 flex gap-2">
-                    {selectedYearData && (() => {
-                      const countries = new Map<string, number>();
-                      Object.values(selectedYearData.workshops).forEach(workshop => {
-                        workshop.countries.forEach((count, country) => {
-                          countries.set(country, (countries.get(country) || 0) + count);
-                        });
-                      });
-                      const topCountries = Array.from(countries.entries())
-                        .sort((a, b) => b[1] - a[1])
-                        .slice(0, 5);
-                      
-                      return topCountries.map(([country, count]) => (
-                        <div key={country} className="text-xs">
-                          <div className="font-medium">{country}</div>
-                          <div className="text-gray-500">{count} faculty</div>
-                        </div>
-                      ));
-                    })()}
+
+                  {/* X-axis label */}
+                  <div className="text-xs text-gray-500 text-center mt-2">Year</div>
+                </div>
+
+                {/* Summary stats */}
+                <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-gray-200">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-emerald-600">
+                      {timelineData.years[timelineData.years.length - 1]?.totals.countryCount || 0}
+                    </div>
+                    <div className="text-sm text-gray-600">Countries (2025)</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-violet-600">
+                      {Math.max(...timelineData.years.map(y => y.totals.countryCount))}
+                    </div>
+                    <div className="text-sm text-gray-600">Peak Countries</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-slate-600">6</div>
+                    <div className="text-sm text-gray-600">Continents</div>
                   </div>
                 </div>
               </div>
@@ -317,40 +376,109 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
           </div>
           
           {/* Cumulative faculty line chart */}
-          <div className="mt-6 bg-white rounded-lg border border-gray-200 p-4">
-            <div className="text-sm font-semibold text-gray-900 mb-3">
+          <div className="mt-6 bg-white rounded-lg border border-gray-200 p-6">
+            <div className="text-base font-semibold text-gray-900 mb-4">
               Cumulative Faculty Growth
             </div>
-            <svg width={timelineWidth} height={80}>
-              <polyline
-                fill="none"
-                stroke="#8b5cf6"
-                strokeWidth="2"
-                points={timelineData.years.map((yearData, index) => {
-                  const x = index * yearWidth + yearWidth / 2;
-                  const y = 80 - (yearData.totals.facultyCount / 170) * 70; // Scale to max
-                  return `${x},${y}`;
-                }).join(' ')}
-              />
-              {/* Data points */}
-              {timelineData.years.map((yearData, index) => {
-                const x = index * yearWidth + yearWidth / 2;
-                const y = 80 - (yearData.totals.facultyCount / 170) * 70;
-                const isSelected = yearData.year === selectedYear;
-                
-                return (
-                  <circle
-                    key={yearData.year}
-                    cx={x}
-                    cy={y}
-                    r={isSelected ? 5 : 3}
-                    fill="#3B82F6"
-                    className="cursor-pointer"
-                    onClick={() => handleYearClick(yearData.year)}
+
+            <div className="relative">
+              {/* Y-axis labels */}
+              <div className="absolute left-0 top-0 h-32 flex flex-col justify-between text-xs text-gray-500 -ml-8">
+                <span>200</span>
+                <span>150</span>
+                <span>100</span>
+                <span>50</span>
+                <span>0</span>
+              </div>
+
+              {/* Chart area */}
+              <div className="ml-4">
+                <svg width={timelineWidth} height={128} className="overflow-visible">
+                  {/* Grid lines */}
+                  {[0, 50, 100, 150, 200].map(value => (
+                    <line
+                      key={value}
+                      x1={0}
+                      y1={128 - (value / 200) * 128}
+                      x2={timelineWidth}
+                      y2={128 - (value / 200) * 128}
+                      stroke="#e5e7eb"
+                      strokeDasharray="2,2"
+                    />
+                  ))}
+
+                  {/* Area fill */}
+                  <polygon
+                    fill="#8b5cf6"
+                    fillOpacity="0.1"
+                    points={`0,128 ${timelineData.years.map((yearData, index) => {
+                      const x = index * yearWidth + yearWidth / 2;
+                      const y = 128 - (yearData.totals.facultyCount / 200) * 128;
+                      return `${x},${y}`;
+                    }).join(' ')} ${timelineWidth},128`}
                   />
-                );
-              })}
-            </svg>
+
+                  {/* Line */}
+                  <polyline
+                    fill="none"
+                    stroke="#8b5cf6"
+                    strokeWidth="3"
+                    points={timelineData.years.map((yearData, index) => {
+                      const x = index * yearWidth + yearWidth / 2;
+                      const y = 128 - (yearData.totals.facultyCount / 200) * 128;
+                      return `${x},${y}`;
+                    }).join(' ')}
+                  />
+
+                  {/* Data points */}
+                  {timelineData.years.map((yearData, index) => {
+                    const x = index * yearWidth + yearWidth / 2;
+                    const y = 128 - (yearData.totals.facultyCount / 200) * 128;
+                    const isHovered = yearData.year === hoveredYear;
+
+                    return (
+                      <g key={yearData.year}>
+                        <circle
+                          cx={x}
+                          cy={y}
+                          r={isHovered ? 4 : 3}
+                          fill="#8b5cf6"
+                          stroke="white"
+                          strokeWidth="2"
+                          className="cursor-pointer transition-all duration-200"
+                          onMouseEnter={() => setHoveredYear(yearData.year)}
+                          onMouseLeave={() => setHoveredYear(null)}
+                          onClick={() => handleYearClick(yearData.year)}
+                        />
+                        {isHovered && (
+                          <g>
+                            <rect
+                              x={x - 15}
+                              y={y - 25}
+                              width="30"
+                              height="18"
+                              fill="#1f2937"
+                              rx="3"
+                            />
+                            <text
+                              x={x}
+                              y={y - 12}
+                              textAnchor="middle"
+                              className="text-xs fill-white font-medium"
+                            >
+                              {yearData.totals.facultyCount}
+                            </text>
+                          </g>
+                        )}
+                      </g>
+                    );
+                  })}
+                </svg>
+              </div>
+
+              {/* X-axis label */}
+              <div className="text-xs text-gray-500 text-center mt-2">Year</div>
+            </div>
           </div>
         </div>
       </div>

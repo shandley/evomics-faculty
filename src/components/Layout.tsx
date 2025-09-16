@@ -42,53 +42,83 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="mt-20 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
+      <footer className="mt-24 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* About Section */}
             <div className="text-center md:text-left">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Evomics Alumni Network</h3>
-              <p className="text-base text-gray-600">
-                Connecting 172 faculty and{' '}
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Evomics Faculty Alumni</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                A comprehensive directory of 172 educators who have shaped genomics education through hands-on workshops worldwide.
+              </p>
+            </div>
+
+            {/* Affiliated Sites */}
+            <div className="text-center">
+              <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">Affiliated Sites</h4>
+              <div className="space-y-2">
                 <a
                   href="https://shandley.github.io/evomics-students/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-violet-600 hover:text-violet-700 font-semibold underline decoration-dotted"
+                  className="flex items-center justify-center gap-2 text-sm text-gray-600 hover:text-violet-600 transition-colors"
                 >
-                  1,411 student alumni
+                  <span className="text-base">🎓</span>
+                  <span>Student Alumni Portal</span>
+                  <svg className="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
                 </a>
-                {' '}across the global genomics education community
-              </p>
+                <a
+                  href="https://shandley.github.io/evomics-workshops/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 text-sm text-gray-600 hover:text-emerald-600 transition-colors"
+                >
+                  <span className="text-base">📚</span>
+                  <span>Workshop Archives</span>
+                  <svg className="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="https://shandley.github.io/evomics-students/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 text-white font-medium rounded-lg hover:bg-violet-700 transition-colors duration-200"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                View Student Alumni
-              </a>
-              <a
-                href="https://evomics.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200"
-              >
-                <span>evomics.org</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+
+            {/* Quick Links */}
+            <div className="text-center md:text-right">
+              <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">Resources</h4>
+              <div className="space-y-2">
+                <a
+                  href="https://evomics.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-gray-600 hover:text-primary-600 transition-colors"
+                >
+                  Main Website
+                </a>
+                <a
+                  href="https://github.com/shandley/evomics-faculty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-gray-600 hover:text-primary-600 transition-colors"
+                >
+                  GitHub Repository
+                </a>
+              </div>
             </div>
           </div>
-          <div className="border-t border-gray-200 pt-4">
-            <p className="text-center text-sm text-gray-600">
-              © {new Date().getFullYear()} Evomics Workshops. Data last updated: {new Date().toLocaleDateString()}
-            </p>
+
+          {/* Bottom Bar */}
+          <div className="pt-8 border-t border-gray-200">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+              <p className="text-xs text-gray-500">
+                © {new Date().getFullYear()} Evomics Workshops. All rights reserved.
+              </p>
+              <p className="text-xs text-gray-500">
+                Data last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              </p>
+            </div>
           </div>
         </div>
       </footer>

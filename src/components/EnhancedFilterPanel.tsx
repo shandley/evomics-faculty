@@ -78,27 +78,41 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
 
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
-        {/* Search */}
-        <div>
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-            <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            Search Faculty
-          </label>
-          <div className="relative">
-            <SearchWithSuggestions
-              value={filters.search}
-              onChange={(value) => onFiltersChange({ ...filters, search: value })}
-              placeholder="Search by name..."
-              className="w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-lg hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 text-sm"
-            />
-            <svg className="absolute left-3 top-3 w-4 h-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
+      {/* Prominent Search Bar */}
+      <div className="mb-6">
+        <div className="relative max-w-2xl mx-auto">
+          <SearchWithSuggestions
+            value={filters.search}
+            onChange={(value) => onFiltersChange({ ...filters, search: value })}
+            placeholder="Search faculty by name, institution, or research area..."
+            className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200 text-base font-medium placeholder-gray-400"
+          />
+          <svg className="absolute left-4 top-3.5 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          {filters.search && (
+            <button
+              onClick={() => onFiltersChange({ ...filters, search: '' })}
+              className="absolute right-3 top-3.5 p-1 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Clear search"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          )}
         </div>
+        {filters.search && (
+          <div className="text-center mt-2">
+            <span className="text-sm text-gray-600">
+              Searching for "<span className="font-semibold text-gray-900">{filters.search}</span>"
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Filter Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
 
         {/* Topic Filter */}
         <div>
@@ -206,15 +220,65 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
         </div>
       </div>
 
+      {/* Active Filters Display */}
+      {(filters.search || filters.workshops.length > 0 || filters.year !== null || (filters.topics && filters.topics.length > 0) || (filters.teachingSpecializations && filters.teachingSpecializations.length > 0)) && (
+        <div className="mb-4 p-3 bg-violet-50 border border-violet-200 rounded-lg">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-sm font-semibold text-violet-900">Active filters:</span>
+              {filters.search && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-violet-700 border border-violet-300">
+                  Search: {filters.search}
+                </span>
+              )}
+              {filters.workshops.length > 0 && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-violet-700 border border-violet-300">
+                  Workshop filtered
+                </span>
+              )}
+              {filters.year && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-violet-700 border border-violet-300">
+                  Year: {filters.year}
+                </span>
+              )}
+              {filters.topics && filters.topics.length > 0 && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-violet-700 border border-violet-300">
+                  {filters.topics.length} topic{filters.topics.length !== 1 ? 's' : ''}
+                </span>
+              )}
+              {filters.teachingSpecializations && filters.teachingSpecializations.length > 0 && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-violet-700 border border-violet-300">
+                  Specialization filtered
+                </span>
+              )}
+            </div>
+            <button
+              onClick={() => onFiltersChange({
+                search: '',
+                workshops: [],
+                year: null,
+                topics: [],
+                teachingSpecializations: [],
+                includeChildTopics: true
+              })}
+              className="text-xs text-violet-600 hover:text-violet-700 font-medium underline"
+            >
+              Clear all
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Results summary */}
       <div className="mt-6 pt-6 border-t border-gray-100">
         <div className="flex items-center justify-between flex-wrap gap-4">
           <span className="text-sm text-gray-600">
-            Showing <span className="font-semibold text-gray-900">{filteredCount}</span> of <span className="font-semibold text-gray-900">{totalCount}</span> faculty members
-            {filters.topics && filters.topics.length > 0 && (
-              <span className="ml-2">
-                • <span className="font-semibold text-primary-600">{filters.topics.length}</span> topic{filters.topics.length !== 1 ? 's' : ''} selected
-              </span>
+            {filteredCount === totalCount ? (
+              <>Showing all <span className="font-semibold text-gray-900">{totalCount}</span> faculty members</>
+            ) : (
+              <>
+                Found <span className="font-semibold text-violet-600">{filteredCount}</span> of <span className="font-semibold text-gray-900">{totalCount}</span> faculty members
+              </>
             )}
           </span>
           
@@ -254,21 +318,6 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
               )}
             </div>
             
-            {/* Clear Filters */}
-            {(filters.search || filters.workshops.length > 0 || filters.year !== null || (filters.topics && filters.topics.length > 0)) && (
-              <button
-                onClick={() => onFiltersChange({
-                  search: '',
-                  workshops: [],
-                  year: null,
-                  topics: [],
-                  includeChildTopics: true
-                })}
-                className="text-sm text-primary-600 hover:text-primary-700 font-medium underline"
-              >
-                Clear filters
-              </button>
-            )}
           </div>
         </div>
       </div>

@@ -170,35 +170,45 @@ export const SearchWithSuggestions: React.FC<SearchWithSuggestionsProps> = ({
       {showSuggestions && suggestions.length > 0 && (
         <div
           ref={suggestionsRef}
-          className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-64 overflow-y-auto"
+          className="absolute z-50 w-full mt-2 bg-white border-2 border-gray-200 rounded-xl shadow-xl max-h-64 overflow-y-auto"
         >
-          {suggestions.map((suggestion, index) => (
-            <button
-              key={`${suggestion.type}-${suggestion.value}-${index}`}
-              className={`w-full px-4 py-2 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none ${
-                index === selectedIndex ? 'bg-gray-50' : ''
-              }`}
-              onClick={() => {
-                onChange(suggestion.value);
-                setShowSuggestions(false);
-                setSelectedIndex(-1);
-              }}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="font-medium text-gray-900">{suggestion.label}</div>
-                  {suggestion.sublabel && (
-                    <div className="text-xs text-gray-500">{suggestion.sublabel}</div>
-                  )}
-                </div>
-                {suggestion.type === 'topic' && (
-                  <svg className="w-4 h-4 text-gray-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          <div className="p-2">
+            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 py-1">Suggestions</div>
+            {suggestions.map((suggestion, index) => (
+              <button
+                key={`${suggestion.type}-${suggestion.value}-${index}`}
+                className={`w-full px-3 py-2 text-left rounded-lg hover:bg-violet-50 focus:bg-violet-50 focus:outline-none transition-colors ${
+                  index === selectedIndex ? 'bg-violet-50' : ''
+                }`}
+                onClick={() => {
+                  onChange(suggestion.value);
+                  setShowSuggestions(false);
+                  setSelectedIndex(-1);
+                }}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    {suggestion.type === 'topic' && (
+                      <div className="w-8 h-8 bg-violet-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-violet-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                      </div>
+                    )}
+                    <div>
+                      <div className="font-medium text-gray-900">{suggestion.label}</div>
+                      {suggestion.sublabel && (
+                        <div className="text-xs text-gray-500">{suggestion.sublabel}</div>
+                      )}
+                    </div>
+                  </div>
+                  <svg className="w-4 h-4 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
-                )}
-              </div>
-            </button>
-          ))}
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </div>

@@ -28,10 +28,10 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="animate-fade-in">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 font-display tracking-tight">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 font-display tracking-tight">
               Faculty Alumni Directory
             </h1>
-            <p className="text-gray-600 mt-1">
+            <p className="text-base md:text-lg text-gray-600 mt-2 font-medium">
               Explore the educators who have shaped genomics education across our workshop series
             </p>
           </div>
@@ -46,14 +46,14 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
             <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Evomics Alumni Network</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Evomics Alumni Network</h3>
+              <p className="text-base text-gray-600">
                 Connecting 172 faculty and{' '}
-                <a 
+                <a
                   href="https://shandley.github.io/evomics-students/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-600 hover:text-purple-800 underline decoration-dotted"
+                  className="text-purple-600 hover:text-purple-700 font-semibold underline decoration-dotted"
                 >
                   1,411 student alumni
                 </a>

@@ -36,21 +36,21 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
   const totalWorkshops = Object.values(workshops).length;
 
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">
+    <div className="bg-white rounded-lg border border-gray-200 p-8 shadow-sm mb-6">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-3">
           Evomics Alumni Community
         </h2>
-        <p className="text-gray-600 mb-2">
+        <p className="text-lg text-gray-700 mb-3 font-medium">
           Connecting faculty and students across the global genomics education network
         </p>
-        <p className="text-sm text-gray-500 italic">
+        <p className="text-base text-gray-600">
           Celebrating the educators who have shaped genomics education worldwide, inspiring our{' '}
           <a
             href="https://shandley.github.io/evomics-students/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-600 hover:text-purple-700 underline decoration-dotted"
+            className="text-purple-600 hover:text-purple-700 font-semibold underline decoration-dotted"
           >
             1,411 student alumni
           </a>
@@ -62,9 +62,9 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
         <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-gray-900">{profiles.length}</div>
-              <div className="text-sm font-semibold text-gray-700">Faculty Alumni</div>
-              <div className="text-xs text-gray-500 mt-1">{facultyWithTeaching.length} with teaching history</div>
+              <div className="text-4xl font-bold text-gray-900">{profiles.length}</div>
+              <div className="text-base font-semibold text-gray-800">Faculty Alumni</div>
+              <div className="text-sm text-gray-500 mt-1">{facultyWithTeaching.length} with teaching history</div>
             </div>
             <div className="p-3 bg-blue-50 rounded-lg">
               <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -72,7 +72,7 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
               </svg>
             </div>
           </div>
-          <div className="flex items-center text-blue-600 text-sm font-medium">
+          <div className="flex items-center text-blue-600 text-sm font-semibold">
             <span>Complete Historical Dataset</span>
             <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -84,9 +84,9 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
         <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-gray-900">1,411</div>
-              <div className="text-sm font-semibold text-gray-700">Student Alumni</div>
-              <div className="text-xs text-gray-500 mt-1">Core workshop series</div>
+              <div className="text-4xl font-bold text-gray-900">1,411</div>
+              <div className="text-base font-semibold text-gray-800">Student Alumni</div>
+              <div className="text-sm text-gray-500 mt-1">Core workshop series</div>
             </div>
             <div className="p-3 bg-purple-50 rounded-lg">
               <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -111,9 +111,9 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
         <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-gray-900">{totalYears}</div>
-              <div className="text-sm font-semibold text-gray-700">Years of Excellence</div>
-              <div className="text-xs text-gray-500 mt-1">{yearRange}</div>
+              <div className="text-4xl font-bold text-gray-900">{totalYears}</div>
+              <div className="text-base font-semibold text-gray-800">Years of Excellence</div>
+              <div className="text-sm text-gray-500 mt-1">{yearRange}</div>
             </div>
             <div className="p-3 bg-green-50 rounded-lg">
               <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -121,24 +121,26 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles }
               </svg>
             </div>
           </div>
-          <div className="text-gray-700 text-sm font-medium">
+          <div className="text-gray-700 text-base font-semibold">
             {totalWorkshops} Workshop Series
-            <div className="text-xs text-gray-500 font-normal mt-1">
+            <div className="text-sm text-gray-500 font-normal mt-0.5">
               {activeWorkshops} Active • {historicalWorkshops} Historical
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mt-6 pt-4 border-t border-gray-200 text-center">
-        <p className="text-sm text-gray-600">
-          <strong>Building the future of genomics education</strong> — 
+      <div className="mt-8 pt-6 border-t border-gray-200 text-center">
+        <p className="text-lg font-bold text-gray-900 mb-2">
+          Building the future of genomics education
+        </p>
+        <p className="text-base text-gray-600">
           Where world-class faculty and{' '}
-          <a 
-            href="https://shandley.github.io/evomics-students/" 
-            target="_blank" 
+          <a
+            href="https://shandley.github.io/evomics-students/"
+            target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-600 hover:text-purple-800 underline decoration-dotted"
+            className="text-purple-600 hover:text-purple-700 font-semibold underline decoration-dotted"
           >
             dedicated students
           </a>

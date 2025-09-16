@@ -51,7 +51,7 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
               {profile.faculty.firstName} {profile.faculty.lastName}
             </h3>
             {profile.faculty.currentAffiliation && (
-              <p className="text-sm text-gray-600 mt-1 line-clamp-1">{profile.faculty.currentAffiliation}</p>
+              <p className="text-sm text-gray-600 mt-1 line-clamp-1 font-medium">{profile.faculty.currentAffiliation}</p>
             )}
           </div>
           <div className="flex flex-col items-end gap-2">

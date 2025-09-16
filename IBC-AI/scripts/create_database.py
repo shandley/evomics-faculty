@@ -11,8 +11,8 @@ sys.path.append(str(Path(__file__).parent.parent))
 from loguru import logger
 from sqlalchemy import text
 
-from ibc_ai.data.database.base import Base
 from ibc_ai.data.database.session import engine
+from ibc_ai.data.models.base import Base
 
 
 async def create_tables() -> None:
@@ -20,9 +20,8 @@ async def create_tables() -> None:
     logger.info("Creating database tables...")
 
     # Import all models to ensure they are registered with the metadata
-    # Add your model imports here as they are created
-    # from ibc_ai.data.models.protocol import Protocol
-    # from ibc_ai.data.models.user import User
+    from ibc_ai.data.models.biological_agent import BiologicalAgentModel
+    from ibc_ai.data.models.protocol import ProtocolModel, ProtocolDocumentModel, ProtocolBiologicalAgentModel
 
     async with engine.begin() as conn:
         # Create tables
@@ -35,6 +34,24 @@ async def create_tables() -> None:
     logger.info("Database tables created successfully")
 
 
+async def drop_tables() -> None:
+    """Drop all database tables."""
+    logger.warning("Dropping all database tables...")
+
+    # Import all models to ensure they are registered with the metadata
+    from ibc_ai.data.models.biological_agent import BiologicalAgentModel
+    from ibc_ai.data.models.protocol import ProtocolModel, ProtocolDocumentModel, ProtocolBiologicalAgentModel
+
+    async with engine.begin() as conn:
+        # Drop tables
+        await conn.run_sync(Base.metadata.drop_all)
+
+    logger.info("Database tables dropped successfully")
+
+
 if __name__ == "__main__":
     """Run the database creation script."""
-    asyncio.run(create_tables())
+    if len(sys.argv) > 1 and sys.argv[1] == "drop":
+        asyncio.run(drop_tables())
+    else:
+        asyncio.run(create_tables())

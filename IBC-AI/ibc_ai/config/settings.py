@@ -53,6 +53,18 @@ class Settings(BaseSettings):
     # Vector DB settings
     weaviate_url: str = "http://weaviate:8080"
 
+    # Redis settings for caching
+    redis_host: str = "redis"
+    redis_port: int = 6379 
+    redis_db: int = 0
+    redis_password: Optional[str] = None
+    redis_ssl: bool = False
+    
+    # Cache settings
+    cache_ttl_default: int = 3600  # 1 hour
+    cache_ttl_short: int = 300     # 5 minutes
+    cache_ttl_long: int = 86400    # 24 hours
+
     @property
     def postgres_dsn(self) -> str:
         """Get PostgreSQL DSN for SQLAlchemy."""
@@ -70,6 +82,13 @@ class Settings(BaseSettings):
     def is_production(self) -> bool:
         """Check if environment is production."""
         return self.environment.lower() == "production"
+
+    @property
+    def redis_url(self) -> str:
+        """Get Redis URL for connections."""
+        scheme = "rediss" if self.redis_ssl else "redis"
+        auth = f":{self.redis_password}@" if self.redis_password else ""
+        return f"{scheme}://{auth}{self.redis_host}:{self.redis_port}/{self.redis_db}"
 
 
 # Create global settings instance

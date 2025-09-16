@@ -26,6 +26,10 @@ import {
   Select,
   OutlinedInput,
   Pagination,
+  Menu,
+  MenuList,
+  ListItemIcon,
+  ListItemText,
 } from '@mui/material';
 import {
   Add as AddIcon,
@@ -39,6 +43,10 @@ import {
   CheckCircle as CheckIcon,
   History as HistoryIcon,
   Refresh as RefreshIcon,
+  ArrowDropDown as ArrowDropDownIcon,
+  SmartToy as SmartFormIcon,
+  Description as FormIcon,
+  Archive as ArchiveIcon,
 } from '@mui/icons-material';
 import { useQuery } from '@tanstack/react-query';
 import { useAuthStore } from '@/store/authStore';
@@ -49,6 +57,31 @@ import { ProtocolStatusChip } from '@/components/protocols/ProtocolStatusChip';
 import { ProtocolStatusTransition } from '@/components/protocols/ProtocolStatusTransition';
 import { ProtocolVersionHistory } from '@/components/protocols/ProtocolVersionHistory';
 import { CreateVersionDialog } from '@/components/protocols/CreateVersionDialog';
+import { ProtocolActions } from '@/components/protocols/ProtocolActions';
+
+// Helper function to get user-friendly status labels
+const getStatusDisplayName = (status: string): string => {
+  switch (status) {
+    case 'DRAFT':
+      return 'Draft';
+    case 'SUBMITTED':
+      return 'Submitted';
+    case 'UNDER_REVIEW':
+      return 'Under Review';
+    case 'APPROVED':
+      return 'Approved';
+    case 'CONDITIONALLY_APPROVED':
+      return 'Conditionally Approved';
+    case 'REJECTED':
+      return 'Rejected';
+    case 'EXPIRED':
+      return 'Expired';
+    case 'WITHDRAWN':
+      return 'Archived';
+    default:
+      return status.replace('_', ' ');
+  }
+};
 
 // Department options for filtering
 const DEPARTMENT_OPTIONS = [
@@ -87,6 +120,8 @@ export const ProtocolsPage = () => {
     protocolId?: string;
     protocol?: Protocol;
   }>({ open: false });
+  const [createMenuAnchor, setCreateMenuAnchor] = useState<null | HTMLElement>(null);
+  const createMenuOpen = Boolean(createMenuAnchor);
 
   // Fetch protocols from real API
   const { data: protocolsResponse, isLoading, refetch } = useQuery({
@@ -451,7 +486,7 @@ export const ProtocolsPage = () => {
                 >
                   {(facetsData?.availableFilters?.status || Object.values(ProtocolStatus)).map((status: string) => (
                     <MenuItem key={status} value={status}>
-                      {status.replace('_', ' ')} 
+                      {getStatusDisplayName(status)} 
                       {facetsData?.statusCounts?.[status] && ` (${facetsData.statusCounts[status]})`}
                     </MenuItem>
                   ))}
@@ -599,24 +634,56 @@ export const ProtocolsPage = () => {
             </Grid>
 
             <Grid item xs={12} sm={6} md={3}>
-              <Box sx={{ display: 'flex', gap: 1 }}>
+              <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', justifyContent: 'flex-end' }}>
+                <Button
+                  variant={filters.status.includes('WITHDRAWN') ? 'contained' : 'outlined'}
+                  startIcon={<ArchiveIcon />}
+                  onClick={() => {
+                    setFilters(prev => ({
+                      ...prev,
+                      status: filters.status.includes('WITHDRAWN') 
+                        ? prev.status.filter(s => s !== 'WITHDRAWN')
+                        : ['WITHDRAWN']
+                    }));
+                  }}
+                  size="small"
+                  color={filters.status.includes('WITHDRAWN') ? 'warning' : 'inherit'}
+                >
+                  {filters.status.includes('WITHDRAWN') ? 'Hide Archived' : 'Show Archived'}
+                </Button>
                 {hasActiveFilters && (
                   <Button
                     variant="outlined"
                     onClick={clearFilters}
                     size="small"
                   >
-                    Clear
+                    Clear All
                   </Button>
                 )}
-                <IconButton>
-                  <FilterIcon />
-                </IconButton>
               </Box>
             </Grid>
           </Grid>
         </CardContent>
       </Card>
+
+      {/* Archive Notice */}
+      {filters.status.includes('WITHDRAWN') && (
+        <Card sx={{ mb: 2, bgcolor: 'warning.light', border: '2px solid', borderColor: 'warning.main' }}>
+          <CardContent>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+              <ArchiveIcon color="warning" sx={{ fontSize: 28 }} />
+              <Box>
+                <Typography variant="h6" color="warning.dark">
+                  Viewing Archived Protocols
+                </Typography>
+                <Typography variant="body2" color="warning.dark">
+                  These protocols have been withdrawn/archived. You can restore them by changing their status if needed.
+                </Typography>
+              </Box>
+            </Box>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Protocols Table */}
       <Card>
@@ -750,30 +817,43 @@ export const ProtocolsPage = () => {
                     </Box>
                   </TableCell>
                   <TableCell align="right">
-                    <IconButton
-                      size="small"
-                      onClick={() => navigate(`/protocols/${protocol.id}`)}
-                      title="View Details"
-                    >
-                      <ViewIcon />
-                    </IconButton>
-                    {canReviewProtocol(protocol) && (
+                    <Box sx={{ display: 'flex', gap: 0.5, alignItems: 'center', justifyContent: 'flex-end' }}>
                       <IconButton
                         size="small"
-                        color="primary"
-                        onClick={() => navigate(`/protocols/${protocol.id}/review`)}
+                        onClick={() => navigate(`/protocols/${protocol.id}`)}
+                        title="View Details"
                       >
-                        <ReviewIcon />
+                        <ViewIcon />
                       </IconButton>
-                    )}
-                    {protocol.status === ProtocolStatus.DRAFT && (
-                      <IconButton
-                        size="small"
-                        onClick={() => navigate(`/protocols/${protocol.id}/edit`)}
-                      >
-                        <EditIcon />
-                      </IconButton>
-                    )}
+                      {canReviewProtocol(protocol) && (
+                        <IconButton
+                          size="small"
+                          color="primary"
+                          onClick={() => navigate(`/protocols/${protocol.id}/review`)}
+                        >
+                          <ReviewIcon />
+                        </IconButton>
+                      )}
+                      {protocol.status === ProtocolStatus.DRAFT && (
+                        <IconButton
+                          size="small"
+                          onClick={() => navigate(`/protocols/smart-form/${protocol.id}`)}
+                        >
+                          <EditIcon />
+                        </IconButton>
+                      )}
+                      <ProtocolActions
+                        protocol={protocol}
+                        onUpdate={() => {
+                          // Refresh protocols list
+                          refetch();
+                        }}
+                        onDelete={() => {
+                          // Refresh protocols list
+                          refetch();
+                        }}
+                      />
+                    </Box>
                   </TableCell>
                 </TableRow>
               ))}
@@ -792,16 +872,68 @@ export const ProtocolsPage = () => {
         </Box>
       </Card>
 
-      {/* Floating Action Button */}
+      {/* Floating Action Button with Dropdown */}
       {canCreateProtocols() && (
-        <Fab
-          color="primary"
-          aria-label="add protocol"
-          sx={{ position: 'fixed', bottom: 16, right: 16 }}
-          onClick={() => navigate(ROUTES.CREATE_PROTOCOL)}
-        >
-          <AddIcon />
-        </Fab>
+        <>
+          <Fab
+            color="primary"
+            aria-label="add protocol"
+            sx={{ 
+              position: 'fixed', 
+              bottom: 16, 
+              right: 16,
+              borderRadius: '50px',
+              width: 'auto',
+              height: 56,
+              px: 2
+            }}
+            variant="extended"
+            onClick={(event) => setCreateMenuAnchor(event.currentTarget)}
+          >
+            <AddIcon sx={{ mr: 1 }} />
+            Create Protocol
+            <ArrowDropDownIcon sx={{ ml: 1 }} />
+          </Fab>
+          
+          <Menu
+            anchorEl={createMenuAnchor}
+            open={createMenuOpen}
+            onClose={() => setCreateMenuAnchor(null)}
+            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            transformOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+          >
+            <MenuList dense>
+              <MenuItem 
+                onClick={() => {
+                  setCreateMenuAnchor(null);
+                  navigate('/protocols/smart-form');
+                }}
+              >
+                <ListItemIcon>
+                  <SmartFormIcon color="primary" />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Smart Form (Recommended)"
+                  secondary="Guided step-by-step protocol creation with AI assistance"
+                />
+              </MenuItem>
+              <MenuItem 
+                onClick={() => {
+                  setCreateMenuAnchor(null);
+                  navigate(ROUTES.CREATE_PROTOCOL);
+                }}
+              >
+                <ListItemIcon>
+                  <FormIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Basic Form"
+                  secondary="Traditional protocol creation form"
+                />
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </>
       )}
 
       {/* Create Version Dialog */}

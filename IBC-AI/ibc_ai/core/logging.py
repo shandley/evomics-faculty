@@ -78,3 +78,17 @@ def configure_logging() -> None:
         logging_logger.handlers = [InterceptHandler()]
 
     logger.info("Logging configured with level: {}", log_level)
+
+
+def get_logger(name: Optional[str] = None) -> logger:
+    """Get a logger instance.
+    
+    Args:
+        name: Optional logger name
+        
+    Returns:
+        Logger instance
+    """
+    if name:
+        return logger.bind(name=name)
+    return logger

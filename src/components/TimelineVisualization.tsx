@@ -50,11 +50,11 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
     return getFacultyCareer(selectedFacultyId, faculty);
   }, [selectedFacultyId, faculty]);
   
-  // Workshop colors
+  // Workshop colors matching our design system
   const workshopColors: Record<string, string> = {
-    wog: '#3B82F6',      // blue
-    wpsg: '#8B5CF6',     // purple  
-    wphylo: '#10B981',   // green
+    wog: '#64748b',      // slate
+    wpsg: '#8b5cf6',     // violet
+    wphylo: '#10b981',   // emerald
   };
   
   // Calculate timeline dimensions
@@ -91,28 +91,30 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
         </p>
       </div>
       
-      {/* View Mode Selector */}
-      <div className="mb-4 flex gap-2">
-        <button
-          onClick={() => setViewMode('overview')}
-          className={`px-3 py-1 text-sm rounded-md transition-colors ${
-            viewMode === 'overview' 
-              ? 'bg-primary-600 text-white' 
-              : 'bg-gray-100 hover:bg-gray-200'
-          }`}
-        >
-          Overview
-        </button>
-        <button
-          onClick={() => setViewMode('geographic')}
-          className={`px-3 py-1 text-sm rounded-md transition-colors ${
-            viewMode === 'geographic' 
-              ? 'bg-primary-600 text-white' 
-              : 'bg-gray-100 hover:bg-gray-200'
-          }`}
-        >
-          Geographic Spread
-        </button>
+      {/* View Mode Selector - Modern Tab Style */}
+      <div className="border-b border-gray-200 mb-6">
+        <div className="flex gap-6">
+          <button
+            onClick={() => setViewMode('overview')}
+            className={`pb-3 text-sm font-medium border-b-2 transition-all duration-200 ${
+              viewMode === 'overview'
+                ? 'border-violet-600 text-violet-600'
+                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+            }`}
+          >
+            Overview
+          </button>
+          <button
+            onClick={() => setViewMode('geographic')}
+            className={`pb-3 text-sm font-medium border-b-2 transition-all duration-200 ${
+              viewMode === 'geographic'
+                ? 'border-violet-600 text-violet-600'
+                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+            }`}
+          >
+            Geographic Spread
+          </button>
+        </div>
       </div>
       
       {/* Timeline Visualization */}
@@ -130,114 +132,98 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
           </div>
           
           {/* Main timeline */}
-          <div className="relative h-64 bg-gray-50 rounded-lg p-4">
+          <div className="relative bg-white rounded-lg border border-gray-200 p-6">
             {/* Different views based on mode */}
             {viewMode === 'overview' && (
-              <>
+              <div className="space-y-8">
                 {/* Workshop tracks */}
-                {Object.entries(workshops).map((([workshopId, workshop], workshopIndex) => (
-              <div 
-                key={workshopId} 
-                className="absolute w-full"
-                style={{ top: `${workshopIndex * 80 + 20}px` }}
-              >
-                <div className="text-sm font-medium text-gray-700 mb-1">
-                  {workshop.shortName}
-                </div>
-                
-                {/* Year blocks */}
-                <div className="relative h-12">
-                  {timelineData.years.map((yearData, index) => {
-                    const workshopData = yearData.workshops[workshopId];
-                    if (!workshopData) return null;
-                    
-                    const barHeight = Math.min(40, Math.max(10, workshopData.totalFaculty * 3));
-                    const isSelected = yearData.year === selectedYear;
-                    const isHovered = yearData.year === hoveredYear;
-                    
-                    return (
-                      <div
-                        key={yearData.year}
-                        className="absolute bottom-0 cursor-pointer transition-all duration-200"
-                        style={{
-                          left: `${index * yearWidth}px`,
-                          width: `${yearWidth - 2}px`,
-                          height: `${barHeight}px`,
-                          backgroundColor: workshopColors[workshopId],
-                          opacity: isSelected || isHovered ? 1 : 0.7,
-                          transform: `scaleY(${isSelected ? 1.1 : 1})`,
-                        }}
-                        onClick={() => handleYearClick(yearData.year)}
-                        onMouseEnter={() => setHoveredYear(yearData.year)}
-                        onMouseLeave={() => setHoveredYear(null)}
-                      >
-                        {/* New faculty indicator */}
-                        {workshopData.newFaculty.length > 0 && (
-                          <div 
-                            className="absolute top-0 left-0 right-0 bg-yellow-400"
-                            style={{ height: `${(workshopData.newFaculty.length / workshopData.totalFaculty) * 100}%` }}
-                          />
-                        )}
-                        
-                        {/* Faculty count */}
-                        {(isHovered || isSelected) && (
-                          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-1 py-0.5 rounded">
-                            {workshopData.totalFaculty}
-                          </div>
-                        )}
+                {Object.entries(workshops).map(([workshopId, workshop]) => (
+                  <div key={workshopId} className="relative">
+                    <div className="flex items-center mb-3">
+                      <div className="text-sm font-semibold text-gray-900 w-32">
+                        {workshop.name}
                       </div>
-                    );
-                  })}
+                      <div className="flex-1 h-px bg-gray-200 ml-4" />
+                    </div>
+
+                    {/* Year blocks - simplified */}
+                    <div className="relative h-16 flex items-end">
+                      {timelineData.years.map((yearData, index) => {
+                        const workshopData = yearData.workshops[workshopId];
+                        if (!workshopData) return null;
+
+                        const isSelected = yearData.year === selectedYear;
+                        const isHovered = yearData.year === hoveredYear;
+                        const hasNewFaculty = workshopData.newFaculty.length > 0;
+
+                        // Simple dot visualization
+                        return (
+                          <div
+                            key={yearData.year}
+                            className="relative flex-1 flex justify-center items-end cursor-pointer group"
+                            onClick={() => handleYearClick(yearData.year)}
+                            onMouseEnter={() => setHoveredYear(yearData.year)}
+                            onMouseLeave={() => setHoveredYear(null)}
+                          >
+                            {/* Faculty count dots */}
+                            <div className="relative">
+                              <div
+                                className={`rounded-full transition-all duration-200 ${
+                                  hasNewFaculty ? 'ring-2 ring-offset-2 ring-yellow-400' : ''
+                                }`}
+                                style={{
+                                  width: `${Math.min(32, 8 + workshopData.totalFaculty * 1.5)}px`,
+                                  height: `${Math.min(32, 8 + workshopData.totalFaculty * 1.5)}px`,
+                                  backgroundColor: workshopColors[workshopId],
+                                  opacity: isSelected || isHovered ? 1 : 0.7,
+                                }}
+                              />
+
+                              {/* Hover tooltip */}
+                              {(isHovered || isSelected) && (
+                                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap z-10">
+                                  {workshopData.totalFaculty} faculty
+                                  {hasNewFaculty && ` (+${workshopData.newFaculty.length} new)`}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+            
+                {/* Summary Statistics */}
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <div className="grid grid-cols-4 gap-4">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-gray-900">
+                        {timelineData.years[timelineData.years.length - 1]?.totals.uniqueFaculty || 0}
+                      </div>
+                      <div className="text-xs text-gray-500">Total Faculty</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-violet-600">
+                        {timelineData.years[timelineData.years.length - 1]?.totals.totalCount || 0}
+                      </div>
+                      <div className="text-xs text-gray-500">Active This Year</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-emerald-600">
+                        {timelineData.years[timelineData.years.length - 1]?.totals.countryCount || 0}
+                      </div>
+                      <div className="text-xs text-gray-500">Countries</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-slate-600">
+                        {Object.keys(workshops).length}
+                      </div>
+                      <div className="text-xs text-gray-500">Active Workshops</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            )))}
-            
-                {/* COVID-19 indicator for 2021 */}
-                {timelineData.years.map((yearData, index) => {
-                  if (yearData.year === 2021) {
-                    return (
-                      <div
-                        key="covid-2021"
-                        className="absolute top-0 bottom-0"
-                        style={{ 
-                          left: `${index * yearWidth}px`,
-                          width: `${yearWidth}px`
-                        }}
-                      >
-                        <div className="h-full bg-gray-200 opacity-50 border-x border-gray-400" />
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-90 whitespace-nowrap">
-                          <span className="text-xs font-medium text-gray-600 bg-white px-1 rounded">
-                            COVID-19
-                          </span>
-                        </div>
-                      </div>
-                    );
-                  }
-                  return null;
-                })}
-                
-                {/* Other milestones */}
-                {timelineData.years.map((yearData, index) => 
-                  yearData.milestones.map((milestone, mIndex) => (
-                    <div
-                      key={`${yearData.year}-${mIndex}`}
-                      className="absolute top-0 w-0.5 h-full bg-red-500"
-                      style={{ left: `${index * yearWidth + yearWidth / 2}px` }}
-                    >
-                      <div 
-                        className="absolute left-2 whitespace-nowrap text-xs text-red-600 font-medium"
-                        style={{ 
-                          top: `${-20 - (mIndex * 15)}px`,
-                          transform: index > timelineData.years.length / 2 ? 'translateX(-100%)' : 'none',
-                          marginLeft: index > timelineData.years.length / 2 ? '-8px' : '0'
-                        }}
-                      >
-                        {milestone}
-                      </div>
-                    </div>
-                  ))
-                )}
-              </>
             )}
             
             
@@ -331,14 +317,14 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
           </div>
           
           {/* Cumulative faculty line chart */}
-          <div className="mt-6 h-32 relative bg-gray-50 rounded-lg p-4">
-            <div className="text-sm font-medium text-gray-700 mb-2">
-              Cumulative Faculty Count
+          <div className="mt-6 bg-white rounded-lg border border-gray-200 p-4">
+            <div className="text-sm font-semibold text-gray-900 mb-3">
+              Cumulative Faculty Growth
             </div>
             <svg width={timelineWidth} height={80}>
               <polyline
                 fill="none"
-                stroke="#3B82F6"
+                stroke="#8b5cf6"
                 strokeWidth="2"
                 points={timelineData.years.map((yearData, index) => {
                   const x = index * yearWidth + yearWidth / 2;

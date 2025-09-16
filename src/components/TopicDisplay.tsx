@@ -9,10 +9,10 @@ interface TopicDisplayProps {
 }
 
 const topicLevelColors = {
-  1: 'bg-blue-100 text-blue-800 border-blue-200',
-  2: 'bg-green-100 text-green-800 border-green-200',
-  3: 'bg-purple-100 text-purple-800 border-purple-200',
-  4: 'bg-orange-100 text-orange-800 border-orange-200'
+  1: 'bg-gray-100 text-gray-700 border-gray-200',
+  2: 'bg-gray-100 text-gray-700 border-gray-200',
+  3: 'bg-gray-100 text-gray-700 border-gray-200',
+  4: 'bg-gray-100 text-gray-700 border-gray-200'
 };
 
 export const TopicDisplay: React.FC<TopicDisplayProps> = ({ 
@@ -87,56 +87,53 @@ export const TopicDisplay: React.FC<TopicDisplayProps> = ({
     );
   }
   
-  // Modal view: show full details with categories
+  // Modal view: show simplified topics
   return (
     <div className="space-y-4">
-      {/* Standardized Topics */}
       <div>
-        <h4 className="text-sm font-semibold text-gray-900 mb-2">Research Topics</h4>
-        
-        {primary.length > 0 && (
-          <div className="mb-3">
-            <h5 className="text-xs font-medium text-gray-600 uppercase tracking-wider mb-1">Primary Areas</h5>
-            <div className="flex flex-wrap gap-2">
-              {primary.map((topic, index) => (
-                <TopicBadge key={`primary-${index}`} topic={topic} showPath />
-              ))}
-            </div>
-          </div>
-        )}
-        
-        {secondary.length > 0 && (
-          <div className="mb-3">
-            <h5 className="text-xs font-medium text-gray-600 uppercase tracking-wider mb-1">Secondary Areas</h5>
-            <div className="flex flex-wrap gap-2">
-              {secondary.map((topic, index) => (
-                <TopicBadge key={`secondary-${index}`} topic={topic} showPath />
-              ))}
-            </div>
-          </div>
-        )}
-        
-        {techniques.length > 0 && (
-          <div className="mb-3">
-            <h5 className="text-xs font-medium text-gray-600 uppercase tracking-wider mb-1">Techniques & Methods</h5>
-            <div className="flex flex-wrap gap-2">
-              {techniques.map((topic, index) => (
-                <TopicBadge key={`technique-${index}`} topic={topic} showPath />
-              ))}
-            </div>
-          </div>
-        )}
+        <h3 className="text-base font-semibold text-gray-900 mb-3">Research Topics</h3>
+
+        {/* Combined topics display without categories */}
+        <div className="flex flex-wrap gap-2">
+          {primary.map((topic, index) => (
+            <span
+              key={`primary-${index}`}
+              className="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-violet-50 text-violet-700 border border-violet-200"
+              title={topic.description || topic.label}
+            >
+              {topic.label}
+            </span>
+          ))}
+          {secondary.map((topic, index) => (
+            <span
+              key={`secondary-${index}`}
+              className="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-gray-50 text-gray-700 border border-gray-200"
+              title={topic.description || topic.label}
+            >
+              {topic.label}
+            </span>
+          ))}
+          {techniques.map((topic, index) => (
+            <span
+              key={`technique-${index}`}
+              className="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-emerald-50 text-emerald-700 border border-emerald-200"
+              title={topic.description || topic.label}
+            >
+              {topic.label}
+            </span>
+          ))}
+        </div>
       </div>
-      
-      {/* Raw Areas (for reference) */}
-      {researchAreas.raw && researchAreas.raw.length > 0 && (
+
+      {/* Raw Areas (if no standardized topics) */}
+      {allTopics.length === 0 && researchAreas.raw && researchAreas.raw.length > 0 && (
         <div>
-          <h4 className="text-sm font-semibold text-gray-900 mb-2">Original Research Areas</h4>
+          <h3 className="text-base font-semibold text-gray-900 mb-3">Original Research Areas</h3>
           <div className="flex flex-wrap gap-2">
             {researchAreas.raw.map((area, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-gray-100 text-gray-600 rounded-md text-xs"
+                className="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200 rounded-md text-sm"
               >
                 {area}
               </span>

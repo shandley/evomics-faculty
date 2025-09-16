@@ -87,40 +87,40 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
         aria-describedby="modal-description"
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
+        <div className="bg-white border-b border-gray-200 p-6">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
             aria-label="Close modal"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          
-          <h2 id="modal-title" className="text-2xl font-bold mb-1">{fullName}</h2>
-          
+
+          <h2 id="modal-title" className="text-2xl font-bold text-gray-900 mb-2">{fullName}</h2>
+
           {enrichment?.professional && (
-            <div className="text-white/90">
+            <div className="text-gray-600">
               {enrichment.professional.title && (
-                <p className="text-lg">{enrichment.professional.title}</p>
+                <p className="text-base font-medium text-gray-700">{enrichment.professional.title}</p>
               )}
               {enrichment.professional.affiliation && (
                 <p className="text-sm">{enrichment.professional.affiliation}</p>
               )}
               {enrichment.professional.department && (
-                <p className="text-sm">{enrichment.professional.department}</p>
+                <p className="text-sm text-gray-500">{enrichment.professional.department}</p>
               )}
             </div>
           )}
-          
+
           {/* Confidence indicator */}
           {enrichment && (
-            <div className="mt-2">
-              <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium
-                ${enrichment.confidence === 'high' ? 'bg-green-200 text-green-800' : 
-                  enrichment.confidence === 'medium' ? 'bg-yellow-200 text-yellow-800' : 
-                  'bg-gray-200 text-gray-800'}`}>
+            <div className="mt-3">
+              <span className={`inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium
+                ${enrichment.confidence === 'high' ? 'bg-green-50 text-green-700 border border-green-200' :
+                  enrichment.confidence === 'medium' ? 'bg-yellow-50 text-yellow-700 border border-yellow-200' :
+                  'bg-gray-50 text-gray-700 border border-gray-200'}`}>
                 Data confidence: {enrichment.confidence}
               </span>
             </div>
@@ -128,13 +128,13 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
         </div>
 
         {/* Tab Navigation */}
-        <div className="border-b border-gray-200 bg-gray-50">
-          <div className="flex">
+        <div className="px-6">
+          <div className="flex gap-4 border-b border-gray-200">
             <button
               onClick={() => setActiveTab('overview')}
-              className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+              className={`pb-3 pt-4 text-sm font-medium border-b-2 transition-all duration-200 ${
                 activeTab === 'overview'
-                  ? 'border-primary-500 text-primary-600 bg-white'
+                  ? 'border-violet-600 text-violet-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
@@ -148,9 +148,9 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
             {profile?.teaching && (
               <button
                 onClick={() => setActiveTab('teaching')}
-                className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+                className={`pb-3 pt-4 text-sm font-medium border-b-2 transition-all duration-200 ${
                   activeTab === 'teaching'
-                    ? 'border-primary-500 text-primary-600 bg-white'
+                    ? 'border-violet-600 text-violet-600'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                 }`}
               >
@@ -159,7 +159,7 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                   Teaching History
-                  <span className="ml-1 bg-primary-100 text-primary-600 text-xs px-2 py-0.5 rounded-full">
+                  <span className="ml-1 bg-violet-50 text-violet-600 text-xs px-2 py-0.5 rounded-full font-semibold">
                     {profile.teaching.totalSessions}
                   </span>
                 </div>
@@ -173,35 +173,37 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
           {activeTab === 'overview' && (
             <>
               {/* Links */}
-              <div className="mb-6 flex flex-wrap gap-4">
-            {enrichment?.professional?.labWebsite && (
-              <a
-                href={enrichment.professional.labWebsite}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-              >
-                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-                Lab Website
-              </a>
-            )}
-            
-            {enrichment?.academic?.orcid && (
-              <a
-                href={`https://orcid.org/${enrichment.academic.orcid}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-green-600 hover:text-green-800 transition-colors"
-              >
-                <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.516.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.5 0 3.872-1.866 3.872-3.722 0-1.856-1.372-3.722-3.872-3.722h-2.297z"/>
-                </svg>
-                ORCID: {enrichment.academic.orcid}
-              </a>
-            )}
-          </div>
+              {(enrichment?.professional?.labWebsite || enrichment?.academic?.orcid) && (
+                <div className="mb-6 flex flex-wrap gap-3">
+                  {enrichment?.professional?.labWebsite && (
+                    <a
+                      href={enrichment.professional.labWebsite}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-3 py-1.5 text-sm bg-gray-50 text-gray-700 rounded-md hover:bg-gray-100 transition-colors border border-gray-200"
+                    >
+                      <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      Lab Website
+                    </a>
+                  )}
+
+                  {enrichment?.academic?.orcid && (
+                    <a
+                      href={`https://orcid.org/${enrichment.academic.orcid}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-3 py-1.5 text-sm bg-green-50 text-green-700 rounded-md hover:bg-green-100 transition-colors border border-green-200"
+                    >
+                      <svg className="w-4 h-4 mr-1.5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.516.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.5 0 3.872-1.866 3.872-3.722 0-1.856-1.372-3.722-3.872-3.722h-2.297z"/>
+                      </svg>
+                      ORCID: {enrichment.academic.orcid}
+                    </a>
+                  )}
+                </div>
+              )}
 
           {/* Bio */}
           {enrichment?.profile?.shortBio && (
@@ -216,23 +218,23 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
 
           {/* Statistics */}
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Teaching Statistics</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-gray-50 p-3 rounded-lg">
+            <h3 className="text-base font-semibold text-gray-900 mb-3">Teaching Statistics</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="text-center">
                 <p className="text-2xl font-bold text-gray-900">{statistics.totalYears}</p>
-                <p className="text-sm text-gray-600">Total Years</p>
+                <p className="text-xs text-gray-500 mt-1">Total Years</p>
               </div>
-              <div className="bg-gray-50 p-3 rounded-lg">
+              <div className="text-center">
                 <p className="text-2xl font-bold text-gray-900">{statistics.workshopCount}</p>
-                <p className="text-sm text-gray-600">Workshops</p>
+                <p className="text-xs text-gray-500 mt-1">Workshops</p>
               </div>
-              <div className="bg-gray-50 p-3 rounded-lg">
+              <div className="text-center">
                 <p className="text-2xl font-bold text-gray-900">{statistics.firstYear}</p>
-                <p className="text-sm text-gray-600">First Year</p>
+                <p className="text-xs text-gray-500 mt-1">First Year</p>
               </div>
-              <div className="bg-gray-50 p-3 rounded-lg">
+              <div className="text-center">
                 <p className="text-2xl font-bold text-gray-900">{statistics.lastYear}</p>
-                <p className="text-sm text-gray-600">Last Year</p>
+                <p className="text-xs text-gray-500 mt-1">Last Year</p>
               </div>
             </div>
           </div>
@@ -244,45 +246,38 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
 
           {/* Workshop Participation */}
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-3">Workshop Participation</h3>
-            {Object.entries(participations).map(([workshopId, years]) => {
-              const workshop = workshops[workshopId];
-              if (!workshop) return null;
+            <h3 className="text-base font-semibold text-gray-900 mb-3">Workshop Participation</h3>
+            <div className="space-y-3">
+              {Object.entries(participations).map(([workshopId, years]) => {
+                const workshop = workshops[workshopId];
+                if (!workshop) return null;
 
-              const colors = {
-                wog: 'bg-blue-500',
-                wpsg: 'bg-purple-500',
-                wphylo: 'bg-green-500'
-              };
+                const colors = {
+                  wog: 'border-slate-400 bg-slate-50',
+                  wpsg: 'border-violet-400 bg-violet-50',
+                  wphylo: 'border-emerald-400 bg-emerald-50'
+                };
 
-              return (
-                <div key={workshopId} className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-medium text-gray-900">{workshop.name}</h4>
-                    <span className="text-sm text-gray-600">{years.length} years</span>
+                const dotColors = {
+                  wog: 'bg-slate-400',
+                  wpsg: 'bg-violet-400',
+                  wphylo: 'bg-emerald-400'
+                };
+
+                return (
+                  <div key={workshopId} className={`p-3 rounded-lg border ${colors[workshopId as keyof typeof colors] || 'border-gray-300 bg-gray-50'}`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="text-sm font-medium text-gray-900">{workshop.name}</h4>
+                      <span className="text-xs text-gray-600 font-semibold">{years.length} years</span>
+                    </div>
+
+                    <p className="text-xs text-gray-600">
+                      Years: {years.sort((a, b) => a - b).join(', ')}
+                    </p>
                   </div>
-                  
-                  {/* Timeline visualization */}
-                  <div className="flex gap-1 mb-2 overflow-x-auto pb-2">
-                    {yearRange.map(year => (
-                      <div
-                        key={year}
-                        className={`w-6 h-6 rounded-sm flex-shrink-0 ${
-                          years.includes(year) 
-                            ? colors[workshopId as keyof typeof colors] || 'bg-gray-500'
-                            : 'bg-gray-200'
-                        }`}
-                        title={year.toString()}
-                      />
-                    ))}
-                  </div>
-                  
-                  <p className="text-sm text-gray-600">
-                    Years: {years.sort((a, b) => a - b).join(', ')}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
 
@@ -306,15 +301,15 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
           )}
           
               {/* Update Request Button - Always visible */}
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
                 <p className="text-sm text-gray-600 mb-3">
                   {enrichment ? 'Is this information outdated or incorrect?' : 'Help us add information for this faculty member'}
                 </p>
                 <a
                   href={`mailto:fourthculture@gmail.com?subject=Faculty Profile Update Request - ${fullName}&body=I would like to update my faculty profile information.%0A%0AName: ${fullName}%0AFaculty ID: ${faculty.id}%0A%0APlease send me the update form link.`}
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
+                  className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:border-gray-400 transition-all duration-200"
                 >
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>
                   {enrichment ? 'Request Update' : 'Add Information'}
@@ -345,22 +340,22 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
 
         {/* Navigation buttons */}
         {onNavigate && (
-          <div className="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-4 pointer-events-none">
+          <div className="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-2 pointer-events-none">
             <button
               onClick={() => onNavigate('prev')}
-              className="pointer-events-auto bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-all"
+              className="pointer-events-auto bg-white/80 backdrop-blur-sm hover:bg-white text-gray-600 hover:text-gray-900 p-1.5 rounded-lg shadow-sm border border-gray-200 transition-all duration-200"
               aria-label="Previous faculty member"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={() => onNavigate('next')}
-              className="pointer-events-auto bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-all"
+              className="pointer-events-auto bg-white/80 backdrop-blur-sm hover:bg-white text-gray-600 hover:text-gray-900 p-1.5 rounded-lg shadow-sm border border-gray-200 transition-all duration-200"
               aria-label="Next faculty member"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>

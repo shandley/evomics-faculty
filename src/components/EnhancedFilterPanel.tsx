@@ -15,6 +15,22 @@ interface EnhancedFilterPanelProps {
   filteredCount: number;
 }
 
+// Top specializations based on frequency analysis
+const TOP_SPECIALIZATIONS = [
+  'Bioinformatics',
+  'Computational Biology',
+  'Evolutionary Biology',
+  'Genomics & Omics Sciences',
+  'Population Genetics',
+  'Phylogenetics',
+  'Comparative Genomics',
+  'Metagenomics',
+  'Population Genomics',
+  'Molecular Evolution',
+  'Adaptation',
+  'Speciation',
+];
+
 export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
   filters,
   sortOption,
@@ -29,6 +45,7 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: currentYear - 2010 }, (_, i) => 2011 + i);
   const [showShareTooltip, setShowShareTooltip] = useState(false);
+  const [showAllSpecializations, setShowAllSpecializations] = useState(false);
   
   const handleShare = async () => {
     const url = window.location.href;
@@ -183,18 +200,53 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
           </label>
           <select
             value={filters.teachingSpecializations?.[0] || ''}
-            onChange={(e) => onFiltersChange({
-              ...filters,
-              teachingSpecializations: e.target.value ? [e.target.value] : []
-            })}
+            onChange={(e) => {
+              if (e.target.value === '__show_all__') {
+                setShowAllSpecializations(true);
+              } else {
+                onFiltersChange({
+                  ...filters,
+                  teachingSpecializations: e.target.value ? [e.target.value] : []
+                });
+              }
+            }}
             className="w-full px-3 py-2.5 border border-gray-200 rounded-lg hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white text-sm appearance-none cursor-pointer"
           >
             <option value="">All Specializations</option>
-            {availableSpecializations.map(spec => (
-              <option key={spec} value={spec}>
-                {spec}
+
+            {/* Popular Specializations */}
+            <optgroup label="Popular Specializations">
+              {TOP_SPECIALIZATIONS
+                .filter(spec => availableSpecializations.includes(spec))
+                .map(spec => (
+                  <option key={spec} value={spec}>
+                    {spec}
+                  </option>
+                ))
+              }
+            </optgroup>
+
+            {/* Show All Option */}
+            {!showAllSpecializations && (
+              <option value="__show_all__" className="font-semibold text-violet-600">
+                → Show all specializations...
               </option>
-            ))}
+            )}
+
+            {/* All Specializations (when expanded) */}
+            {showAllSpecializations && (
+              <optgroup label="All Specializations A-Z">
+                {availableSpecializations
+                  .filter(spec => !TOP_SPECIALIZATIONS.includes(spec))
+                  .sort()
+                  .map(spec => (
+                    <option key={spec} value={spec}>
+                      {spec}
+                    </option>
+                  ))
+                }
+              </optgroup>
+            )}
           </select>
         </div>
 

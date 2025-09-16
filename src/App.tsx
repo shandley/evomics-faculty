@@ -1,19 +1,21 @@
-import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useState, useMemo, useEffect, useCallback, lazy, Suspense } from 'react';
 import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
 import { FacultyCardSkeleton } from './components/FacultyCardSkeleton';
 import { CommunityOverview } from './components/CommunityOverview';
 import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
 import { FacultyModal } from './components/FacultyModal';
-import { GeographicDistribution } from './components/GeographicDistribution';
-import { TopicTaxonomyViewer } from './components/TopicTaxonomyViewer';
-import { FacultyNetworkVisualization } from './components/FacultyNetworkVisualization';
-import { TimelineVisualization } from './components/TimelineVisualization';
 import { useFacultyData } from './hooks/useFacultyData';
 import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
 import { exportToCSV, generateFilename } from './utils/export';
 import type { Filters, SortOption, EnrichedFacultyProfile } from './types';
 import enrichedData from './data/facultyEnriched.json';
+
+// Lazy load heavy visualization components
+const GeographicDistribution = lazy(() => import('./components/GeographicDistribution').then(m => ({ default: m.GeographicDistribution })));
+const TopicTaxonomyViewer = lazy(() => import('./components/TopicTaxonomyViewer').then(m => ({ default: m.TopicTaxonomyViewer })));
+const FacultyNetworkVisualization = lazy(() => import('./components/FacultyNetworkVisualization').then(m => ({ default: m.FacultyNetworkVisualization })));
+const TimelineVisualization = lazy(() => import('./components/TimelineVisualization').then(m => ({ default: m.TimelineVisualization })));
 
 function App() {
   const { loading, error, profiles, workshops } = useFacultyData();
@@ -222,46 +224,70 @@ function App() {
       
       {/* Timeline Visualization */}
       {showTimeline && (
-        <TimelineVisualization
-          faculty={enrichedProfiles}
-          workshops={workshops}
-          onFacultyClick={(facultyId) => {
-            setSelectedFacultyId(facultyId);
-          }}
-        />
+        <Suspense fallback={
+          <div className="flex justify-center items-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+          </div>
+        }>
+          <TimelineVisualization
+            faculty={enrichedProfiles}
+            workshops={workshops}
+            onFacultyClick={(facultyId) => {
+              setSelectedFacultyId(facultyId);
+            }}
+          />
+        </Suspense>
       )}
-      
+
       {/* Faculty Network Visualization */}
       {showNetwork && (
-        <FacultyNetworkVisualization
-          faculty={enrichedProfiles}
-          workshops={workshops}
-          onFacultyClick={handleNetworkFacultyClick}
-        />
+        <Suspense fallback={
+          <div className="flex justify-center items-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+          </div>
+        }>
+          <FacultyNetworkVisualization
+            faculty={enrichedProfiles}
+            workshops={workshops}
+            onFacultyClick={handleNetworkFacultyClick}
+          />
+        </Suspense>
       )}
-      
+
       {/* Topic Taxonomy Viewer */}
       {showTaxonomy && (
-        <TopicTaxonomyViewer 
-          faculty={enrichedProfiles}
-          onTopicClick={(topicId) => {
-            // When a topic is clicked, update the filters to show only faculty with that topic
-            setFilters({
-              ...filters,
-              topics: [topicId],
-              includeChildTopics: true
-            });
-            setShowTaxonomy(false); // Optionally hide the taxonomy after selection
-          }}
-        />
+        <Suspense fallback={
+          <div className="flex justify-center items-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+          </div>
+        }>
+          <TopicTaxonomyViewer
+            faculty={enrichedProfiles}
+            onTopicClick={(topicId) => {
+              // When a topic is clicked, update the filters to show only faculty with that topic
+              setFilters({
+                ...filters,
+                topics: [topicId],
+                includeChildTopics: true
+              });
+              setShowTaxonomy(false); // Optionally hide the taxonomy after selection
+            }}
+          />
+        </Suspense>
       )}
-      
+
       {/* Geographic Distribution Map */}
       {showMap && (
-        <GeographicDistribution 
-          faculty={enrichedProfiles}
-          workshops={workshops}
-        />
+        <Suspense fallback={
+          <div className="flex justify-center items-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+          </div>
+        }>
+          <GeographicDistribution
+            faculty={enrichedProfiles}
+            workshops={workshops}
+          />
+        </Suspense>
       )}
       
       <EnhancedFilterPanel

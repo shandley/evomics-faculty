@@ -199,13 +199,13 @@ export const TimelineVisualization: React.FC<TimelineVisualizationProps> = ({
                   <div className="grid grid-cols-4 gap-4">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-gray-900">
-                        {timelineData.years[timelineData.years.length - 1]?.totals.uniqueFaculty || 0}
+                        {faculty.length}
                       </div>
                       <div className="text-xs text-gray-500">Total Faculty</div>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold text-violet-600">
-                        {timelineData.years[timelineData.years.length - 1]?.totals.totalCount || 0}
+                        {timelineData.years[timelineData.years.length - 1]?.totals.facultyCount || 0}
                       </div>
                       <div className="text-xs text-gray-500">Active This Year</div>
                     </div>

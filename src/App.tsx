@@ -118,7 +118,7 @@ function App() {
         <EnhancedFilterPanel
           filters={filters}
           sortOption={sortOption}
-          workshops={[]}
+          workshops={{}}
           availableSpecializations={[]}
           onFiltersChange={setFilters}
           onSortChange={setSortOption}

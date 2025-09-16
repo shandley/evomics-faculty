@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import { Layout } from './components/Layout';
 import { FacultyCard } from './components/FacultyCard';
+import { FacultyCardSkeleton } from './components/FacultyCardSkeleton';
 import { CommunityOverview } from './components/CommunityOverview';
 import { EnhancedFilterPanel } from './components/EnhancedFilterPanel';
 import { FacultyModal } from './components/FacultyModal';
@@ -112,12 +113,33 @@ function App() {
   if (loading) {
     return (
       <Layout>
-        <div className="flex flex-col justify-center items-center h-64 gap-4">
-          <div className="relative">
-            <div className="w-16 h-16 border-4 border-primary-200 rounded-full"></div>
-            <div className="w-16 h-16 border-4 border-primary-600 rounded-full animate-spin border-t-transparent absolute top-0"></div>
-          </div>
-          <div className="text-gray-600 font-medium">Loading faculty data...</div>
+        <CommunityOverview profiles={[]} />
+
+        <EnhancedFilterPanel
+          filters={filters}
+          sortOption={sortOption}
+          workshops={[]}
+          availableSpecializations={[]}
+          onFiltersChange={setFilters}
+          onSortChange={setSortOption}
+          onExport={() => {}}
+          totalCount={0}
+          filteredCount={0}
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {[...Array(12)].map((_, index) => (
+            <div
+              key={index}
+              style={{
+                animationDelay: `${index * 50}ms`,
+                animationFillMode: 'both'
+              }}
+              className="animate-fade-in-up opacity-0"
+            >
+              <FacultyCardSkeleton />
+            </div>
+          ))}
         </div>
       </Layout>
     );
@@ -284,8 +306,11 @@ function App() {
           {filteredAndSortedProfiles.map((profile, index) => (
             <div
               key={profile.faculty.id}
-              style={{ animationDelay: `${index * 50}ms` }}
-              className="animate-slide-up"
+              style={{
+                animationDelay: `${Math.min(index * 60, 800)}ms`,
+                animationFillMode: 'both'
+              }}
+              className="animate-fade-in-up opacity-0"
             >
               <FacultyCard
                 profile={profile}

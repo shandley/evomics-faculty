@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import type { Filters, SortOption, Workshop } from '../types';
 import { TopicFilter } from './TopicFilter';
 import { SearchWithSuggestions } from './SearchWithSuggestions';
+import { Toast } from './Toast';
 
 interface EnhancedFilterPanelProps {
   filters: Filters;
@@ -46,10 +47,12 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
   const years = Array.from({ length: currentYear - 2010 }, (_, i) => 2011 + i);
   const [showShareTooltip, setShowShareTooltip] = useState(false);
   const [showAllSpecializations, setShowAllSpecializations] = useState(false);
-  
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+
   const handleShare = async () => {
     const url = window.location.href;
-    
+
     if (navigator.share) {
       try {
         await navigator.share({
@@ -57,13 +60,23 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
           text: 'Check out this filtered view of Evomics faculty',
           url: url
         });
+        setToastMessage('Shared successfully!');
+        setShowToast(true);
       } catch (err) {
         // User cancelled share
       }
     } else if (navigator.clipboard) {
       await navigator.clipboard.writeText(url);
-      setShowShareTooltip(true);
-      setTimeout(() => setShowShareTooltip(false), 2000);
+      setToastMessage('Link copied to clipboard!');
+      setShowToast(true);
+    }
+  };
+
+  const handleExport = () => {
+    if (onExport) {
+      onExport();
+      setToastMessage('CSV exported successfully!');
+      setShowToast(true);
     }
   };
 
@@ -338,7 +351,7 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
             {/* Export Button */}
             {onExport && (
               <button
-                onClick={onExport}
+                onClick={handleExport}
                 className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-600 bg-white border border-gray-200 rounded-md hover:border-gray-300 hover:text-gray-700 hover:shadow-sm transition-all duration-200"
               >
                 <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -373,6 +386,15 @@ export const EnhancedFilterPanel: React.FC<EnhancedFilterPanelProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Toast Notification */}
+      {showToast && (
+        <Toast
+          message={toastMessage}
+          type="success"
+          onClose={() => setShowToast(false)}
+        />
+      )}
     </div>
   );
 };

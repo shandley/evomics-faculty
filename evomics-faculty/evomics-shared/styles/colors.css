@@ -1,0 +1,53 @@
+/* Evomics Unified Color System */
+
+:root {
+  /* Navigation Colors */
+  --nav-primary: rgb(31, 41, 55);    /* gray-800 */
+  --nav-secondary: rgb(17, 24, 39);  /* gray-900 */
+  --nav-text: rgb(156, 163, 175);    /* gray-400 */
+  --nav-hover: rgb(209, 213, 219);   /* gray-300 */
+
+  /* Primary Accent - Violet */
+  --violet-50: rgb(245, 243, 255);
+  --violet-100: rgb(237, 233, 254);
+  --violet-200: rgb(221, 214, 254);
+  --violet-500: rgb(139, 92, 246);
+  --violet-600: rgb(124, 58, 237);
+  --violet-700: rgb(109, 40, 217);
+
+  /* Secondary Accent - Emerald */
+  --emerald-50: rgb(236, 253, 245);
+  --emerald-100: rgb(209, 250, 229);
+  --emerald-200: rgb(167, 243, 208);
+  --emerald-500: rgb(16, 185, 129);
+  --emerald-600: rgb(5, 150, 105);
+  --emerald-700: rgb(4, 120, 87);
+
+  /* Tertiary Accent - Slate */
+  --slate-50: rgb(248, 250, 252);
+  --slate-100: rgb(241, 245, 249);
+  --slate-200: rgb(226, 232, 240);
+  --slate-500: rgb(100, 116, 139);
+  --slate-600: rgb(71, 85, 105);
+  --slate-700: rgb(51, 65, 85);
+
+  /* Text Colors */
+  --text-primary: rgb(17, 24, 39);    /* gray-900 */
+  --text-secondary: rgb(55, 65, 81);  /* gray-700 */
+  --text-tertiary: rgb(107, 114, 128); /* gray-500 */
+  --text-light: rgb(156, 163, 175);   /* gray-400 */
+
+  /* Background Colors */
+  --bg-white: rgb(255, 255, 255);
+  --bg-gray-50: rgb(249, 250, 251);
+  --bg-gray-100: rgb(243, 244, 246);
+
+  /* Border Colors */
+  --border-light: rgb(229, 231, 235);  /* gray-200 */
+  --border-medium: rgb(209, 213, 219); /* gray-300 */
+
+  /* Shadow Colors */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
